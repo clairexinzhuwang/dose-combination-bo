@@ -1,0 +1,389 @@
+{
+  "schema_version": 1,
+  "status": "PREFLIGHT_ONLY_NO_SIMULATION_AUTHORIZED",
+  "purpose": "Auditable current-harness rerun map. This file is a design manifest, not evidence that any formal trial was run.",
+  "hard_gates": {
+    "exact_evaluator_validation": "REQUIRES_INDEPENDENT_PASS",
+    "gate_numerics_equivalence": "REQUIRES_STABLE_Z_CONTEXT_IDENTITY_ON_EVERY_RECONSTRUCTIBLE_PRELAUNCH_STATE",
+    "primary_osa_400_cell_run": "REQUIRES_EXPLICIT_AUTHORIZATION_AFTER_EXACT_PASS",
+    "formal_run": "REQUIRES_SEPARATE_AUTHORIZATION_AFTER_PRIMARY_REVIEW"
+  },
+  "gate_numerics_invariant": {
+    "exact_score_gate": "z > scipy.stats.norm.ppf(tau)",
+    "current_context_terminal_gate": "z > scipy.stats.norm.ppf(tau)",
+    "exact_empty_gate_fallback": "argmax(z)",
+    "current_empty_gate_fallback": "argmax(z), masked to protocol-eligible doses when applicable",
+    "cdf_rounding_reference": "scipy.stats.norm.cdf(z) is reporting/diagnostic only and never selects a gate fallback",
+    "required_prelaunch_audit": "Compare the stable z/ppf gate vectors and full/eligible argmax-z fallback indices with the current Context at every reconstructible frozen posterior state. Any current-harness difference is a hard stop. CDF rounding differences are diagnostic only, including when a stable fallback is operational.",
+    "required_execution_audit": "For every formal trial, audit every acquisition context and the terminal state; independently reconstruct the saved terminal recommendation as latent-efficacy argmax over the stable z/ppf gate, with argmax-z fallback when empty. Store zero stable-z/current-Context pass-set, operational-fallback, and terminal-recommendation index differences in the checkpoint row. A semantic difference invalidates the row and stops the shard before checkpoint merge; stopped rows explicitly mark the recommendation audit not applicable and CDF-only differences remain diagnostics.",
+    "required_state_checks": ["gate pass set always", "eligible gate pass set always", "full fallback index when full gate is empty", "eligible fallback index when eligible gate is empty", "terminal state", "saved terminal recommendation index when recommendation_made=true; explicit not-applicable marker when stopped"],
+    "cdf_diagnostic_rule": "Record CDF-versus-z pass-set and fallback-index rounding differences, but do not stop because CDF is not a decision comparator in the stable-z harness.",
+    "failure_resolution": "Unify the complete package harness and rerun every affected policy cell; do not patch only cKG."
+  },
+  "compute_paths": {
+    "exact_ckg": [
+      "src/safedosebo/trial.py::run_trial",
+      "formal-process-local opt-in registration cKG-exact-formal -> src/safedosebo/ckg_exact.py::ckg_scores_exact",
+      "src/safedosebo/ckg_exact.py::ckg_one_step_gated_exact",
+      "src/safedosebo/ckg_exact.py::expected_terminal_value_exact"
+    ],
+    "current_comparators": [
+      "src/safedosebo/trial.py::run_trial",
+      "src/safedosebo/registry.py::get_acquisition",
+      "src/safedosebo/acquisitions.py registered policy implementation",
+      "formal-process-local fixed [cEI,cEI,tMSE] schedule implementation in paper/run_full_formal_rerun.py for policy cEI-tMSE-2to1"
+    ],
+    "terminal_recommendation": "src/safedosebo/trial.py -> src/safedosebo/metrics.py::recommend_obd; independently reconstructed in every formal row as latent-efficacy argmax over z>ppf(tau), with argmax-z empty-gate fallback; CDF rounding is diagnostic only",
+    "provenance_only_never_compute_current_claims": ["paper/gate_ab_smoke.py", "paper/ckg_core.py"],
+    "registration_scope": "exact-cKG and fixed 2:1 schedule names exist only in spawned worker processes and disappear at worker teardown; public/default cKG remains cKG-512 and the package registry gains no persistent schedule policy",
+    "evaluator_isolation": "Only run_class=exact_ckg may call ckg_scores_exact. Comparator and trajectory-replay rows use current package acquisitions except the locked fixed 2:1 comparator, whose equivalent implementation is registered only inside a spawned formal worker."
+  },
+  "harness": {
+    "required": "src/safedosebo/trial.py::run_trial",
+    "empty_gate": "pf option, implemented by the package as argmax stable standardized feasibility z",
+    "exact_evaluator": "src/safedosebo/ckg_exact.py::ckg_scores_exact",
+    "exact_policy_code_during_execution": "cKG-exact-formal",
+    "registered_ckg_default_changed": false,
+    "historical_compute_paths": [
+      "paper/gate_ab_smoke.py",
+      "paper/ckg_core.py"
+    ],
+    "historical_compute_paths_status": "PROVENANCE_ONLY_PROHIBITED_FOR_CURRENT_CLAIMS",
+    "reason": "The historical wrapper falls back to ungated scores when the current gate is empty. Current claim-supporting rows require the package most-feasible-dose fallback and isolated policy randomness."
+  },
+  "common_design": {
+    "budget": 40,
+    "warmup": 4,
+    "r_k": 2,
+    "grid_n": 5,
+    "noise": "fixed",
+    "empty_gate": "pf",
+    "region_step": 0.25,
+    "empty_gate_stop_after": 3,
+    "exclude_repeats_during_expansion": true,
+    "strata": [0, 1]
+  },
+  "primary_gate": {
+    "matrix_id": "primary_osa_tau07_exact_ckg",
+    "policy": "cKG-exact-formal",
+    "sim": ["osa"],
+    "mode": ["latent"],
+    "protocol_scaffold": ["lhs_fixed"],
+    "gamma": [0.7],
+    "kap": [1.0],
+    "seed_count_by_sim": {"osa": 200},
+    "expected_executions": 400,
+    "trajectory_capture": {
+      "seeds": "0..79",
+      "strata": [0, 1],
+      "captured_within_primary_not_additional_executions": 160
+    },
+    "required_operating_characteristics": [
+      "rec_true_eff",
+      "rec_unsafe",
+      "toxic",
+      "dose_units",
+      "recommendation_made"
+    ],
+    "staged_runner": "paper/run_primary_osa_exact_ckg_gate.py",
+    "staged_analyzer": "paper/analyze_primary_osa_exact_ckg_gate.py",
+    "execution_authorization_token": "PRIMARY_RUN_GO",
+    "default_runner_mode": "read-only preflight; no output and no trial execution",
+    "staging_artifacts": [
+      "primary_osa_exact_ckg_gate_raw.json",
+      "primary_osa_exact_ckg_gate_raw.json.metadata.json",
+      "primary_osa_exact_ckg_gate.json",
+      "primary_osa_exact_ckg_gate.md",
+      "primary_osa_exact_ckg_gate.metadata.json"
+    ],
+    "interpretation": "Compare aggregate operating characteristics with frozen cKG-512; exact path agreement is diagnostic only and is not the scientific robustness estimand."
+  },
+  "decision_matrices": [
+    {
+      "matrix_id": "main_full_panel_exact_ckg",
+      "run_class": "exact_ckg",
+      "policy": ["cKG-exact-formal"],
+      "sim": ["osa", "gbump", "efftox", "mariposa"],
+      "seed_count_by_sim": {"osa": 200, "gbump": 200, "efftox": 100, "mariposa": 100},
+      "gamma": [0.5, 0.6, 0.7, 0.8, 0.9],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 6000
+    },
+    {
+      "matrix_id": "sixway_predictive_exact_ckg",
+      "run_class": "exact_ckg",
+      "policy": ["cKG-exact-formal"],
+      "sim": ["osa", "gbump"],
+      "seed_count_by_sim": {"osa": 100, "gbump": 100},
+      "gamma": [0.5, 0.6, 0.7, 0.8, 0.9],
+      "mode": ["predictive"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 2000
+    },
+    {
+      "matrix_id": "kappa_nonreference_exact_ckg",
+      "run_class": "exact_ckg",
+      "policy": ["cKG-exact-formal"],
+      "sim": ["osa"],
+      "seed_count_by_sim": {"osa": 100},
+      "gamma": [0.5, 0.7, 0.9],
+      "mode": ["latent"],
+      "kap": [0.25, 0.5, 1.5, 2.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 2400
+    },
+    {
+      "matrix_id": "gradual_access_exact_ckg",
+      "run_class": "exact_ckg",
+      "policy": ["cKG-exact-formal"],
+      "sim": ["osa"],
+      "seed_count_by_sim": {"osa": 200},
+      "gamma": [0.7, 0.9],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["start_low_expansion"],
+      "expected_executions": 800
+    },
+    {
+      "matrix_id": "sixway_latent_current_boundary_controls",
+      "run_class": "current_harness_comparator",
+      "policy": ["tmse", "qBIG", "random"],
+      "sim": ["osa", "gbump"],
+      "seed_count_by_sim": {"osa": 100, "gbump": 100},
+      "gamma": [0.5, 0.6, 0.7, 0.8, 0.9],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 6000
+    },
+    {
+      "matrix_id": "main_latent_current_cei_controls",
+      "run_class": "current_harness_comparator",
+      "policy": ["cEI", "cEI-tMSE"],
+      "sim": ["osa", "gbump", "efftox", "mariposa"],
+      "seed_count_by_sim": {"osa": 200, "gbump": 200, "efftox": 100, "mariposa": 100},
+      "gamma": [0.5, 0.6, 0.7, 0.8, 0.9],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 12000
+    },
+    {
+      "matrix_id": "sixway_predictive_current_nonckg",
+      "run_class": "current_harness_comparator",
+      "policy": ["cEI", "cEI-tMSE", "tmse", "qBIG", "random"],
+      "sim": ["osa", "gbump"],
+      "seed_count_by_sim": {"osa": 100, "gbump": 100},
+      "gamma": [0.5, 0.6, 0.7, 0.8, 0.9],
+      "mode": ["predictive"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 10000
+    },
+    {
+      "matrix_id": "baseline_current_tmse_qbig",
+      "run_class": "current_harness_comparator",
+      "policy": ["tmse", "qBIG"],
+      "sim": ["efftox", "mariposa"],
+      "seed_count_by_sim": {"efftox": 100, "mariposa": 100},
+      "gamma": [0.7],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 800
+    },
+    {
+      "matrix_id": "kappa_nonreference_current_cei",
+      "run_class": "current_harness_comparator",
+      "policy": ["cEI"],
+      "sim": ["osa"],
+      "seed_count_by_sim": {"osa": 100},
+      "gamma": [0.5, 0.7, 0.9],
+      "mode": ["latent"],
+      "kap": [0.25, 0.5, 1.5, 2.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 2400
+    },
+    {
+      "matrix_id": "gradual_access_current_cei_controls",
+      "run_class": "current_harness_comparator",
+      "policy": ["cEI", "cEI-tMSE"],
+      "sim": ["osa"],
+      "seed_count_by_sim": {"osa": 200},
+      "gamma": [0.7, 0.9],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["start_low_expansion"],
+      "expected_executions": 1600
+    },
+    {
+      "matrix_id": "schedule_ratio_2to1_current",
+      "run_class": "current_harness_comparator",
+      "policy": ["cEI-tMSE-2to1"],
+      "sim": ["osa"],
+      "seed_count_by_sim": {"osa": 100},
+      "gamma": [0.7],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "expected_executions": 200
+    }
+  ],
+  "trajectory_replay_matrices": [
+    {
+      "matrix_id": "osa_tau07_current_nonckg_trajectory_replay",
+      "run_class": "trajectory_replay",
+      "policy": ["cEI", "cEI-tMSE"],
+      "sim": ["osa"],
+      "seed_count_by_sim": {"osa": 80},
+      "gamma": [0.7],
+      "mode": ["latent"],
+      "kap": [1.0],
+      "protocol_scaffold": ["lhs_fixed"],
+      "traj": true,
+      "expected_executions": 320,
+      "distinct_designs_added": 0
+    }
+  ],
+  "totals": {
+    "exact_ckg_distinct_designs": 11200,
+    "current_harness_nonckg_distinct_designs": 33000,
+    "formal_decision_distinct_designs": 44200,
+    "decision_executions_excluding_trajectory_fulfilled_identities": 43880,
+    "decision_identities_fulfilled_by_trajectory_replay": 320,
+    "trajectory_replay_executions": 320,
+    "formal_execution_count": 44200
+  },
+  "record_projection": {
+    "total_logical_rows": 55480,
+    "ckg_raw_appearances_from_exact_master": 15160,
+    "approved_nonckg_replacements": 40320,
+    "approved_replacement_rows": 55480,
+    "required_unchanged_nonckg_rows": 0,
+    "targets": [
+      {"path": "records/osa_main.json.zst", "rows": 6000, "composition": {"current_stable_z_nonckg": 4000, "exact_ckg": 2000}},
+      {"path": "records/gbump_main.json.zst", "rows": 6000, "composition": {"current_stable_z_nonckg": 4000, "exact_ckg": 2000}},
+      {"path": "records/efftox_main.json.zst", "rows": 3000, "composition": {"current_stable_z_nonckg": 2000, "exact_ckg": 1000}},
+      {"path": "records/mariposa_main.json.zst", "rows": 3000, "composition": {"current_stable_z_nonckg": 2000, "exact_ckg": 1000}},
+      {"path": "records/gate_sixway_supplemental.json.zst", "rows": 24000, "composition": {"main_latent_reuse": 6000, "current_latent_boundary_controls": 6000, "current_predictive_nonckg": 10000, "exact_predictive_ckg": 2000}},
+      {"path": "records/efftox_mariposa_baselines_supplemental.json.zst", "rows": 2000, "composition": {"main_latent_reuse": 1200, "new_current_harness": 800}},
+      {"path": "records/kappa_sweep_fixed_supplemental.json.zst", "rows": 6000, "composition": {"main_kappa1_reuse": 1200, "current_nonreference_cei": 2400, "new_exact_ckg": 2400}},
+      {"path": "records/osa_trajectory_supplemental.json.zst", "rows": 480, "composition": {"current_nonckg_replay": 320, "main_exact_ckg_capture": 160}},
+      {"path": "records/protocol_scaffold_sensitivity.json.zst", "rows": 4800, "composition": {"main_lhs_reuse": 2400, "current_gradual_nonckg": 1600, "new_exact_ckg_gradual": 800}},
+      {"path": "records/schedule_ratio_sensitivity_2to1.json.zst", "rows": 200, "composition": {"current_stable_z_schedule": 200}}
+    ]
+  },
+  "frozen_reuse_identities": {
+    "purpose": "Prove logical duplicate projections from the frozen archives before relying on one formal execution for several output files.",
+    "main_identity": ["canonical_policy", "seed", "sim", "stratum", "mode", "gamma"],
+    "policy_aliases": {"cKG1fix": "cKG", "GBE": "cEI-tMSE"},
+    "comparison": "deep equality on every retained main-schema field",
+    "targets": [
+      {"identity": "gate_latent_main_reuse", "path": "records/gate_sixway_supplemental.json.zst", "selector": "mode=latent; policy in {cEI,cKG1fix,GBE}", "rows": 6000, "ckg_rows": 2000, "ignored_main_fields": []},
+      {"identity": "baseline_main_reuse", "path": "records/efftox_mariposa_baselines_supplemental.json.zst", "selector": "policy in {cEI,cKG1fix,GBE}", "rows": 1200, "ckg_rows": 400, "ignored_main_fields": []},
+      {"identity": "kappa_reference_main_reuse", "path": "records/kappa_sweep_fixed_supplemental.json.zst", "selector": "kap=1", "rows": 1200, "ckg_rows": 600, "ignored_main_fields": []},
+      {"identity": "trajectory_final_field_reuse", "path": "records/osa_trajectory_supplemental.json.zst", "selector": "all rows", "rows": 480, "ckg_rows": 160, "ignored_main_fields": ["traj"]},
+      {"identity": "protocol_lhs_main_reuse", "path": "records/protocol_scaffold_sensitivity.json.zst", "selector": "protocol_scaffold=lhs_fixed", "rows": 2400, "ckg_rows": 800, "ignored_main_fields": []}
+    ],
+    "expected_total_reuse_appearances": 11280,
+    "expected_ckg_reuse_appearances": 3960
+  },
+  "policy_projection": {
+    "main_and_protocol": {"cKG-exact-formal": "cKG", "cEI": "cEI", "cEI-tMSE": "cEI-tMSE"},
+    "historical_schema_files": {
+      "cKG-exact-formal": "cKG1fix",
+      "cEI-tMSE": "GBE",
+      "tmse": "straddle",
+      "qBIG": "qBIG",
+      "random": "random",
+      "cEI": "cEI",
+      "cEI-tMSE-2to1": "cEI-tMSE-2to1"
+    }
+  },
+  "checkpoint_contract": {
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    },
+    "process_start_method": "spawn",
+    "worker_cap": 8,
+    "bounded_pending_futures": "2 * workers",
+    "checkpoint_every_completed_trials": 12,
+    "expected_shards": {
+      "decision": {"shard_count": 185, "size_histogram": {"200": 149, "240": 2, "400": 34}, "execution_count": 43880},
+      "trajectory": {"shard_count": 2, "size_histogram": {"160": 2}, "execution_count": 320}
+    },
+    "atomic_protocol": "same-directory temporary file, flush, fsync, os.replace, directory fsync",
+    "write_scope": "new stable-z staging root only; frozen records, canonical archive, and the historical hard-stop staging tree remain read-only until every validator passes",
+    "historical_failed_staging": {
+      "path": "/private/tmp/formal-rerun-cdf-hardstop-20260823",
+      "former_path": "results/formal_rerun_staging",
+      "status": "PROVENANCE_ONLY_NEVER_RESUME",
+      "read_only_inventory": {"checkpoint_payloads": 8, "commit_sidecars": 8, "temporary_files": 0, "decision_masters": 0, "trajectory_masters": 0},
+      "reason": "Contains only valid committed CDF-era partial checkpoints preceding the operational fallback hard stop; the expanded stable-z run has a different manifest, harness id, source map, and output root."
+    },
+    "checkpoint_identity_fields": ["manifest_sha256", "execution source sha256 map", "exact validation artifact sha256", "shard_id", "harness_id"],
+    "required_row_fields": ["formal_execution_key", "harness_id", "evaluator_id", "historical_wrapper_used=false", "gate_numerics_audit with all pass-set/operational-fallback difference counts zero and terminal_state_checked=true", "terminal_recommendation_status=checked and terminal_recommendation_index_difference_count=0 for recommending rows; explicit not_applicable_stopped/null indices for stopped rows", "result"],
+    "resume_rejects": [
+      "manifest hash mismatch",
+      "execution source hash mismatch",
+      "exact validation artifact hash mismatch",
+      "unexpected or duplicate job key",
+      "mixed harness id",
+      "mixed evaluator id",
+      "historical wrapper provenance",
+      "missing or nonzero gate-numerics audit",
+      "missing or nonzero terminal recommendation audit",
+      "design metadata mismatch"
+    ],
+    "canonical_sort_key": [
+      "matrix_id", "policy", "sim", "mode", "protocol_scaffold", "kap", "gamma", "stratum", "seed"
+    ]
+  },
+  "artifact_contract": {
+    "status": "PLANNED_OUTPUTS_NOT_YET_GENERATED",
+    "launch_inputs": [
+      "paper/formal_rerun_manifest.json and its sha256",
+      "schema-3 PASS results/ckg_piecewise_exact_validation/ckg_piecewise_exact_panel.json and its sha256",
+      "authenticated stable-z 400-cell primary raw artifact and commit sidecar",
+      "sha256 map for all execution source files",
+      "the ten frozen records/*.json.zst files as read-only merge bases"
+    ],
+    "execution_source_files": [
+      "src/safedosebo/acquisitions.py",
+      "src/safedosebo/ckg_exact.py",
+      "src/safedosebo/context.py",
+      "src/safedosebo/gp.py",
+      "src/safedosebo/metrics.py",
+      "src/safedosebo/protocol.py",
+      "src/safedosebo/registry.py",
+      "src/safedosebo/surfaces.py",
+      "src/safedosebo/trial.py"
+    ],
+    "staging_outputs": [
+      "atomic per-shard partial checkpoints",
+      "one canonical 43,880-row non-trajectory decision master plus 320 trajectory replay rows that also fulfill their matching decision identities",
+      "a source/hash/environment/run manifest",
+      "ten candidate records/*.json.zst projections with the frozen key sets"
+    ],
+    "exact_validation_generator": "paper/run_ckg_piecewise_exact_validation.py",
+    "exact_validation_tests": ["tests/test_ckg_piecewise_exact.py", "tests/test_ckg_piecewise_exact_panel.py"],
+    "formal_preflight_test": "tests/test_formal_rerun_preflight.py",
+    "candidate_archive_validators": ["scripts/validate_integrity.py", "scripts/validate_full_reproduction.py"],
+    "publication_rule": "No candidate artifact replaces a frozen/canonical file until static preflight, reuse identity, key-set, row-count, gate-numerics, independent terminal-recommendation, source-hash, deep-equality, and regenerated-analysis validators all pass."
+  },
+  "validator_assertions": {
+    "matrix": ["11200 exact-cKG distinct designs", "33000 current stable-z-harness non-cKG distinct designs", "44200 distinct decision identities", "43880 non-trajectory decision executions", "320 trajectory replays that fulfill the matching decision identities", "44200 total executions", "400 authenticated primary imports leave 43800 future executions"],
+    "primary": ["400 OSA tau=0.7 exact-cKG cells", "160 cKG trajectories captured inside those cells", "aggregate OC review before broader authorization"],
+    "archive": ["55480 logical rows", "unchanged record key sets", "55480 approved replacement rows", "zero retained CDF-fallback rows"],
+    "reuse": ["11280 cross-file reuse appearances", "3960 cKG reuse appearances", "deep equality on every retained main-schema field"],
+    "gate_numerics": "zero stable-z/current-Context pass-set and eligible-pass-set differences always; zero full/eligible argmax-z fallback-index differences whenever that fallback is operational; terminal state included; every saved recommendation independently matches latent-efficacy argmax over the stable gate or argmax-z fallback, with stopped rows explicitly not applicable; all CDF rounding differences retained only as diagnostics",
+    "provenance": "no row may name or use paper/gate_ab_smoke.py or paper/ckg_core.py as a current compute path"
+  }
+}

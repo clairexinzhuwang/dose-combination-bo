@@ -1,0 +1,13 @@
+sim,gamma,policy_a,policy_b,metric,recommendation_conditional,difference_mean,difference_se,n,n_pairs,protocol_scaffold,label,contrast,eligible_pair_n,eligible_seed_n
+osa,0.7,cKG,cEI-tMSE,rec_true_eff,True,0.4482111328125001,0.1962371315398055,200,400,lhs_fixed,Recommended efficacy | recommend,cKG − cEI–tMSE,400,200
+osa,0.7,cKG,cEI-tMSE,all_trial_unsafe,False,0.1275,0.02403867800443704,200,400,lhs_fixed,"True-boundary-exceeding final recommendation, all trials",cKG − cEI–tMSE,400,200
+osa,0.7,cKG,cEI-tMSE,dose_units,True,-0.02476556319056862,0.05479982016136069,200,400,lhs_fixed,Dose-location error | recommend,cKG − cEI–tMSE,400,200
+osa,0.9,cKG,cEI-tMSE,rec_true_eff,True,0.13224599609375007,0.15270357708006124,200,400,lhs_fixed,Recommended efficacy | recommend,cKG − cEI–tMSE,400,200
+osa,0.9,cKG,cEI-tMSE,all_trial_unsafe,False,0.0175,0.014343900705079697,200,400,lhs_fixed,"True-boundary-exceeding final recommendation, all trials",cKG − cEI–tMSE,400,200
+osa,0.9,cKG,cEI-tMSE,dose_units,True,0.0009009393763738016,0.04681013187843791,200,400,lhs_fixed,Dose-location error | recommend,cKG − cEI–tMSE,400,200
+osa,0.7,cKG,cEI-tMSE,rec_true_eff,True,-0.3559252929687503,0.221956494670877,200,385,start_low_expansion,Recommended efficacy | recommend,cKG − cEI–tMSE,385,200
+osa,0.7,cKG,cEI-tMSE,all_trial_unsafe,False,0.1025,0.02359027885128548,200,400,start_low_expansion,"True-boundary-exceeding final recommendation, all trials",cKG − cEI–tMSE,400,200
+osa,0.7,cKG,cEI-tMSE,dose_units,True,0.19618258817439774,0.058878327068165745,200,385,start_low_expansion,Dose-location error | recommend,cKG − cEI–tMSE,385,200
+osa,0.9,cKG,cEI-tMSE,rec_true_eff,True,-0.25618717447916667,0.21611521115571214,180,322,start_low_expansion,Recommended efficacy | recommend,cKG − cEI–tMSE,322,180
+osa,0.9,cKG,cEI-tMSE,all_trial_unsafe,False,0.025,0.012149611735633082,200,400,start_low_expansion,"True-boundary-exceeding final recommendation, all trials",cKG − cEI–tMSE,400,200
+osa,0.9,cKG,cEI-tMSE,dose_units,True,0.09346332211416666,0.0604857565652063,180,322,start_low_expansion,Dose-location error | recommend,cKG − cEI–tMSE,322,180

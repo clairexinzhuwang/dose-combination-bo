@@ -1,0 +1,117 @@
+{
+  "columns": [
+    "sim",
+    "policy",
+    "tau",
+    "dose_units_mean",
+    "dose_units_mcse",
+    "above_threshold_recommendation_pct_mean",
+    "above_threshold_recommendation_pct_mcse",
+    "independent_seeds"
+  ],
+  "estimand": {
+    "aggregation": "strata averaged within seed before Monte Carlo SE across seeds",
+    "displayed_thresholds": [
+      0.5,
+      0.7,
+      0.9
+    ]
+  },
+  "rows": [
+    {
+      "above_threshold_recommendation_pct_mcse": 0.0,
+      "above_threshold_recommendation_pct_mean": 0.0,
+      "dose_units_mcse": 0.07916195517281426,
+      "dose_units_mean": 1.9015483546764966,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "sim": "mariposa",
+      "tau": 0.5
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 4.92365963917331,
+      "above_threshold_recommendation_pct_mean": 40.0,
+      "dose_units_mcse": 0.0882766856916653,
+      "dose_units_mean": 1.6121725378317695,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "sim": "mariposa",
+      "tau": 0.5
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 4.512608598542129,
+      "above_threshold_recommendation_pct_mean": 28.000000000000004,
+      "dose_units_mcse": 0.07083667491574971,
+      "dose_units_mean": 1.5616111398027892,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "sim": "mariposa",
+      "tau": 0.5
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 0.0,
+      "above_threshold_recommendation_pct_mean": 0.0,
+      "dose_units_mcse": 0.08232582760800218,
+      "dose_units_mean": 1.903192013565484,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "sim": "mariposa",
+      "tau": 0.7
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 4.020151261036848,
+      "above_threshold_recommendation_pct_mean": 20.0,
+      "dose_units_mcse": 0.08235032566504659,
+      "dose_units_mean": 1.5745905457846576,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "sim": "mariposa",
+      "tau": 0.7
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 3.015113445777636,
+      "above_threshold_recommendation_pct_mean": 10.0,
+      "dose_units_mcse": 0.08379854658210087,
+      "dose_units_mean": 1.630079614483134,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "sim": "mariposa",
+      "tau": 0.7
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 0.9999999999999999,
+      "above_threshold_recommendation_pct_mean": 1.0,
+      "dose_units_mcse": 0.07723304747756843,
+      "dose_units_mean": 1.9811912362685755,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "sim": "mariposa",
+      "tau": 0.9
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.3868325657594203,
+      "above_threshold_recommendation_pct_mean": 6.0,
+      "dose_units_mcse": 0.08286934705919152,
+      "dose_units_mean": 1.657994918796297,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "sim": "mariposa",
+      "tau": 0.9
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.9694638556693238,
+      "above_threshold_recommendation_pct_mean": 4.0,
+      "dose_units_mcse": 0.0890555674895132,
+      "dose_units_mean": 1.8937561622698555,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "sim": "mariposa",
+      "tau": 0.9
+    }
+  ],
+  "schema_version": 2,
+  "source_record_files": [
+    "mariposa_main.json.zst"
+  ],
+  "table_id": "mariposa_geometry"
+}

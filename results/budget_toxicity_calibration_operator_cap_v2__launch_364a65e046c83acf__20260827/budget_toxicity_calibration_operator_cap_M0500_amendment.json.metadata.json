@@ -1,0 +1,16 @@
+{
+  "amendment_generator_sha256": "aafe5eaa13222ba2c108cf2dc656fb324ef9d63ea1f21665d98814997b3e0e7a",
+  "amendment_schema_sha256": "c5aba84194d7600261222ce5950a096b8980a85e5c2af9cc9743614ccf803034",
+  "artifact": "budget_toxicity_calibration_operator_cap_M0500_amendment.json",
+  "artifact_bytes": 5900,
+  "artifact_class": "result_blind_operator_cap_amendment",
+  "artifact_sha256": "3097380d0f3fe661807e162c99a1b83583d1c2ae2ca1dcc31e400e1c47455485",
+  "audit_id": "operator-cap-M0500-63e96c3afbee45a9",
+  "bindings_sha256": "f02704d6c3cac05cf602ea7b19f1239fe9ba96afba2c0986e204ab3103febade",
+  "cap_cumulative_M": 500,
+  "declared_at_utc": "2026-08-27T22:01:08.035616Z",
+  "immutable": true,
+  "launch_fingerprint": "364a65e046c83acf5458885e8b07e2cb3de441c5ba01f0a1d02e6f59f6d3e0a5",
+  "schema_version": 1,
+  "status": "COMPLETE_BUDGET_TOXICITY_CALIBRATION_OPERATOR_CAP_AMENDMENT"
+}

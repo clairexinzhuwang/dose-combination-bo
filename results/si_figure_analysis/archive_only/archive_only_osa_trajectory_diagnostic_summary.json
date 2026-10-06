@@ -1,0 +1,162 @@
+{
+  "design": {
+    "final_state_from_trial_record": 40,
+    "independent_seeds": 80,
+    "policies": 3,
+    "serialized_enrollment_states": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      14,
+      16,
+      18,
+      20,
+      22,
+      24,
+      26,
+      28,
+      30,
+      32,
+      34,
+      36,
+      38
+    ],
+    "serialized_states_per_trial_row": 18,
+    "strata": 2
+  },
+  "endpoints": [
+    {
+      "final_state": {
+        "mcse": 0.07599290204673365,
+        "mean": 1.8717711752078983,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.09914690478210975,
+        "mean": 2.0178310831782365,
+        "patients_enrolled": 4
+      },
+      "outcome": "Dose-units",
+      "policy": "cEI"
+    },
+    {
+      "final_state": {
+        "mcse": 0.201624327678839,
+        "mean": 6.109386886944874,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.2761013706527072,
+        "mean": 5.579045732339219,
+        "patients_enrolled": 4
+      },
+      "outcome": "Posterior efficacy error",
+      "policy": "cEI"
+    },
+    {
+      "final_state": {
+        "mcse": 0.4778722081374123,
+        "mean": 6.69375,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.05996026506008748,
+        "mean": 1.58125,
+        "patients_enrolled": 4
+      },
+      "outcome": "Cumulative above-boundary assignments",
+      "policy": "cEI"
+    },
+    {
+      "final_state": {
+        "mcse": 0.08871359402313003,
+        "mean": 1.6577679461517154,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.09914690478210975,
+        "mean": 2.0178310831782365,
+        "patients_enrolled": 4
+      },
+      "outcome": "Dose-units",
+      "policy": "cKG"
+    },
+    {
+      "final_state": {
+        "mcse": 0.19513003497988765,
+        "mean": 5.8178446514436475,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.2761013706527072,
+        "mean": 5.579045732339219,
+        "patients_enrolled": 4
+      },
+      "outcome": "Posterior efficacy error",
+      "policy": "cKG"
+    },
+    {
+      "final_state": {
+        "mcse": 0.35175798889743004,
+        "mean": 7.24375,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.05996026506008748,
+        "mean": 1.58125,
+        "patients_enrolled": 4
+      },
+      "outcome": "Cumulative above-boundary assignments",
+      "policy": "cKG"
+    },
+    {
+      "final_state": {
+        "mcse": 0.08536867612690896,
+        "mean": 1.690668880197601,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.09914690478210975,
+        "mean": 2.0178310831782365,
+        "patients_enrolled": 4
+      },
+      "outcome": "Dose-units",
+      "policy": "cEI-tMSE"
+    },
+    {
+      "final_state": {
+        "mcse": 0.19376555756251757,
+        "mean": 5.59240558200511,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.2761013706527072,
+        "mean": 5.579045732339219,
+        "patients_enrolled": 4
+      },
+      "outcome": "Posterior efficacy error",
+      "policy": "cEI-tMSE"
+    },
+    {
+      "final_state": {
+        "mcse": 0.4516096168642822,
+        "mean": 9.66875,
+        "patients_enrolled": 40
+      },
+      "first_state": {
+        "mcse": 0.05996026506008748,
+        "mean": 1.58125,
+        "patients_enrolled": 4
+      },
+      "outcome": "Cumulative above-boundary assignments",
+      "policy": "cEI-tMSE"
+    }
+  ],
+  "input_trial_rows": 480,
+  "interpretation": "Operating-characteristic evolution only. The records do not contain acquisition values and cannot evaluate acquisition-threshold stopping.",
+  "schema_version": 1,
+  "scope": "archive_only_github_diagnostic_not_manuscript",
+  "summary_rows": 171
+}

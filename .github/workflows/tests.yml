@@ -1,0 +1,220 @@
+name: Installed distribution
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  wheel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      NUMEXPR_NUM_THREADS: '1'
+      PYTEST_ADDOPTS: ''
+    steps:
+      - name: Set isolated check paths
+        run: |
+          echo "SDB_CHECK_DIR=$RUNNER_TEMP/sdb-installed-check" >> "$GITHUB_ENV"
+          echo "SDB_ENV_DIR=$RUNNER_TEMP/sdb-env" >> "$GITHUB_ENV"
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build wheel and source distribution
+        run: |
+          python -m pip install -r requirements-test.txt
+          python -m build
+          python - <<'PY'
+          from pathlib import Path
+          import tarfile
+          import zipfile
+          for path in Path('dist').glob('*'):
+              if path.suffix == '.whl':
+                  with zipfile.ZipFile(path) as archive:
+                      names = archive.namelist()
+              else:
+                  with tarfile.open(path) as archive:
+                      names = [member.name for member in archive.getmembers() if member.isfile()]
+              for name in names:
+                  parts = Path(name).parts
+                  assert not {'paper', 'review', 'historical', 'results', 'distributions', 'baselines'} & set(parts), name
+                  assert Path(name).suffix not in {'.pdf', '.zip', '.whl', '.zst'}, name
+                  assert 'cover_letter' not in name.lower(), name
+          PY
+
+      - name: Install wheel in an isolated environment
+        run: |
+          python -m venv "$SDB_ENV_DIR"
+          "$SDB_ENV_DIR/bin/python" -m pip install --upgrade pip
+          # CPU wheels avoid downloading unused GPU runtimes on the Linux runner.
+          "$SDB_ENV_DIR/bin/python" -m pip install -c requirements-lock.txt --index-url https://download.pytorch.org/whl/cpu 'torch==2.10.0'
+          "$SDB_ENV_DIR/bin/python" -m pip install -c requirements-lock.txt -r requirements-test.txt dist/*.whl 'ray>=2' 'pandas>=2' 'matplotlib>=3.7'
+          "$SDB_ENV_DIR/bin/python" -m pip check
+          ! grep -q 'include-system-site-packages = true' "$SDB_ENV_DIR/pyvenv.cfg"
+
+      - name: Prepare checks outside the checkout
+        id: prepare
+        run: |
+          env -u PYTHONPATH "$SDB_ENV_DIR/bin/python" - <<'PY'
+          import os
+          import shutil
+          from pathlib import Path
+          from importlib.metadata import version
+          import dose_combination_bo as sdb
+          source = Path.cwd().resolve()
+          installed = Path(sdb.__file__).resolve().parent
+          assert not installed.is_relative_to(source), installed
+          assert sdb.__version__ == version('dose-combination-bo') == '0.2.1rc5'
+          for path in (source / 'src/dose_combination_bo').glob('*.py'):
+              assert path.read_bytes() == (installed / path.name).read_bytes(), path.name
+          target = Path(os.environ['SDB_CHECK_DIR'])
+          target.mkdir()
+          for name in ('tests', 'verification', 'examples'):
+              shutil.copytree(source / name, target / name)
+          shutil.copy2(source / 'README.md', target / 'README.md')
+          shutil.copy2(source / 'GETTING_STARTED.md', target / 'GETTING_STARTED.md')
+          shutil.copytree(source / 'study_archive/frozen_core', target / 'study_archive/frozen_core')
+          (target / 'src').mkdir()
+          (target / 'src/dose_combination_bo').symlink_to(installed, target_is_directory=True)
+          # The fixture loader needs a project marker, without checkout paths or
+          # inherited pytest exclusion rules. The baseline is a comparison fixture.
+          (target / 'pyproject.toml').write_text(
+              '[tool.pytest.ini_options]\nmarkers = ["ray: real local worker integration"]\n'
+          )
+          (target / 'conftest.py').write_text(
+              'import json, os\nfrom pathlib import Path\n'
+              'counts = {"collected": 0, "excluded": 0}\nstarted = set()\n'
+              'def pytest_collection_finish(session):\n    counts["collected"] = len(session.items)\n'
+              'def pytest_deselected(items):\n    counts["excluded"] += len(items)\n'
+              'def pytest_runtest_logstart(nodeid, location):\n    started.add(nodeid)\n'
+              'def pytest_sessionfinish(session, exitstatus):\n'
+              '    counts["not_executed"] = counts["collected"] - len(started)\n'
+              '    counts["exit_code"] = int(exitstatus)\n'
+              '    Path(os.environ["SDB_SUITE"] + "-collection.json").write_text(json.dumps(counts))\n'
+          )
+          print(f'Installed package: {installed}')
+          print(f'Check directory: {target}')
+          PY
+
+      - name: Maintained regression and real GP/Ray tests
+        id: maintained
+        working-directory: ${{ env.SDB_CHECK_DIR }}
+        run: |
+          env -u PYTHONPATH SDB_SUITE=maintained "$SDB_ENV_DIR/bin/python" -m pytest -ra --import-mode=importlib tests --junitxml=wheel-tests.xml
+
+      - name: Independent algebra and explicit controller-fixture tests
+        id: verification
+        if: always() && steps.prepare.outcome == 'success'
+        working-directory: ${{ env.SDB_CHECK_DIR }}
+        run: |
+          env -u PYTHONPATH "$SDB_ENV_DIR/bin/python" - <<'PY'
+          import sys
+          from pathlib import Path
+          import dose_combination_bo
+          sys.path.insert(0, str(Path('verification').resolve()))
+          from fixture_loader import load
+          installed = Path(dose_combination_bo.__file__).resolve().parent
+          modules = load('ci_installed_origin')
+          for module in vars(modules).values():
+              assert Path(module.__file__).resolve().parent == installed, module.__file__
+          PY
+          env -u PYTHONPATH SDB_SUITE=verification "$SDB_ENV_DIR/bin/python" -m pytest -ra --import-mode=prepend verification/test_numerics_and_controller.py --junitxml=verification-tests.xml
+
+      - name: Run README examples and CLI plugins
+        id: examples
+        if: always() && steps.prepare.outcome == 'success'
+        working-directory: ${{ env.SDB_CHECK_DIR }}
+        run: |
+          env -u PYTHONPATH "$SDB_ENV_DIR/bin/python" - <<'PY'
+          import os
+          import re
+          import shlex
+          import subprocess
+          import sys
+          from pathlib import Path
+          text = Path('README.md').read_text() + '\n' + Path('GETTING_STARTED.md').read_text()
+          commands = [line.strip() for block in re.findall(r'```bash\n(.*?)```', text, re.S)
+                      for line in block.splitlines()
+                      if line.startswith(('dose-combination-bo ', 'python examples/'))]
+          blocks = re.findall(r'```python\n(.*?)```', text, re.S)
+          assert commands and blocks, 'README runnable examples not found'
+          with Path('example-results.txt').open('w') as log:
+              for command in commands:
+                  args = shlex.split(command)
+                  args[0] = str(Path(os.environ['SDB_ENV_DIR']) / 'bin' / args[0])
+                  log.write(f'$ {command}\n'); log.flush()
+                  subprocess.run(args, check=True, stdout=log, stderr=subprocess.STDOUT)
+              for block in blocks:
+                  log.write('$ README Python example\n'); log.flush()
+                  subprocess.run([sys.executable, '-c', block], check=True, stdout=log, stderr=subprocess.STDOUT)
+              # Only the copied external-plugin directory is added, never the checkout.
+              plugin_env = dict(os.environ, PYTHONPATH=str(Path.cwd()))
+              cli = str(Path(os.environ['SDB_ENV_DIR']) / 'bin/dose-combination-bo')
+              for module, policy, surface in [
+                  ('examples.add_your_own_acquisition', 'gated_ucb', 'osa'),
+                  ('examples.add_your_own_surface', 'cEI', 'shifted_gaussian'),
+              ]:
+                  log.write(f'$ CLI plugin {module}\n'); log.flush()
+                  subprocess.run([cli, 'run', '--plugin', module, '--acquisitions', policy,
+                                  '--surfaces', surface, '--seeds', '1', '--budget', '6', '--serial'],
+                                 env=plugin_env, check=True, stdout=log, stderr=subprocess.STDOUT)
+          PY
+
+      - name: Summarize distinct checks
+        if: always()
+        env:
+          MAINTAINED_OUTCOME: ${{ steps.maintained.outcome }}
+          VERIFICATION_OUTCOME: ${{ steps.verification.outcome }}
+          EXAMPLES_OUTCOME: ${{ steps.examples.outcome }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+          import xml.etree.ElementTree as ET
+          directory = Path(os.environ['SDB_CHECK_DIR'])
+          directory.mkdir(exist_ok=True)
+          summary = {}
+          for name, file in [('maintained', 'wheel-tests.xml'), ('verification', 'verification-tests.xml')]:
+              path = directory / file
+              if not path.exists():
+                  summary[name] = {'status': os.environ[name.upper() + '_OUTCOME'], 'not_executed': 'suite not run; test count unavailable'}
+                  continue
+              cases = list(ET.parse(path).getroot().iter('testcase'))
+              errors = [case.find('error') for case in cases if case.find('error') is not None]
+              import_errors = sum(any(word in (error.get('message', '') + (error.text or ''))
+                                      for word in ('ImportError', 'ModuleNotFoundError')) for error in errors)
+              counts = json.loads((directory / (name + '-collection.json')).read_text())
+              summary[name] = {
+                  'status': os.environ[name.upper() + '_OUTCOME'],
+                  'passed': sum(not any(case.find(tag) is not None for tag in ('failure', 'error', 'skipped')) for case in cases),
+                  'failed': sum(case.find('failure') is not None for case in cases),
+                  'other_errors': len(errors) - import_errors,
+                  'import_errors': import_errors,
+                  'skipped': sum(case.find('skipped') is not None for case in cases),
+                  **counts,
+              }
+          summary['examples'] = {'status': os.environ['EXAMPLES_OUTCOME']}
+          summary['scope'] = ('Maintained tests include real GP and local Ray workers. Verification uses explicit '
+                              'controller posterior fixtures and independent algebra; it is not a GP integration claim. '
+                              'No marker filters are applied. Historical research/archive suites are outside these suites.')
+          (directory / 'check-summary.json').write_text(json.dumps(summary, indent=2) + '\n')
+          print(json.dumps(summary, indent=2))
+          with Path(os.environ['GITHUB_STEP_SUMMARY']).open('a') as output:
+              output.write('```json\n' + json.dumps(summary, indent=2) + '\n```\n')
+          PY
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: acceptance-artifacts
+          path: |
+            dist/*
+            ${{ env.SDB_CHECK_DIR }}/*.xml
+            ${{ env.SDB_CHECK_DIR }}/check-summary.json
+            ${{ env.SDB_CHECK_DIR }}/*-collection.json
+            ${{ env.SDB_CHECK_DIR }}/example-results.txt

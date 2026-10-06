@@ -1,0 +1,23 @@
+{
+  "artifact_type": "manuscript_result_facts_output_manifest",
+  "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+  "generator": "generate_manuscript_result_facts.py",
+  "generator_sha256": "7ec81b850027452eda7dc10823ae98dbe473b6acdf4a62f1b247d407f11949f7",
+  "outputs": {
+    "manuscript_result_facts.json": {
+      "bytes": 41100,
+      "sha256": "a2a3845c1db2fd7e23e2f1d796d12239c516b5e5e26e5ffc39781b3e0c3fc41d"
+    },
+    "manuscript_result_facts.tex": {
+      "bytes": 2416,
+      "sha256": "eeb52586c016c445cd374c5df7944a7f734bcb381825edc70907d56eeab5de2f"
+    },
+    "manuscript_result_snippets.tex": {
+      "bytes": 2397,
+      "sha256": "f972a3819f8ce0a7ec206b1973a40f5e71f767d301f92327f279e1d0b9c57752"
+    }
+  },
+  "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+  "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf",
+  "schema_version": 1
+}

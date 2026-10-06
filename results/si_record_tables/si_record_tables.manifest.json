@@ -1,0 +1,281 @@
+{
+  "artifacts": {
+    "boundary_baselines": {
+      "csv": {
+        "basename": "si_boundary_baselines.csv",
+        "bytes": 763,
+        "metadata_basename": "si_boundary_baselines.csv.metadata.json",
+        "metadata_sha256": "3f5fee3d3f6f51c9a9d0f8bd17ee7c11464d599be7f85cbdc8cc226fea32f966",
+        "sha256": "25c136d35ad43c69e218090f1fdab6379b341bc51d9d230e559930f94642ed91"
+      },
+      "json": {
+        "basename": "si_boundary_baselines.json",
+        "bytes": 3834,
+        "metadata_basename": "si_boundary_baselines.json.metadata.json",
+        "metadata_sha256": "c807fe223cf0bf80f09ad976a8ae939a410aeb278064563ba2dbacd1fcebb9d9",
+        "sha256": "52c9fd228f2c6b8e05cfcc6b4445db3a922ddd30a006af44702fd954685ef98c"
+      },
+      "tex": {
+        "basename": "si_boundary_baselines.tex",
+        "bytes": 415,
+        "metadata_basename": "si_boundary_baselines.tex.metadata.json",
+        "metadata_sha256": "b330f88d1e5816222216fb192cbb78f3e260a2027ead6271661945ced7467160",
+        "sha256": "7f626afb2271c8046c55f0fac13726ed8861db9d517e0c5ea9780194a019f66e"
+      }
+    },
+    "gaussian_bump_detailed": {
+      "csv": {
+        "basename": "si_gaussian_bump_detailed.csv",
+        "bytes": 4027,
+        "metadata_basename": "si_gaussian_bump_detailed.csv.metadata.json",
+        "metadata_sha256": "37bd7a2ce4ce7ec72cc7249a82723d9b5869137ff1e003d3ffdfe410ebccd677",
+        "sha256": "ad97b1b552dca89bbb669b7bd5fb0d57e979aeb88c2ada730b5f590ae63396d4"
+      },
+      "json": {
+        "basename": "si_gaussian_bump_detailed.json",
+        "bytes": 14060,
+        "metadata_basename": "si_gaussian_bump_detailed.json.metadata.json",
+        "metadata_sha256": "75191ab529eabb954f72c8767450852c87ca572f8fb7405ad5b496641d0468cc",
+        "sha256": "a1149967ec48c3e09f88201725b3595926964e565c339e243140c18690b6c7f8"
+      },
+      "tex": {
+        "basename": "si_gaussian_bump_detailed.tex",
+        "bytes": 2199,
+        "metadata_basename": "si_gaussian_bump_detailed.tex.metadata.json",
+        "metadata_sha256": "fb14f438a89a0c2a1c2af2c37a658f27c1ab8a8f4051610448bb7fb53077763c",
+        "sha256": "5ec7a87cac90baae1fef9c0920f6230195e3c7a50d7330127549e14fa71f0e78"
+      }
+    },
+    "kappa_sensitivity": {
+      "csv": {
+        "basename": "si_kappa_sensitivity.csv",
+        "bytes": 990,
+        "metadata_basename": "si_kappa_sensitivity.csv.metadata.json",
+        "metadata_sha256": "cc5f7430ca443b36a25c948c41d583b457df633884f4f056a49e22c0a330757a",
+        "sha256": "48c41e8b7b5c00ddea1a3ce094d3e0349ece587e82fbf03ffa6308caee0f5b09"
+      },
+      "json": {
+        "basename": "si_kappa_sensitivity.json",
+        "bytes": 7089,
+        "metadata_basename": "si_kappa_sensitivity.json.metadata.json",
+        "metadata_sha256": "45f2dfdf066c752ca77ccb42a44b85953c5314c0edd2673e2f489db22e57863a",
+        "sha256": "54f130691d9bc509045f555e4e7955fc8b09532d1503872dc4083abe0a4e04aa"
+      },
+      "tex": {
+        "basename": "si_kappa_sensitivity.tex",
+        "bytes": 681,
+        "metadata_basename": "si_kappa_sensitivity.tex.metadata.json",
+        "metadata_sha256": "3180e473179472e50bdf9f87e25a9f020092f38dfd2c43faf6cf11de73ca4044",
+        "sha256": "363d662e3ebb8983aca585d472f0b0a0ce44e1201a93393d595fa77a4d6086a8"
+      }
+    },
+    "logistic_geometry": {
+      "csv": {
+        "basename": "si_logistic_geometry.csv",
+        "bytes": 892,
+        "metadata_basename": "si_logistic_geometry.csv.metadata.json",
+        "metadata_sha256": "1533e997eea367843bf92f68ceddbc08d4c67241f08e646f8e64ae9e433bb7b4",
+        "sha256": "baa598f63bfa27f8a972d667076a084479c888176fa9317968a32e710d9c7107"
+      },
+      "json": {
+        "basename": "si_logistic_geometry.json",
+        "bytes": 3446,
+        "metadata_basename": "si_logistic_geometry.json.metadata.json",
+        "metadata_sha256": "2d2860b0f4214e624a02e5e2557b6572458f5e9981aa8616f5a57ac303e59f83",
+        "sha256": "b92c086be5f1e75c3fbdf19f66c1ec8abecd6dbdb6989bbf9079b90d649e685a"
+      },
+      "tex": {
+        "basename": "si_logistic_geometry.tex",
+        "bytes": 661,
+        "metadata_basename": "si_logistic_geometry.tex.metadata.json",
+        "metadata_sha256": "bbfa6cca5a2bd3d27dd7b08f19d8badafbcbbdfd7aa4d11fb694873747176eee",
+        "sha256": "93d642b6f371b078a51c2a13b727122fd45070b29d7a2f0917a706b62ae2e5ca"
+      }
+    },
+    "mariposa_geometry": {
+      "csv": {
+        "basename": "si_mariposa_geometry.csv",
+        "bytes": 885,
+        "metadata_basename": "si_mariposa_geometry.csv.metadata.json",
+        "metadata_sha256": "1d713e77ba2ec6e724b16f3a1e91123874f785c03836ea1fbd571e49b44857b5",
+        "sha256": "18d48820bb2e66b7b32e09f97da27a150b666da788db2d2bcfe6668f64d5f47a"
+      },
+      "json": {
+        "basename": "si_mariposa_geometry.json",
+        "bytes": 3441,
+        "metadata_basename": "si_mariposa_geometry.json.metadata.json",
+        "metadata_sha256": "1917d5c9d403fa238bea8ef2c24538b6a2f5bf76c93edab8dc373e10ea9d301f",
+        "sha256": "1ffc201c885dc575e9d5864bfa0683bab7d2bad2e83210136004644d649f0e54"
+      },
+      "tex": {
+        "basename": "si_mariposa_geometry.tex",
+        "bytes": 659,
+        "metadata_basename": "si_mariposa_geometry.tex.metadata.json",
+        "metadata_sha256": "945b0f1fb0c734d68447df6724d412cf6d59d96a07e5aa1a1f91efa21b4cdafa",
+        "sha256": "2656c74d4a5cd4a45fc06ca715f261011717b5fb0755bc795a50cd0f90126c8f"
+      }
+    },
+    "osa_gate_calibration": {
+      "csv": {
+        "basename": "si_osa_gate_calibration.csv",
+        "bytes": 1512,
+        "metadata_basename": "si_osa_gate_calibration.csv.metadata.json",
+        "metadata_sha256": "25786e70d7a7a323db0aaa28d515f103369bcc7487224df945963628a8adcc39",
+        "sha256": "42b9e3cd895ea226214e616f31bf6bf1843d07b51013d94f6fc2e1c3ec9259fd"
+      },
+      "json": {
+        "basename": "si_osa_gate_calibration.json",
+        "bytes": 5925,
+        "metadata_basename": "si_osa_gate_calibration.json.metadata.json",
+        "metadata_sha256": "277c22f0604ba9d561d2bbbf7d097c7f9b9e26fb2fdcaa2e0af2acc7c9d338e4",
+        "sha256": "d48595aa91b2469a7860da0bf78c282fe3e4518037ed0999645582422a69988e"
+      },
+      "tex": {
+        "basename": "si_osa_gate_calibration.tex",
+        "bytes": 973,
+        "metadata_basename": "si_osa_gate_calibration.tex.metadata.json",
+        "metadata_sha256": "a8bc9dea6dc5610c60a96fc77cbea821bf05167e9a50cdb6a14bd391a3b97d67",
+        "sha256": "e3128d393bf119f6d92bd85643c8a2649aa2652edce1f3952a9876297377513d"
+      }
+    },
+    "osa_gate_diagnostics": {
+      "csv": {
+        "basename": "si_osa_gate_diagnostics.csv",
+        "bytes": 1898,
+        "metadata_basename": "si_osa_gate_diagnostics.csv.metadata.json",
+        "metadata_sha256": "04cd0c72d0724e7b1b15f2fbb3b3e384d64a8b5660e7443a4521f65bb3f113e4",
+        "sha256": "48eb88fc799d117b14ee55fffa73e33f809dd4a812d8f02391fc79394bfb509f"
+      },
+      "json": {
+        "basename": "si_osa_gate_diagnostics.json",
+        "bytes": 8468,
+        "metadata_basename": "si_osa_gate_diagnostics.json.metadata.json",
+        "metadata_sha256": "4c7c8a213b8021b6e2f605363efffea58904134b8f8940b3342786a82ce72cd2",
+        "sha256": "0dd9f9aff292446321645bf3dbe3e300e6d87c88dd338e4c09406a7c3c4c7023"
+      },
+      "tex": {
+        "basename": "si_osa_gate_diagnostics.tex",
+        "bytes": 1430,
+        "metadata_basename": "si_osa_gate_diagnostics.tex.metadata.json",
+        "metadata_sha256": "919977f79c90391261d26f24950dd60f4d315be78f95c45bed043711d2415340",
+        "sha256": "df4a50c4ea22a08a3d76aef775e82d109cd7e5108f38238f54b0598218a0d7a9"
+      }
+    },
+    "osa_precision": {
+      "csv": {
+        "basename": "si_osa_precision.csv",
+        "bytes": 1177,
+        "metadata_basename": "si_osa_precision.csv.metadata.json",
+        "metadata_sha256": "89619bbfd382cb2c5ee0d414fdac51c617d2d37116ec6f0b3aa7c3a7b341a833",
+        "sha256": "f25a278eeebcd5096488246c4ee78d9a514c8202b5c195217f675464ca3623f3"
+      },
+      "json": {
+        "basename": "si_osa_precision.json",
+        "bytes": 3740,
+        "metadata_basename": "si_osa_precision.json.metadata.json",
+        "metadata_sha256": "2baf21ac30d06147bfa3ed2dc5c963133a49d408b8e39ff5934c50b0abc6f3a8",
+        "sha256": "0b47c1be7b1250650d869d5dde1fa242b36ca0f30edb72fa6395dfba4aa866d8"
+      },
+      "tex": {
+        "basename": "si_osa_precision.tex",
+        "bytes": 719,
+        "metadata_basename": "si_osa_precision.tex.metadata.json",
+        "metadata_sha256": "336257741d139856d2d35d90a6dd3e32fa9243306343ff511b6b4470a8b7b123",
+        "sha256": "fa991da65b1b10946f1657e57160e112ea298993767165dbf521be47139c3c82"
+      }
+    },
+    "osa_source_panel": {
+      "csv": {
+        "basename": "si_osa_source_panel.csv",
+        "bytes": 1419,
+        "metadata_basename": "si_osa_source_panel.csv.metadata.json",
+        "metadata_sha256": "2ca8fda569227c86a7cc16d8d7c5ca0752b2b324eef3e20c874ba884769dc560",
+        "sha256": "439559699f24c770dde6b14f7fab42c7da18a18329780fb83c6ec5e9201b61c3"
+      },
+      "json": {
+        "basename": "si_osa_source_panel.json",
+        "bytes": 3880,
+        "metadata_basename": "si_osa_source_panel.json.metadata.json",
+        "metadata_sha256": "3c02b2144a8071e354b586b3c09868d30519da558d6e9857d2f936dafdf02a9d",
+        "sha256": "b60fd6a139abdee390e77ab45824932a99bb30cb2a7929ee46007f3644d36756"
+      },
+      "tex": {
+        "basename": "si_osa_source_panel.tex",
+        "bytes": 782,
+        "metadata_basename": "si_osa_source_panel.tex.metadata.json",
+        "metadata_sha256": "2f047523059c0c8000bfbf9b0aa82141589edb4f9192520df12f95654b8a130e",
+        "sha256": "0113c23ae59f1e348d33d7b2347dcc17ca813571accbca0abc476e3890cb199a"
+      }
+    },
+    "osa_tradeoff": {
+      "csv": {
+        "basename": "si_osa_tradeoff.csv",
+        "bytes": 1360,
+        "metadata_basename": "si_osa_tradeoff.csv.metadata.json",
+        "metadata_sha256": "980b3184c1d26f1a44dba14371aac906f8f78fa2e234d43898092a2b4bf4f7f3",
+        "sha256": "f7f5cefa3e4b5bb4a2cbd71e9749d667cd029151aa70c11a8632a313a7bfef76"
+      },
+      "json": {
+        "basename": "si_osa_tradeoff.json",
+        "bytes": 6888,
+        "metadata_basename": "si_osa_tradeoff.json.metadata.json",
+        "metadata_sha256": "9475dd8d6d9a4b224f648fa4f684e106ba52b92cc3a677ff0bb1fecd3d2b819c",
+        "sha256": "6468bd747f347675623685ea38969b4d20678c0c3218bbd97794f28a95f78855"
+      },
+      "tex": {
+        "basename": "si_osa_tradeoff.tex",
+        "bytes": 1016,
+        "metadata_basename": "si_osa_tradeoff.tex.metadata.json",
+        "metadata_sha256": "58bc34a4cdae3f4974c6be4bc55034f9618e8aec053c29b660a2247b8349ee01",
+        "sha256": "125758bdeebff0f58f0005ba688bc1dec25a8240cdcb4d8b249bc492153a8f39"
+      }
+    },
+    "six_policy": {
+      "csv": {
+        "basename": "si_six_policy.csv",
+        "bytes": 1601,
+        "metadata_basename": "si_six_policy.csv.metadata.json",
+        "metadata_sha256": "e5aa596b5f7ed803c621271524b887dcee66865585b7460bf9cc785c937478fd",
+        "sha256": "c77af1722d96d58ef59655b6c561a19a1534609c074fe978d2f0a9c831799397"
+      },
+      "json": {
+        "basename": "si_six_policy.json",
+        "bytes": 5560,
+        "metadata_basename": "si_six_policy.json.metadata.json",
+        "metadata_sha256": "8d71260f116fb8fbab14f354785005c4e3fb66a1335ca2f66a55c94a4fad5c3a",
+        "sha256": "c5502ce1aa1c3e84a3f8e4b2c19ec96f54bf8e1637166b79eb1ffedf3539e1d0"
+      },
+      "tex": {
+        "basename": "si_six_policy.tex",
+        "bytes": 723,
+        "metadata_basename": "si_six_policy.tex.metadata.json",
+        "metadata_sha256": "b6099b0e9d47e361654a13de05fa5eb93f14ee7ff879cc9ae3e8feb16f63e8d8",
+        "sha256": "25087c962d3489e590aeaff0291df224847894fd9c72de8bf498079e1b402def"
+      }
+    }
+  },
+  "artifacts_per_table": [
+    "tex",
+    "csv",
+    "json"
+  ],
+  "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+  "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+  "schema_version": 1,
+  "sidecar_per_artifact": true,
+  "status": "COMPLETE",
+  "table_count": 11,
+  "table_ids": [
+    "gaussian_bump_detailed",
+    "logistic_geometry",
+    "mariposa_geometry",
+    "osa_tradeoff",
+    "osa_precision",
+    "osa_gate_calibration",
+    "osa_gate_diagnostics",
+    "osa_source_panel",
+    "boundary_baselines",
+    "six_policy",
+    "kappa_sensitivity"
+  ]
+}

@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+build/
+dist/
+.eggs/
+
+# Testing / caching
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+/tmp/
+*.stdout
+
+# Environments
+.venv/
+venv/
+env/
+
+# Simulation run outputs (regenerate with dose_combination_bo.sweep(..., out=...))
+results.json
+*_results.json
+!baselines/demo_results.json
+/results/*.partial
+*.json.partial
+*.checkpoint.json
+/scratch/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# TeX build products
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

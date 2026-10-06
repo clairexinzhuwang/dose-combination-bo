@@ -1,0 +1,14 @@
+{
+  "all_estimands_pass_guarded_1_5pp": false,
+  "artifact": "budget_toxicity_calibration_precision_M0200.json.zst",
+  "artifact_sha256": "4adc82fe019bbbc8bcc4df814bd561ef21c9738a6568021dc3a99da9e550524c",
+  "cumulative_M": 200,
+  "estimand_count": 118,
+  "maximum_guarded_mcse_points": 2.71187598477215,
+  "metadata": "budget_toxicity_calibration_precision_M0200.json.zst.metadata.json",
+  "metadata_sha256": "f364c621254905c2f85fb59bfcf524ca5e429471e79eba48241ba6d2f739198b",
+  "next_M": 500,
+  "schema_version": 2,
+  "status": "COMMITTED_BLINDED_BUDGET_TOXICITY_CALIBRATION_PRECISION_DECISION",
+  "top_up_limit_reached": false
+}

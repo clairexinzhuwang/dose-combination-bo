@@ -1,0 +1,13 @@
+{
+  "artifact": "budget_toxicity_calibration_baseline_identity_M0200.json.zst",
+  "artifact_sha256": "4737aa29bf793a8a99de49689188c24622bbf8fa6aa18bd94fa3b3e5a8b95dff",
+  "checked_allocation_histories": 3040,
+  "checked_common_cells": 3200,
+  "cumulative_M": 200,
+  "metadata": "budget_toxicity_calibration_baseline_identity_M0200.json.zst.metadata.json",
+  "metadata_sha256": "44b8141267ee87513c00a524f54359524fc4b89b35153dae5b3ab84df75a21cf",
+  "pass": true,
+  "schema_version": 1,
+  "status": "COMMITTED_BUDGET_TOXICITY_CALIBRATION_BASELINE_IDENTITY",
+  "unavailable_allocation_histories": 160
+}

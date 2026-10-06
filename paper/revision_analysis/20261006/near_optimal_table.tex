@@ -1,0 +1,43 @@
+\begin{table}[H]
+\revisioncolor
+\centering
+\footnotesize
+\setlength{\tabcolsep}{5pt}
+\caption{Truly acceptable selections within an efficacy margin of the grid optimum in OSA, under full-grid availability.}
+\label{tab:nearoptimal}
+\begin{tabular}{@{}clcccc@{}}
+\toprule
+$\tau$ & Rule & $\delta=0$ & $\delta=0.5$ & $\delta=1$ & $\delta=2$ \\
+\midrule
+0.5 & cKG & 21.00 (2.08) & 21.00 (2.08) & 21.00 (2.08) & 38.00 (2.41) \\
+0.5 & tMSE & 24.75 (2.30) & 24.75 (2.30) & 24.75 (2.30) & 46.25 (2.58) \\
+0.5 & Entropy rule & 22.25 (2.09) & 22.25 (2.09) & 22.25 (2.09) & 41.75 (2.62) \\
+0.5 & cEI & 17.00 (1.99) & 17.00 (1.99) & 17.00 (1.99) & 36.00 (2.63) \\
+\addlinespace[2pt]
+0.6 & cKG & 18.25 (2.04) & 18.25 (2.04) & 18.25 (2.04) & 34.50 (2.41) \\
+0.6 & tMSE & 19.50 (1.97) & 19.50 (1.97) & 19.50 (1.97) & 36.75 (2.42) \\
+0.6 & Entropy rule & 21.00 (2.05) & 21.00 (2.05) & 21.00 (2.05) & 38.50 (2.50) \\
+0.6 & cEI & 10.25 (1.52) & 10.25 (1.52) & 10.25 (1.52) & 30.25 (2.60) \\
+\addlinespace[2pt]
+0.7 & cKG & 14.25 (1.71) & 14.25 (1.71) & 14.25 (1.71) & 28.75 (2.23) \\
+0.7 & tMSE & 13.75 (1.81) & 13.75 (1.81) & 13.75 (1.81) & 30.50 (2.50) \\
+0.7 & Entropy rule & 14.50 (1.86) & 14.50 (1.86) & 14.50 (1.86) & 32.00 (2.48) \\
+0.7 & cEI & 7.25 (1.39) & 7.25 (1.39) & 7.25 (1.39) & 21.00 (2.08) \\
+\addlinespace[2pt]
+0.8 & cKG & 9.75 (1.61) & 9.75 (1.61) & 9.75 (1.61) & 23.25 (2.06) \\
+0.8 & tMSE & 11.00 (1.59) & 11.00 (1.59) & 11.00 (1.59) & 18.00 (2.13) \\
+0.8 & Entropy rule & 11.00 (1.59) & 11.00 (1.59) & 11.00 (1.59) & 24.25 (2.18) \\
+0.8 & cEI & 7.00 (1.28) & 7.00 (1.28) & 7.00 (1.28) & 17.25 (1.99) \\
+\addlinespace[2pt]
+0.9 & cKG & 5.75 (1.29) & 5.75 (1.29) & 5.75 (1.29) & 13.50 (1.83) \\
+0.9 & tMSE & 5.50 (1.22) & 5.50 (1.22) & 5.50 (1.22) & 10.75 (1.66) \\
+0.9 & Entropy rule & 9.75 (1.53) & 9.75 (1.53) & 9.75 (1.53) & 17.25 (1.99) \\
+0.9 & cEI & 5.50 (1.22) & 5.50 (1.22) & 5.50 (1.22) & 12.00 (1.63) \\
+\bottomrule
+\end{tabular}
+\vspace{3pt}
+\begin{minipage}{0.98\linewidth}
+\scriptsize\raggedright
+\textit{Note.} Entries are percentages (MCSE in pp), averaging the two stratum indicators within each of $M=200$ independent replicate sets. Each rule--cutoff row uses all 400 initiated trials, retaining fallback selections. Acceptability uses true mean toxicity, not the posterior criterion. Margins are in simulated AHI4 events/hour and are descriptive, not clinically calibrated. $\delta=0$ denotes selection of the exact acceptable grid optimum. These post hoc summaries reuse existing records; no adaptive trials were rerun.
+\end{minipage}
+\end{table}

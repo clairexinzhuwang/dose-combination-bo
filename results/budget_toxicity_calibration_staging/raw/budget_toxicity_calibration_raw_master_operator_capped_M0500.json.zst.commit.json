@@ -1,0 +1,18 @@
+{
+  "amendment_bundle_sha256": "ccaa6f589088c7f919527ac273c8574821dfb692d8ca4acf83812c38abc93dba",
+  "artifact": "budget_toxicity_calibration_raw_master_operator_capped_M0500.json.zst",
+  "artifact_sha256": "24336bf86b838ec7a3a634926e6c2bdf582339900405f2fedb1f84d08b74d24a",
+  "cap_finalizer_sha256": "6e8f0644f7d91b38056731816e1ac4fe1c1d1623135dbea11298c3721dfe7a5f",
+  "committed_at_utc": "2026-08-28T06:05:06.328175Z",
+  "final_M": 500,
+  "immutable": true,
+  "launch_fingerprint": "364a65e046c83acf5458885e8b07e2cb3de441c5ba01f0a1d02e6f59f6d3e0a5",
+  "metadata": "budget_toxicity_calibration_raw_master_operator_capped_M0500.json.zst.metadata.json",
+  "metadata_sha256": "91e65ec0d19b76055d508d171f4f42e41e2f313ff61de53331a0cd0520c1ddfb",
+  "path_count": 24000,
+  "precision_bundle_sha256": "69e1f78f45bfa214996c899b1a8532ced06f1eb31b7e819b993b921e2eb50b4d",
+  "schema_version": 1,
+  "snapshot_count": 72000,
+  "status": "COMMITTED_TERMINAL_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_OPERATOR_CAP",
+  "uncompressed_sha256": "629a053eb1d421d3fb3ea35929ec1fb49a5da712a499648765e99b6058f28274"
+}

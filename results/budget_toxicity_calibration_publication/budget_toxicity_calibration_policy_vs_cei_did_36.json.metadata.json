@@ -1,0 +1,25 @@
+{
+  "adapter": "paper/generate_budget_toxicity_calibration_publication.py",
+  "adapter_sha256": "e14c2464f586f3abb805bfa24bb47f2ecc61a93e7405e0cb51489d497c6aa919",
+  "artifact": "budget_toxicity_calibration_policy_vs_cei_did_36.json",
+  "artifact_bytes": 44054,
+  "artifact_class": "outcome_independent_budget_toxicity_calibration_publication_projection",
+  "artifact_sha256": "42fc98e299b86bc90a3a502fb52d6f5527a61db68d3292863f9c27c77d213352",
+  "artifact_type": "complete_policy_vs_cEI_calibration_did_36_json",
+  "contract": "budget_toxicity_calibration_publication_contract.json",
+  "contract_sha256": "a1904b435d4e42ef6df25094bc1f3ce35156ceaec5bf157ec24fb2ff2827b6a8",
+  "description": "All 36 frozen policy-vs-cEI calibration difference-in-differences with raw and guarded pointwise intervals.",
+  "input_bundle_sha256": "3b8ea560a8b6ff56199b97eafacc4709af44f14f1595bec982a21142768a1973",
+  "no_filtering_by_sign_interval_or_winner": true,
+  "schema_version": 3,
+  "selection": {
+    "complete_without_sign_filtering": true,
+    "secondary_policy_vs_cEI_calibration_did_rows": 36
+  },
+  "status": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_PUBLICATION_ARTIFACT",
+  "trusted_commitments": {
+    "analyzer_sha256": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+    "manifest_sha256": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+    "prespec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178"
+  }
+}

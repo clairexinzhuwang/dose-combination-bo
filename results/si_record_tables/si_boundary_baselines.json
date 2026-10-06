@@ -1,0 +1,126 @@
+{
+  "columns": [
+    "surface",
+    "policy",
+    "above_threshold_recommendation_pct_mean",
+    "above_threshold_recommendation_pct_mcse",
+    "independent_seeds"
+  ],
+  "estimand": {
+    "aggregation": "strata averaged within seed before Monte Carlo SE across seeds",
+    "threshold": 0.7
+  },
+  "rows": [
+    {
+      "above_threshold_recommendation_pct_mcse": 2.4183640851792454,
+      "above_threshold_recommendation_pct_mean": 11.0,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "surface": "OSA"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.8118615998241547,
+      "above_threshold_recommendation_pct_mean": 18.5,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "surface": "OSA"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.6329931618554518,
+      "above_threshold_recommendation_pct_mean": 6.0,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "surface": "OSA"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.6227443411030125,
+      "above_threshold_recommendation_pct_mean": 13.0,
+      "independent_seeds": 100,
+      "policy": "tMSE",
+      "surface": "OSA"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.786602145113563,
+      "above_threshold_recommendation_pct_mean": 17.5,
+      "independent_seeds": 100,
+      "policy": "SUR",
+      "surface": "OSA"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.5912634880780585,
+      "above_threshold_recommendation_pct_mean": 10.5,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "surface": "Logistic"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 3.2114064384831935,
+      "above_threshold_recommendation_pct_mean": 23.0,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "surface": "Logistic"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.5912634880780585,
+      "above_threshold_recommendation_pct_mean": 10.5,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "surface": "Logistic"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.9745860069872618,
+      "above_threshold_recommendation_pct_mean": 8.0,
+      "independent_seeds": 100,
+      "policy": "tMSE",
+      "surface": "Logistic"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.2473328748774732,
+      "above_threshold_recommendation_pct_mean": 10.0,
+      "independent_seeds": 100,
+      "policy": "SUR",
+      "surface": "Logistic"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 0.0,
+      "above_threshold_recommendation_pct_mean": 0.0,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "surface": "MARIPOSA-motivated"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 4.020151261036848,
+      "above_threshold_recommendation_pct_mean": 20.0,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "surface": "MARIPOSA-motivated"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 3.015113445777636,
+      "above_threshold_recommendation_pct_mean": 10.0,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "surface": "MARIPOSA-motivated"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 3.4873508801977695,
+      "above_threshold_recommendation_pct_mean": 14.000000000000002,
+      "independent_seeds": 100,
+      "policy": "tMSE",
+      "surface": "MARIPOSA-motivated"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 3.684529491774706,
+      "above_threshold_recommendation_pct_mean": 16.0,
+      "independent_seeds": 100,
+      "policy": "SUR",
+      "surface": "MARIPOSA-motivated"
+    }
+  ],
+  "schema_version": 2,
+  "source_record_files": [
+    "gate_sixway_supplemental.json.zst",
+    "efftox_mariposa_baselines_supplemental.json.zst"
+  ],
+  "table_id": "boundary_baselines"
+}

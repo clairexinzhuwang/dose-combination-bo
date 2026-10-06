@@ -1,0 +1,196 @@
+{
+  "artifact_class": "outcome_independent_budget_toxicity_calibration_publication_projection",
+  "authentication": {
+    "allowed_input_files": [
+      "budget_toxicity_calibration_analysis.metadata.json",
+      "budget_toxicity_calibration_analysis.commit.json",
+      "budget_toxicity_calibration_primary.json",
+      "budget_toxicity_calibration_primary.json.metadata.json",
+      "budget_toxicity_calibration_secondary.json",
+      "budget_toxicity_calibration_secondary.json.metadata.json",
+      "budget_toxicity_calibration_baseline_identity.json",
+      "budget_toxicity_calibration_baseline_identity.json.metadata.json"
+    ],
+    "analyzer_payload_schema_versions": {
+      "primary": 2,
+      "secondary": 2
+    },
+    "baseline_status": "PASS_AVAILABLE_FIELD_IDENTITY",
+    "binding_state": "BOUND_FINAL_THIRD_AMENDMENT_MANIFEST_SHA256",
+    "committed_analysis_status": "COMMITTED_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_ANALYSIS",
+    "complete_analysis_status": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_ANALYSIS",
+    "complete_artifact_status": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_ANALYSIS_ARTIFACT",
+    "eligible_common_m": [
+      200,
+      500,
+      1000
+    ],
+    "finite_json_required": true,
+    "hash_algorithm": "sha256",
+    "primary_family_counts": {
+      "A": 54,
+      "B": 48,
+      "C": 16
+    },
+    "primary_total": 118,
+    "secondary_counts": {
+      "absolute": 864,
+      "contrast_and_conditional": 363,
+      "plotted_absolute": 72,
+      "published_policy_vs_cei_calibration_did": 36
+    },
+    "trusted_commitments": {
+      "analyzer_sha256": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+      "manifest_sha256": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+      "prespec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178"
+    }
+  },
+  "captions": {
+    "absolute_gate_brier_profiles": "Raw absolute estimates with numerically guarded pointwise 95% Monte Carlo intervals in the finite fixed-design audit. Lines connect the evaluated N=20, 40, and 80 snapshots.",
+    "attenuation_interactions": "Calibration-penalty interactions between the evaluated N=20 and N=80 snapshots, with numerically guarded familywise simultaneous 95% max-t bands. A guarded-negative interaction supports finite-range attenuation only when its matched N=20 penalty is guarded-positive.",
+    "calibration_penalties": "Erroneous-minus-correct assumed toxicity-noise contrasts with numerically guarded familywise simultaneous 95% max-t bands in the finite fixed-design audit. Lines connect the evaluated N=20, 40, and 80 snapshots.",
+    "cei_reference": "Shared-gate cEI reference contrasts with numerically guarded familywise simultaneous 95% max-t bands in the finite fixed-design audit. This reference is not a four-policy ranking.",
+    "principal_profile": "cKG-minus-tMSE-only and cKG-minus-Entropy contrasts with numerically guarded familywise simultaneous 95% max-t bands in the finite fixed-design audit. Lines connect the evaluated N=20, 40, and 80 snapshots."
+  },
+  "colors_by_c_sigma": {
+    "0.5": "#0072B2",
+    "1.0": "#666666",
+    "2.0": "#D55E00"
+  },
+  "estimands": {
+    "family_A": "cKG minus comparator for true-boundary-exceeding terminal recommendation and assignment outcomes at every 3-by-3 budget/calibration cell",
+    "family_B": "erroneous c_sigma minus correct c_sigma=1 for target exclusion and panel Brier score",
+    "family_C": "Family-B penalty at N=80 minus the corresponding penalty at N=20; guarded-negative values can support finite-range attenuation only under the frozen N=20 guarded-positive condition",
+    "family_order": [
+      "A",
+      "B",
+      "C"
+    ],
+    "no_cell_vote": true,
+    "no_filtering_by_sign_interval_or_winner": true,
+    "unresolved_is_not_sameness": true
+  },
+  "figures": {
+    "absolute_gate_brier_profiles": {
+      "primary_rows": 0,
+      "secondary_absolute_rows": 72,
+      "stem": "figure_budget_toxicity_calibration_absolute_gate_brier_profiles"
+    },
+    "attenuation_interactions": {
+      "primary_rows": 16,
+      "secondary_absolute_rows": 0,
+      "stem": "figure_budget_toxicity_calibration_attenuation_interactions"
+    },
+    "calibration_penalties": {
+      "primary_rows": 48,
+      "secondary_absolute_rows": 0,
+      "stem": "figure_budget_toxicity_calibration_calibration_penalties"
+    },
+    "cei_reference": {
+      "primary_rows": 18,
+      "secondary_absolute_rows": 0,
+      "stem": "figure_budget_toxicity_calibration_cei_reference"
+    },
+    "formats": [
+      "png",
+      "pdf"
+    ],
+    "principal_profile": {
+      "primary_rows": 36,
+      "secondary_absolute_rows": 0,
+      "stem": "figure_budget_toxicity_calibration_principal_profile"
+    }
+  },
+  "interpretation": {
+    "band_classification": {
+      "negative": "numerically guarded simultaneous upper endpoint is strictly below zero",
+      "positive": "numerically guarded simultaneous lower endpoint is strictly above zero",
+      "unresolved": "numerically guarded simultaneous band includes zero, including an endpoint exactly equal to zero"
+    },
+    "budget_robust_within_factor": "terminal and assignment directions are each guarded-resolved consistently and are opposite at N=20, 40, and 80 for that c_sigma",
+    "calibration_robust_at_N40": "terminal and assignment directions are each guarded-resolved consistently and are opposite at all three c_sigma values at N=40",
+    "finite_range_attenuation": "Family-B N=20 penalty is guarded-positive and the matched Family-C interaction is guarded-negative over the evaluated N=20 to N=80 range",
+    "full_grid_robust": "terminal and assignment directions are each guarded-resolved consistently and are opposite in all nine evaluated budget-by-c_sigma cells",
+    "principal_comparators_are_separate": [
+      "tmse",
+      "qBIG"
+    ],
+    "prohibited_inferences": [
+      "sameness from an interval that includes zero",
+      "behavior outside the three evaluated finite snapshots",
+      "a clinical enrollment requirement from per-stratum simulated enrollment",
+      "robustness to model errors outside the frozen toxicity-noise-SD perturbation",
+      "a four-policy ranking from the cEI shared-gate reference"
+    ],
+    "secondary_interval_classification": {
+      "negative": "numerically guarded pointwise upper endpoint is strictly below zero",
+      "positive": "numerically guarded pointwise lower endpoint is strictly above zero",
+      "unavailable": "the frozen conditional diagnostic has no eligible denominator",
+      "unresolved": "numerically guarded pointwise interval includes zero, including an endpoint exactly equal to zero"
+    },
+    "shared_gate_history_compatibility": "Within one frozen factor-budget-metric cell, guarded-positive calibration penalties for all four policies together with unresolved guarded policy-vs-cEI differentials are compatible with shared-gate fragility; any guarded-resolved differential shows that policy-induced histories modify sensitivity"
+  },
+  "labels": {
+    "audit_scope": "Finite fixed-design audit",
+    "c_sigma_axis": "Assumed / true toxicity observation-noise SD, c_sigma",
+    "difference_axis": "Difference (percentage points)",
+    "metric_assignment": "Above-boundary assignments / N (%)",
+    "metric_brier": "Panel feasibility Brier score ×100",
+    "metric_exclusion": "True panel OBD excluded from terminal gate (%)",
+    "metric_terminal": "True-boundary-exceeding terminal recommendation (%)",
+    "x_budget": "Per-stratum simulated enrollment N"
+  },
+  "mcse_target_points": 1.5,
+  "outputs": {
+    "all_primary_csv": "budget_toxicity_calibration_all_118.csv",
+    "all_primary_json": "budget_toxicity_calibration_all_118.json",
+    "family_A_tex": "budget_toxicity_calibration_family_A.tex",
+    "family_B_tex": "budget_toxicity_calibration_family_B.tex",
+    "family_C_tex": "budget_toxicity_calibration_family_C.tex",
+    "plotted_secondary_json": "budget_toxicity_calibration_plotted_secondary_72.json",
+    "policy_cei_did_json": "budget_toxicity_calibration_policy_vs_cei_did_36.json",
+    "policy_cei_did_tex": "budget_toxicity_calibration_policy_vs_cei_did_36.tex",
+    "publication_commit": "budget_toxicity_calibration_publication.commit.json",
+    "publication_metadata": "budget_toxicity_calibration_publication.metadata.json",
+    "result_facts_json": "budget_toxicity_calibration_result_facts.json",
+    "result_facts_tex": "budget_toxicity_calibration_result_facts.tex"
+  },
+  "policy_labels": {
+    "cEI": "cEI",
+    "cKG-exact-formal": "cKG",
+    "qBIG": "Entropy reduction",
+    "tmse": "tMSE-only"
+  },
+  "schema_version": 3,
+  "secondary_projection": {
+    "analysis_type": "policy_minus_cEI_calibration_difference_in_differences",
+    "budgets": [
+      20,
+      40,
+      80
+    ],
+    "c_sigma": [
+      0.5,
+      2.0
+    ],
+    "complete_without_sign_filtering": true,
+    "inference_scope": "cell-specific guarded pointwise statements only; no majority vote or family theorem",
+    "metrics": [
+      "terminal_target_exclusion_pct",
+      "panel_brier_score_pct"
+    ],
+    "order": [
+      "policy",
+      "c_sigma",
+      "budget",
+      "metric"
+    ],
+    "policies": [
+      "cKG-exact-formal",
+      "tmse",
+      "qBIG"
+    ],
+    "row_count": 36
+  },
+  "status": "FROZEN_OUTCOME_INDEPENDENT_PUBLICATION_CONTRACT"
+}

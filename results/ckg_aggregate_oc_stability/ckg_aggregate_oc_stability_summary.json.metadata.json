@@ -1,0 +1,27 @@
+{
+  "artifact": "ckg_aggregate_oc_stability_summary.json",
+  "artifact_bytes": 42420,
+  "artifact_class": "computational_diagnostic",
+  "artifact_sha256": "7f4b1778b59760ef776f805b07c35e42bd63a2fe9bfffa8b3a4552d451bf7bf1",
+  "clustering": "two OSA strata averaged within trial seed",
+  "fantasy_bank_conditionality": "Paired t Monte Carlo intervals use trial seeds as the only random unit and are conditional on each evaluated fixed fantasy bank. Fantasy-bank seed 1 is a second deterministic numerical arm; two fixed banks do not estimate a between-bank seed distribution.",
+  "generated_at_utc": "2026-08-23T15:45:27.832483+00:00",
+  "independent_trial_seeds": 200,
+  "input": "ckg_aggregate_oc_stability_raw.json",
+  "input_sha256": "66be0d84da8e9c96f03793e14ed8fc5557cdae794aabaf27af045545fd3158d0",
+  "interpretation": "Numerical stability only; absence of a statistically detectable difference is not formal equivalence and does not establish accuracy or convergence.",
+  "interval": "pointwise unadjusted paired-seed t Monte Carlo interval",
+  "inventory_note": "The 1,200 reused reference rows and 800 new computational-diagnostic executions are excluded from the logical trial-record inventory; the archived logical total remains 55,480.",
+  "logical_trial_records": 0,
+  "schema_version": 1,
+  "seed_stratum_cells_per_policy": 400,
+  "source_sha256": {
+    "paper/analyze_ckg_aggregate_oc_stability.py": "c23f782d45c8e7404646a8e88db2a1bff60095a784911af618f3dab6f81ec31a",
+    "paper/migrate_ckg_aggregate_oc_stability_metadata.py": "c465ab28e75fef1711911ef517f50384706945e06b788b25ef39f3ede4cf8f41",
+    "paper/run_ckg_1024_anchor.py": "1672246feba9ccdaf5e15d1b9e063359420c7d254a1a27a42df01d26ce68a5d3",
+    "paper/run_ckg_aggregate_oc_stability.py": "9ff2820d4a46cda16b24d6e2c04d15bcb1b46807cf7f94e583d26a3160021c52",
+    "src/safedosebo/acquisitions.py": "fe6a55c937a9db615bba057d8b420e917b02d368a2f478632344ad23a2c5f960",
+    "src/safedosebo/trial.py": "29351d4c85104582514fc19eac839b32a3a623e7c446b72e668f407a07dda56e"
+  },
+  "status": "post hoc numerical-stability sensitivity"
+}

@@ -1,0 +1,16 @@
+{
+  "artifact": "budget_toxicity_calibration_M0200_block_index.json.zst",
+  "artifact_sha256": "8e054dd2c6941c3501a97d356fbd7d9a2b9a5afd1d43c6e50b09216733c29fea",
+  "block_id": "M0200",
+  "committed_at_utc": "2026-08-27T19:31:44.155959+00:00",
+  "immutable": true,
+  "launch_fingerprint": "364a65e046c83acf5458885e8b07e2cb3de441c5ba01f0a1d02e6f59f6d3e0a5",
+  "metadata": "budget_toxicity_calibration_M0200_block_index.json.zst.metadata.json",
+  "metadata_sha256": "1b8dc07c05d02019091050224def621dc0ddbe0ba64a887377cef67471917178",
+  "path_count": 9600,
+  "schema_version": 1,
+  "shard_count": 24,
+  "snapshot_count": 28800,
+  "status": "COMMITTED_IMMUTABLE_BUDGET_TOXICITY_CALIBRATION_SEED_BLOCK",
+  "uncompressed_sha256": "d5eca5b87945f1407350579686c92c247b60e2e9df702fe7a4aef273f4c4f0bf"
+}

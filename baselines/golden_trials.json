@@ -1,0 +1,204 @@
+{
+  "_note": "Golden per-trial outputs captured from safedosebo at the commit below, at which tests/test_identity.py passed against the original gate_ab_smoke.py. These values therefore equal the paper's original harness; test_golden.py asserts them unconditionally so the reproducibility claim is checkable in any checkout.",
+  "_commit": "cd8cd707416606358785722b9d92451bc1942776",
+  "_budget": 16,
+  "_keys": [
+    "dose_units",
+    "rpsel",
+    "toxic",
+    "rec_unsafe",
+    "n_gate_pass",
+    "n_gate_pass_safe",
+    "rec_d1",
+    "rec_d2",
+    "rec_true_eff",
+    "rec_true_tox",
+    "obd_pf"
+  ],
+  "trials": [
+    {
+      "case": [
+        "cEI",
+        0,
+        0,
+        0.7,
+        "osa",
+        "latent"
+      ],
+      "expected": {
+        "dose_units": 3.4959600719727413,
+        "rpsel": 6.142441055141229,
+        "toxic": 3,
+        "rec_unsafe": 1,
+        "n_gate_pass": 5,
+        "n_gate_pass_safe": 3,
+        "rec_d1": 1.0,
+        "rec_d2": 0.25,
+        "rec_true_eff": 4.7543750000000005,
+        "rec_true_tox": 2.79375,
+        "obd_pf": 0.15549400191830393
+      }
+    },
+    {
+      "case": [
+        "cKG",
+        1,
+        0,
+        0.7,
+        "osa",
+        "latent"
+      ],
+      "expected": {
+        "dose_units": 0.4434086114262469,
+        "rpsel": 1.9672166313074924,
+        "toxic": 8,
+        "rec_unsafe": 0,
+        "n_gate_pass": 7,
+        "n_gate_pass_safe": 5,
+        "rec_d1": 0.25,
+        "rec_d2": 0.75,
+        "rec_true_eff": 7.6792187499999995,
+        "rec_true_tox": 1.2816796875,
+        "obd_pf": 0.9498090068589339
+      }
+    },
+    {
+      "case": [
+        "cKG",
+        2,
+        1,
+        0.9,
+        "osa",
+        "predictive"
+      ],
+      "expected": {
+        "dose_units": 3.3090862434166834,
+        "rpsel": 11.840467430069147,
+        "toxic": 5,
+        "rec_unsafe": 0,
+        "n_gate_pass": 1,
+        "n_gate_pass_safe": 1,
+        "rec_d1": 0.0,
+        "rec_d2": 0.25,
+        "rec_true_eff": 0.88375,
+        "rec_true_tox": 0.004374999999999976,
+        "obd_pf": 0.6558954108934698
+      }
+    },
+    {
+      "case": [
+        "cEI-tMSE",
+        3,
+        0,
+        0.5,
+        "osa",
+        "latent"
+      ],
+      "expected": {
+        "dose_units": 3.3408734362872785,
+        "rpsel": 5.20570019524799,
+        "toxic": 5,
+        "rec_unsafe": 0,
+        "n_gate_pass": 11,
+        "n_gate_pass_safe": 10,
+        "rec_d1": 0.5,
+        "rec_d2": 0.0,
+        "rec_true_eff": 2.8075,
+        "rec_true_tox": 0.7725000000000001,
+        "obd_pf": 0.6250196736244698
+      }
+    },
+    {
+      "case": [
+        "cEI",
+        0,
+        0,
+        0.7,
+        "efftox",
+        "latent"
+      ],
+      "expected": {
+        "dose_units": 1.1479274986080643,
+        "rpsel": 0.14208031818569222,
+        "toxic": 10,
+        "rec_unsafe": 0,
+        "n_gate_pass": 0,
+        "n_gate_pass_safe": 0,
+        "rec_d1": 0.0,
+        "rec_d2": 0.0,
+        "rec_true_eff": 0.2689414213699951,
+        "rec_true_tox": 0.11920292202211755,
+        "obd_pf": 0.05346763758462568
+      }
+    },
+    {
+      "case": [
+        "cKG",
+        1,
+        1,
+        0.7,
+        "efftox",
+        "latent"
+      ],
+      "expected": {
+        "dose_units": 2.2436508006456672,
+        "rpsel": 0.04764409757990563,
+        "toxic": 14,
+        "rec_unsafe": 1,
+        "n_gate_pass": 1,
+        "n_gate_pass_safe": 0,
+        "rec_d1": 0.0,
+        "rec_d2": 0.75,
+        "rec_true_eff": 0.5358757430496351,
+        "rec_true_tox": 0.3429895373265012,
+        "obd_pf": 0.2042710987602424
+      }
+    },
+    {
+      "case": [
+        "tmse",
+        4,
+        0,
+        0.6,
+        "gbump",
+        "latent"
+      ],
+      "expected": {
+        "dose_units": 1.7419671660036264,
+        "rpsel": 3.049178756343012,
+        "toxic": 3,
+        "rec_unsafe": 0,
+        "n_gate_pass": 5,
+        "n_gate_pass_safe": 4,
+        "rec_d1": 0.25,
+        "rec_d2": 0.25,
+        "rec_true_eff": 0.2229308172249813,
+        "rec_true_tox": 0.8125,
+        "obd_pf": 0.1613637969522052
+      }
+    },
+    {
+      "case": [
+        "cEI",
+        2,
+        0,
+        0.7,
+        "mariposa",
+        "latent"
+      ],
+      "expected": {
+        "dose_units": 1.7990722029812523,
+        "rpsel": 27.066856540737202,
+        "toxic": 1,
+        "rec_unsafe": 0,
+        "n_gate_pass": 25,
+        "n_gate_pass_safe": 18,
+        "rec_d1": 0.5,
+        "rec_d2": 0.5,
+        "rec_true_eff": 38.843491992578514,
+        "rec_true_tox": 1.5999999999999999,
+        "obd_pf": 0.9488815837580049
+      }
+    }
+  ]
+}

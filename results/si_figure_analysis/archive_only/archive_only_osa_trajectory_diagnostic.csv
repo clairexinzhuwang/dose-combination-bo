@@ -1,0 +1,172 @@
+scope,simulator,dose_access,gate_mode,tau,policy_id,policy,outcome_id,outcome,direction,state_index,state_source,patients_enrolled,independent_seed_clusters,strata_averaged_within_seed,mean,mcse
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,0,serialized_trajectory,4,80,2,2.0178310831782365,0.09914690478210975
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,1,serialized_trajectory,6,80,2,2.041279460908882,0.10314195404578343
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,2,serialized_trajectory,8,80,2,2.0650565047768725,0.09195073565189349
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,3,serialized_trajectory,10,80,2,1.9826854738238358,0.09232419484643528
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,4,serialized_trajectory,12,80,2,2.0792191721967623,0.09516035773559234
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,5,serialized_trajectory,14,80,2,2.0699389863955586,0.08663782490478211
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,6,serialized_trajectory,16,80,2,2.1196774888025525,0.08643972088007641
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,7,serialized_trajectory,18,80,2,2.0464533730812,0.08368110866527936
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,8,serialized_trajectory,20,80,2,2.0929248452936458,0.08425881257002533
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,9,serialized_trajectory,22,80,2,1.9888713877122737,0.08768885312270006
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,10,serialized_trajectory,24,80,2,1.9630221987228782,0.08544950072338171
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,11,serialized_trajectory,26,80,2,1.9606950087921988,0.07702057523879928
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,12,serialized_trajectory,28,80,2,1.9027421921156626,0.07674778305636322
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,13,serialized_trajectory,30,80,2,1.8781850280954686,0.0782601794466705
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,14,serialized_trajectory,32,80,2,1.9253146398732546,0.07941881816528629
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,15,serialized_trajectory,34,80,2,1.8655083142104814,0.07663381212432206
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,16,serialized_trajectory,36,80,2,1.8251741877634022,0.07474735902780692
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,17,serialized_trajectory,38,80,2,1.843350422524109,0.07461281837686465
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,du,Dose-units,lower is better,18,final_trial_record,40,80,2,1.8717711752078983,0.07599290204673365
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,0,serialized_trajectory,4,80,2,5.579045732339219,0.2761013706527072
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,1,serialized_trajectory,6,80,2,5.692695724405197,0.26093792004751865
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,2,serialized_trajectory,8,80,2,5.742338807722746,0.24188254257220412
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,3,serialized_trajectory,10,80,2,5.761928911632482,0.2248954236201446
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,4,serialized_trajectory,12,80,2,5.648443907441233,0.216909162989486
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,5,serialized_trajectory,14,80,2,5.758113503176247,0.1935560549099591
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,6,serialized_trajectory,16,80,2,5.8882015751301005,0.18609501808318463
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,7,serialized_trajectory,18,80,2,6.228934244913831,0.18402741246111065
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,8,serialized_trajectory,20,80,2,6.193582508946478,0.19974369927453067
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,9,serialized_trajectory,22,80,2,6.064954820945356,0.1991315275708612
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,10,serialized_trajectory,24,80,2,6.070081060934781,0.1782403347675654
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,11,serialized_trajectory,26,80,2,6.082201876717617,0.17799613774756903
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,12,serialized_trajectory,28,80,2,6.161121903386898,0.19489792029249592
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,13,serialized_trajectory,30,80,2,6.156811928685157,0.19429512625829512
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,14,serialized_trajectory,32,80,2,6.1437198336141545,0.2043716835412742
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,15,serialized_trajectory,34,80,2,6.05244725416257,0.19768207723785297
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,16,serialized_trajectory,36,80,2,6.076744019001323,0.20202205774832882
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,17,serialized_trajectory,38,80,2,6.067809054135033,0.19881553375058167
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,rpsel,Posterior efficacy error,lower is better,18,final_trial_record,40,80,2,6.109386886944874,0.201624327678839
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,0,serialized_trajectory,4,80,2,1.58125,0.05996026506008748
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,1,serialized_trajectory,6,80,2,2.34375,0.10621276339308254
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,2,serialized_trajectory,8,80,2,2.93125,0.1468939356229004
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,3,serialized_trajectory,10,80,2,3.49375,0.1849764246866974
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,4,serialized_trajectory,12,80,2,4.04375,0.22557832672342829
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,5,serialized_trajectory,14,80,2,4.46875,0.26777679249939834
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,6,serialized_trajectory,16,80,2,4.86875,0.28556292258128424
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,7,serialized_trajectory,18,80,2,5.19375,0.3164145641781532
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,8,serialized_trajectory,20,80,2,5.35625,0.32305819003017033
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,9,serialized_trajectory,22,80,2,5.59375,0.3390574414106692
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,10,serialized_trajectory,24,80,2,5.74375,0.35589450395171585
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,11,serialized_trajectory,26,80,2,5.86875,0.3753420117587947
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,12,serialized_trajectory,28,80,2,6.06875,0.39645818713398967
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,13,serialized_trajectory,30,80,2,6.20625,0.40278831858509445
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,14,serialized_trajectory,32,80,2,6.33125,0.4145250208126729
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,15,serialized_trajectory,34,80,2,6.44375,0.42805064377856084
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,16,serialized_trajectory,36,80,2,6.50625,0.44299164116896106
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,17,serialized_trajectory,38,80,2,6.60625,0.4601779504108209
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cEI,cEI,toxic,Cumulative above-boundary assignments,lower is better,18,final_trial_record,40,80,2,6.69375,0.4778722081374123
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,0,serialized_trajectory,4,80,2,2.0178310831782365,0.09914690478210975
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,1,serialized_trajectory,6,80,2,1.9874164477182448,0.1064330046267956
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,2,serialized_trajectory,8,80,2,2.013769702939309,0.09939606935882282
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,3,serialized_trajectory,10,80,2,1.9643896050117502,0.10015780100091594
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,4,serialized_trajectory,12,80,2,1.9006712906781584,0.09848109676237797
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,5,serialized_trajectory,14,80,2,1.9780264971097306,0.0973327307072872
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,6,serialized_trajectory,16,80,2,1.8730834811577437,0.09104902422711444
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,7,serialized_trajectory,18,80,2,1.8435749406729918,0.09106455858927257
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,8,serialized_trajectory,20,80,2,1.8035608712797555,0.09051021928743701
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,9,serialized_trajectory,22,80,2,1.8398506718989043,0.09051042329683086
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,10,serialized_trajectory,24,80,2,1.7703188589486607,0.08931447430350677
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,11,serialized_trajectory,26,80,2,1.7403108108510128,0.08354784048633516
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,12,serialized_trajectory,28,80,2,1.7376053664247686,0.09117781984461372
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,13,serialized_trajectory,30,80,2,1.675341407579857,0.08902603672586376
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,14,serialized_trajectory,32,80,2,1.7316252319224212,0.08792844674000057
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,15,serialized_trajectory,34,80,2,1.6321597646392951,0.0865258198577939
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,16,serialized_trajectory,36,80,2,1.6922305877268258,0.08269202760895622
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,17,serialized_trajectory,38,80,2,1.6727895151431553,0.08616849985134932
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,du,Dose-units,lower is better,18,final_trial_record,40,80,2,1.6577679461517154,0.08871359402313003
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,0,serialized_trajectory,4,80,2,5.579045732339219,0.2761013706527072
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,1,serialized_trajectory,6,80,2,5.7932411862599205,0.24105275865423934
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,2,serialized_trajectory,8,80,2,5.895469072612702,0.22970132301992058
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,3,serialized_trajectory,10,80,2,5.870133978450946,0.18757358563579052
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,4,serialized_trajectory,12,80,2,5.75438345362224,0.1913263882009028
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,5,serialized_trajectory,14,80,2,5.849086141454026,0.18003591673078415
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,6,serialized_trajectory,16,80,2,5.779119434278526,0.18373693517322667
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,7,serialized_trajectory,18,80,2,5.963663981992266,0.18593658856513745
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,8,serialized_trajectory,20,80,2,6.004114503700954,0.20428546974780115
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,9,serialized_trajectory,22,80,2,5.957113265248521,0.19588016563985555
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,10,serialized_trajectory,24,80,2,5.882224706049907,0.1910519126450356
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,11,serialized_trajectory,26,80,2,5.794827159873086,0.18339532275224363
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,12,serialized_trajectory,28,80,2,5.859956556488613,0.19369555532984933
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,13,serialized_trajectory,30,80,2,5.859095907857059,0.19570442905884888
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,14,serialized_trajectory,32,80,2,5.867078797293162,0.1940942746381336
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,15,serialized_trajectory,34,80,2,5.833819183652486,0.19280412784876505
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,16,serialized_trajectory,36,80,2,5.85098240473229,0.19725642714717145
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,17,serialized_trajectory,38,80,2,5.8276059153235735,0.19892000414510147
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,rpsel,Posterior efficacy error,lower is better,18,final_trial_record,40,80,2,5.8178446514436475,0.19513003497988765
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,0,serialized_trajectory,4,80,2,1.58125,0.05996026506008748
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,1,serialized_trajectory,6,80,2,2.44375,0.10296004740072476
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,2,serialized_trajectory,8,80,2,3.26875,0.14828762837083914
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,3,serialized_trajectory,10,80,2,3.90625,0.19610401326588742
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,4,serialized_trajectory,12,80,2,4.46875,0.21684295307311316
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,5,serialized_trajectory,14,80,2,4.95625,0.23146372265446538
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,6,serialized_trajectory,16,80,2,5.33125,0.24935736232477598
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,7,serialized_trajectory,18,80,2,5.60625,0.25325316141328374
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,8,serialized_trajectory,20,80,2,5.80625,0.24991988431485265
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,9,serialized_trajectory,22,80,2,5.94375,0.2573283116339017
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,10,serialized_trajectory,24,80,2,6.13125,0.26783587543659276
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,11,serialized_trajectory,26,80,2,6.24375,0.2747256614921119
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,12,serialized_trajectory,28,80,2,6.40625,0.28864230278269365
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,13,serialized_trajectory,30,80,2,6.56875,0.30054588388927367
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,14,serialized_trajectory,32,80,2,6.71875,0.3022651497077493
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,15,serialized_trajectory,34,80,2,6.85625,0.3160017412526134
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,16,serialized_trajectory,36,80,2,6.98125,0.32210784100076983
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,17,serialized_trajectory,38,80,2,7.13125,0.3422680945924545
+archive_only_not_manuscript,osa,full_panel,latent,0.7,cKG1fix,cKG,toxic,Cumulative above-boundary assignments,lower is better,18,final_trial_record,40,80,2,7.24375,0.35175798889743004
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,0,serialized_trajectory,4,80,2,2.0178310831782365,0.09914690478210975
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,1,serialized_trajectory,6,80,2,2.041279460908882,0.10314195404578343
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,2,serialized_trajectory,8,80,2,1.9925743927396524,0.09758264328361033
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,3,serialized_trajectory,10,80,2,1.9604110596762443,0.09485709079655767
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,4,serialized_trajectory,12,80,2,1.9494299619251514,0.0942165525303934
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,5,serialized_trajectory,14,80,2,1.8935403319408184,0.09061351172639728
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,6,serialized_trajectory,16,80,2,1.9012299597159537,0.08775723490225142
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,7,serialized_trajectory,18,80,2,1.8784788426914734,0.08533334958164952
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,8,serialized_trajectory,20,80,2,1.894049467869242,0.08994021784166809
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,9,serialized_trajectory,22,80,2,1.8036110192203778,0.09057126415887637
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,10,serialized_trajectory,24,80,2,1.7682962197714065,0.09550738559484248
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,11,serialized_trajectory,26,80,2,1.8412049136200828,0.08784058138985776
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,12,serialized_trajectory,28,80,2,1.7957891279134253,0.08418812398258288
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,13,serialized_trajectory,30,80,2,1.8252141809744162,0.08836667518480076
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,14,serialized_trajectory,32,80,2,1.6995209033107819,0.08388380476752588
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,15,serialized_trajectory,34,80,2,1.6771886747941736,0.08387432525815103
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,16,serialized_trajectory,36,80,2,1.6857317941519578,0.0859712223469408
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,17,serialized_trajectory,38,80,2,1.7021000663139876,0.08231040018888904
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,du,Dose-units,lower is better,18,final_trial_record,40,80,2,1.690668880197601,0.08536867612690896
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,0,serialized_trajectory,4,80,2,5.579045732339219,0.2761013706527072
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,1,serialized_trajectory,6,80,2,5.692695724405197,0.26093792004751865
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,2,serialized_trajectory,8,80,2,5.518838069968334,0.23055766306527015
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,3,serialized_trajectory,10,80,2,5.5027456850412655,0.21505909438753898
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,4,serialized_trajectory,12,80,2,5.426766916506709,0.188666926234162
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,5,serialized_trajectory,14,80,2,5.517961127038136,0.18378319513860505
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,6,serialized_trajectory,16,80,2,5.534711161751977,0.17494464740919805
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,7,serialized_trajectory,18,80,2,5.835745380251696,0.19207276727480477
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,8,serialized_trajectory,20,80,2,5.877165239564794,0.21026867112106573
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,9,serialized_trajectory,22,80,2,5.679187264634885,0.20166436060945372
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,10,serialized_trajectory,24,80,2,5.675320107101799,0.19805475931837072
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,11,serialized_trajectory,26,80,2,5.58897032368841,0.18778472467370072
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,12,serialized_trajectory,28,80,2,5.574119267045016,0.1811303533420562
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,13,serialized_trajectory,30,80,2,5.62384946614876,0.19298690846192315
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,14,serialized_trajectory,32,80,2,5.633657626331779,0.1906150161352939
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,15,serialized_trajectory,34,80,2,5.634828791404343,0.19927395272987053
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,16,serialized_trajectory,36,80,2,5.54620012692403,0.19654603413012167
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,17,serialized_trajectory,38,80,2,5.535315780947338,0.19800455811877057
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,rpsel,Posterior efficacy error,lower is better,18,final_trial_record,40,80,2,5.59240558200511,0.19376555756251757
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,0,serialized_trajectory,4,80,2,1.58125,0.05996026506008748
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,1,serialized_trajectory,6,80,2,2.34375,0.10621276339308254
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,2,serialized_trajectory,8,80,2,3.39375,0.13450970213465802
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,3,serialized_trajectory,10,80,2,4.05625,0.17766812104082494
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,4,serialized_trajectory,12,80,2,4.98125,0.20696796784814275
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,5,serialized_trajectory,14,80,2,5.43125,0.23862471031604784
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,6,serialized_trajectory,16,80,2,6.05625,0.25361215623691863
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,7,serialized_trajectory,18,80,2,6.35625,0.26790232816589865
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,8,serialized_trajectory,20,80,2,7.01875,0.2823168934420765
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,9,serialized_trajectory,22,80,2,7.25625,0.29352098533003385
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,10,serialized_trajectory,24,80,2,7.69375,0.3170390292129721
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,11,serialized_trajectory,26,80,2,7.86875,0.33431676856015813
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,12,serialized_trajectory,28,80,2,8.29375,0.35708180705600184
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,13,serialized_trajectory,30,80,2,8.50625,0.373837200360555
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,14,serialized_trajectory,32,80,2,8.90625,0.39419178551286777
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,15,serialized_trajectory,34,80,2,8.99375,0.4028668771788617
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,16,serialized_trajectory,36,80,2,9.33125,0.42433340780689494
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,17,serialized_trajectory,38,80,2,9.45625,0.43739318316271825
+archive_only_not_manuscript,osa,full_panel,latent,0.7,GBE,cEI-tMSE,toxic,Cumulative above-boundary assignments,lower is better,18,final_trial_record,40,80,2,9.66875,0.4516096168642822

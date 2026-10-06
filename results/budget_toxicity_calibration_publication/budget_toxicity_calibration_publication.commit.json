@@ -1,0 +1,18 @@
+{
+  "adapter_sha256": "e14c2464f586f3abb805bfa24bb47f2ecc61a93e7405e0cb51489d497c6aa919",
+  "artifact_count": 20,
+  "baseline_identity_passed": true,
+  "contract_sha256": "a1904b435d4e42ef6df25094bc1f3ce35156ceaec5bf157ec24fb2ff2827b6a8",
+  "input_bundle_sha256": "3b8ea560a8b6ff56199b97eafacc4709af44f14f1595bec982a21142768a1973",
+  "metadata": "budget_toxicity_calibration_publication.metadata.json",
+  "metadata_sha256": "2ac1273e458a33aabcdd0769524b3f267a0cdb3b3016a508db94ba50e500cc68",
+  "output_bundle_sha256": "5d0ba397ecb75d8165c4228c992bda93a269814dfa0efb687c13e14d0bdeeeab",
+  "primary_estimand_count": 118,
+  "schema_version": 3,
+  "status": "COMMITTED_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_PUBLICATION",
+  "trusted_commitments": {
+    "analyzer_sha256": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+    "manifest_sha256": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+    "prespec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178"
+  }
+}

@@ -1,0 +1,181 @@
+simulator,dose_access,gate_mode,stratum,tau,policy_id,policy,outcome_id,outcome,unit,direction,independent_seeds,estimate,mcse
+osa,full_panel,latent,0,0.5,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.7486672827010505,0.06900469363349769
+osa,full_panel,latent,0,0.5,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,4.4548915681616394,0.1383117004701653
+osa,full_panel,latent,0,0.5,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,9.145,0.5280283559844282
+osa,full_panel,latent,0,0.5,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.4624948732925482,0.05955701823541229
+osa,full_panel,latent,0,0.5,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.691752225129959,0.11798598679085699
+osa,full_panel,latent,0,0.5,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,11.145,0.3843938973783384
+osa,full_panel,latent,0,0.5,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.4533828483702802,0.06418279797737557
+osa,full_panel,latent,0,0.5,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.507769739661926,0.10830762775799024
+osa,full_panel,latent,0,0.5,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,14.215,0.48083248057079014
+osa,full_panel,latent,0,0.6,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.9201317916746998,0.06521372437358328
+osa,full_panel,latent,0,0.6,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,4.735986950515433,0.12741815699510814
+osa,full_panel,latent,0,0.6,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,8.175,0.4702419723533981
+osa,full_panel,latent,0,0.6,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.5779124703275351,0.06439495721660707
+osa,full_panel,latent,0,0.6,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,4.000039028567801,0.12143166081429543
+osa,full_panel,latent,0,0.6,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,9.285,0.36439372791627955
+osa,full_panel,latent,0,0.6,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.7154385220799808,0.06757859733615755
+osa,full_panel,latent,0,0.6,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,4.023885057626423,0.11574741306058953
+osa,full_panel,latent,0,0.6,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.295,0.4474830504075099
+osa,full_panel,latent,0,0.7,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,2.0979559917090462,0.0665953679174593
+osa,full_panel,latent,0,0.7,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,4.988857027511182,0.11821344754918958
+osa,full_panel,latent,0,0.7,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,7.395,0.3955085461153162
+osa,full_panel,latent,0,0.7,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.8334490997518194,0.06727478657200409
+osa,full_panel,latent,0,0.7,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,4.46327981289053,0.11987461737108727
+osa,full_panel,latent,0,0.7,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,8.095,0.3546246865937403
+osa,full_panel,latent,0,0.7,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.8959862020783103,0.06406939719949235
+osa,full_panel,latent,0,0.7,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,4.3005217350225085,0.11367304776836876
+osa,full_panel,latent,0,0.7,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,10.365,0.4089561107289052
+osa,full_panel,latent,0,0.8,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,2.1101725415087564,0.06438200393706418
+osa,full_panel,latent,0,0.8,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,5.145022925206999,0.12730875241140605
+osa,full_panel,latent,0,0.8,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,6.875,0.36649483944072586
+osa,full_panel,latent,0,0.8,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.9885746566112907,0.06786045159696556
+osa,full_panel,latent,0,0.8,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,4.759564053269762,0.12138243772808972
+osa,full_panel,latent,0,0.8,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,7.545,0.36054101586449633
+osa,full_panel,latent,0,0.8,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,2.03866030683134,0.06123329397837993
+osa,full_panel,latent,0,0.8,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,4.732035499257766,0.1245710863315748
+osa,full_panel,latent,0,0.8,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,8.935,0.38069478271699453
+osa,full_panel,latent,0,0.9,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,2.24384753541123,0.06676804214554898
+osa,full_panel,latent,0,0.9,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,5.261247535694327,0.13104087463562614
+osa,full_panel,latent,0,0.9,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,6.845,0.3571310514918837
+osa,full_panel,latent,0,0.9,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,2.2724620171020904,0.06649667078290336
+osa,full_panel,latent,0,0.9,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,5.174663843808569,0.12127319186053966
+osa,full_panel,latent,0,0.9,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,6.875,0.35194631128930837
+osa,full_panel,latent,0,0.9,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,2.3028126906366397,0.0629865605134839
+osa,full_panel,latent,0,0.9,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,5.119580632531546,0.11955491854621239
+osa,full_panel,latent,0,0.9,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,7.685,0.3544106510077521
+osa,full_panel,latent,1,0.5,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.4796771860426026,0.059886729083168694
+osa,full_panel,latent,1,0.5,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,6.681686612737796,0.2013739148338545
+osa,full_panel,latent,1,0.5,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,7.41,0.5239581670362816
+osa,full_panel,latent,1,0.5,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.2553774035010081,0.056619539921443536
+osa,full_panel,latent,1,0.5,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,6.1149952832291365,0.15262260601065586
+osa,full_panel,latent,1,0.5,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,10.09,0.3118424740846187
+osa,full_panel,latent,1,0.5,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.2011806224162362,0.049448655569966665
+osa,full_panel,latent,1,0.5,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,5.778893866927074,0.14709501799360755
+osa,full_panel,latent,1,0.5,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.24,0.34057592369249323
+osa,full_panel,latent,1,0.6,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.6259320919147746,0.061651128736525486
+osa,full_panel,latent,1,0.6,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,7.115432692428291,0.2125599215793154
+osa,full_panel,latent,1,0.6,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,6.7,0.4923025584386355
+osa,full_panel,latent,1,0.6,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.5012870233904083,0.06519441953439803
+osa,full_panel,latent,1,0.6,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,7.000949383266484,0.18239648669530784
+osa,full_panel,latent,1,0.6,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,8.52,0.3169388762147702
+osa,full_panel,latent,1,0.6,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.3636672641212815,0.05720641693659025
+osa,full_panel,latent,1,0.6,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,6.318562531733402,0.17759662139355092
+osa,full_panel,latent,1,0.6,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,10.7,0.3738298325690353
+osa,full_panel,latent,1,0.7,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.7484730016357362,0.06015495001277437
+osa,full_panel,latent,1,0.7,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,7.433702554204938,0.20380250957617024
+osa,full_panel,latent,1,0.7,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,6.06,0.4552121378569131
+osa,full_panel,latent,1,0.7,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.553668999036343,0.06578534680739298
+osa,full_panel,latent,1,0.7,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,7.60180428770226,0.19461168840798806
+osa,full_panel,latent,1,0.7,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,7.04,0.2592838998154679
+osa,full_panel,latent,1,0.7,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.5406630230909895,0.0643305258254043
+osa,full_panel,latent,1,0.7,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,6.908808657078807,0.18092453056534452
+osa,full_panel,latent,1,0.7,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,8.99,0.353872333109984
+osa,full_panel,latent,1,0.8,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.8690732766475855,0.06264031318788679
+osa,full_panel,latent,1,0.8,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,8.073539534872882,0.21387912208806148
+osa,full_panel,latent,1,0.8,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,5.66,0.41166654798959357
+osa,full_panel,latent,1,0.8,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.8263510394805211,0.06494170235718104
+osa,full_panel,latent,1,0.8,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,8.060925265193855,0.20349684025103693
+osa,full_panel,latent,1,0.8,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,5.95,0.29703306754649456
+osa,full_panel,latent,1,0.8,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.7458453928195297,0.05983235641273407
+osa,full_panel,latent,1,0.8,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,7.6827594422467165,0.2006919288501271
+osa,full_panel,latent,1,0.8,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,7.65,0.3838282436233882
+osa,full_panel,latent,1,0.9,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,2.138245283080818,0.06532253877286594
+osa,full_panel,latent,1,0.9,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,8.774356077340977,0.2257105242980505
+osa,full_panel,latent,1,0.9,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,5.48,0.41655201102557077
+osa,full_panel,latent,1,0.9,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,2.1272953230489025,0.06890354495787093
+osa,full_panel,latent,1,0.9,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,8.896312537300311,0.20747152742694494
+osa,full_panel,latent,1,0.9,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,5.35,0.29156913899463077
+osa,full_panel,latent,1,0.9,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,2.0951427707616057,0.06741169577991087
+osa,full_panel,latent,1,0.9,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,8.54917078124391,0.2048837683194261
+osa,full_panel,latent,1,0.9,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,7.06,0.4158686495377377
+gbump,full_panel,latent,0,0.5,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.7826442995485694,0.06329566181495748
+gbump,full_panel,latent,0,0.5,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.6786897905964975,0.07297536129837512
+gbump,full_panel,latent,0,0.5,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.18,0.767059254228438
+gbump,full_panel,latent,0,0.5,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.6124104867034383,0.06557762523837539
+gbump,full_panel,latent,0,0.5,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.63895203796836,0.07093787368015299
+gbump,full_panel,latent,0,0.5,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,15.26,0.645169137575878
+gbump,full_panel,latent,0,0.5,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.651266181381243,0.06315235154435113
+gbump,full_panel,latent,0,0.5,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.5862692717126925,0.07016000554106361
+gbump,full_panel,latent,0,0.5,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,17.04,0.6341155356579856
+gbump,full_panel,latent,0,0.6,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.8386655325032788,0.06515673474279429
+gbump,full_panel,latent,0,0.6,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.706602810694764,0.0761706220270106
+gbump,full_panel,latent,0,0.6,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.96,0.7568063020974868
+gbump,full_panel,latent,0,0.6,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.7307904823874662,0.06284819004462146
+gbump,full_panel,latent,0,0.6,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.662443279822254,0.06738533241250752
+gbump,full_panel,latent,0,0.6,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.79,0.6307684553155029
+gbump,full_panel,latent,0,0.6,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.6670080011047799,0.059641967949597016
+gbump,full_panel,latent,0,0.6,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.643678583515069,0.06985593918713216
+gbump,full_panel,latent,0,0.6,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,15.2,0.6351512303594599
+gbump,full_panel,latent,0,0.7,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.8307551791477823,0.058374184472560986
+gbump,full_panel,latent,0,0.7,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.8147035538678606,0.07094779913602087
+gbump,full_panel,latent,0,0.7,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.54,0.7431712572401732
+gbump,full_panel,latent,0,0.7,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.8211627096464866,0.05928912435913265
+gbump,full_panel,latent,0,0.7,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.8298778887813887,0.06702806385852586
+gbump,full_panel,latent,0,0.7,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.56,0.6840112256271235
+gbump,full_panel,latent,0,0.7,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.7313961953910046,0.05844258040027003
+gbump,full_panel,latent,0,0.7,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.7514791845818376,0.0703202525869076
+gbump,full_panel,latent,0,0.7,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,14.6,0.7150921506488503
+gbump,full_panel,latent,0,0.8,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.830240027987702,0.05836818618844157
+gbump,full_panel,latent,0,0.8,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.8067626563165824,0.07186581051369657
+gbump,full_panel,latent,0,0.8,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.54,0.7555104101860526
+gbump,full_panel,latent,0,0.8,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.8512855363958078,0.05829682297458218
+gbump,full_panel,latent,0,0.8,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.872876626246573,0.06884538478535934
+gbump,full_panel,latent,0,0.8,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.38,0.7241546796092669
+gbump,full_panel,latent,0,0.8,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.7812845098551788,0.056435887693753066
+gbump,full_panel,latent,0,0.8,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.8258949721978683,0.07191834683727008
+gbump,full_panel,latent,0,0.8,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.8,0.7422632780013751
+gbump,full_panel,latent,0,0.9,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.8166978391559598,0.054918752650611045
+gbump,full_panel,latent,0,0.9,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.8580339817923512,0.07100778180700465
+gbump,full_panel,latent,0,0.9,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,11.99,0.7675579627172485
+gbump,full_panel,latent,0,0.9,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.8588117372645405,0.05645880892681682
+gbump,full_panel,latent,0,0.9,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.8609969808293854,0.06826601195674109
+gbump,full_panel,latent,0,0.9,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.63,0.7385409356073901
+gbump,full_panel,latent,0,0.9,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.8421161016213847,0.05534733538816377
+gbump,full_panel,latent,0,0.9,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.915157989408824,0.06777814759159849
+gbump,full_panel,latent,0,0.9,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.45,0.7495308415349299
+gbump,full_panel,latent,1,0.5,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.6656622534112402,0.05799220908989809
+gbump,full_panel,latent,1,0.5,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,2.9869056136786583,0.07008632275197925
+gbump,full_panel,latent,1,0.5,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.41,0.7733042722547426
+gbump,full_panel,latent,1,0.5,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.3397986235435633,0.06605097466272394
+gbump,full_panel,latent,1,0.5,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,2.870610836628192,0.06693405927988487
+gbump,full_panel,latent,1,0.5,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,16.16,0.6404473938752565
+gbump,full_panel,latent,1,0.5,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.4042409406592418,0.05954300278460181
+gbump,full_panel,latent,1,0.5,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,2.844818956294099,0.07074402143787464
+gbump,full_panel,latent,1,0.5,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,16.25,0.6060312445301262
+gbump,full_panel,latent,1,0.6,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.6846855796685463,0.05443921109087362
+gbump,full_panel,latent,1,0.6,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.1353423008892576,0.06218275454330159
+gbump,full_panel,latent,1,0.6,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.18,0.7691201002725231
+gbump,full_panel,latent,1,0.6,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.4156237519943595,0.06401380958147258
+gbump,full_panel,latent,1,0.6,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,2.9419897549742573,0.06748465943029576
+gbump,full_panel,latent,1,0.6,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,15.58,0.7175250595312169
+gbump,full_panel,latent,1,0.6,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.5825616234532296,0.051416339390107674
+gbump,full_panel,latent,1,0.6,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.105925720717271,0.05546377115140682
+gbump,full_panel,latent,1,0.6,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,15.53,0.6222390272517272
+gbump,full_panel,latent,1,0.7,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.652641764000187,0.051693234421189165
+gbump,full_panel,latent,1,0.7,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.179670425945318,0.056509656164247545
+gbump,full_panel,latent,1,0.7,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.04,0.7878741832572103
+gbump,full_panel,latent,1,0.7,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.4495419713576745,0.05829439924297926
+gbump,full_panel,latent,1,0.7,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.100868650727615,0.05829529675246774
+gbump,full_panel,latent,1,0.7,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,14.66,0.727059196611173
+gbump,full_panel,latent,1,0.7,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.5973974712263113,0.053865082475314054
+gbump,full_panel,latent,1,0.7,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.1500730113091016,0.058689749063034674
+gbump,full_panel,latent,1,0.7,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,14.99,0.7169516008699259
+gbump,full_panel,latent,1,0.8,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.6829111064050417,0.04927324524551896
+gbump,full_panel,latent,1,0.8,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.2604533880117286,0.054859945494319405
+gbump,full_panel,latent,1,0.8,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.72,0.7771601440161714
+gbump,full_panel,latent,1,0.8,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.558978239078511,0.052815655621488905
+gbump,full_panel,latent,1,0.8,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.2608109561628207,0.050220557395009024
+gbump,full_panel,latent,1,0.8,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,14.27,0.7400159579971585
+gbump,full_panel,latent,1,0.8,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.6148559672788065,0.05361924417054926
+gbump,full_panel,latent,1,0.8,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.209886552865929,0.055648443782746214
+gbump,full_panel,latent,1,0.8,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.93,0.7277869670080206
+gbump,full_panel,latent,1,0.9,cEI,cEI,dose_units,Dose-units,dose-units,lower is better,200,1.665180792632791,0.04893622346969195
+gbump,full_panel,latent,1,0.9,cEI,cEI,rpsel,Posterior efficacy error,response units,lower is better,200,3.34447838533762,0.04730819929662499
+gbump,full_panel,latent,1,0.9,cEI,cEI,toxic,Above-boundary simulated assignments,assignments,lower is better,200,12.46,0.7818879355243902
+gbump,full_panel,latent,1,0.9,cKG,cKG,dose_units,Dose-units,dose-units,lower is better,200,1.6428853206484662,0.053977689685110936
+gbump,full_panel,latent,1,0.9,cKG,cKG,rpsel,Posterior efficacy error,response units,lower is better,200,3.266982899056801,0.05342802773536216
+gbump,full_panel,latent,1,0.9,cKG,cKG,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.56,0.7589876886733993
+gbump,full_panel,latent,1,0.9,cEI-tMSE,cEI-tMSE,dose_units,Dose-units,dose-units,lower is better,200,1.6642489708774793,0.04797139085932138
+gbump,full_panel,latent,1,0.9,cEI-tMSE,cEI-tMSE,rpsel,Posterior efficacy error,response units,lower is better,200,3.3714051217478174,0.04256773783974006
+gbump,full_panel,latent,1,0.9,cEI-tMSE,cEI-tMSE,toxic,Above-boundary simulated assignments,assignments,lower is better,200,13.09,0.7641525670496979

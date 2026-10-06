@@ -1,0 +1,36 @@
+{
+  "analysis_commit_sha256": "83ed20118b1ad9bdf37c35db809317d625c8fcd66e0eedc909d44b8527d8f20f",
+  "artifact": "budget_toxicity_calibration_final_provenance_seal.json",
+  "artifact_bytes": 43723,
+  "artifact_class": "outcome_blind_hash_bound_calibration_final_provenance_seal",
+  "artifact_sha256": "422b53ad3cdd7d846606c3b4b895056e55aea9922cd6565c5b1d382da3c79afc",
+  "branch": "OPERATOR_CAPPED_M0500_UNRESOLVED",
+  "environment": {
+    "captured_at_utc": "2026-08-28T06:17:15.328497+00:00",
+    "logical_cpu_count": 10,
+    "machine": "arm64",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "privacy_note": "No username, home path, hostname, serial number, or persistent device identifier is recorded.",
+    "python": "3.11.6",
+    "thread_environment": {
+      "MKL_NUM_THREADS": null,
+      "NUMEXPR_NUM_THREADS": null,
+      "OMP_NUM_THREADS": null,
+      "OPENBLAS_NUM_THREADS": null,
+      "VECLIB_MAXIMUM_THREADS": null
+    }
+  },
+  "finalizer": "paper/finalize_budget_toxicity_calibration_final_provenance_seal.py",
+  "finalizer_sha256": "76713ddc30a9821441d2e0a79c472e58447c970615a200cc63e762e1c17dfc2f",
+  "generated_at_utc": "2026-08-28T06:17:15.328497+00:00",
+  "immutable": true,
+  "master_commit_sha256": "57a984ec584faaf65c6d08d52bd6cbdbfa94ad80351bcb58987cef20c770a5ab",
+  "projection_commit_sha256": "058b1bdf54102f935100d5a697f6748a73caeb0c573a3e358859557e708a8072",
+  "publication_commit_sha256": "7f4587a6e9f84366e1ff62848f383488986d864dd823c027f4c5e87e9278c779",
+  "schema": "paper/budget_toxicity_calibration_final_provenance_seal_schema.json",
+  "schema_sha256": "59e382276864571d51e75fb07d9c6d7b841694302d7f27ab6dcb5d695e03b25f",
+  "schema_version": 1,
+  "source_bundle_sha256": "4e905576058319d592e92400e452b8c0bac8cc6df1a8ce879ef74a1feac91025",
+  "status": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_FINAL_PROVENANCE_SEAL",
+  "upstream_commit_bundle_sha256": "d9a0b54a20e4057c01ff72a2bf5b91d927c6e4a89d7fc41dba4a2b5408f87274"
+}

@@ -1,0 +1,22 @@
+include LICENSE CITATION.cff requirements-lock.txt requirements-test.txt
+include README.md GETTING_STARTED.md CHANGELOG.md RELEASE.md
+include ACCEPTANCE_RESULT.md DISCLAIMER.md SECURITY.md
+recursive-include docs *.md *.json *.csv
+recursive-include examples *.py
+recursive-include tests *.py *.json
+recursive-include verification *.py
+include study_archive/README.md
+recursive-include study_archive/frozen_core *.py
+recursive-include .github/workflows *.yml
+prune docs/archive
+include docs/archive/protocol_scaffold_sensitivity.md
+include docs/archive/protocol_scaffold_sensitivity_prespec.md
+prune historical
+prune paper
+prune review
+prune results
+prune baselines
+prune distributions
+prune build
+prune dist
+global-exclude __pycache__ *.py[cod] .DS_Store *.pdf *.zip *.whl *.zst

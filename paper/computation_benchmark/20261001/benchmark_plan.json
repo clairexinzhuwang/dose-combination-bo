@@ -1,0 +1,31 @@
+{
+  "purpose": "Computational benchmark only; not an operating-characteristic experiment",
+  "surface": "osa",
+  "stratum": 0,
+  "seed": 20261001,
+  "record_counts": [
+    4,
+    20,
+    40
+  ],
+  "grid_n": 5,
+  "available_candidates": 25,
+  "gate_tau": 0.7,
+  "cohort_size": 2,
+  "rules": [
+    "cKG",
+    "tmse",
+    "entropy",
+    "cEI"
+  ],
+  "observations": "Nested fixed nonadaptive on-grid observations; independent Gaussian outcome noise; individual records",
+  "dose_order": "First 40 indices from two independently permuted 25-point grids, using seed20261001",
+  "gp": "Independent efficacy/toxicity exact GPs; constant mean; Matern5/2 ARD; known individual noise variances; 120 Adam steps, learning rate0.1",
+  "fitting": "One unreported-timing warm-up pair at n4; one measured pair for each n; 8 individual fits total (6 measured,2 warm-up)",
+  "scoring": "One warm-up and five measured repetitions per rule/dataset; fresh Context per call; no score reuse; same fitted models for all four rules within each dataset",
+  "primary_timing": "Context construction plus registered full-vector scorer; includes gate and tMSE preparation; excludes fitting and file I/O",
+  "gp_prediction_cache": "Fitted-GP prediction caches are warmed by the per-rule warm-up, retained across scoring calls; score/Context objects are fresh",
+  "execution": "Serial CPU, one PyTorch intra/inter-op thread; numerical-library thread limits1",
+  "maximum_wall_seconds": 300,
+  "scope_limit": "Three prespecified data sizes and one stratum; timings are not full-trial runtimes and not a representative distribution over adaptive trial states"
+}

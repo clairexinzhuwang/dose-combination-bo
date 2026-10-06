@@ -1,0 +1,656 @@
+{
+  "artifact_sha256": "5c6dd0c412c644baec97cfd06f0c2717776296bcee6589567149df247bc88d7d",
+  "artifact_type": "cross_testbed_terminal_assignment_contrast_figure_pdf",
+  "assignment_pointwise_interval_exceptions": [
+    {
+      "difference_mean_pp": -1.7,
+      "pointwise_95_high_pp": 0.15654901665867182,
+      "pointwise_95_low_pp": -3.5565490166586717,
+      "tau": 0.6,
+      "testbed": "Gaussian bump",
+      "testbed_id": "gbump"
+    },
+    {
+      "difference_mean_pp": -0.1,
+      "pointwise_95_high_pp": 1.3074564248813167,
+      "pointwise_95_low_pp": -1.507456424881317,
+      "tau": 0.8,
+      "testbed": "Gaussian bump",
+      "testbed_id": "gbump"
+    },
+    {
+      "difference_mean_pp": 0.8125,
+      "pointwise_95_high_pp": 1.9245344291468856,
+      "pointwise_95_low_pp": -0.29953442914688555,
+      "tau": 0.9,
+      "testbed": "Gaussian bump",
+      "testbed_id": "gbump"
+    },
+    {
+      "difference_mean_pp": -0.6,
+      "pointwise_95_high_pp": 0.11406238586631268,
+      "pointwise_95_low_pp": -1.3140623858663125,
+      "tau": 0.9,
+      "testbed": "Logistic",
+      "testbed_id": "efftox"
+    }
+  ],
+  "assignment_pointwise_intervals_excluding_zero": 16,
+  "both_pointwise_intervals_excluding_zero": 11,
+  "budget": [
+    40
+  ],
+  "design": {
+    "budget": [
+      40
+    ],
+    "empty_gate": [
+      "pf"
+    ],
+    "empty_gate_stop_after": [
+      3
+    ],
+    "exclude_repeats_during_expansion": [
+      true
+    ],
+    "gamma": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "grid_n": [
+      5
+    ],
+    "kap": [
+      1.0
+    ],
+    "mode": [
+      "latent"
+    ],
+    "noise": [
+      "fixed"
+    ],
+    "policy": [
+      "cEI-tMSE",
+      "cKG"
+    ],
+    "protocol_scaffold": [
+      "lhs_fixed"
+    ],
+    "r_k": [
+      2
+    ],
+    "region_step": [
+      0.25
+    ],
+    "sim": [
+      "efftox",
+      "gbump",
+      "mariposa",
+      "osa"
+    ],
+    "stratum": [
+      0,
+      1
+    ],
+    "warmup": [
+      4
+    ]
+  },
+  "estimand": {
+    "aggregation": "The two stratum-specific policy differences are averaged within matched Monte Carlo replicate set before the standard error is computed across sets.",
+    "assignment_denominator": "Each above-boundary assignment count is divided by that trial's stored assignment budget; observed budget levels are [40].",
+    "contrast": "cKG minus cEI\u2013tMSE",
+    "full_panel_reference_schedule": {
+      "cEI_scheduled_positions": 9,
+      "cohort_size": 2,
+      "empty_gate_override": "An empty eligible gate can invoke the common greatest-feasibility fallback instead of the scheduled acquisition.",
+      "initialization_assignments": 4,
+      "maximum_assignments": 40,
+      "scheduled_adaptive_cohort_positions": 18,
+      "scope": "all displayed testbeds use full-panel access",
+      "tMSE_scheduled_positions": 9
+    },
+    "interval": "point estimate plus or minus 1.96 Monte Carlo standard errors; pointwise and unadjusted across all profile contrasts; the figure displays the supporting-surface subset",
+    "no_recommendation": "A trial with no final recommendation contributes zero to the all-trial threshold-exceedance indicator.",
+    "outcomes": {
+      "assignment_percentage": "percentage of above-boundary simulated assignments",
+      "terminal_recommendation": "all-trial true-boundary-exceeding final-recommendation rate"
+    },
+    "reader_facing_policy_alias": {
+      "cEI-tMSE": "cEI\u2013tMSE"
+    },
+    "scope": "the profile data contain four evaluated two-dimensional continuous-outcome simulations; the figure displays only the three supporting surfaces because OSA is reported separately with simultaneous bands; no universal policy ordering or simultaneous cross-testbed analysis is claimed",
+    "unit": "percentage points"
+  },
+  "figure_cells": 15,
+  "figure_contrasts": 30,
+  "figure_testbeds": [
+    "gbump",
+    "efftox",
+    "mariposa"
+  ],
+  "independent_seed_counts": {
+    "efftox": 100,
+    "gbump": 200,
+    "mariposa": 100,
+    "osa": 200
+  },
+  "input_files": {
+    "efftox": {
+      "compressed_sha256": "e0cf90431c00a66da147c686aa40c8044c74c09f1447d70f07db3466d85b64b9",
+      "source_path": "efftox_main.json.zst",
+      "trial_rows": 3000,
+      "uncompressed_sha256": "1bdaa7d0f6898601f665cf64f90326cbdc50e1b1525f5ccb7fca3a4842576054"
+    },
+    "gbump": {
+      "compressed_sha256": "6b4b957c9bd37010e008fd2d56adc934d66bdbd8e9e9193ed4b1b3b8b8ffd3bd",
+      "source_path": "gbump_main.json.zst",
+      "trial_rows": 6000,
+      "uncompressed_sha256": "04477284e0703f02f18cafb53d3f8b4c0d45a1cceaaad95e853485314b6a3873"
+    },
+    "mariposa": {
+      "compressed_sha256": "7670f0d18ab5220d875bb796801156994aa8a827ce5566b8853a39d2344ccdcc",
+      "source_path": "mariposa_main.json.zst",
+      "trial_rows": 3000,
+      "uncompressed_sha256": "84067a94af9204b4df4642e4bcfe406d3f737443a89a9cef05c58da7543954ec"
+    },
+    "osa": {
+      "compressed_sha256": "bbb97bef4e30ac48daa9becea8b9d8bae55b6fc5da1e673ca7e5ea1288f03040",
+      "source_path": "osa_main.json.zst",
+      "trial_rows": 6000,
+      "uncompressed_sha256": "f1803700f24915aff959781c8d40f71b7042273b244a707aab14c94515c37831"
+    }
+  },
+  "minority_sign_annotations": [
+    {
+      "difference_mean_pp": 0.8125,
+      "direction": "positive",
+      "outcome_id": "assignment_percentage",
+      "pointwise_95_high_pp": 1.9245344291468856,
+      "pointwise_95_low_pp": -0.29953442914688555,
+      "tau": 0.9,
+      "testbed": "Gaussian bump",
+      "testbed_id": "gbump",
+      "text": "Only positive assignment estimate\n+0.81 [-0.30, 1.92]"
+    }
+  ],
+  "monte_carlo_replicate_sets_by_testbed": {
+    "efftox": 100,
+    "gbump": 200,
+    "mariposa": 100,
+    "osa": 200
+  },
+  "negative_assignment_point_estimates": 19,
+  "opposite_direction_point_estimate_cells": 19,
+  "pointwise_interval_exceptions": [
+    {
+      "difference_mean_pp": 3.75,
+      "pointwise_95_high_pp": 7.5510825620099435,
+      "pointwise_95_low_pp": -0.05108256200994399,
+      "tau": 0.8,
+      "testbed": "OSA",
+      "testbed_id": "osa"
+    },
+    {
+      "difference_mean_pp": 1.75,
+      "pointwise_95_high_pp": 4.561404538195621,
+      "pointwise_95_low_pp": -1.061404538195621,
+      "tau": 0.9,
+      "testbed": "OSA",
+      "testbed_id": "osa"
+    },
+    {
+      "difference_mean_pp": 3.5,
+      "pointwise_95_high_pp": 7.754740424561997,
+      "pointwise_95_low_pp": -0.7547404245619971,
+      "tau": 0.6,
+      "testbed": "Gaussian bump",
+      "testbed_id": "gbump"
+    },
+    {
+      "difference_mean_pp": 1.5,
+      "pointwise_95_high_pp": 4.4399999999999995,
+      "pointwise_95_low_pp": -1.44,
+      "tau": 0.9,
+      "testbed": "Logistic",
+      "testbed_id": "efftox"
+    },
+    {
+      "difference_mean_pp": 4.0,
+      "pointwise_95_high_pp": 14.760634580063416,
+      "pointwise_95_low_pp": -6.7606345800634156,
+      "tau": 0.6,
+      "testbed": "MARIPOSA-motivated",
+      "testbed_id": "mariposa"
+    },
+    {
+      "difference_mean_pp": 7.0,
+      "pointwise_95_high_pp": 14.503643290179951,
+      "pointwise_95_low_pp": -0.5036432901799524,
+      "tau": 0.8,
+      "testbed": "MARIPOSA-motivated",
+      "testbed_id": "mariposa"
+    },
+    {
+      "difference_mean_pp": 2.0,
+      "pointwise_95_high_pp": 6.80907559524781,
+      "pointwise_95_low_pp": -2.80907559524781,
+      "tau": 0.9,
+      "testbed": "MARIPOSA-motivated",
+      "testbed_id": "mariposa"
+    }
+  ],
+  "positive_terminal_point_estimates": 20,
+  "profile_cells": 20,
+  "profile_contrasts": 40,
+  "projection": {
+    "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+    "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+    "projection_metadata_path": "formal_projection.metadata.json",
+    "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf"
+  },
+  "protocol_scaffold": [
+    "lhs_fixed"
+  ],
+  "record_count": 12000,
+  "result_summary": {
+    "both_pointwise_intervals_excluding_zero": 11,
+    "opposite_sign_point_estimate_cells": 19,
+    "outcomes": {
+      "assignment_percentage": {
+        "cells": 20,
+        "pointwise_intervals_excluding_zero": 16,
+        "pointwise_intervals_including_zero_cells": [
+          {
+            "difference_mean_pp": -1.7,
+            "pointwise_95_high_pp": 0.15654901665867182,
+            "pointwise_95_low_pp": -3.5565490166586717,
+            "tau": 0.6,
+            "testbed": "Gaussian bump",
+            "testbed_id": "gbump"
+          },
+          {
+            "difference_mean_pp": -0.1,
+            "pointwise_95_high_pp": 1.3074564248813167,
+            "pointwise_95_low_pp": -1.507456424881317,
+            "tau": 0.8,
+            "testbed": "Gaussian bump",
+            "testbed_id": "gbump"
+          },
+          {
+            "difference_mean_pp": 0.8125,
+            "pointwise_95_high_pp": 1.9245344291468856,
+            "pointwise_95_low_pp": -0.29953442914688555,
+            "tau": 0.9,
+            "testbed": "Gaussian bump",
+            "testbed_id": "gbump"
+          },
+          {
+            "difference_mean_pp": -0.6,
+            "pointwise_95_high_pp": 0.11406238586631268,
+            "pointwise_95_low_pp": -1.3140623858663125,
+            "tau": 0.9,
+            "testbed": "Logistic",
+            "testbed_id": "efftox"
+          }
+        ],
+        "sign_counts": {
+          "negative": 19,
+          "positive": 1,
+          "zero": 0
+        }
+      },
+      "terminal_recommendation": {
+        "cells": 20,
+        "pointwise_intervals_excluding_zero": 13,
+        "pointwise_intervals_including_zero_cells": [
+          {
+            "difference_mean_pp": 3.75,
+            "pointwise_95_high_pp": 7.5510825620099435,
+            "pointwise_95_low_pp": -0.05108256200994399,
+            "tau": 0.8,
+            "testbed": "OSA",
+            "testbed_id": "osa"
+          },
+          {
+            "difference_mean_pp": 1.75,
+            "pointwise_95_high_pp": 4.561404538195621,
+            "pointwise_95_low_pp": -1.061404538195621,
+            "tau": 0.9,
+            "testbed": "OSA",
+            "testbed_id": "osa"
+          },
+          {
+            "difference_mean_pp": 3.5,
+            "pointwise_95_high_pp": 7.754740424561997,
+            "pointwise_95_low_pp": -0.7547404245619971,
+            "tau": 0.6,
+            "testbed": "Gaussian bump",
+            "testbed_id": "gbump"
+          },
+          {
+            "difference_mean_pp": 1.5,
+            "pointwise_95_high_pp": 4.4399999999999995,
+            "pointwise_95_low_pp": -1.44,
+            "tau": 0.9,
+            "testbed": "Logistic",
+            "testbed_id": "efftox"
+          },
+          {
+            "difference_mean_pp": 4.0,
+            "pointwise_95_high_pp": 14.760634580063416,
+            "pointwise_95_low_pp": -6.7606345800634156,
+            "tau": 0.6,
+            "testbed": "MARIPOSA-motivated",
+            "testbed_id": "mariposa"
+          },
+          {
+            "difference_mean_pp": 7.0,
+            "pointwise_95_high_pp": 14.503643290179951,
+            "pointwise_95_low_pp": -0.5036432901799524,
+            "tau": 0.8,
+            "testbed": "MARIPOSA-motivated",
+            "testbed_id": "mariposa"
+          },
+          {
+            "difference_mean_pp": 2.0,
+            "pointwise_95_high_pp": 6.80907559524781,
+            "pointwise_95_low_pp": -2.80907559524781,
+            "tau": 0.9,
+            "testbed": "MARIPOSA-motivated",
+            "testbed_id": "mariposa"
+          }
+        ],
+        "sign_counts": {
+          "negative": 0,
+          "positive": 20,
+          "zero": 0
+        }
+      }
+    }
+  },
+  "schema_version": 3,
+  "seed_count": 200,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151,
+    152,
+    153,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199
+  ],
+  "source_path": null,
+  "source_sha256": "e69ccc505786dd1c2e0424c19e5223a61c30021ac444769887c19366b6307b20",
+  "source_sha256_role": "SHA-256 of the selected records in canonical compact-JSON form and testbed order; authenticated compressed and logical input commitments follow",
+  "tau": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "terminal_pointwise_interval_exceptions": [
+    {
+      "difference_mean_pp": 3.75,
+      "pointwise_95_high_pp": 7.5510825620099435,
+      "pointwise_95_low_pp": -0.05108256200994399,
+      "tau": 0.8,
+      "testbed": "OSA",
+      "testbed_id": "osa"
+    },
+    {
+      "difference_mean_pp": 1.75,
+      "pointwise_95_high_pp": 4.561404538195621,
+      "pointwise_95_low_pp": -1.061404538195621,
+      "tau": 0.9,
+      "testbed": "OSA",
+      "testbed_id": "osa"
+    },
+    {
+      "difference_mean_pp": 3.5,
+      "pointwise_95_high_pp": 7.754740424561997,
+      "pointwise_95_low_pp": -0.7547404245619971,
+      "tau": 0.6,
+      "testbed": "Gaussian bump",
+      "testbed_id": "gbump"
+    },
+    {
+      "difference_mean_pp": 1.5,
+      "pointwise_95_high_pp": 4.4399999999999995,
+      "pointwise_95_low_pp": -1.44,
+      "tau": 0.9,
+      "testbed": "Logistic",
+      "testbed_id": "efftox"
+    },
+    {
+      "difference_mean_pp": 4.0,
+      "pointwise_95_high_pp": 14.760634580063416,
+      "pointwise_95_low_pp": -6.7606345800634156,
+      "tau": 0.6,
+      "testbed": "MARIPOSA-motivated",
+      "testbed_id": "mariposa"
+    },
+    {
+      "difference_mean_pp": 7.0,
+      "pointwise_95_high_pp": 14.503643290179951,
+      "pointwise_95_low_pp": -0.5036432901799524,
+      "tau": 0.8,
+      "testbed": "MARIPOSA-motivated",
+      "testbed_id": "mariposa"
+    },
+    {
+      "difference_mean_pp": 2.0,
+      "pointwise_95_high_pp": 6.80907559524781,
+      "pointwise_95_low_pp": -2.80907559524781,
+      "tau": 0.9,
+      "testbed": "MARIPOSA-motivated",
+      "testbed_id": "mariposa"
+    }
+  ],
+  "terminal_pointwise_intervals_excluding_zero": 13,
+  "unique_positive_assignment_estimate": {
+    "difference_mean_pp": 0.8125,
+    "pointwise_95_high_pp": 1.9245344291468856,
+    "pointwise_95_low_pp": -0.29953442914688555,
+    "tau": 0.9,
+    "testbed": "Gaussian bump",
+    "testbed_id": "gbump"
+  }
+}

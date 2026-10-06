@@ -1,0 +1,175 @@
+{
+  "analysis": {
+    "N_max": 40,
+    "cell_vote_count_decision_rule": false,
+    "cellwise_intervals": "pointwise and unadjusted",
+    "interval": "two-sided paired 95% t interval across matched replicate sets",
+    "monte_carlo_symbol": "M",
+    "principal_comparators": [
+      "tmse",
+      "qBIG"
+    ],
+    "qBIG_reader_facing_description": "finite-panel feasibility-entropy reduction",
+    "reader_facing_policy_labels": {
+      "cEI": "cEI",
+      "cEI-tMSE": "cEI\u2013tMSE hybrid",
+      "cKG": "cKG",
+      "qBIG": "Entropy reduction",
+      "tmse": "tMSE-only"
+    },
+    "secondary_comparators": [
+      "cEI",
+      "cEI-tMSE"
+    ],
+    "support_summary": {
+      "binding_family": {
+        "by_boundary_comparator": {
+          "qBIG": true,
+          "tmse": true
+        },
+        "cell_vote_count_used": false,
+        "decision_rule": "all four prespecified paired 95% t intervals must lie strictly in their prespecified directions",
+        "four_interval_conjunction": true
+      },
+      "binding_family_statement_permitted": false,
+      "confirmatory_claim": false,
+      "gaussian_nonbinding_stress_test": {
+        "by_boundary_comparator": {
+          "qBIG": false,
+          "tmse": true
+        },
+        "cell_vote_count_used": false,
+        "decision_rule": "all four prespecified paired 95% t intervals must lie strictly in their prespecified directions",
+        "four_interval_conjunction": false
+      },
+      "interpretation_ladder_branch": "boundary_comparators_must_remain_separate_or_contrast_specific",
+      "osa_primary": {
+        "by_boundary_comparator": {
+          "qBIG": false,
+          "tmse": true
+        },
+        "cell_vote_count_used": false,
+        "decision_rule": "all four prespecified paired 95% t intervals must lie strictly in their prespecified directions",
+        "four_interval_conjunction": false
+      },
+      "reason": "The conjunction was frozen after partial archived pilot results were known; the family analysis is exploratory/descriptive."
+    }
+  },
+  "analyzer": "paper/analyze_comparator_family.py",
+  "analyzer_sha256": "ae70d7fca2938c2dd027a95dfeb61aa5c71275e2ce3d1d09d25190c173190675",
+  "artifact": "comparator_family_full_panel_oc.csv",
+  "artifact_sha256": "358baa5269d2a644cc888e5ba8d0ffe26afbfd12f15f4b279324eec3eb318953",
+  "artifact_type": "full_panel_five_policy_operating_characteristics",
+  "input_provenance": {
+    "analysis_specification": {
+      "path": "paper/comparator_family_extension_prespec.md",
+      "sha256": "117e8d1cd3221a54786075494c7b92503001dba90c72a22f4049d2fc807cccd8",
+      "temporal_status": "frozen before generation of missing extension cells"
+    },
+    "formal_projection": {
+      "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+      "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+      "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf",
+      "selected_records": 25200,
+      "selected_source_files": {
+        "efftox_main.json.zst": {
+          "compressed_sha256": "e0cf90431c00a66da147c686aa40c8044c74c09f1447d70f07db3466d85b64b9",
+          "rows_in_authenticated_source": 3000,
+          "uncompressed_sha256": "1bdaa7d0f6898601f665cf64f90326cbdc50e1b1525f5ccb7fca3a4842576054"
+        },
+        "efftox_mariposa_baselines_supplemental.json.zst": {
+          "compressed_sha256": "420f8738ffa639badee0a0b02a77e4134ac695f4ac30dc0375490a879258295e",
+          "rows_in_authenticated_source": 2000,
+          "uncompressed_sha256": "e676ec70936a182c7cefa24ec185b0831cea142c40579090cb5c26236ff7edda"
+        },
+        "gate_sixway_supplemental.json.zst": {
+          "compressed_sha256": "8dbf520c2c7adc8fb4fc9c6a9253a6ddccd2e580c81636b041426e0d332197f0",
+          "rows_in_authenticated_source": 24000,
+          "uncompressed_sha256": "4734e8a6cd4696ebeb048e3c21505f2588f8a89fade479eafc917ff187e2c2cd"
+        },
+        "gbump_main.json.zst": {
+          "compressed_sha256": "6b4b957c9bd37010e008fd2d56adc934d66bdbd8e9e9193ed4b1b3b8b8ffd3bd",
+          "rows_in_authenticated_source": 6000,
+          "uncompressed_sha256": "04477284e0703f02f18cafb53d3f8b4c0d45a1cceaaad95e853485314b6a3873"
+        },
+        "mariposa_main.json.zst": {
+          "compressed_sha256": "7670f0d18ab5220d875bb796801156994aa8a827ce5566b8853a39d2344ccdcc",
+          "rows_in_authenticated_source": 3000,
+          "uncompressed_sha256": "84067a94af9204b4df4642e4bcfe406d3f737443a89a9cef05c58da7543954ec"
+        },
+        "osa_main.json.zst": {
+          "compressed_sha256": "bbb97bef4e30ac48daa9becea8b9d8bae55b6fc5da1e673ca7e5ea1288f03040",
+          "rows_in_authenticated_source": 6000,
+          "uncompressed_sha256": "f1803700f24915aff959781c8d40f71b7042273b244a707aab14c94515c37831"
+        },
+        "protocol_scaffold_sensitivity.json.zst": {
+          "compressed_sha256": "96521e14a828dc68025e871d9596295411b3087a16a904d42785b32ed17a342b",
+          "rows_in_authenticated_source": 4800,
+          "uncompressed_sha256": "c2528c1abe7f47df2a9eca2ad8b3bce41a0f94c3477b38fb36c20037614e099b"
+        }
+      }
+    },
+    "new_extension": {
+      "artifact": "comparator_family_completion_records.json.zst",
+      "artifact_sha256": "866c6ab2af18aa54187001c9286c9b20b1ebb6258756895d5610a3f1ce9bbf5c",
+      "bindings": {
+        "analysis_spec_sha256": "117e8d1cd3221a54786075494c7b92503001dba90c72a22f4049d2fc807cccd8",
+        "completion_manifest_sha256": "40ed347851d1866d7860ccc40751985f2fbb0a3b45ef063d1af1488c14834c69",
+        "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+        "launch_fingerprint": "70893e2a1c827750f26c374589bbc9e188c325bdd1604ed0c76d557b65dd4f92",
+        "ray_contract": {
+          "maximum_in_flight": 20,
+          "num_cpus": 10,
+          "serial_fallback": false,
+          "worker_num_cpus": 1
+        },
+        "runtime_identity": {
+          "gpytorch": "1.14",
+          "numpy": "1.26.4",
+          "python": "3.11.6",
+          "ray": "2.10.0",
+          "scipy": "1.16.3",
+          "torch": "2.4.1",
+          "zstandard": "0.19.0"
+        },
+        "source_sha256": {
+          "paper/analyze_primary_osa_exact_ckg_gate.py": "579d4a390c051316b31cbd8775a655b274c4f0952a85090493fdc5c6a75dbbb2",
+          "paper/formal_rerun_manifest.json": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+          "paper/formal_rerun_preflight.py": "a326911a293600e2951f380bb8297b08ec1fda7440b417c8d9d0dda9b7de208b",
+          "paper/run_comparator_family_completion.py": "5047ea4b4379545cbd881578b5c8374adda58e43c07fd7a43e8941010e9ff5f3",
+          "paper/run_full_formal_rerun.py": "e3037131097e7be5672495604574ba20fbaff34014c27c978811e06c3b7c3d8f",
+          "paper/run_primary_osa_exact_ckg_gate.py": "063a8aa444be800d1be442dce0b13fba84bd96e493bf2022ca72e785461847a9",
+          "src/safedosebo/acquisitions.py": "1e06ad27fd355fb8106d3a07d44ad446edbddd3e3d1f4e36766d2fc68d0c5756",
+          "src/safedosebo/ckg_exact.py": "b0689cdfb1bc95f0bb6da12745962fb51f42cfc5e8fb15f39b07de702527484d",
+          "src/safedosebo/context.py": "61085802c1d2d80ade1622aa062b0a10a1f567120404227d2e09d1622dfe65b1",
+          "src/safedosebo/gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+          "src/safedosebo/metrics.py": "45a62ea39dc36af6ee7a5e17d547e6bbb2ad40499d028195c3f4fe3cf0d35fb7",
+          "src/safedosebo/protocol.py": "ff0a55b3e12bceb5a556121f721b44a9e186b0dc823d895cf98cda9681f3e8b7",
+          "src/safedosebo/registry.py": "3d097a6b33a27f192d0dd7a90b4e4a89b34f04821c8b42c2681fc101460e5241",
+          "src/safedosebo/surfaces.py": "48d9a238e17c919c09fc7f577e4cd3c85e21023b60a0df7ee1d99d23a3419899",
+          "src/safedosebo/trial.py": "61929fa04d30b27155c2aa99992bed30ad7ccb072b43e0c46a1e282dfd81a3ce"
+        }
+      },
+      "commit": "comparator_family_completion_records.json.zst.commit.json",
+      "commit_sha256": "ebc9ec4d6327f00069999431d424364413c2018e5546815db924a75a6aa8fb2a",
+      "launch_fingerprint": "70893e2a1c827750f26c374589bbc9e188c325bdd1604ed0c76d557b65dd4f92",
+      "metadata": "comparator_family_completion_records.json.zst.metadata.json",
+      "metadata_sha256": "88e22c060471d95d659a0d81b6eaff42d2dd9a35d5a03f93464fb6d601ba8f35",
+      "row_count": 8800,
+      "uncompressed_sha256": "dd48edaccc5bbcd59f35d8ed247d870391531037a8a66ecd12556ab25c147192"
+    },
+    "post_hoc_allocation_estimand_correction": {
+      "path": "paper/allocation_estimand_correction.md",
+      "sha256": "db2520c3bf97823706e20a8ae56fd169f7af81745c3b8574597703a34434b6e7",
+      "status": "post_hoc_reporting_correction_raw_simulation_paths_unchanged"
+    }
+  },
+  "schema_version": 1,
+  "selected_family_commitment": {
+    "compressed_bytes": 1261566,
+    "compressed_sha256": "57228be58af841ea360938c8ff7a9f8688378a013b92fec66c819cc26959f5d8",
+    "rows": 34000,
+    "uncompressed_bytes": 45285661,
+    "uncompressed_sha256": "c394b274681618cdb64d52d9533910eeab5c66db88c6afd3bc3ff34da8cb2ba7"
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "interpretation": "This validates a deterministic piecewise-analytic evaluator, exact up to floating-point arithmetic, on frozen/reconstructed posterior states and numerical sentinels. It does not run formal OC trials, prove a Monte Carlo convergence rate, or authorize changing the registered cKG default.",
+  "primary": {
+    "approximation_pair_runtime_seconds_total": 36.21052029076964,
+    "approximations": {
+      "legacy_mc_512_seed0": {
+        "max_abs_score_error_full_grid": 0.3571185608773113,
+        "max_exact_regret": 0.02755376638540874,
+        "median_exact_regret": 0.0,
+        "median_rmse_score_error_full_grid": 0.009084233094526011,
+        "p95_exact_regret": 0.007119234507673135,
+        "selection_agreement_count": 466,
+        "selection_agreement_denominator": 720,
+        "selection_agreement_nonempty_gate_count": 411,
+        "selection_agreement_nonempty_gate_denominator": 665
+      },
+      "prefix_preserving_mc_1024_seed0": {
+        "max_abs_score_error_full_grid": 0.24565123084258023,
+        "max_exact_regret": 0.01595797733163921,
+        "median_exact_regret": 0.0,
+        "median_rmse_score_error_full_grid": 0.007955215753338674,
+        "p95_exact_regret": 0.003403383064103345,
+        "selection_agreement_count": 537,
+        "selection_agreement_denominator": 720,
+        "selection_agreement_nonempty_gate_count": 482,
+        "selection_agreement_nonempty_gate_denominator": 665
+      }
+    },
+    "current_comparator_audit": {
+      "cdf_eligible_gate_pass_set_rounding_difference_state_count": 0,
+      "cdf_gate_pass_set_rounding_difference_state_count": 0,
+      "cdf_saturated_one_total": 148,
+      "cdf_saturated_zero_total": 0,
+      "eligible_fallback_index_difference_state_count": 0,
+      "eligible_gate_empty_difference_state_count": 0,
+      "eligible_gate_pass_set_difference_state_count": 0,
+      "full_fallback_index_difference_state_count": 0,
+      "gate_pass_set_difference_state_count": 0,
+      "inactive_eligible_fallback_rounding_difference_state_count": 7,
+      "inactive_full_fallback_rounding_difference_state_count": 7,
+      "maximum_abs_standardized_feasibility": 13.136100808248855,
+      "minimum_abs_z_minus_q": 2.1851508358095018e-05,
+      "operational_eligible_fallback_rounding_difference_state_count": 0,
+      "operational_full_fallback_rounding_difference_state_count": 0,
+      "state_count": 720
+    },
+    "empty_current_gate_state_count": 55,
+    "exact_empty_gate_regime_count_total": 4436,
+    "exact_fallback_segment_count_total": 14426,
+    "exact_gate_regime_count_total": 467996,
+    "exact_runtime_seconds_median_per_full_vector": 0.25014743744395673,
+    "exact_runtime_seconds_total": 183.34726786380634,
+    "exact_top_two_margin": {
+      "max": 1.2528050506944066,
+      "median": 0.000939796928009183,
+      "min": 3.3319731044128392e-59,
+      "non_null_count": 644,
+      "p95": 0.06808903307565076
+    },
+    "full_score_vector_length": 25,
+    "source_1024_decision_reconstruction_match_count": 720,
+    "source_512_decision_reconstruction_match_count": 720,
+    "state_count": 720,
+    "steps_per_trajectory": 18,
+    "total_exact_query_evaluations": 18000,
+    "trajectory_count": 40
+  },
+  "sentinels": {
+    "current_comparator_audit": {
+      "cdf_eligible_gate_pass_set_rounding_difference_state_count": 0,
+      "cdf_gate_pass_set_rounding_difference_state_count": 0,
+      "cdf_saturated_one_total": 6,
+      "cdf_saturated_zero_total": 0,
+      "eligible_fallback_index_difference_state_count": 0,
+      "eligible_gate_empty_difference_state_count": 0,
+      "eligible_gate_pass_set_difference_state_count": 0,
+      "full_fallback_index_difference_state_count": 0,
+      "gate_pass_set_difference_state_count": 0,
+      "inactive_eligible_fallback_rounding_difference_state_count": 0,
+      "inactive_full_fallback_rounding_difference_state_count": 0,
+      "maximum_abs_standardized_feasibility": 23.5573648589998,
+      "minimum_abs_z_minus_q": 0.031113629538336518,
+      "operational_eligible_fallback_rounding_difference_state_count": 0,
+      "operational_full_fallback_rounding_difference_state_count": 0,
+      "state_count": 28
+    },
+    "four_testbed_five_gate_state_count": 20,
+    "gradual_access_state_count": 4,
+    "predictive_gate_state_count": 4,
+    "sobol_check_count": 56,
+    "sobol_max_abs_error": 1.5073332918336124e-05,
+    "state_count": 28
+  },
+  "sobol_audit": {
+    "check_count": 512,
+    "coverage": {
+      "gate_status": {
+        "empty": 10,
+        "nonempty": 54
+      },
+      "joint_strata": {
+        "0|early|empty|not_applicable_empty_gate": 4,
+        "0|early|nonempty|high_margin": 4,
+        "0|early|nonempty|low_margin": 4,
+        "0|early|nonempty|single_candidate": 1,
+        "0|late|nonempty|high_margin": 4,
+        "0|late|nonempty|low_margin": 4,
+        "0|late|nonempty|single_candidate": 4,
+        "0|middle|empty|not_applicable_empty_gate": 2,
+        "0|middle|nonempty|high_margin": 4,
+        "0|middle|nonempty|low_margin": 4,
+        "0|middle|nonempty|single_candidate": 4,
+        "1|early|empty|not_applicable_empty_gate": 4,
+        "1|early|nonempty|high_margin": 4,
+        "1|early|nonempty|low_margin": 4,
+        "1|late|nonempty|high_margin": 4,
+        "1|late|nonempty|low_margin": 3,
+        "1|middle|nonempty|high_margin": 3,
+        "1|middle|nonempty|low_margin": 3
+      },
+      "margin_band": {
+        "high_margin": 23,
+        "low_margin": 22,
+        "not_applicable_empty_gate": 10,
+        "single_candidate": 9
+      },
+      "phase": {
+        "early": 25,
+        "late": 19,
+        "middle": 20
+      },
+      "stratum": {
+        "0": 39,
+        "1": 25
+      }
+    },
+    "max_abs_error": 9.398446377173464e-05,
+    "median_abs_error": 5.948890100734849e-07,
+    "p95_abs_error": 1.5718042295231188e-05,
+    "points_per_check": 131072,
+    "state_count": 64
+  },
+  "status": "PASS_DETERMINISTIC_PIECEWISE_ANALYTIC_VALIDATION_EXACT_UP_TO_FLOATING_POINT_STABLE_Z_HARNESS_REGISTERED_CKG_EVALUATOR_UNCHANGED"
+}

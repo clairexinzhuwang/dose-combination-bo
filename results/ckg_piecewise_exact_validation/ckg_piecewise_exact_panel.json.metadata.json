@@ -1,0 +1,26 @@
+{
+  "artifact": "ckg_piecewise_exact_panel.json",
+  "artifact_sha256": "647e66f034711d0ebf503676b4e40074a2dd065fb86633a7b77a8779c87d9630",
+  "artifact_type": "numerical_validation",
+  "exact_module": "src/safedosebo/ckg_exact.py",
+  "exact_module_sha256": "b0689cdfb1bc95f0bb6da12745962fb51f42cfc5e8fb15f39b07de702527484d",
+  "generator": "run_ckg_piecewise_exact_validation.py",
+  "generator_sha256": "a4ead7fded02065d227b73e82e49c0b09c58d3959ac28a8ce1a1c1df1abdb2e6",
+  "primary_state_count": 720,
+  "production_default_changed": false,
+  "production_harness_gate_semantics": "stable_z_strict_ppf",
+  "schema_version": 3,
+  "sentinel_state_count": 28,
+  "source_sha256": {
+    "ckg_1024_anchor_raw.json": "e7f26fba2edfe8ec616c26a21b8cb973bcaabf43dd72e09e9e691f127989c5aa",
+    "protocol_scaffold_sensitivity.json": "d26805e47b2226a537ba547c3cfbd33f523e0b547a47164c415e28cac915048f"
+  },
+  "stable_harness_source_sha256": {
+    "src/safedosebo/acquisitions.py": "1e06ad27fd355fb8106d3a07d44ad446edbddd3e3d1f4e36766d2fc68d0c5756",
+    "src/safedosebo/context.py": "61085802c1d2d80ade1622aa062b0a10a1f567120404227d2e09d1622dfe65b1",
+    "src/safedosebo/gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+    "src/safedosebo/protocol.py": "ff0a55b3e12bceb5a556121f721b44a9e186b0dc823d895cf98cda9681f3e8b7",
+    "src/safedosebo/surfaces.py": "48d9a238e17c919c09fc7f577e4cd3c85e21023b60a0df7ee1d99d23a3419899",
+    "src/safedosebo/trial.py": "61929fa04d30b27155c2aa99992bed30ad7ccb072b43e0c46a1e282dfd81a3ce"
+  }
+}

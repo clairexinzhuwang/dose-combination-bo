@@ -1,0 +1,16 @@
+{
+  "artifact": "budget_toxicity_calibration_M0500_TOPUP_block_index.json.zst",
+  "artifact_sha256": "5bb19c116e597acb6f5a6a93ab9b3e2efeba0c8d97f0620a8e1d653695398ba6",
+  "block_id": "M0500_TOPUP",
+  "committed_at_utc": "2026-08-28T06:01:06.549152+00:00",
+  "immutable": true,
+  "launch_fingerprint": "364a65e046c83acf5458885e8b07e2cb3de441c5ba01f0a1d02e6f59f6d3e0a5",
+  "metadata": "budget_toxicity_calibration_M0500_TOPUP_block_index.json.zst.metadata.json",
+  "metadata_sha256": "85b477b04276f162e79c925f16217a8f0bcc5931d08f95f8747a2bb65bb29502",
+  "path_count": 14400,
+  "schema_version": 1,
+  "shard_count": 24,
+  "snapshot_count": 43200,
+  "status": "COMMITTED_IMMUTABLE_BUDGET_TOXICITY_CALIBRATION_SEED_BLOCK",
+  "uncompressed_sha256": "9bd6fe13c9fb04348dab665a31191dfb65c39330a6e797290c3337265701d351"
+}

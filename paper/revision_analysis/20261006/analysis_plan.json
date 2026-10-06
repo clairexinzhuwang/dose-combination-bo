@@ -1,0 +1,31 @@
+{
+  "analysis_kind": "post_hoc_descriptive_reanalysis_of_existing_records_not_new_trials",
+  "fixed_before_metric_calculation": true,
+  "deltas_events_per_hour": [
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "scope": "primary OSA full-grid availability, all4reported policies,2strata,5cutoffs,200replicate seeds",
+  "policies": [
+    "cKG",
+    "tmse",
+    "qBIG",
+    "cEI"
+  ],
+  "thresholds": [
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "truth_acceptability": "g(selected,z)<=gdag(z)",
+  "efficacy_gap": "maximum true efficacy over truly acceptable25grid doses minus true efficacy at selectedgrid dose",
+  "denominator": "all initiated full-grid stratum trials; retain every fallback, filter neither by posterior criterion nor by outcomes",
+  "aggregate": "average two stratum indicators within each seed; report mean percentage and replicate-cluster MCSE; no tau pooling in manuscript table",
+  "clinical_status": "delta values are an exploratory sensitivity range, not clinically validated margins",
+  "software_and_original_data": "unchanged",
+  "gradual_scope": "not included in this new table; full-grid analysis explicitly labeled to avoid treating stopping or subset conditional rates as same metric"
+}

@@ -1,0 +1,533 @@
+{
+  "design": {
+    "acquisition_timing_boundary": "Time only the registered acquisition callable; Context construction, GP fitting, allocation, final refits, and metrics are excluded.",
+    "budget": 40,
+    "ckg_fantasy_counts": [
+      128,
+      256,
+      512
+    ],
+    "cohort_size": 2,
+    "empty_gate": "pf",
+    "fantasy_nesting": "Generate production-ordered Zf[0:512] and Zg[0:512] banks with seed 0; use channel-wise prefixes for 128 and 256.",
+    "gate_mode": "latent",
+    "grid_n": 5,
+    "noise": "fixed",
+    "protocol_scaffold": "lhs_fixed",
+    "stability_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "status": "post hoc and descriptive",
+    "strata": [
+      0,
+      1
+    ],
+    "stratum_clustering": "Average the two strata within seed before timing summaries, ratios, and agreement summaries.",
+    "surface": "osa",
+    "tau": 0.7,
+    "timing_order": "One process; seed then stratum; cyclically rotate the six variants within each seed-stratum cell.",
+    "timing_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "timing_variants": [
+      "cEI",
+      "tMSE",
+      "cEI-tMSE",
+      "cKG-128",
+      "cKG-256",
+      "cKG-512"
+    ],
+    "total_timing_boundary": "Entire run_trial call, including final refits and metrics.",
+    "warmup": 4
+  },
+  "environment": {
+    "captured_at_utc": "2026-08-23T03:09:59.973392+00:00",
+    "hardware": {
+      "chip": "Apple M2 Pro",
+      "core_description": "10 (6 Performance and 4 Efficiency)",
+      "cpu_model": "Apple M2 Pro",
+      "logical_cpu_count": 10,
+      "memory": "16 GB",
+      "model_identifier": "Mac14,9",
+      "model_name": "MacBook Pro",
+      "model_number": "MPHE3LL/A"
+    },
+    "machine": "arm64",
+    "numpy_configuration": {
+      "build_dependencies": {
+        "blas": {
+          "found": true,
+          "name": "openblas64",
+          "openblas configuration": "USE_64BITINT=1 DYNAMIC_ARCH=1 DYNAMIC_OLDER= NO_CBLAS= NO_LAPACK= NO_LAPACKE= NO_AFFINITY=1 USE_OPENMP= SANDYBRIDGE MAX_THREADS=3",
+          "version": "0.3.23.dev"
+        },
+        "lapack": {
+          "found": true,
+          "name": "dep4350285776",
+          "openblas configuration": "unknown",
+          "version": "1.26.4"
+        }
+      },
+      "compilers": {
+        "c": {
+          "linker": "ld64",
+          "name": "clang",
+          "version": "14.0.0"
+        },
+        "c++": {
+          "linker": "ld64",
+          "name": "clang",
+          "version": "14.0.0"
+        },
+        "cython": {
+          "linker": "cython",
+          "name": "cython",
+          "version": "3.0.8"
+        }
+      },
+      "host_machine": {
+        "cpu": "aarch64",
+        "endian": "little",
+        "family": "aarch64",
+        "system": "darwin"
+      },
+      "simd_extensions": {
+        "baseline": [
+          "NEON",
+          "NEON_FP16",
+          "NEON_VFPV4",
+          "ASIMD"
+        ],
+        "found": [
+          "ASIMDHP"
+        ]
+      }
+    },
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.11.6 | packaged by conda-forge | (main, Oct  3 2023, 10:37:07) [Clang 15.0.7 ]",
+    "python_executable_name": "python",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1,
+    "versions": {
+      "gpytorch": "1.14",
+      "numpy": "1.26.4",
+      "safedosebo": "source-tree",
+      "scipy": "1.16.3",
+      "torch": "2.4.1"
+    }
+  },
+  "production_compatibility_preflight": {
+    "budget": 8,
+    "full_path_and_terminal_match": true,
+    "note": "Production cKG and nested cKG-512 were identical on all audited fields.",
+    "seed": 0,
+    "stratum": 0
+  },
+  "schema_version": 1,
+  "stability": {
+    "comparisons": {
+      "cKG-128_vs_cKG-512": {
+        "full_adaptive_path_exact_agreement": {
+          "max_seed_average_pct": 50.0,
+          "mcse_pct": 2.4999999999999996,
+          "mean_pct": 2.5,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "positionwise_adaptive_cohort_agreement": {
+          "max_seed_average_pct": 55.55555555555556,
+          "mcse_pct": 3.18887768199021,
+          "mean_pct": 23.888888888888886,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "same_state_all_decisions_exact_agreement": {
+          "max_seed_average_pct": 50.0,
+          "mcse_pct": 2.4999999999999996,
+          "mean_pct": 2.5,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "same_state_selected_dose_agreement": {
+          "max_seed_average_pct": 75.0,
+          "mcse_pct": 3.322808677139461,
+          "mean_pct": 43.75,
+          "min_seed_average_pct": 8.333333333333332,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "terminal_recommendation_agreement": {
+          "max_seed_average_pct": 100.0,
+          "mcse_pct": 6.5644577280349585,
+          "mean_pct": 17.5,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "terminal_unsafe_status_agreement": {
+          "max_seed_average_pct": 100.0,
+          "mcse_pct": 9.230242056471361,
+          "mean_pct": 72.5,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        }
+      },
+      "cKG-256_vs_cKG-512": {
+        "full_adaptive_path_exact_agreement": {
+          "max_seed_average_pct": 50.0,
+          "mcse_pct": 2.4999999999999996,
+          "mean_pct": 2.5,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "positionwise_adaptive_cohort_agreement": {
+          "max_seed_average_pct": 61.111111111111114,
+          "mcse_pct": 3.564561647677168,
+          "mean_pct": 36.80555555555555,
+          "min_seed_average_pct": 2.7777777777777777,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "same_state_all_decisions_exact_agreement": {
+          "max_seed_average_pct": 50.0,
+          "mcse_pct": 2.4999999999999996,
+          "mean_pct": 2.5,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "same_state_selected_dose_agreement": {
+          "max_seed_average_pct": 88.88888888888889,
+          "mcse_pct": 4.168493751458124,
+          "mean_pct": 57.638888888888886,
+          "min_seed_average_pct": 13.88888888888889,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "terminal_recommendation_agreement": {
+          "max_seed_average_pct": 100.0,
+          "mcse_pct": 8.95897080555221,
+          "mean_pct": 35.0,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        },
+        "terminal_unsafe_status_agreement": {
+          "max_seed_average_pct": 100.0,
+          "mcse_pct": 7.499999999999999,
+          "mean_pct": 82.5,
+          "min_seed_average_pct": 0.0,
+          "n_seed_stratum_cells": 40,
+          "n_seeds": 20
+        }
+      }
+    },
+    "reference": "cKG-512",
+    "stratum_handling": "agreement computed by stratum, then the two strata averaged within seed"
+  },
+  "status": "post hoc and descriptive",
+  "timing": {
+    "stratum_handling": "two strata averaged within seed before summaries",
+    "unit": "seconds",
+    "variants": {
+      "cEI": {
+        "acquisition_seconds_per_decision": {
+          "max": 0.0211774815,
+          "median": 0.019298339666666664,
+          "min": 0.017993399277777777,
+          "n": 10,
+          "q1": 0.019226006979166668,
+          "q3": 0.020041190138888887
+        },
+        "acquisition_seconds_per_trial": {
+          "max": 0.38119466700000004,
+          "median": 0.34737011399999995,
+          "min": 0.323881187,
+          "n": 10,
+          "q1": 0.346068125625,
+          "q3": 0.3607414225
+        },
+        "fantasy_count": null,
+        "paired_acquisition_ratio_to_cEI": {
+          "max": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 10,
+          "q1": 1.0,
+          "q3": 1.0
+        },
+        "paired_total_ratio_to_cEI": {
+          "max": 1.0,
+          "median": 1.0,
+          "min": 1.0,
+          "n": 10,
+          "q1": 1.0,
+          "q3": 1.0
+        },
+        "total_trial_seconds": {
+          "max": 5.6385064795,
+          "median": 5.323284854000001,
+          "min": 4.9752262495,
+          "n": 10,
+          "q1": 5.280195078125001,
+          "q3": 5.422786906374999
+        }
+      },
+      "cEI-tMSE": {
+        "acquisition_seconds_per_decision": {
+          "max": 0.009701890083333333,
+          "median": 0.009568416138888888,
+          "min": 0.008832254555555558,
+          "n": 10,
+          "q1": 0.009124406548611111,
+          "q3": 0.00959120277777778
+        },
+        "acquisition_seconds_per_trial": {
+          "max": 0.1746340215,
+          "median": 0.17223149049999997,
+          "min": 0.15898058200000004,
+          "n": 10,
+          "q1": 0.164239317875,
+          "q3": 0.17264165000000004
+        },
+        "fantasy_count": null,
+        "paired_acquisition_ratio_to_cEI": {
+          "max": 0.5039986536679971,
+          "median": 0.49340257809199417,
+          "min": 0.44028968932951174,
+          "n": 10,
+          "q1": 0.4724613060744559,
+          "q3": 0.49855480570179056
+        },
+        "paired_total_ratio_to_cEI": {
+          "max": 0.9723817253867311,
+          "median": 0.9514684841431698,
+          "min": 0.8636528816619464,
+          "n": 10,
+          "q1": 0.9343646890708552,
+          "q3": 0.9642373646271976
+        },
+        "total_trial_seconds": {
+          "max": 5.249950291499999,
+          "median": 5.114353802,
+          "min": 4.6975704375,
+          "n": 10,
+          "q1": 4.857673297,
+          "q3": 5.125203968375
+        }
+      },
+      "cKG-128": {
+        "acquisition_seconds_per_decision": {
+          "max": 0.03529788191666666,
+          "median": 0.034306912069444445,
+          "min": 0.03135328352777778,
+          "n": 10,
+          "q1": 0.03257109668055556,
+          "q3": 0.03450554429166666
+        },
+        "acquisition_seconds_per_trial": {
+          "max": 0.6353618745,
+          "median": 0.61752441725,
+          "min": 0.5643591035,
+          "n": 10,
+          "q1": 0.5862797402500001,
+          "q3": 0.6210997972500001
+        },
+        "fantasy_count": 128,
+        "paired_acquisition_ratio_to_cEI": {
+          "max": 1.8133783911756947,
+          "median": 1.774311128667959,
+          "min": 1.5480607795752248,
+          "n": 10,
+          "q1": 1.6942683202462878,
+          "q3": 1.781918245793918
+        },
+        "paired_total_ratio_to_cEI": {
+          "max": 1.087338507400627,
+          "median": 1.0418899515324354,
+          "min": 0.9386563952883188,
+          "n": 10,
+          "q1": 1.0061174659247747,
+          "q3": 1.0504336332923576
+        },
+        "total_trial_seconds": {
+          "max": 5.771437104,
+          "median": 5.579976052,
+          "min": 5.109192021,
+          "n": 10,
+          "q1": 5.285612989375,
+          "q3": 5.5848442915
+        }
+      },
+      "cKG-256": {
+        "acquisition_seconds_per_decision": {
+          "max": 0.04219453708333333,
+          "median": 0.03728821016666667,
+          "min": 0.03490882530555556,
+          "n": 10,
+          "q1": 0.03710339900694445,
+          "q3": 0.03812509634722222
+        },
+        "acquisition_seconds_per_trial": {
+          "max": 0.7595016674999999,
+          "median": 0.6711877829999999,
+          "min": 0.6283588554999999,
+          "n": 10,
+          "q1": 0.667861182125,
+          "q3": 0.68625173425
+        },
+        "fantasy_count": 256,
+        "paired_acquisition_ratio_to_cEI": {
+          "max": 2.0630576576218362,
+          "median": 1.9380766126211144,
+          "min": 1.7417889890973828,
+          "n": 10,
+          "q1": 1.922385023748331,
+          "q3": 1.9716922158962882
+        },
+        "paired_total_ratio_to_cEI": {
+          "max": 1.1160962521860942,
+          "median": 1.064448185522802,
+          "min": 0.982590827271007,
+          "n": 10,
+          "q1": 1.0503225782169672,
+          "q3": 1.074068897839737
+        },
+        "total_trial_seconds": {
+          "max": 5.957432771000001,
+          "median": 5.66436713525,
+          "min": 5.3131773955,
+          "n": 10,
+          "q1": 5.46598568275,
+          "q3": 5.7964471768750006
+        }
+      },
+      "cKG-512": {
+        "acquisition_seconds_per_decision": {
+          "max": 0.04361345033333334,
+          "median": 0.040927394680555555,
+          "min": 0.037103720916666666,
+          "n": 10,
+          "q1": 0.04051800889583333,
+          "q3": 0.04103926625
+        },
+        "acquisition_seconds_per_trial": {
+          "max": 0.7850421060000001,
+          "median": 0.73669310425,
+          "min": 0.6678669765,
+          "n": 10,
+          "q1": 0.729324160125,
+          "q3": 0.7387067924999999
+        },
+        "fantasy_count": 512,
+        "paired_acquisition_ratio_to_cEI": {
+          "max": 2.183925314594607,
+          "median": 2.083657965072948,
+          "min": 1.9981401874584028,
+          "n": 10,
+          "q1": 2.0463861172480335,
+          "q3": 2.1249565866631377
+        },
+        "paired_total_ratio_to_cEI": {
+          "max": 1.0864693007390729,
+          "median": 1.0557898069257274,
+          "min": 1.019835753316225,
+          "n": 10,
+          "q1": 1.0368876134012543,
+          "q3": 1.0740286876599963
+        },
+        "total_trial_seconds": {
+          "max": 5.9292837915,
+          "median": 5.68748877075,
+          "min": 5.201330645500001,
+          "n": 10,
+          "q1": 5.620962463375,
+          "q3": 5.730630640625
+        }
+      },
+      "tMSE": {
+        "acquisition_seconds_per_decision": {
+          "max": 2.0835583333333334e-05,
+          "median": 1.6563708333333334e-05,
+          "min": 1.4127138888888887e-05,
+          "n": 10,
+          "q1": 1.6125659722222224e-05,
+          "q3": 1.6916305555555557e-05
+        },
+        "acquisition_seconds_per_trial": {
+          "max": 0.0003750405,
+          "median": 0.00029814675000000004,
+          "min": 0.0002542885,
+          "n": 10,
+          "q1": 0.000290261875,
+          "q3": 0.00030449350000000003
+        },
+        "fantasy_count": null,
+        "paired_acquisition_ratio_to_cEI": {
+          "max": 0.0010187767982113504,
+          "median": 0.0008584698837751365,
+          "min": 0.0007643884548589378,
+          "n": 10,
+          "q1": 0.0008136188665877316,
+          "q3": 0.0008797818570704246
+        },
+        "paired_total_ratio_to_cEI": {
+          "max": 0.9547710888185856,
+          "median": 0.9208400597242088,
+          "min": 0.8421095190602609,
+          "n": 10,
+          "q1": 0.8969010362727792,
+          "q3": 0.9325231778203729
+        },
+        "total_trial_seconds": {
+          "max": 5.0325740625,
+          "median": 4.958955770999999,
+          "min": 4.4977885,
+          "n": 10,
+          "q1": 4.698922984125,
+          "q3": 4.987468807125
+        }
+      }
+    }
+  }
+}

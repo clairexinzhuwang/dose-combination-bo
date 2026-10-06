@@ -1,0 +1,13 @@
+{
+  "artifact": "budget_toxicity_calibration_operator_cap_M0500_amendment.json",
+  "artifact_sha256": "3097380d0f3fe661807e162c99a1b83583d1c2ae2ca1dcc31e400e1c47455485",
+  "audit_id": "operator-cap-M0500-63e96c3afbee45a9",
+  "cap_cumulative_M": 500,
+  "committed_at_utc": "2026-08-27T22:01:09.009723Z",
+  "immutable": true,
+  "launch_fingerprint": "364a65e046c83acf5458885e8b07e2cb3de441c5ba01f0a1d02e6f59f6d3e0a5",
+  "metadata": "budget_toxicity_calibration_operator_cap_M0500_amendment.json.metadata.json",
+  "metadata_sha256": "d56c68e4d36516502abfb07d80f93037525a7fca91ad3a62a4a084a62021319e",
+  "schema_version": 1,
+  "status": "COMMITTED_BUDGET_TOXICITY_CALIBRATION_OPERATOR_CAP_AMENDMENT"
+}

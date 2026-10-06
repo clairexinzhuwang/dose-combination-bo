@@ -1,0 +1,12 @@
+{
+  "artifact": "comparator_family_completion_records.json.zst",
+  "artifact_sha256": "866c6ab2af18aa54187001c9286c9b20b1ebb6258756895d5610a3f1ce9bbf5c",
+  "committed_at_utc": "2026-08-25T23:28:16.763755+00:00",
+  "immutable_formal_projection_changed": false,
+  "launch_fingerprint": "70893e2a1c827750f26c374589bbc9e188c325bdd1604ed0c76d557b65dd4f92",
+  "metadata": "comparator_family_completion_records.json.zst.metadata.json",
+  "metadata_sha256": "88e22c060471d95d659a0d81b6eaff42d2dd9a35d5a03f93464fb6d601ba8f35",
+  "row_count": 8800,
+  "schema_version": 1,
+  "status": "COMMITTED_COMPARATOR_FAMILY_RAW_EXTENSION"
+}

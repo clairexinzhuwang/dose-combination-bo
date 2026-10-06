@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://safedosebo.local/schemas/budget_toxicity_calibration_operator_cap_amendment.schema.json",
+  "additionalProperties": false,
+  "properties": {
+    "amended_terminal_rule": {
+      "additionalProperties": false,
+      "properties": {
+        "effective_next_M": {
+          "type": "null"
+        },
+        "if_original_next_M_1000": {
+          "const": "terminate_due_to_operator_cap_and_disclose_all_unresolved_guarded_precision_targets"
+        },
+        "no_precision_pass_may_be_fabricated": {
+          "const": true
+        },
+        "original_precision_decision_must_remain_immutable": {
+          "const": true
+        },
+        "precision_threshold_unchanged": {
+          "const": true
+        },
+        "stop_after_complete_balanced_M0500": {
+          "const": true
+        }
+      },
+      "required": [
+        "stop_after_complete_balanced_M0500",
+        "effective_next_M",
+        "precision_threshold_unchanged",
+        "original_precision_decision_must_remain_immutable",
+        "if_original_next_M_1000",
+        "no_precision_pass_may_be_fabricated"
+      ],
+      "type": "object"
+    },
+    "artifact_class": {
+      "const": "result_blind_operator_cap_amendment"
+    },
+    "audit_id": {
+      "pattern": "^operator-cap-M0500-[0-9a-f]{16}$",
+      "type": "string"
+    },
+    "bindings": {
+      "additionalProperties": false,
+      "properties": {
+        "absence_evidence": {
+          "additionalProperties": false,
+          "properties": {
+            "m0500_precision_envelope_absent": {
+              "const": true
+            },
+            "m1000_artifacts_absent": {
+              "const": true
+            }
+          },
+          "required": [
+            "m0500_precision_envelope_absent",
+            "m1000_artifacts_absent"
+          ],
+          "type": "object"
+        },
+        "amendment_generator_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "amendment_schema_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "baseline_identity_M0200": {
+          "$ref": "#/$defs/trio"
+        },
+        "frozen_source_hashes": {
+          "additionalProperties": {
+            "$ref": "#/$defs/sha256"
+          },
+          "minProperties": 8,
+          "type": "object"
+        },
+        "manifest_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "precision_M0200": {
+          "$ref": "#/$defs/trio"
+        },
+        "prespec_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "superseded_amendment": {
+          "additionalProperties": false,
+          "properties": {
+            "reason": {
+              "const": "superseded_due_to_authentication_hardening"
+            },
+            "trio": {
+              "$ref": "#/$defs/trio"
+            }
+          },
+          "required": [
+            "reason",
+            "trio"
+          ],
+          "type": "object"
+        },
+        "user_directive_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "manifest_sha256",
+        "prespec_sha256",
+        "frozen_source_hashes",
+        "amendment_generator_sha256",
+        "amendment_schema_sha256",
+        "baseline_identity_M0200",
+        "precision_M0200",
+        "superseded_amendment",
+        "user_directive_sha256",
+        "absence_evidence"
+      ],
+      "type": "object"
+    },
+    "cap_cumulative_M": {
+      "const": 500
+    },
+    "declaration_phase": {
+      "const": "M0500_TOPUP_IN_PROGRESS_BEFORE_M0500_PRECISION_MONITOR"
+    },
+    "declared_at_utc": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "launch_fingerprint": {
+      "$ref": "#/$defs/sha256"
+    },
+    "original_frozen_rule": {
+      "additionalProperties": false,
+      "properties": {
+        "guarded_mcse_threshold_points": {
+          "const": 1.5
+        },
+        "initial_M": {
+          "const": 200
+        },
+        "intermediate_M": {
+          "const": 500
+        },
+        "maximum_M": {
+          "const": 1000
+        },
+        "threshold_rule": {
+          "const": "all_118_primary_estimands_guarded_mcse_at_most_1.5_points"
+        }
+      },
+      "required": [
+        "initial_M",
+        "intermediate_M",
+        "maximum_M",
+        "guarded_mcse_threshold_points",
+        "threshold_rule"
+      ],
+      "type": "object"
+    },
+    "prohibited_seed_blocks": {
+      "const": [
+        "M1000_TOPUP"
+      ]
+    },
+    "result_blindness_assertion": {
+      "additionalProperties": false,
+      "properties": {
+        "decision_basis": {
+          "const": "operator_compute_cap_not_M0500_result"
+        },
+        "m0200_precision_decision_was_known": {
+          "const": true
+        },
+        "m0500_precision_decision_available": {
+          "const": false
+        },
+        "m0500_scientific_effects_inspected": {
+          "const": false
+        },
+        "user_directive": {
+          "const": "ok最多就这个了不再追加。"
+        }
+      },
+      "required": [
+        "m0500_scientific_effects_inspected",
+        "m0500_precision_decision_available",
+        "m0200_precision_decision_was_known",
+        "decision_basis",
+        "user_directive"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "status": {
+      "const": "DECLARED_BUDGET_TOXICITY_CALIBRATION_OPERATOR_CAP"
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "artifact_class",
+    "audit_id",
+    "launch_fingerprint",
+    "declared_at_utc",
+    "declaration_phase",
+    "cap_cumulative_M",
+    "prohibited_seed_blocks",
+    "original_frozen_rule",
+    "amended_terminal_rule",
+    "result_blindness_assertion",
+    "bindings"
+  ],
+  "type": "object",
+  "$defs": {
+    "fileCommitment": {
+      "additionalProperties": false,
+      "properties": {
+        "bytes": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "path": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "type": "object"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "trio": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact": {
+          "$ref": "#/$defs/fileCommitment"
+        },
+        "commit": {
+          "$ref": "#/$defs/fileCommitment"
+        },
+        "metadata": {
+          "$ref": "#/$defs/fileCommitment"
+        }
+      },
+      "required": [
+        "artifact",
+        "metadata",
+        "commit"
+      ],
+      "type": "object"
+    }
+  }
+}

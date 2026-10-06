@@ -1,0 +1,35 @@
+\begin{tabular}{lllrrr}
+\toprule
+Scope & Comparator & Outcome & Estimate & MCSE & 95\% MC interval \\
+\midrule
+OSA & tMSE-only & True-boundary-exceeding recommendation (pp) & 6.95 & 1.14 & [4.70, 9.20] \\
+OSA & tMSE-only & $100N_{\rm above}^{\rm post}/(N_{\rm obs}-N_{\rm init})$ (pp) & -9.15 & 0.52 & [-10.19, -8.12] \\
+OSA & Entropy reduction & True-boundary-exceeding recommendation (pp) & 0.15 & 1.33 & [-2.48, 2.78] \\
+OSA & Entropy reduction & $100N_{\rm above}^{\rm post}/(N_{\rm obs}-N_{\rm init})$ (pp) & -4.50 & 0.64 & [-5.76, -3.24] \\
+Equal-weight binding-surface aggregate & tMSE-only & True-boundary-exceeding recommendation (pp) & 7.70 & 1.29 & [5.13, 10.27] \\
+Equal-weight binding-surface aggregate & tMSE-only & $100N_{\rm above}^{\rm post}/(N_{\rm obs}-N_{\rm init})$ (pp) & -8.86 & 0.58 & [-10.01, -7.70] \\
+Equal-weight binding-surface aggregate & Entropy reduction & True-boundary-exceeding recommendation (pp) & 5.33 & 1.25 & [2.86, 7.81] \\
+Equal-weight binding-surface aggregate & Entropy reduction & $100N_{\rm above}^{\rm post}/(N_{\rm obs}-N_{\rm init})$ (pp) & -6.15 & 0.55 & [-7.24, -5.06] \\
+Gaussian-bump stress test & tMSE-only & True-boundary-exceeding recommendation (pp) & 4.25 & 1.06 & [2.16, 6.34] \\
+Gaussian-bump stress test & tMSE-only & $100N_{\rm above}^{\rm post}/(N_{\rm obs}-N_{\rm init})$ (pp) & -2.36 & 0.58 & [-3.50, -1.22] \\
+Gaussian-bump stress test & Entropy reduction & True-boundary-exceeding recommendation (pp) & 1.60 & 1.23 & [-0.82, 4.02] \\
+Gaussian-bump stress test & Entropy reduction & $100N_{\rm above}^{\rm post}/(N_{\rm obs}-N_{\rm init})$ (pp) & -0.10 & 0.74 & [-1.57, 1.36] \\
+\bottomrule
+\end{tabular}
+
+\begin{tabular}{clrrrrrr}
+\toprule
+$\tau$ & Policy & Terminal exceed. (\%) & Recommend (\%) & Stop (\%) & $E(N_{\rm obs})$ & $E(C_A)$ & Assignment burden (\% of maximum enrollment) \\
+\midrule
+0.7 & cKG & 18.50 & 97.00 & 3.00 & 39.14 & 6.47 & 16.16 \\
+0.7 & tMSE-only & 9.75 & 98.00 & 2.00 & 39.42 & 10.97 & 27.41 \\
+0.7 & Entropy reduction & 17.50 & 99.75 & 0.25 & 39.92 & 10.07 & 25.18 \\
+0.7 & cEI & 10.25 & 99.00 & 1.00 & 39.71 & 3.81 & 9.53 \\
+0.7 & cEI--tMSE hybrid & 8.25 & 98.75 & 1.25 & 39.63 & 9.08 & 22.69 \\
+0.9 & cKG & 4.50 & 83.25 & 16.75 & 35.20 & 4.44 & 11.09 \\
+0.9 & tMSE-only & 2.00 & 87.50 & 12.50 & 36.45 & 6.24 & 15.60 \\
+0.9 & Entropy reduction & 7.50 & 92.50 & 7.50 & 37.86 & 5.78 & 14.44 \\
+0.9 & cEI & 2.75 & 91.75 & 8.25 & 37.63 & 3.28 & 8.19 \\
+0.9 & cEI--tMSE hybrid & 2.00 & 88.50 & 11.50 & 36.69 & 5.24 & 13.09 \\
+\bottomrule
+\end{tabular}

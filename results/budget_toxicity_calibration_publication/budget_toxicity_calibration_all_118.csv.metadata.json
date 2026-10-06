@@ -1,0 +1,29 @@
+{
+  "adapter": "paper/generate_budget_toxicity_calibration_publication.py",
+  "adapter_sha256": "e14c2464f586f3abb805bfa24bb47f2ecc61a93e7405e0cb51489d497c6aa919",
+  "artifact": "budget_toxicity_calibration_all_118.csv",
+  "artifact_bytes": 59383,
+  "artifact_class": "outcome_independent_budget_toxicity_calibration_publication_projection",
+  "artifact_sha256": "0d59ab620691fd55973059161f4ddac3deaebb7f3f57c0d2d94966c509fed96d",
+  "artifact_type": "all_118_primary_csv",
+  "contract": "budget_toxicity_calibration_publication_contract.json",
+  "contract_sha256": "a1904b435d4e42ef6df25094bc1f3ce35156ceaec5bf157ec24fb2ff2827b6a8",
+  "description": "Complete 118-row primary publication table in CSV form.",
+  "input_bundle_sha256": "3b8ea560a8b6ff56199b97eafacc4709af44f14f1595bec982a21142768a1973",
+  "no_filtering_by_sign_interval_or_winner": true,
+  "schema_version": 3,
+  "selection": {
+    "family_counts": {
+      "A": 54,
+      "B": 48,
+      "C": 16
+    },
+    "primary_rows": 118
+  },
+  "status": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_PUBLICATION_ARTIFACT",
+  "trusted_commitments": {
+    "analyzer_sha256": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+    "manifest_sha256": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+    "prespec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178"
+  }
+}

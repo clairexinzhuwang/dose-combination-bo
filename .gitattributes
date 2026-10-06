@@ -1,0 +1,6 @@
+paper/source/generated/** linguist-generated=true
+paper/source/PAPER_arxiv_singlefile.tex linguist-generated=true
+paper/**/*.tex linguist-documentation=true
+results/**/*.tex linguist-generated=true
+*.eps linguist-generated=true
+results/**/*.html linguist-generated=true

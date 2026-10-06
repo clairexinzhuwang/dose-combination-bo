@@ -1,0 +1,2206 @@
+{
+  "baseline_identity": {
+    "allocation_history_cells": 3040,
+    "common_field_cells": 3200,
+    "historical_cells_without_allocation_history": 160,
+    "passed": true,
+    "status": "PASS_AVAILABLE_FIELD_IDENTITY"
+  },
+  "complete_unfiltered_primary_projection": true,
+  "final_M": 500,
+  "finite_snapshot_budgets": [
+    20,
+    40,
+    80
+  ],
+  "interpretation_predicates": {
+    "cEI_shared_gate_reference": {
+      "budget_robust_within_c_sigma": {
+        "0.5": {
+          "assignment": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=20|c=0p5",
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=0p5",
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=80|c=0p5"
+            ],
+            "negative_count": 0,
+            "positive_count": 3,
+            "resolved_same_direction": true,
+            "state": "positive",
+            "unresolved_count": 0
+          },
+          "budgets": [
+            20,
+            40,
+            80
+          ],
+          "c_sigma": [
+            0.5
+          ],
+          "opposite_resolved_directions": false,
+          "supported": false,
+          "terminal": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=20|c=0p5",
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=80|c=0p5"
+            ],
+            "negative_count": 0,
+            "positive_count": 3,
+            "resolved_same_direction": true,
+            "state": "positive",
+            "unresolved_count": 0
+          }
+        },
+        "1": {
+          "assignment": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=20|c=1",
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=1",
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=80|c=1"
+            ],
+            "negative_count": 0,
+            "positive_count": 3,
+            "resolved_same_direction": true,
+            "state": "positive",
+            "unresolved_count": 0
+          },
+          "budgets": [
+            20,
+            40,
+            80
+          ],
+          "c_sigma": [
+            1.0
+          ],
+          "opposite_resolved_directions": false,
+          "supported": false,
+          "terminal": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=20|c=1",
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=1",
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=80|c=1"
+            ],
+            "negative_count": 0,
+            "positive_count": 3,
+            "resolved_same_direction": true,
+            "state": "positive",
+            "unresolved_count": 0
+          }
+        },
+        "2": {
+          "assignment": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=20|c=2",
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=2",
+              "A|cKG-minus-cEI|above_boundary_assignment_pct|N=80|c=2"
+            ],
+            "negative_count": 1,
+            "positive_count": 0,
+            "resolved_same_direction": false,
+            "state": "mixed",
+            "unresolved_count": 2
+          },
+          "budgets": [
+            20,
+            40,
+            80
+          ],
+          "c_sigma": [
+            2.0
+          ],
+          "opposite_resolved_directions": false,
+          "supported": false,
+          "terminal": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=20|c=2",
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=2",
+              "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=80|c=2"
+            ],
+            "negative_count": 0,
+            "positive_count": 3,
+            "resolved_same_direction": true,
+            "state": "positive",
+            "unresolved_count": 0
+          }
+        }
+      },
+      "calibration_robust_at_N40": {
+        "assignment": {
+          "estimand_count": 3,
+          "estimand_ids": [
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=0p5",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=1",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=2"
+          ],
+          "negative_count": 0,
+          "positive_count": 2,
+          "resolved_same_direction": false,
+          "state": "mixed",
+          "unresolved_count": 1
+        },
+        "budgets": [
+          40
+        ],
+        "c_sigma": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "opposite_resolved_directions": false,
+        "supported": false,
+        "terminal": {
+          "estimand_count": 3,
+          "estimand_ids": [
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=1",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=2"
+          ],
+          "negative_count": 0,
+          "positive_count": 3,
+          "resolved_same_direction": true,
+          "state": "positive",
+          "unresolved_count": 0
+        }
+      },
+      "robust_over_evaluated_3x3_grid": {
+        "assignment": {
+          "estimand_count": 9,
+          "estimand_ids": [
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=20|c=0p5",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=20|c=1",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=20|c=2",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=0p5",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=1",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=40|c=2",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=80|c=0p5",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=80|c=1",
+            "A|cKG-minus-cEI|above_boundary_assignment_pct|N=80|c=2"
+          ],
+          "negative_count": 1,
+          "positive_count": 6,
+          "resolved_same_direction": false,
+          "state": "mixed",
+          "unresolved_count": 2
+        },
+        "budgets": [
+          20,
+          40,
+          80
+        ],
+        "c_sigma": [
+          0.5,
+          1.0,
+          2.0
+        ],
+        "opposite_resolved_directions": false,
+        "supported": false,
+        "terminal": {
+          "estimand_count": 9,
+          "estimand_ids": [
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=20|c=0p5",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=20|c=1",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=20|c=2",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=1",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=40|c=2",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=80|c=0p5",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=80|c=1",
+            "A|cKG-minus-cEI|terminal_true_boundary_exceedance_pct|N=80|c=2"
+          ],
+          "negative_count": 0,
+          "positive_count": 9,
+          "resolved_same_direction": true,
+          "state": "positive",
+          "unresolved_count": 0
+        }
+      }
+    },
+    "calibration_penalty_attenuation": [
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "unresolved",
+        "family_C_interaction_estimand_id": "C|cKG-exact-formal|terminal_target_exclusion_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG",
+        "reader_code": "guarded_attenuation_interaction_unresolved"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|cKG-exact-formal|panel_brier_score_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG",
+        "reader_code": "penalty_increased_over_N20_to_N80"
+      },
+      {
+        "N20_penalty_guarded_positive": false,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "negative",
+        "family_B_N20_estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|cKG-exact-formal|terminal_target_exclusion_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG",
+        "reader_code": "N20_penalty_not_guarded_positive"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "negative",
+        "family_C_interaction_estimand_id": "C|cKG-exact-formal|panel_brier_score_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": true,
+        "finite_range_attenuation_supported": true,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG",
+        "reader_code": "finite_range_attenuation_supported"
+      },
+      {
+        "N20_penalty_guarded_positive": false,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "unresolved",
+        "family_B_N20_estimand_id": "B|tmse|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|tmse|terminal_target_exclusion_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only",
+        "reader_code": "N20_penalty_not_guarded_positive"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|tmse|panel_brier_score_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|tmse|panel_brier_score_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only",
+        "reader_code": "penalty_increased_over_N20_to_N80"
+      },
+      {
+        "N20_penalty_guarded_positive": false,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "unresolved",
+        "family_B_N20_estimand_id": "B|tmse|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "unresolved",
+        "family_C_interaction_estimand_id": "C|tmse|terminal_target_exclusion_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only",
+        "reader_code": "N20_penalty_not_guarded_positive"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|tmse|panel_brier_score_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "negative",
+        "family_C_interaction_estimand_id": "C|tmse|panel_brier_score_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": true,
+        "finite_range_attenuation_supported": true,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only",
+        "reader_code": "finite_range_attenuation_supported"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "unresolved",
+        "family_C_interaction_estimand_id": "C|qBIG|terminal_target_exclusion_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction",
+        "reader_code": "guarded_attenuation_interaction_unresolved"
+      },
+      {
+        "N20_penalty_guarded_positive": false,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "negative",
+        "family_B_N20_estimand_id": "B|qBIG|panel_brier_score_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|qBIG|panel_brier_score_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction",
+        "reader_code": "N20_penalty_not_guarded_positive"
+      },
+      {
+        "N20_penalty_guarded_positive": false,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "negative",
+        "family_B_N20_estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "unresolved",
+        "family_C_interaction_estimand_id": "C|qBIG|terminal_target_exclusion_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction",
+        "reader_code": "N20_penalty_not_guarded_positive"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|qBIG|panel_brier_score_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|qBIG|panel_brier_score_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction",
+        "reader_code": "penalty_increased_over_N20_to_N80"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "unresolved",
+        "family_C_interaction_estimand_id": "C|cEI|terminal_target_exclusion_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cEI",
+        "policy_label": "cEI",
+        "reader_code": "guarded_attenuation_interaction_unresolved"
+      },
+      {
+        "N20_penalty_guarded_positive": false,
+        "c_sigma": 0.5,
+        "family_B_N20_classification": "unresolved",
+        "family_B_N20_estimand_id": "B|cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|cEI|panel_brier_score_pct|N80-minus-N20|c=0p5-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cEI",
+        "policy_label": "cEI",
+        "reader_code": "N20_penalty_not_guarded_positive"
+      },
+      {
+        "N20_penalty_guarded_positive": false,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "negative",
+        "family_B_N20_estimand_id": "B|cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "positive",
+        "family_C_interaction_estimand_id": "C|cEI|terminal_target_exclusion_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": false,
+        "finite_range_attenuation_supported": false,
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cEI",
+        "policy_label": "cEI",
+        "reader_code": "N20_penalty_not_guarded_positive"
+      },
+      {
+        "N20_penalty_guarded_positive": true,
+        "c_sigma": 2.0,
+        "family_B_N20_classification": "positive",
+        "family_B_N20_estimand_id": "B|cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+        "family_C_interaction_classification": "negative",
+        "family_C_interaction_estimand_id": "C|cEI|panel_brier_score_pct|N80-minus-N20|c=2-minus-1",
+        "family_C_interaction_guarded_negative": true,
+        "finite_range_attenuation_supported": true,
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cEI",
+        "policy_label": "cEI",
+        "reader_code": "finite_range_attenuation_supported"
+      }
+    ],
+    "finite_range_attenuation_supported_count": 3,
+    "policy_vs_cEI_calibration_differential_cells": [
+      {
+        "budget": 20,
+        "c_sigma": 0.5,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+        "guarded_classification": "unresolved",
+        "guarded_differential_resolved": false,
+        "history_modification_direction": "unresolved",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 0.5,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 0.5,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+        "guarded_classification": "unresolved",
+        "guarded_differential_resolved": false,
+        "history_modification_direction": "unresolved",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 0.5,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=40|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 0.5,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+        "guarded_classification": "unresolved",
+        "guarded_differential_resolved": false,
+        "history_modification_direction": "unresolved",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 0.5,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=80|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 2.0,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 2.0,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+        "guarded_classification": "unresolved",
+        "guarded_differential_resolved": false,
+        "history_modification_direction": "unresolved",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 2.0,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 2.0,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=40|c=2-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 2.0,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 2.0,
+        "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=80|c=2-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "cKG-exact-formal",
+        "policy_label": "cKG"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 0.5,
+        "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 0.5,
+        "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 0.5,
+        "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 0.5,
+        "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=40|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 0.5,
+        "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 0.5,
+        "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=80|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 2.0,
+        "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 2.0,
+        "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+        "guarded_classification": "unresolved",
+        "guarded_differential_resolved": false,
+        "history_modification_direction": "unresolved",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 2.0,
+        "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 2.0,
+        "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=40|c=2-minus-1",
+        "guarded_classification": "unresolved",
+        "guarded_differential_resolved": false,
+        "history_modification_direction": "unresolved",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 2.0,
+        "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 2.0,
+        "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=80|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "tmse",
+        "policy_label": "tMSE-only"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 0.5,
+        "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 0.5,
+        "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 0.5,
+        "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 0.5,
+        "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=40|c=0p5-minus-1",
+        "guarded_classification": "unresolved",
+        "guarded_differential_resolved": false,
+        "history_modification_direction": "unresolved",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 0.5,
+        "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 0.5,
+        "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=80|c=0p5-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 2.0,
+        "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 20,
+        "c_sigma": 2.0,
+        "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 2.0,
+        "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 40,
+        "c_sigma": 2.0,
+        "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=40|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 2.0,
+        "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+        "guarded_classification": "negative",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_less_sensitive_than_cEI",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      },
+      {
+        "budget": 80,
+        "c_sigma": 2.0,
+        "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=80|c=2-minus-1",
+        "guarded_classification": "positive",
+        "guarded_differential_resolved": true,
+        "history_modification_direction": "policy_more_sensitive_than_cEI",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy": "qBIG",
+        "policy_label": "Entropy reduction"
+      }
+    ],
+    "scientific_acquisition_comparators": {
+      "qBIG": {
+        "budget_robust_within_c_sigma": {
+          "0.5": {
+            "assignment": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=20|c=0p5",
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=0p5",
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=80|c=0p5"
+              ],
+              "negative_count": 3,
+              "positive_count": 0,
+              "resolved_same_direction": true,
+              "state": "negative",
+              "unresolved_count": 0
+            },
+            "budgets": [
+              20,
+              40,
+              80
+            ],
+            "c_sigma": [
+              0.5
+            ],
+            "opposite_resolved_directions": false,
+            "supported": false,
+            "terminal": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=20|c=0p5",
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=80|c=0p5"
+              ],
+              "negative_count": 0,
+              "positive_count": 2,
+              "resolved_same_direction": false,
+              "state": "mixed",
+              "unresolved_count": 1
+            }
+          },
+          "1": {
+            "assignment": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=20|c=1",
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=1",
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=80|c=1"
+              ],
+              "negative_count": 2,
+              "positive_count": 1,
+              "resolved_same_direction": false,
+              "state": "mixed",
+              "unresolved_count": 0
+            },
+            "budgets": [
+              20,
+              40,
+              80
+            ],
+            "c_sigma": [
+              1.0
+            ],
+            "opposite_resolved_directions": false,
+            "supported": false,
+            "terminal": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=20|c=1",
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=1",
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=80|c=1"
+              ],
+              "negative_count": 0,
+              "positive_count": 1,
+              "resolved_same_direction": false,
+              "state": "mixed",
+              "unresolved_count": 2
+            }
+          },
+          "2": {
+            "assignment": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=20|c=2",
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=2",
+                "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=80|c=2"
+              ],
+              "negative_count": 0,
+              "positive_count": 2,
+              "resolved_same_direction": false,
+              "state": "mixed",
+              "unresolved_count": 1
+            },
+            "budgets": [
+              20,
+              40,
+              80
+            ],
+            "c_sigma": [
+              2.0
+            ],
+            "opposite_resolved_directions": false,
+            "supported": false,
+            "terminal": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=20|c=2",
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=2",
+                "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=80|c=2"
+              ],
+              "negative_count": 2,
+              "positive_count": 0,
+              "resolved_same_direction": false,
+              "state": "mixed",
+              "unresolved_count": 1
+            }
+          }
+        },
+        "calibration_robust_at_N40": {
+          "assignment": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=0p5",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=1",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=2"
+            ],
+            "negative_count": 2,
+            "positive_count": 1,
+            "resolved_same_direction": false,
+            "state": "mixed",
+            "unresolved_count": 0
+          },
+          "budgets": [
+            40
+          ],
+          "c_sigma": [
+            0.5,
+            1.0,
+            2.0
+          ],
+          "opposite_resolved_directions": false,
+          "supported": false,
+          "terminal": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=1",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=2"
+            ],
+            "negative_count": 1,
+            "positive_count": 1,
+            "resolved_same_direction": false,
+            "state": "mixed",
+            "unresolved_count": 1
+          }
+        },
+        "robust_over_evaluated_3x3_grid": {
+          "assignment": {
+            "estimand_count": 9,
+            "estimand_ids": [
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=20|c=0p5",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=20|c=1",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=20|c=2",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=0p5",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=1",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=40|c=2",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=80|c=0p5",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=80|c=1",
+              "A|cKG-minus-qBIG|above_boundary_assignment_pct|N=80|c=2"
+            ],
+            "negative_count": 5,
+            "positive_count": 3,
+            "resolved_same_direction": false,
+            "state": "mixed",
+            "unresolved_count": 1
+          },
+          "budgets": [
+            20,
+            40,
+            80
+          ],
+          "c_sigma": [
+            0.5,
+            1.0,
+            2.0
+          ],
+          "opposite_resolved_directions": false,
+          "supported": false,
+          "terminal": {
+            "estimand_count": 9,
+            "estimand_ids": [
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=20|c=0p5",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=20|c=1",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=20|c=2",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=1",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=40|c=2",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=80|c=0p5",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=80|c=1",
+              "A|cKG-minus-qBIG|terminal_true_boundary_exceedance_pct|N=80|c=2"
+            ],
+            "negative_count": 2,
+            "positive_count": 3,
+            "resolved_same_direction": false,
+            "state": "mixed",
+            "unresolved_count": 4
+          }
+        }
+      },
+      "tmse": {
+        "budget_robust_within_c_sigma": {
+          "0.5": {
+            "assignment": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=20|c=0p5",
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=0p5",
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=80|c=0p5"
+              ],
+              "negative_count": 3,
+              "positive_count": 0,
+              "resolved_same_direction": true,
+              "state": "negative",
+              "unresolved_count": 0
+            },
+            "budgets": [
+              20,
+              40,
+              80
+            ],
+            "c_sigma": [
+              0.5
+            ],
+            "opposite_resolved_directions": false,
+            "supported": false,
+            "terminal": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=20|c=0p5",
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=80|c=0p5"
+              ],
+              "negative_count": 0,
+              "positive_count": 2,
+              "resolved_same_direction": false,
+              "state": "mixed",
+              "unresolved_count": 1
+            }
+          },
+          "1": {
+            "assignment": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=20|c=1",
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=1",
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=80|c=1"
+              ],
+              "negative_count": 3,
+              "positive_count": 0,
+              "resolved_same_direction": true,
+              "state": "negative",
+              "unresolved_count": 0
+            },
+            "budgets": [
+              20,
+              40,
+              80
+            ],
+            "c_sigma": [
+              1.0
+            ],
+            "opposite_resolved_directions": true,
+            "supported": true,
+            "terminal": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=20|c=1",
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=1",
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=80|c=1"
+              ],
+              "negative_count": 0,
+              "positive_count": 3,
+              "resolved_same_direction": true,
+              "state": "positive",
+              "unresolved_count": 0
+            }
+          },
+          "2": {
+            "assignment": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=20|c=2",
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=2",
+                "A|cKG-minus-tmse|above_boundary_assignment_pct|N=80|c=2"
+              ],
+              "negative_count": 3,
+              "positive_count": 0,
+              "resolved_same_direction": true,
+              "state": "negative",
+              "unresolved_count": 0
+            },
+            "budgets": [
+              20,
+              40,
+              80
+            ],
+            "c_sigma": [
+              2.0
+            ],
+            "opposite_resolved_directions": true,
+            "supported": true,
+            "terminal": {
+              "estimand_count": 3,
+              "estimand_ids": [
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=20|c=2",
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=2",
+                "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=80|c=2"
+              ],
+              "negative_count": 0,
+              "positive_count": 3,
+              "resolved_same_direction": true,
+              "state": "positive",
+              "unresolved_count": 0
+            }
+          }
+        },
+        "calibration_robust_at_N40": {
+          "assignment": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=0p5",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=1",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=2"
+            ],
+            "negative_count": 3,
+            "positive_count": 0,
+            "resolved_same_direction": true,
+            "state": "negative",
+            "unresolved_count": 0
+          },
+          "budgets": [
+            40
+          ],
+          "c_sigma": [
+            0.5,
+            1.0,
+            2.0
+          ],
+          "opposite_resolved_directions": true,
+          "supported": true,
+          "terminal": {
+            "estimand_count": 3,
+            "estimand_ids": [
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=1",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=2"
+            ],
+            "negative_count": 0,
+            "positive_count": 3,
+            "resolved_same_direction": true,
+            "state": "positive",
+            "unresolved_count": 0
+          }
+        },
+        "robust_over_evaluated_3x3_grid": {
+          "assignment": {
+            "estimand_count": 9,
+            "estimand_ids": [
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=20|c=0p5",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=20|c=1",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=20|c=2",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=0p5",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=1",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=40|c=2",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=80|c=0p5",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=80|c=1",
+              "A|cKG-minus-tmse|above_boundary_assignment_pct|N=80|c=2"
+            ],
+            "negative_count": 9,
+            "positive_count": 0,
+            "resolved_same_direction": true,
+            "state": "negative",
+            "unresolved_count": 0
+          },
+          "budgets": [
+            20,
+            40,
+            80
+          ],
+          "c_sigma": [
+            0.5,
+            1.0,
+            2.0
+          ],
+          "opposite_resolved_directions": false,
+          "supported": false,
+          "terminal": {
+            "estimand_count": 9,
+            "estimand_ids": [
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=20|c=0p5",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=20|c=1",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=20|c=2",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=0p5",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=1",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=40|c=2",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=80|c=0p5",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=80|c=1",
+              "A|cKG-minus-tmse|terminal_true_boundary_exceedance_pct|N=80|c=2"
+            ],
+            "negative_count": 0,
+            "positive_count": 8,
+            "resolved_same_direction": false,
+            "state": "mixed",
+            "unresolved_count": 1
+          }
+        }
+      }
+    },
+    "shared_gate_history_cells": [
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 20,
+        "c_sigma": 0.5,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "negative",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 20,
+        "c_sigma": 0.5,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|panel_brier_score_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|panel_brier_score_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=20|c=0p5-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 40,
+        "c_sigma": 0.5,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "negative",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": true,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 40,
+        "c_sigma": 0.5,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|panel_brier_score_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|panel_brier_score_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|panel_brier_score_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=40|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 80,
+        "c_sigma": 0.5,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "negative",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": true,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 80,
+        "c_sigma": 0.5,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|panel_brier_score_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|panel_brier_score_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|panel_brier_score_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=80|c=0p5-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 20,
+        "c_sigma": 2.0,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=20|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": true,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 20,
+        "c_sigma": 2.0,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=20|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|panel_brier_score_pct|N=20|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|panel_brier_score_pct|N=20|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=20|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 40,
+        "c_sigma": 2.0,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=40|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": true,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 40,
+        "c_sigma": 2.0,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=40|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|panel_brier_score_pct|N=40|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|panel_brier_score_pct|N=40|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|panel_brier_score_pct|N=40|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=40|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=40|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=40|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 80,
+        "c_sigma": 2.0,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "terminal_target_exclusion_pct",
+        "metric_label": "True panel OBD excluded from terminal gate (%)",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|terminal_target_exclusion_pct|N=80|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      },
+      {
+        "all_four_policy_penalties_guarded_positive": false,
+        "all_three_policy_vs_cEI_differentials_guarded_unresolved": false,
+        "any_policy_vs_cEI_differential_guarded_resolved": true,
+        "budget": 80,
+        "c_sigma": 2.0,
+        "inference_scope": "this factor-budget-metric cell only; no majority vote or family theorem",
+        "metric": "panel_brier_score_pct",
+        "metric_label": "Panel feasibility Brier score ×100",
+        "policy_penalties": [
+          {
+            "estimand_id": "B|cKG-exact-formal|panel_brier_score_pct|N=80|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "B|tmse|panel_brier_score_pct|N=80|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "B|qBIG|panel_brier_score_pct|N=80|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          },
+          {
+            "estimand_id": "B|cEI|panel_brier_score_pct|N=80|c=2-minus-1",
+            "guarded_classification": "unresolved",
+            "policy": "cEI",
+            "policy_label": "cEI"
+          }
+        ],
+        "policy_vs_cEI_differentials": [
+          {
+            "estimand_id": "D|cKG-exact-formal-minus-cEI|panel_brier_score_pct|N=80|c=2-minus-1",
+            "guarded_classification": "negative",
+            "policy": "cKG-exact-formal",
+            "policy_label": "cKG"
+          },
+          {
+            "estimand_id": "D|tmse-minus-cEI|panel_brier_score_pct|N=80|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "tmse",
+            "policy_label": "tMSE-only"
+          },
+          {
+            "estimand_id": "D|qBIG-minus-cEI|panel_brier_score_pct|N=80|c=2-minus-1",
+            "guarded_classification": "positive",
+            "policy": "qBIG",
+            "policy_label": "Entropy reduction"
+          }
+        ],
+        "reader_code": "policy_history_modification_resolved",
+        "shared_gate_fragility_compatible": false
+      }
+    ],
+    "tmse_only_and_entropy_same_scope": {
+      "budget_robust_within_c_sigma": {
+        "0.5": false,
+        "1": false,
+        "2": false
+      },
+      "calibration_robust_at_N40": false,
+      "robust_over_evaluated_3x3_grid": false,
+      "rule": "tMSE-only and Entropy reduction must each meet the same frozen scope"
+    }
+  },
+  "interpretation_rules": {
+    "band_classification": {
+      "negative": "numerically guarded simultaneous upper endpoint is strictly below zero",
+      "positive": "numerically guarded simultaneous lower endpoint is strictly above zero",
+      "unresolved": "numerically guarded simultaneous band includes zero, including an endpoint exactly equal to zero"
+    },
+    "budget_robust_within_factor": "terminal and assignment directions are each guarded-resolved consistently and are opposite at N=20, 40, and 80 for that c_sigma",
+    "calibration_robust_at_N40": "terminal and assignment directions are each guarded-resolved consistently and are opposite at all three c_sigma values at N=40",
+    "finite_range_attenuation": "Family-B N=20 penalty is guarded-positive and the matched Family-C interaction is guarded-negative over the evaluated N=20 to N=80 range",
+    "full_grid_robust": "terminal and assignment directions are each guarded-resolved consistently and are opposite in all nine evaluated budget-by-c_sigma cells",
+    "principal_comparators_are_separate": [
+      "tmse",
+      "qBIG"
+    ],
+    "prohibited_inferences": [
+      "sameness from an interval that includes zero",
+      "behavior outside the three evaluated finite snapshots",
+      "a clinical enrollment requirement from per-stratum simulated enrollment",
+      "robustness to model errors outside the frozen toxicity-noise-SD perturbation",
+      "a four-policy ranking from the cEI shared-gate reference"
+    ],
+    "secondary_interval_classification": {
+      "negative": "numerically guarded pointwise upper endpoint is strictly below zero",
+      "positive": "numerically guarded pointwise lower endpoint is strictly above zero",
+      "unavailable": "the frozen conditional diagnostic has no eligible denominator",
+      "unresolved": "numerically guarded pointwise interval includes zero, including an endpoint exactly equal to zero"
+    },
+    "shared_gate_history_compatibility": "Within one frozen factor-budget-metric cell, guarded-positive calibration penalties for all four policies together with unresolved guarded policy-vs-cEI differentials are compatible with shared-gate fragility; any guarded-resolved differential shows that policy-induced histories modify sensitivity"
+  },
+  "limitations": [
+    "sameness from an interval that includes zero",
+    "behavior outside the three evaluated finite snapshots",
+    "a clinical enrollment requirement from per-stratum simulated enrollment",
+    "robustness to model errors outside the frozen toxicity-noise-SD perturbation",
+    "a four-policy ranking from the cEI shared-gate reference"
+  ],
+  "mcse": {
+    "all_guarded_meet_target": false,
+    "guarded_maximum_points": 1.7438971743510048,
+    "guarded_meeting_target_count": 111,
+    "guarded_not_meeting_target_count": 7,
+    "raw_maximum_points": 1.7438971743510048,
+    "raw_meeting_target_count": 111,
+    "raw_not_meeting_target_count": 7,
+    "scientific_target_source": "guarded MCSE",
+    "target_points": 1.5
+  },
+  "multiplicity": {
+    "family_max_t_critical_95": {
+      "A": 3.2377110269244023,
+      "B": 3.2143583464120637,
+      "C": 2.9314372722396795
+    },
+    "family_max_t_draws": {
+      "A": 100000,
+      "B": 100000,
+      "C": 100000
+    },
+    "guarded_simultaneous_band_classification_counts": {
+      "negative": 29,
+      "positive": 66,
+      "unresolved": 23
+    },
+    "plotted_secondary_guarded_pointwise_classification_counts": {
+      "negative": 0,
+      "positive": 72,
+      "unavailable": 0,
+      "unresolved": 0
+    },
+    "pointwise_t_critical_95": 1.9647293909876649
+  },
+  "numerical_guards": {
+    "primary": {
+      "eta": 1.4901161193847656e-08,
+      "eta_formula": "2^-26 = sqrt(binary64_epsilon)",
+      "family_B_brier_replicate_bound_formula": "400 * eta",
+      "family_B_brier_replicate_bound_points": 5.9604644775390625e-06,
+      "family_C_brier_interaction_bound_formula": "800 * eta",
+      "family_C_brier_interaction_bound_points": 1.1920928955078125e-05,
+      "guarded_mcse_formula": "raw_mcse_points + mcse_guard_points",
+      "maximum_M": 1000,
+      "mcse_guard_formula": "replicate_bound_points / sqrt(cumulative_M - 1)",
+      "panel_brier_snapshot_bound_formula": "200 * eta",
+      "panel_brier_snapshot_bound_points": 2.9802322387695312e-06,
+      "row_guard_classes": [
+        {
+          "applies_to": "all locked non-Brier primary rows",
+          "replicate_bound_points": 0.0,
+          "row_guard_class": "exact_discrete_primary_contribution"
+        },
+        {
+          "applies_to": "Family B panel-Brier differences",
+          "replicate_bound_points": 5.9604644775390625e-06,
+          "row_guard_class": "family_B_panel_brier_difference"
+        },
+        {
+          "applies_to": "Family C panel-Brier differences-in-differences",
+          "replicate_bound_points": 1.1920928955078125e-05,
+          "row_guard_class": "family_C_panel_brier_difference_in_differences"
+        }
+      ],
+      "schema_version": 1,
+      "threshold_points": 1.5,
+      "threshold_rule": "all guarded_mcse_points <= threshold_points; top up the whole factorial from M=200 to 500 or from M=500 to 1000; at M=1000 stop and retain any rows over threshold",
+      "whole_factorial_top_up": [
+        {
+          "from_M": 200,
+          "to_M": 500
+        },
+        {
+          "from_M": 500,
+          "to_M": 1000
+        }
+      ]
+    },
+    "primary_scientific_interval_source": "guarded simultaneous 95% band only",
+    "secondary": {
+      "eta": 1.4901161193847656e-08,
+      "eta_expression": "2^-26",
+      "guarded_pointwise_interval_fields": [
+        "guarded_ci95_low",
+        "guarded_ci95_high"
+      ],
+      "guarded_pointwise_interval_formula": "guarded_low = raw_ci95_low - h; guarded_high = raw_ci95_high + h",
+      "guarded_scientific_sign_rule": "positive iff guarded_low > 0; negative iff guarded_high < 0; otherwise unresolved, including an endpoint exactly equal to zero",
+      "mcse_numerical_guard_formula": "a = b/sqrt(M-1)",
+      "pointwise_numerical_halfwidth_guard_formula": "h = b + t_crit*a",
+      "raw_pointwise_interval_fields": [
+        "ci95_low",
+        "ci95_high"
+      ],
+      "row_guard_classes": {
+        "secondary_absolute_panel_brier_snapshot": {
+          "applies_to": "absolute_equal_gate_stratum_profile",
+          "bound_expression": "delta0 = 200*eta",
+          "replicate_numerical_bound_points": 2.9802322387695312e-06
+        },
+        "secondary_non_brier_zero_guard": {
+          "applies_to": "every non-Brier secondary row",
+          "bound_expression": "0",
+          "replicate_numerical_bound_points": 0.0
+        },
+        "secondary_policy_vs_cEI_panel_brier_calibration_did": {
+          "applies_to": "policy_minus_cEI_calibration_difference_in_differences",
+          "bound_expression": "4*delta0 = 800*eta",
+          "replicate_numerical_bound_points": 1.1920928955078125e-05
+        },
+        "secondary_within_policy_N80_minus_N20_panel_brier_contrast": {
+          "applies_to": "absolute_budget_contrast_N80_minus_N20",
+          "bound_expression": "2*delta0 = 400*eta",
+          "replicate_numerical_bound_points": 5.9604644775390625e-06
+        }
+      },
+      "schema_version": 1,
+      "unit": "percentage points for panel_brier_score_pct; zero otherwise"
+    },
+    "secondary_scientific_interval_source": "guarded pointwise 95% interval only"
+  },
+  "primary_estimand_count": 118,
+  "primary_family_counts": {
+    "A": 54,
+    "B": 48,
+    "C": 16
+  },
+  "published_policy_vs_cEI_calibration_did_count": 36,
+  "reader_labels": {
+    "audit_scope": "Finite fixed-design audit",
+    "c_sigma_axis": "Assumed / true toxicity observation-noise SD, c_sigma",
+    "difference_axis": "Difference (percentage points)",
+    "metric_assignment": "Above-boundary assignments / N (%)",
+    "metric_brier": "Panel feasibility Brier score ×100",
+    "metric_exclusion": "True panel OBD excluded from terminal gate (%)",
+    "metric_terminal": "True-boundary-exceeding terminal recommendation (%)",
+    "x_budget": "Per-stratum simulated enrollment N"
+  },
+  "schema_version": 3,
+  "status": "COMPLETE_BUDGET_TOXICITY_CALIBRATION_RESULT_FACTS"
+}

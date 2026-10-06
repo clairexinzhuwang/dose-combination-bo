@@ -1,0 +1,58 @@
+{
+  "analysis": {
+    "axis_limits": "derived from every displayed mean plus or minus one MCSE",
+    "directional_assertion": null,
+    "displayed_summary_rows": 20,
+    "dose_access": "full_panel",
+    "error_bars": "plus or minus one Monte Carlo standard error across seeds",
+    "estimand": "mean dose-units by policy, stratum, and threshold",
+    "gate_mode": "latent",
+    "independent_seeds_per_cell": 100,
+    "input_factorial_rows": 24000,
+    "legacy_correspondence": "fig2_precision.pdf",
+    "policies": [
+      "cEI",
+      "cKG"
+    ],
+    "role": "candidate journal SI figure",
+    "selected_trial_rows": 2000,
+    "simulator": "osa",
+    "strata": [
+      0,
+      1
+    ],
+    "tau_levels": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ]
+  },
+  "artifact_bytes": 26718,
+  "artifact_class": "journal_supplement_figure_candidate",
+  "artifact_filename": "si_osa_dose_selection_precision_by_threshold.pdf",
+  "artifact_sha256": "768ebdda13fca886aa4cf75808ffff0a45ef1862fd409a3ce6a889c025cb59d9",
+  "artifact_type": "vector_figure_pdf",
+  "generator_files_sha256": {
+    "analysis_record_bundle.py": "855c760491b06d74dd87d08ae60a5190689005b4ca0bcd0fc0fea623bf1b154c",
+    "figure_artifacts.py": "5a2cbbe2cd9f52d0d13c57846f46e1f3ce7681c8fb4da05b3c984392b21f1eb8",
+    "make_fig2.py": "ad857c86650af5d17c16476930cab2ff33b5d59cdedb72e6ecaf193596974bf0"
+  },
+  "input_records": {
+    "gate_sixway_supplemental.json.zst": {
+      "compressed_bytes": 878479,
+      "compressed_sha256": "8dbf520c2c7adc8fb4fc9c6a9253a6ddccd2e580c81636b041426e0d332197f0",
+      "rows": 24000,
+      "uncompressed_bytes": 21919441,
+      "uncompressed_sha256": "4734e8a6cd4696ebeb048e3c21505f2588f8a89fade479eafc917ff187e2c2cd"
+    }
+  },
+  "projection": {
+    "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+    "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+    "projection_metadata_path": "formal_projection.metadata.json",
+    "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf"
+  },
+  "schema_version": 1
+}

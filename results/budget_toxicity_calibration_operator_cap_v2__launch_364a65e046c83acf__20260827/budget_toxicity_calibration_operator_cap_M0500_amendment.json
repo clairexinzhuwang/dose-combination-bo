@@ -1,0 +1,110 @@
+{
+  "amended_terminal_rule": {
+    "effective_next_M": null,
+    "if_original_next_M_1000": "terminate_due_to_operator_cap_and_disclose_all_unresolved_guarded_precision_targets",
+    "no_precision_pass_may_be_fabricated": true,
+    "original_precision_decision_must_remain_immutable": true,
+    "precision_threshold_unchanged": true,
+    "stop_after_complete_balanced_M0500": true
+  },
+  "artifact_class": "result_blind_operator_cap_amendment",
+  "audit_id": "operator-cap-M0500-63e96c3afbee45a9",
+  "bindings": {
+    "absence_evidence": {
+      "m0500_precision_envelope_absent": true,
+      "m1000_artifacts_absent": true
+    },
+    "amendment_generator_sha256": "aafe5eaa13222ba2c108cf2dc656fb324ef9d63ea1f21665d98814997b3e0e7a",
+    "amendment_schema_sha256": "c5aba84194d7600261222ce5950a096b8980a85e5c2af9cc9743614ccf803034",
+    "baseline_identity_M0200": {
+      "artifact": {
+        "bytes": 3840,
+        "path": "results/budget_toxicity_calibration_staging/baseline/budget_toxicity_calibration_baseline_identity_M0200.json.zst",
+        "sha256": "4737aa29bf793a8a99de49689188c24622bbf8fa6aa18bd94fa3b3e5a8b95dff"
+      },
+      "commit": {
+        "bytes": 599,
+        "path": "results/budget_toxicity_calibration_staging/baseline/budget_toxicity_calibration_baseline_identity_M0200.json.zst.commit.json",
+        "sha256": "25e3ca17283ec497034bad6c5f22365494b072b23ddd2618ec33dbe3edf53d08"
+      },
+      "metadata": {
+        "bytes": 12376,
+        "path": "results/budget_toxicity_calibration_staging/baseline/budget_toxicity_calibration_baseline_identity_M0200.json.zst.metadata.json",
+        "sha256": "44b8141267ee87513c00a524f54359524fc4b89b35153dae5b3ab84df75a21cf"
+      }
+    },
+    "frozen_source_hashes": {
+      "paper/analyze_budget_toxicity_calibration_audit.py": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+      "paper/budget_toxicity_calibration_core.py": "da51663bb6a6ae8e0bf1ceff4f6168d71d5ad71ceb3b193907c72c04ad0a7558",
+      "paper/budget_toxicity_calibration_manifest.json": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+      "paper/budget_toxicity_calibration_prespec.md": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178",
+      "paper/budget_toxicity_calibration_publication_contract.json": "a1904b435d4e42ef6df25094bc1f3ce35156ceaec5bf157ec24fb2ff2827b6a8",
+      "paper/generate_budget_toxicity_calibration_publication.py": "e14c2464f586f3abb805bfa24bb47f2ecc61a93e7405e0cb51489d497c6aa919",
+      "paper/monitor_budget_toxicity_calibration_precision.py": "3994535bc1e2c300388c2d161d326e66f6185452971075e8d7bc9caf76bb07e0",
+      "paper/run_budget_toxicity_calibration_audit.py": "c36420dc8a37c8a538ecba3b8d5d82753d428fb0eb4074dbe97baf83e474365d"
+    },
+    "manifest_sha256": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+    "precision_M0200": {
+      "artifact": {
+        "bytes": 6693,
+        "path": "results/budget_toxicity_calibration_staging/precision/budget_toxicity_calibration_precision_M0200.json.zst",
+        "sha256": "4adc82fe019bbbc8bcc4df814bd561ef21c9738a6568021dc3a99da9e550524c"
+      },
+      "commit": {
+        "bytes": 632,
+        "path": "results/budget_toxicity_calibration_staging/precision/budget_toxicity_calibration_precision_M0200.json.zst.commit.json",
+        "sha256": "6dcc136436af0a8adb036c2ec18dc7ecaaa33543e7d00ccc0b008fa0a76a6a16"
+      },
+      "metadata": {
+        "bytes": 13815,
+        "path": "results/budget_toxicity_calibration_staging/precision/budget_toxicity_calibration_precision_M0200.json.zst.metadata.json",
+        "sha256": "f364c621254905c2f85fb59bfcf524ca5e429471e79eba48241ba6d2f739198b"
+      }
+    },
+    "prespec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178",
+    "superseded_amendment": {
+      "reason": "superseded_due_to_authentication_hardening",
+      "trio": {
+        "artifact": {
+          "bytes": 4825,
+          "path": "results/budget_toxicity_calibration_operator_cap__launch_364a65e046c83acf__20260827/budget_toxicity_calibration_operator_cap_M0500_amendment.json",
+          "sha256": "90eb4a64da603b41b2aaa54f86fa5ceede70fbf57e8612b1d617ff5d6be21c27"
+        },
+        "commit": {
+          "bytes": 703,
+          "path": "results/budget_toxicity_calibration_operator_cap__launch_364a65e046c83acf__20260827/budget_toxicity_calibration_operator_cap_M0500_amendment.json.commit.json",
+          "sha256": "e9f2bf730b81dc9b77c25bbfa7385e82f679f832c569a133a602d598902018fb"
+        },
+        "metadata": {
+          "bytes": 890,
+          "path": "results/budget_toxicity_calibration_operator_cap__launch_364a65e046c83acf__20260827/budget_toxicity_calibration_operator_cap_M0500_amendment.json.metadata.json",
+          "sha256": "c48ad477d3f872d552714b97b66e8d90a3e2e6ef2cafad1320ba6259193fc1c3"
+        }
+      }
+    },
+    "user_directive_sha256": "b7ad263b582abcfc5fe830f32f371d066e1921337c9e85ac891b4eae52a1cc6e"
+  },
+  "cap_cumulative_M": 500,
+  "declaration_phase": "M0500_TOPUP_IN_PROGRESS_BEFORE_M0500_PRECISION_MONITOR",
+  "declared_at_utc": "2026-08-27T22:01:08.035616Z",
+  "launch_fingerprint": "364a65e046c83acf5458885e8b07e2cb3de441c5ba01f0a1d02e6f59f6d3e0a5",
+  "original_frozen_rule": {
+    "guarded_mcse_threshold_points": 1.5,
+    "initial_M": 200,
+    "intermediate_M": 500,
+    "maximum_M": 1000,
+    "threshold_rule": "all_118_primary_estimands_guarded_mcse_at_most_1.5_points"
+  },
+  "prohibited_seed_blocks": [
+    "M1000_TOPUP"
+  ],
+  "result_blindness_assertion": {
+    "decision_basis": "operator_compute_cap_not_M0500_result",
+    "m0200_precision_decision_was_known": true,
+    "m0500_precision_decision_available": false,
+    "m0500_scientific_effects_inspected": false,
+    "user_directive": "ok最多就这个了不再追加。"
+  },
+  "schema_version": 1,
+  "status": "DECLARED_BUDGET_TOXICITY_CALIBRATION_OPERATOR_CAP"
+}

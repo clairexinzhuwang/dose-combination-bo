@@ -1,0 +1,18 @@
+{
+  "artifacts": {
+    "qbig_quadrature_representative_audit.json": {
+      "bytes": 556960,
+      "sha256": "3c156f473e1063d5096fa3a05b458cb05e9b428d7b49d14bea8223e840fd1a7e"
+    },
+    "qbig_quadrature_representative_audit_states.csv": {
+      "bytes": 77680,
+      "rows_excluding_header": 432,
+      "sha256": "9d8c4fecc4a9d7ed92b68962428b88d245fd9bbc7ea449a8a1636bce3054da64"
+    }
+  },
+  "conclusion": "decision-stable representative audit, not exact integration or universal guarantee",
+  "schema_version": 1,
+  "status": "COMMITTED_QBIG_QUADRATURE_REPRESENTATIVE_AUDIT",
+  "validator_source": "paper/validate_qbig_quadrature.py",
+  "validator_source_sha256": "6ac7b94213f945ded72007adfcf8f4ac2ef5e51683226e90acdb1ea89fc234b6"
+}

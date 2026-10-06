@@ -1,0 +1,7 @@
+sim,gamma,policy_a,policy_b,metric,recommendation_conditional,difference_mean,difference_se,n,n_pairs,label,tier,contrast,protocol_scaffold,eligible_pair_n,eligible_seed_n,ci95_low,ci95_high
+osa,0.7,cKG,cEI-tMSE,rec_true_eff,True,-0.3559252929687503,0.221956494670877,200,385,Recommended efficacy | recommend,primary,cKG − cEI–tMSE,start_low_expansion,385,200,-0.7909600225236693,0.07910943658616859
+osa,0.7,cKG,cEI-tMSE,all_trial_unsafe,False,0.1025,0.02359027885128548,200,400,"True-boundary-exceeding final recommendation, all trials",primary,cKG − cEI–tMSE,start_low_expansion,400,200,0.05626305345148046,0.14873694654851954
+osa,0.7,cKG,cEI-tMSE,dose_units,True,0.19618258817439774,0.058878327068165745,200,385,Dose-location error | recommend,secondary,cKG − cEI–tMSE,start_low_expansion,385,200,0.08078106712079287,0.3115841092280026
+osa,0.7,cKG,cEI-tMSE,no_feasible_dose,False,0.0175,0.008950941108825838,200,400,Feasibility stop,secondary,cKG − cEI–tMSE,start_low_expansion,400,200,-4.3844573298638945e-05,0.03504384457329864
+osa,0.7,cKG,cEI-tMSE,post_initialization_patients_above,False,-2.61,0.25329883834620653,200,400,Post-initialization above-boundary simulated assignments,secondary,cKG − cEI–tMSE,start_low_expansion,400,200,-3.1064657231585646,-2.113534276841435
+osa,0.7,cKG,cEI-tMSE,n_enrolled,False,-0.495,0.252226019324178,200,400,Sample size,secondary,cKG − cEI–tMSE,start_low_expansion,400,200,-0.9893629978753888,-0.0006370021246111524

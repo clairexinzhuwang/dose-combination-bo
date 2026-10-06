@@ -1,0 +1,7 @@
+sim,gamma,policy_a,policy_b,metric,scaffold_a,scaffold_b,recommendation_conditional,interaction_mean,interaction_se,n,n_pairs,label,contrast,eligible_pair_n,eligible_seed_n,ci95_low,ci95_high
+osa,0.7,cKG,cEI-tMSE,rec_true_eff,start_low_expansion,lhs_fixed,True,-0.7642866210937505,0.28513218339540347,200,385,Recommended efficacy | recommend,cKG − cEI–tMSE,385,200,-1.3231457005487413,-0.20542754163875965
+osa,0.9,cKG,cEI-tMSE,rec_true_eff,start_low_expansion,lhs_fixed,True,-0.2867446831597221,0.27443277503058333,180,322,Recommended efficacy | recommend,cKG − cEI–tMSE,322,180,-0.8246329222196654,0.2511435559002212
+osa,0.7,cKG,cEI-tMSE,all_trial_unsafe,start_low_expansion,lhs_fixed,False,-0.025,0.031850388320723885,200,400,"True-boundary-exceeding final recommendation, all trials",cKG − cEI–tMSE,400,200,-0.08742676110861881,0.03742676110861881
+osa,0.9,cKG,cEI-tMSE,all_trial_unsafe,start_low_expansion,lhs_fixed,False,0.0075,0.018914479577520557,200,400,"True-boundary-exceeding final recommendation, all trials",cKG − cEI–tMSE,400,200,-0.029572379971940295,0.044572379971940294
+osa,0.7,cKG,cEI-tMSE,dose_units,start_low_expansion,lhs_fixed,True,0.21349584650625653,0.07810437134705045,200,385,Dose-location error | recommend,cKG − cEI–tMSE,385,200,0.060411278666037654,0.36658041434647537
+osa,0.9,cKG,cEI-tMSE,dose_units,start_low_expansion,lhs_fixed,True,0.07207926760450571,0.07570808440956193,180,322,Dose-location error | recommend,cKG − cEI–tMSE,322,180,-0.07630857783823568,0.2204671130472471

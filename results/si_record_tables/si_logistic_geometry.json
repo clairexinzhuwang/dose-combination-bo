@@ -1,0 +1,117 @@
+{
+  "columns": [
+    "sim",
+    "policy",
+    "tau",
+    "dose_units_mean",
+    "dose_units_mcse",
+    "above_threshold_recommendation_pct_mean",
+    "above_threshold_recommendation_pct_mcse",
+    "independent_seeds"
+  ],
+  "estimand": {
+    "aggregation": "strata averaged within seed before Monte Carlo SE across seeds",
+    "displayed_thresholds": [
+      0.5,
+      0.7,
+      0.9
+    ]
+  },
+  "rows": [
+    {
+      "above_threshold_recommendation_pct_mcse": 3.352595858420604,
+      "above_threshold_recommendation_pct_mean": 21.5,
+      "dose_units_mcse": 0.03598747661209091,
+      "dose_units_mean": 1.1592504306442422,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "sim": "efftox",
+      "tau": 0.5
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 4.085883557377088,
+      "above_threshold_recommendation_pct_mean": 41.5,
+      "dose_units_mcse": 0.05495682057484976,
+      "dose_units_mean": 1.399308034182146,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "sim": "efftox",
+      "tau": 0.5
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 3.07277060515737,
+      "above_threshold_recommendation_pct_mean": 15.5,
+      "dose_units_mcse": 0.030534307638870634,
+      "dose_units_mean": 1.100846118275458,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "sim": "efftox",
+      "tau": 0.5
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.5912634880780585,
+      "above_threshold_recommendation_pct_mean": 10.5,
+      "dose_units_mcse": 0.032201215463555026,
+      "dose_units_mean": 1.1814282605606006,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "sim": "efftox",
+      "tau": 0.7
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 3.2114064384831935,
+      "above_threshold_recommendation_pct_mean": 23.0,
+      "dose_units_mcse": 0.046797498138983734,
+      "dose_units_mean": 1.3039801576878978,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "sim": "efftox",
+      "tau": 0.7
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.5912634880780585,
+      "above_threshold_recommendation_pct_mean": 10.5,
+      "dose_units_mcse": 0.035152470283735616,
+      "dose_units_mean": 1.1524890725957173,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "sim": "efftox",
+      "tau": 0.7
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.8333333333333333,
+      "above_threshold_recommendation_pct_mean": 6.5,
+      "dose_units_mcse": 0.027100362051088494,
+      "dose_units_mean": 1.2208461112424605,
+      "independent_seeds": 100,
+      "policy": "cEI",
+      "sim": "efftox",
+      "tau": 0.9
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.929960485281363,
+      "above_threshold_recommendation_pct_mean": 7.5,
+      "dose_units_mcse": 0.03222185405104502,
+      "dose_units_mean": 1.2630479261415148,
+      "independent_seeds": 100,
+      "policy": "cKG",
+      "sim": "efftox",
+      "tau": 0.9
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.780931546050317,
+      "above_threshold_recommendation_pct_mean": 6.0,
+      "dose_units_mcse": 0.02591106081478774,
+      "dose_units_mean": 1.1997806665977444,
+      "independent_seeds": 100,
+      "policy": "cEI-tMSE",
+      "sim": "efftox",
+      "tau": 0.9
+    }
+  ],
+  "schema_version": 2,
+  "source_record_files": [
+    "efftox_main.json.zst"
+  ],
+  "table_id": "logistic_geometry"
+}

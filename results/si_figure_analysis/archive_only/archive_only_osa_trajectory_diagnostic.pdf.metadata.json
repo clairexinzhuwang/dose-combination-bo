@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "axis_limits": "derived separately for every outcome from all means +/-1 MCSE",
+    "design_identity": "80 seeds x 2 strata x 3 policies",
+    "directional_assertion": null,
+    "displayed_states_per_curve": 19,
+    "displayed_summary_rows": 171,
+    "final_state_source": "terminal fields in the trial record at n=40",
+    "input_trial_rows": 480,
+    "legacy_correspondence": "fig_traj.pdf",
+    "role": "archive/GitHub-only diagnostic; excluded from manuscript and SI",
+    "serialized_states_per_trial_row": 18,
+    "stopping_rule_claim": null,
+    "tau": 0.7
+  },
+  "artifact_bytes": 39789,
+  "artifact_class": "archive_only_github_diagnostic_not_manuscript",
+  "artifact_filename": "archive_only_osa_trajectory_diagnostic.pdf",
+  "artifact_sha256": "6a0e4f288f79c092370bac191e554468c2830655d93a0acb1a1ad24ae8a5bfb6",
+  "artifact_type": "diagnostic_vector_figure_pdf",
+  "generator_files_sha256": {
+    "analysis_record_bundle.py": "855c760491b06d74dd87d08ae60a5190689005b4ca0bcd0fc0fea623bf1b154c",
+    "figure_artifacts.py": "5a2cbbe2cd9f52d0d13c57846f46e1f3ce7681c8fb4da05b3c984392b21f1eb8",
+    "make_traj.py": "02ee3d14815584d87d446d2f6bdf448a0535d4f33b17d290230857713c353dc2"
+  },
+  "input_records": {
+    "osa_trajectory_supplemental.json.zst": {
+      "compressed_bytes": 110462,
+      "compressed_sha256": "a7506226c0fb91a4cecd59a16a1efc8a7b9947ac1421fdf07dd1c7e97cd21afa",
+      "rows": 480,
+      "uncompressed_bytes": 811802,
+      "uncompressed_sha256": "13a62835ad278a1684f8318b208d14b65d68202efb0812feb7fc4e7bd3041b8c"
+    }
+  },
+  "projection": {
+    "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+    "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+    "projection_metadata_path": "formal_projection.metadata.json",
+    "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf"
+  },
+  "schema_version": 1
+}

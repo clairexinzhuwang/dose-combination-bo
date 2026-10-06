@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Please cite dose-combination-bo and the companion manuscript."
+title: "dose-combination-bo"
+type: software
+authors:
+  - family-names: Wang
+    given-names: Xinzhu
+version: "0.2.1rc5"
+license: MIT
+repository-code: "https://github.com/clairexinzhuwang/dose-combination-bo"
+references:
+  - type: unpublished
+    title: "Bayesian Optimization for Dose Finding with Two Agents: Participant Allocation and Final Selection"
+    authors:
+      - family-names: Wang
+        given-names: Xinzhu
+      - family-names: Love
+        given-names: Tanzy
+    year: 2026

@@ -1,0 +1,204 @@
+{
+  "columns": [
+    "tau",
+    "stratum",
+    "policy",
+    "above_threshold_recommendation_pct_mean",
+    "above_threshold_recommendation_pct_mcse",
+    "above_boundary_assignments_pct_mean",
+    "above_boundary_assignments_pct_mcse",
+    "independent_seeds"
+  ],
+  "estimand": {
+    "aggregation": "one row per seed in each policy-by-stratum-by-threshold cell",
+    "assignment_denominator": "each trial's stored budget field",
+    "assignment_unit": "percentage of simulated assignments"
+  },
+  "rows": [
+    {
+      "above_boundary_assignments_pct_mcse": 1.320070889961071,
+      "above_boundary_assignments_pct_mean": 22.8625,
+      "above_threshold_recommendation_pct_mcse": 3.109395714370031,
+      "above_threshold_recommendation_pct_mean": 26.0,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.960984743445846,
+      "above_boundary_assignments_pct_mean": 27.8625,
+      "above_threshold_recommendation_pct_mcse": 3.431856376795913,
+      "above_threshold_recommendation_pct_mean": 37.5,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 1.2020812014269753,
+      "above_boundary_assignments_pct_mean": 35.5375,
+      "above_threshold_recommendation_pct_mcse": 2.8617649261360225,
+      "above_threshold_recommendation_pct_mean": 20.5,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 1.3098954175907045,
+      "above_boundary_assignments_pct_mean": 18.525,
+      "above_threshold_recommendation_pct_mcse": 2.598801424545766,
+      "above_threshold_recommendation_pct_mean": 16.0,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.7796061852115468,
+      "above_boundary_assignments_pct_mean": 25.225,
+      "above_threshold_recommendation_pct_mcse": 3.263741725420573,
+      "above_threshold_recommendation_pct_mean": 30.5,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.851439809231233,
+      "above_boundary_assignments_pct_mean": 30.6,
+      "above_threshold_recommendation_pct_mcse": 2.887331539169935,
+      "above_threshold_recommendation_pct_mean": 21.0,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.9887713652882906,
+      "above_boundary_assignments_pct_mean": 18.4875,
+      "above_threshold_recommendation_pct_mcse": 2.422414178513102,
+      "above_threshold_recommendation_pct_mean": 13.5,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.8865617164843508,
+      "above_boundary_assignments_pct_mean": 20.2375,
+      "above_threshold_recommendation_pct_mcse": 2.8617649261360225,
+      "above_threshold_recommendation_pct_mean": 20.5,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 1.022390276822263,
+      "above_boundary_assignments_pct_mean": 25.9125,
+      "above_threshold_recommendation_pct_mcse": 1.8086892447072265,
+      "above_threshold_recommendation_pct_mean": 7.000000000000001,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 1.1380303446422828,
+      "above_boundary_assignments_pct_mean": 15.15,
+      "above_threshold_recommendation_pct_mcse": 1.6834995854681276,
+      "above_threshold_recommendation_pct_mean": 6.0,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.6482097495386697,
+      "above_boundary_assignments_pct_mean": 17.6,
+      "above_threshold_recommendation_pct_mcse": 2.7525684670556596,
+      "above_threshold_recommendation_pct_mean": 18.5,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.8846808327749601,
+      "above_boundary_assignments_pct_mean": 22.475,
+      "above_threshold_recommendation_pct_mcse": 1.7475754920753817,
+      "above_threshold_recommendation_pct_mean": 6.5,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.8928276287297092,
+      "above_boundary_assignments_pct_mean": 17.1125,
+      "above_threshold_recommendation_pct_mcse": 1.5449707678033373,
+      "above_threshold_recommendation_pct_mean": 5.0,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.879865778223271,
+      "above_boundary_assignments_pct_mean": 17.1875,
+      "above_threshold_recommendation_pct_mcse": 1.747575492075382,
+      "above_threshold_recommendation_pct_mean": 6.5,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.8860266275193804,
+      "above_boundary_assignments_pct_mean": 19.2125,
+      "above_threshold_recommendation_pct_mcse": 0.99243368701167,
+      "above_threshold_recommendation_pct_mean": 2.0,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 1.041380027563927,
+      "above_boundary_assignments_pct_mean": 13.7,
+      "above_threshold_recommendation_pct_mcse": 0.8616625276509298,
+      "above_threshold_recommendation_pct_mean": 1.5,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 1,
+      "tau": 0.9
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 0.728922847486577,
+      "above_boundary_assignments_pct_mean": 13.375,
+      "above_threshold_recommendation_pct_mcse": 1.6161092305986409,
+      "above_threshold_recommendation_pct_mean": 5.5,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 1,
+      "tau": 0.9
+    },
+    {
+      "above_boundary_assignments_pct_mcse": 1.0396716238443442,
+      "above_boundary_assignments_pct_mean": 17.65,
+      "above_threshold_recommendation_pct_mcse": 1.747575492075382,
+      "above_threshold_recommendation_pct_mean": 6.5,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 1,
+      "tau": 0.9
+    }
+  ],
+  "schema_version": 2,
+  "source_record_files": [
+    "osa_main.json.zst"
+  ],
+  "table_id": "osa_tradeoff"
+}

@@ -1,0 +1,30 @@
+\begin{tabular}{@{}llrrrrr@{}}
+\multicolumn{7}{@{}l}{\textit{Panel A: all $2M=400$ stratum-specific simulated trials per policy--protocol cell}}\\[2pt]
+\toprule
+Protocol & Policy & Recommend (\%) & Stop (\%) & \shortstack{True-boundary-\\exceeding final rec. (\%)} & \shortstack{Post-init. above-\\boundary simulated\\assignments} & \shortstack{Mean\\$N_{\mathrm{obs}}$} \\
+\midrule
+All combinations available & cEI & 100.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 & 9.8 $\pm$ 1.6 & 5.19 $\pm$ 0.33 & 40.0 $\pm$ 0.0 \\
+All combinations available & cKG & 100.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 & 19.5 $\pm$ 2.1 & 6.03 $\pm$ 0.24 & 40.0 $\pm$ 0.0 \\
+All combinations available & cEI--tMSE & 100.0 $\pm$ 0.0 & 0.0 $\pm$ 0.0 & 6.8 $\pm$ 1.3 & 8.14 $\pm$ 0.32 & 40.0 $\pm$ 0.0 \\
+\addlinespace
+Gradual expansion & cEI & 99.0 $\pm$ 0.5 & 1.0 $\pm$ 0.5 & 10.2 $\pm$ 1.5 & 3.81 $\pm$ 0.19 & 39.7 $\pm$ 0.1 \\
+Gradual expansion & cKG & 97.0 $\pm$ 0.8 & 3.0 $\pm$ 0.8 & 18.5 $\pm$ 2.1 & 6.46 $\pm$ 0.21 & 39.1 $\pm$ 0.2 \\
+Gradual expansion & cEI--tMSE & 98.8 $\pm$ 0.6 & 1.2 $\pm$ 0.6 & 8.2 $\pm$ 1.4 & 9.07 $\pm$ 0.27 & 39.6 $\pm$ 0.2 \\
+\bottomrule
+\end{tabular}
+
+\par\vspace{5pt}
+\begin{tabular}{@{}llrrr@{}}
+\multicolumn{5}{@{}l}{\textit{Panel B: recommendation-conditional outcomes}}\\[2pt]
+\toprule
+Protocol & Policy & Recommendations & Rec. efficacy & Dose-location error \\
+\midrule
+All combinations available & cEI & 400 & 6.680 $\pm$ 0.184 & 1.92 $\pm$ 0.05 \\
+All combinations available & cKG & 400 & 7.586 $\pm$ 0.199 & 1.69 $\pm$ 0.05 \\
+All combinations available & cEI--tMSE & 400 & 7.137 $\pm$ 0.171 & 1.72 $\pm$ 0.05 \\
+\addlinespace
+Gradual expansion & cEI & 396 & 6.410 $\pm$ 0.194 & 1.99 $\pm$ 0.05 \\
+Gradual expansion & cKG & 388 & 7.263 $\pm$ 0.189 & 1.78 $\pm$ 0.05 \\
+Gradual expansion & cEI--tMSE & 395 & 7.512 $\pm$ 0.162 & 1.61 $\pm$ 0.04 \\
+\bottomrule
+\end{tabular}

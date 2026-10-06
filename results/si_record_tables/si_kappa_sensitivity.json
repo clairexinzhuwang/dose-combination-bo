@@ -1,0 +1,240 @@
+{
+  "auxiliary": {
+    "threshold_specific_dose_unit_contrasts": [
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.04360400311280881,
+        "difference_mean": 0.08665250660512167,
+        "independent_seeds": 100,
+        "kappa": 0.25,
+        "tau": 0.5
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.045209387883821325,
+        "difference_mean": 0.1542244242532162,
+        "independent_seeds": 100,
+        "kappa": 0.25,
+        "tau": 0.7
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.04739141125203764,
+        "difference_mean": 0.20922097176621954,
+        "independent_seeds": 100,
+        "kappa": 0.25,
+        "tau": 0.9
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.06602950614832265,
+        "difference_mean": 0.2473404745533378,
+        "independent_seeds": 100,
+        "kappa": 0.5,
+        "tau": 0.5
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.06477478778095086,
+        "difference_mean": 0.170886029795323,
+        "independent_seeds": 100,
+        "kappa": 0.5,
+        "tau": 0.7
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.055864536780419104,
+        "difference_mean": 0.042309984599804284,
+        "independent_seeds": 100,
+        "kappa": 0.5,
+        "tau": 0.9
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.0689106428614822,
+        "difference_mean": 0.1816705396119524,
+        "independent_seeds": 100,
+        "kappa": 1.0,
+        "tau": 0.5
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.06939482823541873,
+        "difference_mean": 0.21934708475829076,
+        "independent_seeds": 100,
+        "kappa": 1.0,
+        "tau": 0.7
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.06970236323212754,
+        "difference_mean": -0.11287838564283087,
+        "independent_seeds": 100,
+        "kappa": 1.0,
+        "tau": 0.9
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.08258206263279634,
+        "difference_mean": 0.2853611106022279,
+        "independent_seeds": 100,
+        "kappa": 1.5,
+        "tau": 0.5
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.09472330373726329,
+        "difference_mean": 0.11981506690608146,
+        "independent_seeds": 100,
+        "kappa": 1.5,
+        "tau": 0.7
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.07296024282516171,
+        "difference_mean": 0.08210179704267112,
+        "independent_seeds": 100,
+        "kappa": 1.5,
+        "tau": 0.9
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.09268825356295406,
+        "difference_mean": 0.19798263020797827,
+        "independent_seeds": 100,
+        "kappa": 2.0,
+        "tau": 0.5
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.09637312081134,
+        "difference_mean": 0.1258388185359574,
+        "independent_seeds": 100,
+        "kappa": 2.0,
+        "tau": 0.7
+      },
+      {
+        "contrast": "cEI minus cKG",
+        "difference_mcse": 0.07276879516605675,
+        "difference_mean": 0.048121233588122134,
+        "independent_seeds": 100,
+        "kappa": 2.0,
+        "tau": 0.9
+      }
+    ]
+  },
+  "columns": [
+    "kappa",
+    "policy",
+    "dose_units_mean",
+    "dose_units_mcse",
+    "above_threshold_recommendation_pct_mean",
+    "above_threshold_recommendation_pct_mcse",
+    "independent_seeds"
+  ],
+  "estimand": {
+    "aggregation": "two strata and three thresholds averaged within each seed",
+    "thresholds": [
+      0.5,
+      0.7,
+      0.9
+    ]
+  },
+  "rows": [
+    {
+      "above_threshold_recommendation_pct_mcse": 0.32824397594488725,
+      "above_threshold_recommendation_pct_mean": 0.6666666666666666,
+      "dose_units_mcse": 0.03446761825091879,
+      "dose_units_mean": 0.9406791591531075,
+      "independent_seeds": 100,
+      "kappa": 0.25,
+      "policy": "cEI"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.4613424942572106,
+      "above_threshold_recommendation_pct_mean": 11.166666666666666,
+      "dose_units_mcse": 0.019638685236960635,
+      "dose_units_mean": 0.7906465249449218,
+      "independent_seeds": 100,
+      "kappa": 0.25,
+      "policy": "cKG"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.0855649121315492,
+      "above_threshold_recommendation_pct_mean": 3.3333333333333335,
+      "dose_units_mcse": 0.04873736499857849,
+      "dose_units_mean": 1.327311950742439,
+      "independent_seeds": 100,
+      "kappa": 0.5,
+      "policy": "cEI"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.7805376305059062,
+      "above_threshold_recommendation_pct_mean": 16.833333333333332,
+      "dose_units_mcse": 0.03767142062279719,
+      "dose_units_mean": 1.1737997877596171,
+      "independent_seeds": 100,
+      "kappa": 0.5,
+      "policy": "cKG"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.8291197370171475,
+      "above_threshold_recommendation_pct_mean": 12.33333333333333,
+      "dose_units_mcse": 0.06000289696850893,
+      "dose_units_mean": 1.8475577617406227,
+      "independent_seeds": 100,
+      "kappa": 1.0,
+      "policy": "cEI"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 1.7786456215091246,
+      "above_threshold_recommendation_pct_mean": 20.833333333333332,
+      "dose_units_mcse": 0.054986480667954064,
+      "dose_units_mean": 1.7515113488314853,
+      "independent_seeds": 100,
+      "kappa": 1.0,
+      "policy": "cKG"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.1847214596696736,
+      "above_threshold_recommendation_pct_mean": 19.5,
+      "dose_units_mcse": 0.07431420788864042,
+      "dose_units_mean": 2.220160956911044,
+      "independent_seeds": 100,
+      "kappa": 1.5,
+      "policy": "cEI"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.1770020263360244,
+      "above_threshold_recommendation_pct_mean": 24.5,
+      "dose_units_mcse": 0.06474195415938315,
+      "dose_units_mean": 2.057734965394051,
+      "independent_seeds": 100,
+      "kappa": 1.5,
+      "policy": "cKG"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.3968624272055115,
+      "above_threshold_recommendation_pct_mean": 22.5,
+      "dose_units_mcse": 0.07280487526595035,
+      "dose_units_mean": 2.437013364368592,
+      "independent_seeds": 100,
+      "kappa": 2.0,
+      "policy": "cEI"
+    },
+    {
+      "above_threshold_recommendation_pct_mcse": 2.4122652360434103,
+      "above_threshold_recommendation_pct_mean": 28.166666666666668,
+      "dose_units_mcse": 0.06964451214179254,
+      "dose_units_mean": 2.313032470257906,
+      "independent_seeds": 100,
+      "kappa": 2.0,
+      "policy": "cKG"
+    }
+  ],
+  "schema_version": 2,
+  "source_record_files": [
+    "kappa_sweep_fixed_supplemental.json.zst"
+  ],
+  "table_id": "kappa_sensitivity"
+}

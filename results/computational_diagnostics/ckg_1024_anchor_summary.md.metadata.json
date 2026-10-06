@@ -1,0 +1,161 @@
+{
+  "artifact": "ckg_1024_anchor_summary.md",
+  "artifact_bytes": 1285,
+  "artifact_sha256": "472201d7e0a179e6461b2996641838f31a0d6e1f06f6f3dd98f9057a9a46eefd",
+  "artifact_type": "ckg_1024_anchor_markdown",
+  "design": {
+    "anchor_fantasies": 1024,
+    "anchor_scope": "cKG-1024 is a custom prefix-preserving post hoc numerical anchor, not a package default or the conventional nmc=1024 draw order.",
+    "bank_construction": "Draw production Zf[0:512], then production Zg[0:512], then fresh Zf[512:1024], then fresh Zg[512:1024]; compare channel-wise prefixes.",
+    "budget": 40,
+    "cohort_size": 2,
+    "empty_gate": "pf",
+    "fantasy_seed_note": "The cKG fantasy bank is fixed at seed 0 for every trial; trial seeds vary data and paths, not the fantasy-bank realization.",
+    "fixed_fantasy_seed": 0,
+    "gate_mode": "latent",
+    "grid_n": 5,
+    "interpretation": "agreement is a nested-count stability sensitivity, not accuracy or convergence",
+    "noise": "fixed",
+    "protocol_scaffold": "lhs_fixed",
+    "reference_compatibility": "The 512 channel prefixes and 512 reference paths remain production-compatible.",
+    "reference_fantasies": 512,
+    "reference_source": {
+      "artifact": "computational_diagnostics_raw.json",
+      "artifact_sha256": "1db64beb0b2d1bc2cceac19b125fedb823923efa88e1f5fb56e1d8d3966129f4",
+      "metadata_sha256": "436426e12d602835130e1fff6305786bec829dbf172488e969ae652468f1805d",
+      "verified_source_sha256": {
+        "acquisitions.py": "fe6a55c937a9db615bba057d8b420e917b02d368a2f478632344ad23a2c5f960",
+        "gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+        "run_computational_diagnostics.py": "55bdfb44383c58f0af386b384090a0a01c4cbc6206a5dc6108794f09ea9bfb45",
+        "trial.py": "29351d4c85104582514fc19eac839b32a3a623e7c446b72e668f407a07dda56e"
+      }
+    },
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "status": "post hoc and descriptive",
+    "strata": [
+      0,
+      1
+    ],
+    "surface": "osa",
+    "tau": 0.7,
+    "warmup": 4
+  },
+  "environment": {
+    "captured_at_utc": "2026-08-23T03:40:48.377537+00:00",
+    "hardware": {
+      "chip": "Apple M2 Pro",
+      "core_description": "10 (6 Performance and 4 Efficiency)",
+      "cpu_model": "Apple M2 Pro",
+      "logical_cpu_count": 10,
+      "memory": "16 GB",
+      "model_identifier": "Mac14,9",
+      "model_name": "MacBook Pro",
+      "model_number": "MPHE3LL/A"
+    },
+    "machine": "arm64",
+    "numpy_configuration": {
+      "build_dependencies": {
+        "blas": {
+          "found": true,
+          "name": "openblas64",
+          "openblas configuration": "USE_64BITINT=1 DYNAMIC_ARCH=1 DYNAMIC_OLDER= NO_CBLAS= NO_LAPACK= NO_LAPACKE= NO_AFFINITY=1 USE_OPENMP= SANDYBRIDGE MAX_THREADS=3",
+          "version": "0.3.23.dev"
+        },
+        "lapack": {
+          "found": true,
+          "name": "dep4350285776",
+          "openblas configuration": "unknown",
+          "version": "1.26.4"
+        }
+      },
+      "compilers": {
+        "c": {
+          "linker": "ld64",
+          "name": "clang",
+          "version": "14.0.0"
+        },
+        "c++": {
+          "linker": "ld64",
+          "name": "clang",
+          "version": "14.0.0"
+        },
+        "cython": {
+          "linker": "cython",
+          "name": "cython",
+          "version": "3.0.8"
+        }
+      },
+      "host_machine": {
+        "cpu": "aarch64",
+        "endian": "little",
+        "family": "aarch64",
+        "system": "darwin"
+      },
+      "simd_extensions": {
+        "baseline": [
+          "NEON",
+          "NEON_FP16",
+          "NEON_VFPV4",
+          "ASIMD"
+        ],
+        "found": [
+          "ASIMDHP"
+        ]
+      }
+    },
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.11.6 | packaged by conda-forge | (main, Oct  3 2023, 10:37:07) [Clang 15.0.7 ]",
+    "python_executable_name": "python",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1,
+    "versions": {
+      "gpytorch": "1.14",
+      "numpy": "1.26.4",
+      "safedosebo": "source-tree",
+      "scipy": "1.16.3",
+      "torch": "2.4.1"
+    }
+  },
+  "generated_at_utc": "2026-08-23T03:48:38.221846+00:00",
+  "record_counts": {
+    "anchor_full_path_trials": 40,
+    "reference_path_trials": 40,
+    "same_state_decisions": 720
+  },
+  "source_sha256": {
+    "acquisitions.py": "fe6a55c937a9db615bba057d8b420e917b02d368a2f478632344ad23a2c5f960",
+    "gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+    "run_ckg_1024_anchor.py": "1672246feba9ccdaf5e15d1b9e063359420c7d254a1a27a42df01d26ce68a5d3",
+    "run_computational_diagnostics.py": "55bdfb44383c58f0af386b384090a0a01c4cbc6206a5dc6108794f09ea9bfb45",
+    "trial.py": "29351d4c85104582514fc19eac839b32a3a623e7c446b72e668f407a07dda56e"
+  },
+  "status": "post hoc and descriptive"
+}

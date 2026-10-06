@@ -1,0 +1,239 @@
+{
+  "artifact_type": "post_hoc_schedule_ratio_analysis",
+  "confirmatory": false,
+  "contrasts": [
+    {
+      "policy_a": "cKG",
+      "policy_b": "cEI-tMSE-1to1",
+      "role": "existing main comparator"
+    },
+    {
+      "policy_a": "cKG",
+      "policy_b": "cEI-tMSE-2to1",
+      "role": "new schedule-composition check"
+    },
+    {
+      "policy_a": "cKG",
+      "policy_b": "tMSE",
+      "role": "pure-tMSE component reference"
+    },
+    {
+      "policy_a": "cKG",
+      "policy_b": "cEI",
+      "role": "pure-cEI component reference"
+    },
+    {
+      "policy_a": "cEI-tMSE-2to1",
+      "policy_b": "cEI-tMSE-1to1",
+      "role": "schedule-composition check"
+    }
+  ],
+  "design": {
+    "budget": 40,
+    "empty_gate": "pf",
+    "empty_gate_stop_after": 3,
+    "exclude_repeats_during_expansion": true,
+    "gamma": 0.7,
+    "grid_n": 5,
+    "kap": 1.0,
+    "mode": "latent",
+    "new_schedule_cycle": [
+      "cEI",
+      "cEI",
+      "tMSE"
+    ],
+    "noise": "fixed",
+    "policies": [
+      "cEI",
+      "tMSE",
+      "cEI-tMSE-1to1",
+      "cEI-tMSE-2to1",
+      "cKG"
+    ],
+    "protocol_scaffold": "lhs_fixed",
+    "r_k": 2,
+    "region_step": 0.25,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99
+    ],
+    "sim": "osa",
+    "strata": [
+      0,
+      1
+    ],
+    "warmup": 4
+  },
+  "full_panel_reference_schedule": {
+    "cEI_scheduled_positions": 9,
+    "cohort_size": 2,
+    "empty_gate_override": "An empty eligible gate can invoke the common greatest-feasibility fallback instead of the scheduled acquisition.",
+    "initialization_assignments": 4,
+    "maximum_assignments": 40,
+    "policy": "cEI-tMSE-1to1",
+    "reader_facing_alias": "cEI\u2013tMSE",
+    "scheduled_adaptive_cohort_positions": 18,
+    "scope": "full-panel access only",
+    "tMSE_scheduled_positions": 9
+  },
+  "inputs": {
+    "formal_projection": {
+      "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+      "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+      "projection_metadata_path": "formal_projection.metadata.json",
+      "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf",
+      "selected_records": {
+        "gate_sixway_supplemental.json.zst": {
+          "compressed_bytes": 878479,
+          "compressed_sha256": "8dbf520c2c7adc8fb4fc9c6a9253a6ddccd2e580c81636b041426e0d332197f0",
+          "rows": 24000,
+          "uncompressed_bytes": 21919441,
+          "uncompressed_sha256": "4734e8a6cd4696ebeb048e3c21505f2588f8a89fade479eafc917ff187e2c2cd"
+        },
+        "schedule_ratio_sensitivity_2to1.json.zst": {
+          "compressed_bytes": 28086,
+          "compressed_sha256": "980b0f809f5948fe2d3cd55779a6eba4650b63c01daa726fe6bae97ec4827947",
+          "rows": 200,
+          "uncompressed_bytes": 431057,
+          "uncompressed_sha256": "86b98b9b8aac119f1b4f1a1cd698db2516098be2edcea0c2c43517d14bbf0692"
+        }
+      }
+    }
+  },
+  "outcome_note": "The assignment count includes all 40 simulated assignments. Its percentage is exactly 100*count/40 and is reported only to supply both requested scales, not as an independent outcome.",
+  "outputs": {
+    "schedule_ratio_operating_characteristics.csv": {
+      "rows": 15,
+      "sha256": "3966046a0ec8edb88433f6febb7d952892c83c89b20c347fec0786fc58e04c49"
+    },
+    "schedule_ratio_paired_contrasts.csv": {
+      "rows": 15,
+      "sha256": "4b9d51431b7f1ddd5b5ab3f4eef994bdf04ae3bdbd70d284946a1811d89031a5"
+    },
+    "schedule_ratio_table.tex": {
+      "rows": 5,
+      "sha256": "980ce44cc39575f72ce00420fa28609f9a0a183cc239a8e6268feb9b139b9de4"
+    }
+  },
+  "post_hoc_descriptive": true,
+  "post_hoc_timing_status": "The cEI-heavy [cEI,cEI,tMSE] cycle and post-hoc contrasts were specified after the original study results were examined.",
+  "provenance": {
+    "all_analysis_rows_authenticated_by_formal_projection": true,
+    "analyzer": "analyze_schedule_ratio_sensitivity.py",
+    "core_api_or_default_policy_changed": false,
+    "current_analysis_source_sha256": "9b8d3d08959829e894172705c4f939db984c040daf050e6c1d3fde00feec13f1",
+    "reference_selection": "OSA latent-gate tau=0.7 full-panel cells for cEI, cKG1fix, GBE, and straddle, mapped to the analysis policy labels",
+    "row_authentication": "All 1,000 analysis appearances were loaded from one authenticated formal projection; 800 are selected six-policy reference appearances and 200 are fixed cEI-heavy schedule appearances."
+  },
+  "ratio_tuned": false,
+  "record_counts": {
+    "combined_rows": 1000,
+    "formal_2to1_appearances": 200,
+    "formal_sixway_reference_appearances": 800
+  },
+  "schema_version": 2,
+  "uncertainty": {
+    "interval": "mean plus/minus 1.96 paired Monte Carlo SE",
+    "multiplicity_adjustment": "none; descriptive pointwise intervals",
+    "p_values": "not computed",
+    "unit": "independent matched replicate set after averaging its two strata"
+  }
+}

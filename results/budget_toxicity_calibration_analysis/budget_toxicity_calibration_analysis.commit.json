@@ -1,0 +1,8 @@
+{
+  "artifact_count": 16,
+  "baseline_identity_passed": true,
+  "metadata": "budget_toxicity_calibration_analysis.metadata.json",
+  "metadata_sha256": "9c1d2ffffa347c116583e6e4d0ab75440e01236a065d2b87003b16c0dddb8a9e",
+  "schema_version": 1,
+  "status": "COMMITTED_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_ANALYSIS"
+}

@@ -1,0 +1,35 @@
+{
+  "source_authenticated": true,
+  "input_bundle_rows": 34000,
+  "selected_full_grid_osa_rows": 8000,
+  "complete_four_policy_factorial": true,
+  "all_full_grid_trials_select": true,
+  "grid_optima": [
+    {
+      "stratum": 0,
+      "dose": [
+        0.25,
+        0.75
+      ],
+      "efficacy": 7.6792187499999995,
+      "acceptable_pairs": 11
+    },
+    {
+      "stratum": 1,
+      "dose": [
+        0.5,
+        0.75
+      ],
+      "efficacy": 13.205468749999998,
+      "acceptable_pairs": 16
+    }
+  ],
+  "maximum_stored_truth_efficacy_error": 7.105427357601002e-15,
+  "maximum_stored_truth_toxicity_error": 4.440892098500626e-16,
+  "all_stored_unsafe_flags_match_truth": true,
+  "indicators_monotone_in_delta": true,
+  "unsafe_selections_never_successes": true,
+  "legacy_dense_grid_regret_not_used": true,
+  "mcse_unit": "200 independent seeds with paired strata; not400 independent Bernoulli trials",
+  "new_trials_run": 0
+}

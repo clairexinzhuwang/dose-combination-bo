@@ -1,0 +1,150 @@
+{
+  "columns": [
+    "tau",
+    "stratum",
+    "policy",
+    "dose_units_mean",
+    "dose_units_mcse",
+    "rpsel_mean",
+    "rpsel_mcse",
+    "independent_seeds"
+  ],
+  "estimand": {
+    "displayed_thresholds": [
+      0.5,
+      0.7,
+      0.9
+    ],
+    "policies": [
+      "cEI",
+      "cKG"
+    ]
+  },
+  "rows": [
+    {
+      "dose_units_mcse": 0.06900469363349769,
+      "dose_units_mean": 1.7486672827010505,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "rpsel_mcse": 0.1383117004701653,
+      "rpsel_mean": 4.4548915681616394,
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "dose_units_mcse": 0.05955701823541229,
+      "dose_units_mean": 1.4624948732925482,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "rpsel_mcse": 0.11798598679085699,
+      "rpsel_mean": 3.691752225129959,
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "dose_units_mcse": 0.059886729083168694,
+      "dose_units_mean": 1.4796771860426026,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "rpsel_mcse": 0.2013739148338545,
+      "rpsel_mean": 6.681686612737796,
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "dose_units_mcse": 0.056619539921443536,
+      "dose_units_mean": 1.2553774035010081,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "rpsel_mcse": 0.15262260601065586,
+      "rpsel_mean": 6.1149952832291365,
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "dose_units_mcse": 0.0665953679174593,
+      "dose_units_mean": 2.0979559917090462,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "rpsel_mcse": 0.11821344754918958,
+      "rpsel_mean": 4.988857027511182,
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "dose_units_mcse": 0.06727478657200409,
+      "dose_units_mean": 1.8334490997518194,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "rpsel_mcse": 0.11987461737108727,
+      "rpsel_mean": 4.46327981289053,
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "dose_units_mcse": 0.06015495001277437,
+      "dose_units_mean": 1.7484730016357362,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "rpsel_mcse": 0.2038025095761703,
+      "rpsel_mean": 7.433702554204938,
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "dose_units_mcse": 0.06578534680739297,
+      "dose_units_mean": 1.553668999036343,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "rpsel_mcse": 0.19461168840798806,
+      "rpsel_mean": 7.60180428770226,
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "dose_units_mcse": 0.06676804214554898,
+      "dose_units_mean": 2.24384753541123,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "rpsel_mcse": 0.13104087463562614,
+      "rpsel_mean": 5.261247535694327,
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "dose_units_mcse": 0.06649667078290336,
+      "dose_units_mean": 2.2724620171020904,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "rpsel_mcse": 0.12127319186053966,
+      "rpsel_mean": 5.174663843808569,
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "dose_units_mcse": 0.06532253877286594,
+      "dose_units_mean": 2.1382452830808183,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "rpsel_mcse": 0.2257105242980505,
+      "rpsel_mean": 8.774356077340977,
+      "stratum": 1,
+      "tau": 0.9
+    },
+    {
+      "dose_units_mcse": 0.06890354495787093,
+      "dose_units_mean": 2.1272953230489025,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "rpsel_mcse": 0.20747152742694497,
+      "rpsel_mean": 8.896312537300311,
+      "stratum": 1,
+      "tau": 0.9
+    }
+  ],
+  "schema_version": 2,
+  "source_record_files": [
+    "osa_main.json.zst"
+  ],
+  "table_id": "osa_precision"
+}

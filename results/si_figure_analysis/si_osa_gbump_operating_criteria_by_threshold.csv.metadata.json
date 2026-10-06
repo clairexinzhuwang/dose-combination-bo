@@ -1,0 +1,71 @@
+{
+  "analysis": {
+    "axis_limits": "derived separately for every simulator-by-outcome panel",
+    "directional_assertion": null,
+    "displayed_summary_rows": 180,
+    "dose_access": "full_panel",
+    "estimands": [
+      "Dose-units",
+      "Posterior efficacy error",
+      "Above-boundary simulated assignments"
+    ],
+    "gate_mode": "latent",
+    "independent_seeds_per_cell": 200,
+    "input_factorial_rows": 12000,
+    "legacy_correspondence": "fig_criteria.pdf",
+    "policies": [
+      "cEI",
+      "cKG",
+      "cEI-tMSE"
+    ],
+    "role": "candidate journal SI figure",
+    "simulators": [
+      "osa",
+      "gbump"
+    ],
+    "strata": [
+      0,
+      1
+    ],
+    "tau_levels": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ]
+  },
+  "artifact_bytes": 25151,
+  "artifact_class": "journal_supplement_figure_candidate",
+  "artifact_filename": "si_osa_gbump_operating_criteria_by_threshold.csv",
+  "artifact_sha256": "da786d11f172a8797432ae8ad95ed6d7606d66f5a0de4e228aada28ebe6ebcea",
+  "artifact_type": "figure_source_data_csv",
+  "generator_files_sha256": {
+    "analysis_record_bundle.py": "855c760491b06d74dd87d08ae60a5190689005b4ca0bcd0fc0fea623bf1b154c",
+    "figure_artifacts.py": "5a2cbbe2cd9f52d0d13c57846f46e1f3ce7681c8fb4da05b3c984392b21f1eb8",
+    "make_safety_criteria.py": "f1e34e5b849c834e860393dcb8b8fb1bedb455e3996fc288655d474fbae686ee"
+  },
+  "input_records": {
+    "gbump_main.json.zst": {
+      "compressed_bytes": 198168,
+      "compressed_sha256": "6b4b957c9bd37010e008fd2d56adc934d66bdbd8e9e9193ed4b1b3b8b8ffd3bd",
+      "rows": 6000,
+      "uncompressed_bytes": 5422290,
+      "uncompressed_sha256": "04477284e0703f02f18cafb53d3f8b4c0d45a1cceaaad95e853485314b6a3873"
+    },
+    "osa_main.json.zst": {
+      "compressed_bytes": 266349,
+      "compressed_sha256": "bbb97bef4e30ac48daa9becea8b9d8bae55b6fc5da1e673ca7e5ea1288f03040",
+      "rows": 6000,
+      "uncompressed_bytes": 5402014,
+      "uncompressed_sha256": "f1803700f24915aff959781c8d40f71b7042273b244a707aab14c94515c37831"
+    }
+  },
+  "projection": {
+    "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+    "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+    "projection_metadata_path": "formal_projection.metadata.json",
+    "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf"
+  },
+  "schema_version": 1
+}

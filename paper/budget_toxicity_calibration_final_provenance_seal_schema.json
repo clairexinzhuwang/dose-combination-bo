@@ -1,0 +1,560 @@
+{
+  "$defs": {
+    "fileCommitment": {
+      "additionalProperties": false,
+      "properties": {
+        "bytes": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "path": {
+          "$ref": "#/$defs/path"
+        },
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "path",
+        "sha256",
+        "bytes"
+      ],
+      "type": "object"
+    },
+    "fileMap": {
+      "additionalProperties": {
+        "$ref": "#/$defs/fileCommitment"
+      },
+      "minProperties": 1,
+      "type": "object"
+    },
+    "path": {
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.?/)(?!.*//)[^\\u0000]+$",
+      "type": "string"
+    },
+    "sha256": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "trio": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact": {
+          "$ref": "#/$defs/fileCommitment"
+        },
+        "commit": {
+          "$ref": "#/$defs/fileCommitment"
+        },
+        "metadata": {
+          "$ref": "#/$defs/fileCommitment"
+        }
+      },
+      "required": [
+        "artifact",
+        "metadata",
+        "commit"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "https://safedosebo.local/schemas/budget_toxicity_calibration_final_provenance_seal.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "branch": {
+            "const": "ORIGINAL_M0500_PRECISION_PASS"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "precision_state": {
+            "properties": {
+              "effective_terminal_state": {
+                "properties": {
+                  "operator_cap_applied": {
+                    "const": false
+                  },
+                  "precision_target_achieved": {
+                    "const": true
+                  },
+                  "terminated_with_unresolved_precision": {
+                    "const": false
+                  },
+                  "unresolved_estimand_count": {
+                    "const": 0
+                  }
+                }
+              },
+              "original_frozen_decision": {
+                "properties": {
+                  "all_estimands_pass_guarded_1_5pp": {
+                    "const": true
+                  },
+                  "next_M": {
+                    "const": null
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "branch": {
+            "const": "OPERATOR_CAPPED_M0500_UNRESOLVED"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "precision_state": {
+            "properties": {
+              "effective_terminal_state": {
+                "properties": {
+                  "operator_cap_applied": {
+                    "const": true
+                  },
+                  "precision_target_achieved": {
+                    "const": false
+                  },
+                  "terminated_with_unresolved_precision": {
+                    "const": true
+                  },
+                  "unresolved_estimand_count": {
+                    "minimum": 1
+                  }
+                }
+              },
+              "original_frozen_decision": {
+                "properties": {
+                  "all_estimands_pass_guarded_1_5pp": {
+                    "const": false
+                  },
+                  "next_M": {
+                    "const": 1000
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "properties": {
+    "amendment_v2": {
+      "additionalProperties": false,
+      "properties": {
+        "audit_id": {
+          "pattern": "^operator-cap-M0500-[0-9a-f]{16}$",
+          "type": "string"
+        },
+        "cap_cumulative_M": {
+          "const": 500
+        },
+        "committed_at_utc": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "declared_at_utc": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "envelope": {
+          "$ref": "#/$defs/trio"
+        },
+        "launch_fingerprint": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "envelope",
+        "audit_id",
+        "launch_fingerprint",
+        "declared_at_utc",
+        "committed_at_utc",
+        "cap_cumulative_M"
+      ],
+      "type": "object"
+    },
+    "analysis_envelope": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "commit_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "file_bundle_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "file_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "files": {
+          "$ref": "#/$defs/fileMap"
+        },
+        "raw_master_commit_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "trusted_commit_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "files",
+        "trusted_commit_sha256",
+        "file_count",
+        "artifact_count",
+        "file_bundle_sha256",
+        "status",
+        "commit_status",
+        "raw_master_commit_sha256"
+      ],
+      "type": "object"
+    },
+    "artifact_class": {
+      "const": "outcome_blind_hash_bound_calibration_final_provenance_seal"
+    },
+    "audit_identity": {
+      "additionalProperties": false,
+      "properties": {
+        "final_M": {
+          "const": 500
+        },
+        "launch_fingerprint": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "launch_fingerprint",
+        "final_M"
+      ],
+      "type": "object"
+    },
+    "branch": {
+      "enum": [
+        "ORIGINAL_M0500_PRECISION_PASS",
+        "OPERATOR_CAPPED_M0500_UNRESOLVED"
+      ]
+    },
+    "master_envelope": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact_class": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "commit_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "envelope": {
+          "$ref": "#/$defs/trio"
+        },
+        "indexed_baseline_files": {
+          "$ref": "#/$defs/fileMap",
+          "maxProperties": 3,
+          "minProperties": 3
+        },
+        "indexed_block_files": {
+          "$ref": "#/$defs/fileMap",
+          "maxProperties": 6,
+          "minProperties": 6
+        },
+        "indexed_precision_files": {
+          "$ref": "#/$defs/fileMap",
+          "maxProperties": 6,
+          "minProperties": 6
+        },
+        "status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "storage_model": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "trusted_commit_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "uncompressed_bytes": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "uncompressed_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "envelope",
+        "indexed_block_files",
+        "indexed_baseline_files",
+        "indexed_precision_files",
+        "trusted_commit_sha256",
+        "uncompressed_sha256",
+        "uncompressed_bytes",
+        "status",
+        "commit_status",
+        "artifact_class",
+        "storage_model"
+      ],
+      "type": "object"
+    },
+    "precision_state": {
+      "additionalProperties": false,
+      "properties": {
+        "effective_terminal_state": {
+          "additionalProperties": false,
+          "properties": {
+            "effective_next_M": {
+              "const": null
+            },
+            "operator_cap_applied": {
+              "type": "boolean"
+            },
+            "precision_target_achieved": {
+              "type": "boolean"
+            },
+            "terminated_with_unresolved_precision": {
+              "type": "boolean"
+            },
+            "unresolved_estimand_count": {
+              "maximum": 118,
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "operator_cap_applied",
+            "effective_next_M",
+            "precision_target_achieved",
+            "terminated_with_unresolved_precision",
+            "unresolved_estimand_count"
+          ],
+          "type": "object"
+        },
+        "original_frozen_decision": {
+          "additionalProperties": false,
+          "properties": {
+            "all_estimands_pass_guarded_1_5pp": {
+              "type": "boolean"
+            },
+            "cumulative_M": {
+              "const": 500
+            },
+            "next_M": {
+              "enum": [
+                1000,
+                null
+              ],
+              "type": [
+                "integer",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "cumulative_M",
+            "all_estimands_pass_guarded_1_5pp",
+            "next_M"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "original_frozen_decision",
+        "effective_terminal_state"
+      ],
+      "type": "object"
+    },
+    "projection_envelope": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "additionalProperties": false,
+          "properties": {
+            "commit_status": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "file_bundle_sha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "file_count": {
+              "minimum": 1,
+              "type": "integer"
+            },
+            "files": {
+              "$ref": "#/$defs/fileMap"
+            },
+            "path_root_role": {
+              "const": "explicit_manuscript_source_root"
+            },
+            "projection_bundle_sha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "source_publication_commit_sha256": {
+              "$ref": "#/$defs/sha256"
+            },
+            "status": {
+              "minLength": 1,
+              "type": "string"
+            },
+            "trusted_commit_sha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          },
+          "required": [
+            "path_root_role",
+            "files",
+            "trusted_commit_sha256",
+            "file_count",
+            "file_bundle_sha256",
+            "projection_bundle_sha256",
+            "status",
+            "commit_status",
+            "source_publication_commit_sha256"
+          ],
+          "type": "object"
+        }
+      ]
+    },
+    "publication_envelope": {
+      "additionalProperties": false,
+      "properties": {
+        "analysis_commit_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "artifact_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "commit_status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "file_bundle_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "file_count": {
+          "minimum": 1,
+          "type": "integer"
+        },
+        "files": {
+          "$ref": "#/$defs/fileMap"
+        },
+        "input_bundle_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "output_bundle_sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "status": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "trusted_commit_sha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      },
+      "required": [
+        "files",
+        "trusted_commit_sha256",
+        "file_count",
+        "artifact_count",
+        "file_bundle_sha256",
+        "input_bundle_sha256",
+        "output_bundle_sha256",
+        "status",
+        "commit_status",
+        "analysis_commit_sha256"
+      ],
+      "type": "object"
+    },
+    "schema_version": {
+      "const": 1
+    },
+    "scope": {
+      "additionalProperties": false,
+      "properties": {
+        "cryptographic_provenance_only": {
+          "const": true
+        },
+        "effect_directions_interpreted": {
+          "const": false
+        },
+        "effect_values_interpreted": {
+          "const": false
+        },
+        "operational_precision_state_authenticated": {
+          "const": true
+        },
+        "scientific_artifacts_decoded": {
+          "const": false
+        },
+        "winner_or_sign_selected": {
+          "const": false
+        }
+      },
+      "required": [
+        "scientific_artifacts_decoded",
+        "effect_values_interpreted",
+        "effect_directions_interpreted",
+        "winner_or_sign_selected",
+        "operational_precision_state_authenticated",
+        "cryptographic_provenance_only"
+      ],
+      "type": "object"
+    },
+    "source_bundle_sha256": {
+      "$ref": "#/$defs/sha256"
+    },
+    "source_commitments": {
+      "$ref": "#/$defs/fileMap"
+    },
+    "status": {
+      "const": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_FINAL_PROVENANCE_SEAL"
+    },
+    "upstream_commit_bundle_sha256": {
+      "$ref": "#/$defs/sha256"
+    }
+  },
+  "required": [
+    "schema_version",
+    "status",
+    "artifact_class",
+    "branch",
+    "scope",
+    "audit_identity",
+    "precision_state",
+    "amendment_v2",
+    "source_commitments",
+    "source_bundle_sha256",
+    "master_envelope",
+    "analysis_envelope",
+    "publication_envelope",
+    "projection_envelope",
+    "upstream_commit_bundle_sha256"
+  ],
+  "title": "SafeDoseBO budget-toxicity calibration final provenance seal",
+  "type": "object"
+}

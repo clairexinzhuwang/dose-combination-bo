@@ -1,0 +1,8 @@
+UNTRUSTED DIRECTORY-PRESERVATION MARKER
+
+This static file exists only so Git retains
+results/budget_toxicity_calibration_staging/raw/shards/ after checkout.
+
+It is not a calibration shard, result, provenance record, scientific evidence,
+final-seal input, or authenticated output. No actual shard outcome file is
+distributed by the release/Git allowlist.

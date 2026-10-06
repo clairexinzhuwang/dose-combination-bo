@@ -1,0 +1,5 @@
+# Tools used for candidate tests and distribution builds.
+pytest==7.4.4
+build==1.6.0
+setuptools>=77.0.3
+mpmath==1.3.0  # Independent high-precision numerical regression oracle.

@@ -1,0 +1,203 @@
+{
+  "columns": [
+    "tau",
+    "stratum",
+    "policy",
+    "false_admissions_mean",
+    "false_admissions_mcse",
+    "gate_precision_pct_mean",
+    "gate_precision_pct_mcse",
+    "independent_seeds"
+  ],
+  "estimand": {
+    "precision": "ratio of total truly feasible admissions to total admissions",
+    "precision_mcse": "matched-replicate-clustered influence-function Monte Carlo SE"
+  },
+  "rows": [
+    {
+      "false_admissions_mcse": 0.3290575853439058,
+      "false_admissions_mean": 3.45,
+      "gate_precision_pct_mcse": 1.7868229501154378,
+      "gate_precision_pct_mean": 68.50753080785029,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "false_admissions_mcse": 0.13002464010784986,
+      "false_admissions_mean": 1.225,
+      "gate_precision_pct_mcse": 1.168027100117882,
+      "gate_precision_pct_mean": 86.50881057268722,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "false_admissions_mcse": 0.10241064250600357,
+      "false_admissions_mean": 0.73,
+      "gate_precision_pct_mcse": 1.0366239338170802,
+      "gate_precision_pct_mean": 91.56556903523975,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 0,
+      "tau": 0.5
+    },
+    {
+      "false_admissions_mcse": 0.22710517121802806,
+      "false_admissions_mean": 3.285,
+      "gate_precision_pct_mcse": 0.9539480097276888,
+      "gate_precision_pct_mean": 78.751617076326,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "false_admissions_mcse": 0.11964719913690638,
+      "false_admissions_mean": 1.535,
+      "gate_precision_pct_mcse": 0.7121387038684981,
+      "gate_precision_pct_mean": 88.9924704195052,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "false_admissions_mcse": 0.0897224923201574,
+      "false_admissions_mean": 1.055,
+      "gate_precision_pct_mcse": 0.5779658457264845,
+      "gate_precision_pct_mean": 92.14737625604764,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 1,
+      "tau": 0.5
+    },
+    {
+      "false_admissions_mcse": 0.2649241381886046,
+      "false_admissions_mean": 1.615,
+      "gate_precision_pct_mcse": 2.5795059740847117,
+      "gate_precision_pct_mean": 76.25,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "false_admissions_mcse": 0.1168665433078416,
+      "false_admissions_mean": 0.61,
+      "gate_precision_pct_mcse": 1.611739596739711,
+      "gate_precision_pct_mean": 90.19292604501608,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "false_admissions_mcse": 0.04236121294072025,
+      "false_admissions_mean": 0.23,
+      "gate_precision_pct_mcse": 0.653027503302814,
+      "gate_precision_pct_mean": 96.16346955796497,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 0,
+      "tau": 0.7
+    },
+    {
+      "false_admissions_mcse": 0.22513842754578559,
+      "false_admissions_mean": 2.135,
+      "gate_precision_pct_mcse": 1.2533570896748154,
+      "gate_precision_pct_mean": 82.08892617449665,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "false_admissions_mcse": 0.09569633715416498,
+      "false_admissions_mean": 0.76,
+      "gate_precision_pct_mcse": 0.777355719397165,
+      "gate_precision_pct_mean": 92.92364990689012,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "false_admissions_mcse": 0.06535177328394987,
+      "false_admissions_mean": 0.49,
+      "gate_precision_pct_mcse": 0.5722457253979021,
+      "gate_precision_pct_mean": 95.17479074347612,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 1,
+      "tau": 0.7
+    },
+    {
+      "false_admissions_mcse": 0.22091518188648712,
+      "false_admissions_mean": 0.91,
+      "gate_precision_pct_mcse": 3.4868792608729797,
+      "gate_precision_pct_mean": 78.30750893921335,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "false_admissions_mcse": 0.12441622476560132,
+      "false_admissions_mean": 0.36,
+      "gate_precision_pct_mcse": 2.801904330669435,
+      "gate_precision_pct_mean": 90.51383399209486,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "false_admissions_mcse": 0.02263707547210213,
+      "false_admissions_mean": 0.055,
+      "gate_precision_pct_mcse": 0.7024408198594111,
+      "gate_precision_pct_mean": 98.24281150159744,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 0,
+      "tau": 0.9
+    },
+    {
+      "false_admissions_mcse": 0.17450000359966011,
+      "false_admissions_mean": 0.98,
+      "gate_precision_pct_mcse": 1.7472006909522104,
+      "gate_precision_pct_mean": 85.85858585858585,
+      "independent_seeds": 200,
+      "policy": "cEI",
+      "stratum": 1,
+      "tau": 0.9
+    },
+    {
+      "false_admissions_mcse": 0.0913872702613944,
+      "false_admissions_mean": 0.305,
+      "gate_precision_pct_mcse": 1.2395995380292852,
+      "gate_precision_pct_mean": 95.4272863568216,
+      "independent_seeds": 200,
+      "policy": "cKG",
+      "stratum": 1,
+      "tau": 0.9
+    },
+    {
+      "false_admissions_mcse": 0.025497561219471627,
+      "false_admissions_mean": 0.125,
+      "gate_precision_pct_mcse": 0.41687025079959966,
+      "gate_precision_pct_mean": 97.82229965156795,
+      "independent_seeds": 200,
+      "policy": "cEI-tMSE",
+      "stratum": 1,
+      "tau": 0.9
+    }
+  ],
+  "schema_version": 2,
+  "source_record_files": [
+    "osa_main.json.zst"
+  ],
+  "table_id": "osa_gate_calibration"
+}

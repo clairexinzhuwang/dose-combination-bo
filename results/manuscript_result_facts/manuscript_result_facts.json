@@ -1,0 +1,1117 @@
+{
+  "artifact_type": "authenticated_manuscript_result_facts",
+  "cross_testbed": {
+    "displayed_contrasts": 40,
+    "displayed_testbed_threshold_cells": 20,
+    "gate_levels": [
+      0.5,
+      0.6,
+      0.7,
+      0.8,
+      0.9
+    ],
+    "minority_sign_annotations": [
+      {
+        "difference_mean_pp": 0.8125,
+        "direction": "positive",
+        "outcome_id": "assignment_percentage",
+        "pointwise_95_high_pp": 1.9245344291468856,
+        "pointwise_95_low_pp": -0.29953442914688555,
+        "tau": 0.9,
+        "testbed": "Gaussian bump",
+        "testbed_id": "gbump",
+        "text": "Only positive assignment estimate\n+0.81 [-0.30, 1.92]"
+      }
+    ],
+    "pointwise_interval": "estimate plus or minus 1.96 paired MCSE; unadjusted",
+    "summary": {
+      "both_pointwise_intervals_excluding_zero": 11,
+      "opposite_sign_point_estimate_cells": 19,
+      "outcomes": {
+        "assignment_percentage": {
+          "cells": 20,
+          "pointwise_intervals_excluding_zero": 16,
+          "pointwise_intervals_including_zero_cells": [
+            {
+              "difference_mean_pp": -1.7,
+              "pointwise_95_high_pp": 0.15654901665867182,
+              "pointwise_95_low_pp": -3.5565490166586717,
+              "tau": 0.6,
+              "testbed": "Gaussian bump",
+              "testbed_id": "gbump"
+            },
+            {
+              "difference_mean_pp": -0.1,
+              "pointwise_95_high_pp": 1.3074564248813167,
+              "pointwise_95_low_pp": -1.507456424881317,
+              "tau": 0.8,
+              "testbed": "Gaussian bump",
+              "testbed_id": "gbump"
+            },
+            {
+              "difference_mean_pp": 0.8125,
+              "pointwise_95_high_pp": 1.9245344291468856,
+              "pointwise_95_low_pp": -0.29953442914688555,
+              "tau": 0.9,
+              "testbed": "Gaussian bump",
+              "testbed_id": "gbump"
+            },
+            {
+              "difference_mean_pp": -0.6,
+              "pointwise_95_high_pp": 0.11406238586631268,
+              "pointwise_95_low_pp": -1.3140623858663125,
+              "tau": 0.9,
+              "testbed": "Logistic",
+              "testbed_id": "efftox"
+            }
+          ],
+          "sign_counts": {
+            "negative": 19,
+            "positive": 1,
+            "zero": 0
+          }
+        },
+        "terminal_recommendation": {
+          "cells": 20,
+          "pointwise_intervals_excluding_zero": 13,
+          "pointwise_intervals_including_zero_cells": [
+            {
+              "difference_mean_pp": 3.75,
+              "pointwise_95_high_pp": 7.5510825620099435,
+              "pointwise_95_low_pp": -0.05108256200994399,
+              "tau": 0.8,
+              "testbed": "OSA",
+              "testbed_id": "osa"
+            },
+            {
+              "difference_mean_pp": 1.75,
+              "pointwise_95_high_pp": 4.561404538195621,
+              "pointwise_95_low_pp": -1.061404538195621,
+              "tau": 0.9,
+              "testbed": "OSA",
+              "testbed_id": "osa"
+            },
+            {
+              "difference_mean_pp": 3.5,
+              "pointwise_95_high_pp": 7.754740424561997,
+              "pointwise_95_low_pp": -0.7547404245619971,
+              "tau": 0.6,
+              "testbed": "Gaussian bump",
+              "testbed_id": "gbump"
+            },
+            {
+              "difference_mean_pp": 1.5,
+              "pointwise_95_high_pp": 4.4399999999999995,
+              "pointwise_95_low_pp": -1.44,
+              "tau": 0.9,
+              "testbed": "Logistic",
+              "testbed_id": "efftox"
+            },
+            {
+              "difference_mean_pp": 4.0,
+              "pointwise_95_high_pp": 14.760634580063416,
+              "pointwise_95_low_pp": -6.7606345800634156,
+              "tau": 0.6,
+              "testbed": "MARIPOSA-motivated",
+              "testbed_id": "mariposa"
+            },
+            {
+              "difference_mean_pp": 7.0,
+              "pointwise_95_high_pp": 14.503643290179951,
+              "pointwise_95_low_pp": -0.5036432901799524,
+              "tau": 0.8,
+              "testbed": "MARIPOSA-motivated",
+              "testbed_id": "mariposa"
+            },
+            {
+              "difference_mean_pp": 2.0,
+              "pointwise_95_high_pp": 6.80907559524781,
+              "pointwise_95_low_pp": -2.80907559524781,
+              "tau": 0.9,
+              "testbed": "MARIPOSA-motivated",
+              "testbed_id": "mariposa"
+            }
+          ],
+          "sign_counts": {
+            "negative": 0,
+            "positive": 20,
+            "zero": 0
+          }
+        }
+      }
+    },
+    "testbeds": [
+      "osa",
+      "gbump",
+      "efftox",
+      "mariposa"
+    ]
+  },
+  "exact_validation": {
+    "full_score_vector_length": 25,
+    "historical_approximation_comparisons": {
+      "historical_only": true,
+      "legacy_512_and_prefix_preserving_1024": {
+        "legacy_mc_512_seed0": {
+          "max_abs_score_error_full_grid": 0.3571185608773113,
+          "max_exact_regret": 0.02755376638540874,
+          "median_exact_regret": 0.0,
+          "median_rmse_score_error_full_grid": 0.009084233094526011,
+          "p95_exact_regret": 0.007119234507673135,
+          "selection_agreement_count": 466,
+          "selection_agreement_denominator": 720,
+          "selection_agreement_nonempty_gate_count": 411,
+          "selection_agreement_nonempty_gate_denominator": 665
+        },
+        "prefix_preserving_mc_1024_seed0": {
+          "max_abs_score_error_full_grid": 0.24565123084258023,
+          "max_exact_regret": 0.01595797733163921,
+          "median_exact_regret": 0.0,
+          "median_rmse_score_error_full_grid": 0.007955215753338674,
+          "p95_exact_regret": 0.003403383064103345,
+          "selection_agreement_count": 537,
+          "selection_agreement_denominator": 720,
+          "selection_agreement_nonempty_gate_count": 482,
+          "selection_agreement_nonempty_gate_denominator": 665
+        }
+      },
+      "not_the_current_exact_implementation": true
+    },
+    "interpretation": "This validates a deterministic piecewise-analytic evaluator, exact up to floating-point arithmetic, on frozen/reconstructed posterior states and numerical sentinels. It does not run formal OC trials, prove a Monte Carlo convergence rate, or authorize changing the registered cKG default.",
+    "primary_state_count": 720,
+    "production_default_changed_by_validation": false,
+    "production_harness_gate_semantics": "stable_z_strict_ppf",
+    "provenance": {
+      "exact_module": "src/safedosebo/ckg_exact.py",
+      "exact_module_sha256": "b0689cdfb1bc95f0bb6da12745962fb51f42cfc5e8fb15f39b07de702527484d",
+      "generator": "run_ckg_piecewise_exact_validation.py",
+      "generator_sha256": "a4ead7fded02065d227b73e82e49c0b09c58d3959ac28a8ce1a1c1df1abdb2e6",
+      "metadata": "ckg_piecewise_exact_summary.json.metadata.json",
+      "metadata_sha256": "4c38520accb137e3588d0d2b0889edd2b6279241e2f81dbb368b788a1eceece3",
+      "summary": "ckg_piecewise_exact_summary.json",
+      "summary_sha256": "faef29a58be71e0d286caef1e1fd21a34e968efddeddde69bec9204cc29c2826"
+    },
+    "sentinels": {
+      "sobol_check_count": 56,
+      "sobol_max_abs_error": 1.5073332918336124e-05,
+      "state_count": 28
+    },
+    "sobol_audit": {
+      "check_count": 512,
+      "max_abs_error": 9.398446377173464e-05,
+      "p95_abs_error": 1.5718042295231188e-05,
+      "points_per_check": 131072,
+      "state_count": 64
+    },
+    "stable_z_current_operational_audit": {
+      "all_difference_counts_zero": true,
+      "audited_state_count": 748,
+      "difference_counts": {
+        "primary": {
+          "eligible_fallback_index_difference_state_count": 0,
+          "eligible_gate_empty_difference_state_count": 0,
+          "eligible_gate_pass_set_difference_state_count": 0,
+          "full_fallback_index_difference_state_count": 0,
+          "gate_pass_set_difference_state_count": 0,
+          "operational_eligible_fallback_rounding_difference_state_count": 0,
+          "operational_full_fallback_rounding_difference_state_count": 0
+        },
+        "sentinels": {
+          "eligible_fallback_index_difference_state_count": 0,
+          "eligible_gate_empty_difference_state_count": 0,
+          "eligible_gate_pass_set_difference_state_count": 0,
+          "full_fallback_index_difference_state_count": 0,
+          "gate_pass_set_difference_state_count": 0,
+          "operational_eligible_fallback_rounding_difference_state_count": 0,
+          "operational_full_fallback_rounding_difference_state_count": 0
+        }
+      },
+      "inactive_rounding_differences_are_not_operational": true,
+      "total_difference_count": 0
+    },
+    "status": "PASS_DETERMINISTIC_PIECEWISE_ANALYTIC_VALIDATION_EXACT_UP_TO_FLOATING_POINT_STABLE_Z_HARNESS_REGISTERED_CKG_EVALUATOR_UNCHANGED",
+    "total_exact_query_evaluations": 18000
+  },
+  "final_posterior_feasibility_learning": {
+    "both_cKG_and_reference_improve_over_cEI_on_both_diagnostics": 6,
+    "diagnostics": "mean false admissions per trial and admission-weighted pooled gate precision",
+    "displayed_gate_by_stratum_cells": 6,
+    "dose_access": "full_panel",
+    "gate_levels": [
+      0.5,
+      0.7,
+      0.9
+    ],
+    "point_estimate_summary": true,
+    "reference_most_favorable_on_both_diagnostics": 6,
+    "sim": "osa",
+    "strata": [
+      0,
+      1
+    ]
+  },
+  "formal_projection": {
+    "all_rows_replaced": true,
+    "approved_replacement_rows": 55480,
+    "execution_counts_are_not_logical_record_counts": true,
+    "frozen_archive_read_only": true,
+    "logical_record_rows": 55480,
+    "not_available_from_projection_metadata": [
+      "formal_stopped_execution_count",
+      "full_execution stable-z/current operational-identity audit totals"
+    ],
+    "record_files": 10,
+    "unchanged_rows": 0,
+    "unique_decision_executions": 43880,
+    "unique_formal_executions": 44200,
+    "unique_trajectory_replay_executions": 320
+  },
+  "main_osa": {
+    "cKG_minus_cEI_tMSE_at_primary_tau": {
+      "above_boundary_simulated_assignments": {
+        "cEI_tMSE_mean_pct": 24.19375,
+        "cKG_mean_pct": 18.91875,
+        "direction": "negative",
+        "eligible_pairs": 400,
+        "estimate": -5.275,
+        "independent_seeds": 200,
+        "joint10_95_high": -3.5082194248612724,
+        "joint10_95_low": -7.041780575138729,
+        "joint10_interval_excludes_zero": true,
+        "mcse": 0.6277677410343869,
+        "pointwise_95_high": -4.044575227572602,
+        "pointwise_95_low": -6.505424772427399,
+        "pointwise_interval_excludes_zero": true,
+        "unit": "percentage points"
+      },
+      "final_threshold_exceeding_recommendation": {
+        "cEI_tMSE_mean_pct": 6.75,
+        "cKG_mean_pct": 19.5,
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 12.75,
+        "independent_seeds": 200,
+        "joint10_95_high": 19.515411245928863,
+        "joint10_95_low": 5.984588754071136,
+        "joint10_interval_excludes_zero": true,
+        "mcse": 2.4038678004437037,
+        "pointwise_95_high": 17.46158088886966,
+        "pointwise_95_low": 8.038419111130342,
+        "pointwise_interval_excludes_zero": true,
+        "unit": "percentage points"
+      }
+    },
+    "dose_access": "full_panel",
+    "full_panel_reference_schedule": {
+      "cEI_scheduled_positions": 9,
+      "cohort_size": 2,
+      "empty_gate_override": "An empty eligible gate can invoke the common greatest-feasibility fallback instead of the scheduled acquisition.",
+      "initialization_assignments": 4,
+      "maximum_assignments": 40,
+      "policy": "cEI-tMSE",
+      "reader_facing_alias": "cEI–tMSE",
+      "scheduled_adaptive_cohort_positions": 18,
+      "tMSE_scheduled_positions": 9
+    },
+    "joint10_max_t": {
+      "batch_size": 1000,
+      "confidence_level": 0.95,
+      "critical_values": {
+        "above_boundary_simulated_assignments": 2.568687109527924,
+        "final_threshold_exceeding_recommendation": 2.582385566362636,
+        "joint_10_contrasts": 2.8143857348062613
+      },
+      "joint_family_size": 10,
+      "n_resamples": 500000,
+      "n_seed_clusters": 200,
+      "post_hoc_descriptive": true,
+      "quantile_method": "higher",
+      "resampling_unit": "complete matched Monte Carlo replicate-set vector",
+      "rng": "numpy.random.Generator(PCG64)",
+      "rng_seed": 20260822,
+      "studentization": "bootstrap-sample MCSE recomputed for each coordinate"
+    },
+    "policy_operating_characteristics": {
+      "cEI": {
+        "dose_units": {
+          "mcse": 0.04895737169618754,
+          "mean": 1.923214496672391
+        },
+        "pcs_within1": {
+          "mcse": 1.64108295534737,
+          "mean": 11.25
+        },
+        "pct_patients_above": {
+          "mcse": 0.8307548965720226,
+          "mean": 16.81875
+        },
+        "rec_efficacy": {
+          "mcse": 0.18406441282626493,
+          "mean": 6.680289062500001
+        },
+        "rec_unsafe_pct": {
+          "mcse": 1.5730735206936568,
+          "mean": 9.75
+        }
+      },
+      "cEI-tMSE": {
+        "dose_units": {
+          "mcse": 0.05227531248213117,
+          "mean": 1.71832461258465
+        },
+        "pcs_within1": {
+          "mcse": 2.129521497671537,
+          "mean": 20.25
+        },
+        "pct_patients_above": {
+          "mcse": 0.7921518255746853,
+          "mean": 24.19375
+        },
+        "rec_efficacy": {
+          "mcse": 0.17056774271254496,
+          "mean": 7.1373462890625
+        },
+        "rec_unsafe_pct": {
+          "mcse": 1.2620026758168323,
+          "mean": 6.75
+        }
+      },
+      "cKG": {
+        "dose_units": {
+          "mcse": 0.05306740008401281,
+          "mean": 1.6935590493940815
+        },
+        "pcs_within1": {
+          "mcse": 2.2413989708960043,
+          "mean": 25.5
+        },
+        "pct_patients_above": {
+          "mcse": 0.6106182958309696,
+          "mean": 18.91875
+        },
+        "rec_efficacy": {
+          "mcse": 0.19898127529171178,
+          "mean": 7.585557421875
+        },
+        "rec_unsafe_pct": {
+          "mcse": 2.0603336803469134,
+          "mean": 19.5
+        }
+      }
+    },
+    "pooled_five_threshold_summary": {
+      "above_boundary_simulated_assignments": {
+        "cells": 5,
+        "joint10_intervals_excluding_zero": 5,
+        "sign_counts": {
+          "negative": 5,
+          "positive": 0,
+          "zero": 0
+        }
+      },
+      "final_threshold_exceeding_recommendation": {
+        "cells": 5,
+        "joint10_intervals_excluding_zero": 3,
+        "sign_counts": {
+          "negative": 0,
+          "positive": 5,
+          "zero": 0
+        }
+      }
+    },
+    "primary_tau": 0.7,
+    "reader_facing_contrast": "cKG minus cEI–tMSE",
+    "sim": "osa"
+  },
+  "protocol_scaffold": {
+    "contrast": "cKG minus cEI–tMSE",
+    "derived_finding_category": "the recommended-efficacy interval included zero; cKG had more true-boundary-exceeding final recommendations and the interval excluded zero; cKG had greater dose-location error and the interval excluded zero",
+    "derived_finding_sentence": "Under gradual OSA panel access, at threshold 0.7, the recommended-efficacy interval included zero, cKG had more true-boundary-exceeding final recommendations and the interval excluded zero, and cKG had greater dose-location error and the interval excluded zero; at threshold 0.9, the recommended-efficacy interval included zero, cKG had more true-boundary-exceeding final recommendations and the interval excluded zero, and the dose-location-error interval included zero.",
+    "paired_grid": [
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 0.4482111328125001,
+        "independent_seeds": 200,
+        "mcse": 0.1962371315398055,
+        "outcome": "Recommended efficacy | recommend",
+        "pointwise_95_high": 0.8328359106305188,
+        "pointwise_95_low": 0.06358635499448134,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "lhs_fixed",
+        "tau": 0.7,
+        "unit": "efficacy units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 12.75,
+        "independent_seeds": 200,
+        "mcse": 2.4038678004437037,
+        "outcome": "True-boundary-exceeding final recommendation, all trials",
+        "pointwise_95_high": 17.46158088886966,
+        "pointwise_95_low": 8.038419111130342,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "lhs_fixed",
+        "tau": 0.7,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "negative",
+        "eligible_pairs": 400,
+        "estimate": -0.02476556319056862,
+        "independent_seeds": 200,
+        "mcse": 0.05479982016136069,
+        "outcome": "Dose-location error | recommend",
+        "pointwise_95_high": 0.08264208432569832,
+        "pointwise_95_low": -0.13217321070683558,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "lhs_fixed",
+        "tau": 0.7,
+        "unit": "dose-location units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 0.13224599609375007,
+        "independent_seeds": 200,
+        "mcse": 0.15270357708006124,
+        "outcome": "Recommended efficacy | recommend",
+        "pointwise_95_high": 0.4315450071706701,
+        "pointwise_95_low": -0.16705301498316996,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "lhs_fixed",
+        "tau": 0.9,
+        "unit": "efficacy units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 1.7500000000000002,
+        "independent_seeds": 200,
+        "mcse": 1.4343900705079697,
+        "outcome": "True-boundary-exceeding final recommendation, all trials",
+        "pointwise_95_high": 4.561404538195621,
+        "pointwise_95_low": -1.0614045381956203,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "lhs_fixed",
+        "tau": 0.9,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 0.0009009393763738016,
+        "independent_seeds": 200,
+        "mcse": 0.04681013187843791,
+        "outcome": "Dose-location error | recommend",
+        "pointwise_95_high": 0.0926487978581121,
+        "pointwise_95_low": -0.09084691910536451,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "lhs_fixed",
+        "tau": 0.9,
+        "unit": "dose-location units"
+      },
+      {
+        "direction": "negative",
+        "eligible_pairs": 385,
+        "estimate": -0.3559252929687503,
+        "independent_seeds": 200,
+        "mcse": 0.221956494670877,
+        "outcome": "Recommended efficacy | recommend",
+        "pointwise_95_high": 0.07910943658616859,
+        "pointwise_95_low": -0.7909600225236693,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "efficacy units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 10.25,
+        "independent_seeds": 200,
+        "mcse": 2.359027885128548,
+        "outcome": "True-boundary-exceeding final recommendation, all trials",
+        "pointwise_95_high": 14.873694654851954,
+        "pointwise_95_low": 5.626305345148046,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 385,
+        "estimate": 0.19618258817439774,
+        "independent_seeds": 200,
+        "mcse": 0.058878327068165745,
+        "outcome": "Dose-location error | recommend",
+        "pointwise_95_high": 0.3115841092280026,
+        "pointwise_95_low": 0.08078106712079287,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "dose-location units"
+      },
+      {
+        "direction": "negative",
+        "eligible_pairs": 322,
+        "estimate": -0.25618717447916667,
+        "independent_seeds": 180,
+        "mcse": 0.21611521115571214,
+        "outcome": "Recommended efficacy | recommend",
+        "pointwise_95_high": 0.1673986393860291,
+        "pointwise_95_low": -0.6797729883443624,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.9,
+        "unit": "efficacy units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 2.5,
+        "independent_seeds": 200,
+        "mcse": 1.2149611735633081,
+        "outcome": "True-boundary-exceeding final recommendation, all trials",
+        "pointwise_95_high": 4.881323900184084,
+        "pointwise_95_low": 0.1186760998159162,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.9,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 322,
+        "estimate": 0.09346332211416666,
+        "independent_seeds": 180,
+        "mcse": 0.0604857565652063,
+        "outcome": "Dose-location error | recommend",
+        "pointwise_95_high": 0.21201540498197102,
+        "pointwise_95_low": -0.02508876075363768,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.9,
+        "unit": "dose-location units"
+      }
+    ],
+    "primary_and_secondary_contrasts": [
+      {
+        "direction": "negative",
+        "eligible_pairs": 385,
+        "estimate": -0.3559252929687503,
+        "independent_seeds": 200,
+        "mcse": 0.221956494670877,
+        "outcome": "Recommended efficacy | recommend",
+        "pointwise_95_high": 0.07910943658616859,
+        "pointwise_95_low": -0.7909600225236693,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "efficacy units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 10.25,
+        "independent_seeds": 200,
+        "mcse": 2.359027885128548,
+        "outcome": "True-boundary-exceeding final recommendation, all trials",
+        "pointwise_95_high": 14.873694654851954,
+        "pointwise_95_low": 5.626305345148046,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 385,
+        "estimate": 0.19618258817439774,
+        "independent_seeds": 200,
+        "mcse": 0.058878327068165745,
+        "outcome": "Dose-location error | recommend",
+        "pointwise_95_high": 0.3115841092280026,
+        "pointwise_95_low": 0.08078106712079287,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "dose-location units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 1.7500000000000002,
+        "independent_seeds": 200,
+        "mcse": 0.8950941108825837,
+        "outcome": "Feasibility stop",
+        "pointwise_95_high": 3.5043844573298646,
+        "pointwise_95_low": -0.004384457329863922,
+        "pointwise_interval_excludes_zero": false,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "negative",
+        "eligible_pairs": 400,
+        "estimate": -2.61,
+        "independent_seeds": 200,
+        "mcse": 0.25329883834620653,
+        "outcome": "Post-initialization above-boundary simulated assignments",
+        "pointwise_95_high": -2.113534276841435,
+        "pointwise_95_low": -3.1064657231585646,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "assignments"
+      },
+      {
+        "direction": "negative",
+        "eligible_pairs": 400,
+        "estimate": -0.495,
+        "independent_seeds": 200,
+        "mcse": 0.252226019324178,
+        "outcome": "Sample size",
+        "pointwise_95_high": -0.0006370021246111524,
+        "pointwise_95_low": -0.9893629978753888,
+        "pointwise_interval_excludes_zero": true,
+        "protocol_scaffold": "start_low_expansion",
+        "tau": 0.7,
+        "unit": "assignments"
+      }
+    ],
+    "primary_protocol_scaffold": "start_low_expansion",
+    "primary_tau": 0.7,
+    "scaffold_interactions": [
+      {
+        "direction": "negative",
+        "eligible_pairs": 385,
+        "estimate": -0.7642866210937505,
+        "independent_seeds": 200,
+        "mcse": 0.28513218339540347,
+        "outcome": "Recommended efficacy | recommend",
+        "pointwise_95_high": -0.20542754163875965,
+        "pointwise_95_low": -1.3231457005487413,
+        "pointwise_interval_excludes_zero": true,
+        "tau": 0.7,
+        "unit": "efficacy units"
+      },
+      {
+        "direction": "negative",
+        "eligible_pairs": 322,
+        "estimate": -0.2867446831597221,
+        "independent_seeds": 180,
+        "mcse": 0.27443277503058333,
+        "outcome": "Recommended efficacy | recommend",
+        "pointwise_95_high": 0.2511435559002212,
+        "pointwise_95_low": -0.8246329222196654,
+        "pointwise_interval_excludes_zero": false,
+        "tau": 0.9,
+        "unit": "efficacy units"
+      },
+      {
+        "direction": "negative",
+        "eligible_pairs": 400,
+        "estimate": -2.5,
+        "independent_seeds": 200,
+        "mcse": 3.1850388320723884,
+        "outcome": "True-boundary-exceeding final recommendation, all trials",
+        "pointwise_95_high": 3.742676110861881,
+        "pointwise_95_low": -8.742676110861881,
+        "pointwise_interval_excludes_zero": false,
+        "tau": 0.7,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 400,
+        "estimate": 0.75,
+        "independent_seeds": 200,
+        "mcse": 1.8914479577520558,
+        "outcome": "True-boundary-exceeding final recommendation, all trials",
+        "pointwise_95_high": 4.45723799719403,
+        "pointwise_95_low": -2.9572379971940292,
+        "pointwise_interval_excludes_zero": false,
+        "tau": 0.9,
+        "unit": "percentage points"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 385,
+        "estimate": 0.21349584650625653,
+        "independent_seeds": 200,
+        "mcse": 0.07810437134705045,
+        "outcome": "Dose-location error | recommend",
+        "pointwise_95_high": 0.36658041434647537,
+        "pointwise_95_low": 0.060411278666037654,
+        "pointwise_interval_excludes_zero": true,
+        "tau": 0.7,
+        "unit": "dose-location units"
+      },
+      {
+        "direction": "positive",
+        "eligible_pairs": 322,
+        "estimate": 0.07207926760450571,
+        "independent_seeds": 180,
+        "mcse": 0.07570808440956193,
+        "outcome": "Dose-location error | recommend",
+        "pointwise_95_high": 0.2204671130472471,
+        "pointwise_95_low": -0.07630857783823568,
+        "pointwise_interval_excludes_zero": false,
+        "tau": 0.9,
+        "unit": "dose-location units"
+      }
+    ]
+  },
+  "provenance": {
+    "all_analyzer_csvs_recomputed_byte_identical": true,
+    "all_analyzer_sidecars_match_projection": true,
+    "formal_manifest_sha256": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+    "projection_fingerprint": "e95a7d0a1376e0ff748b19e69873e5d8aac6e58e8b143b86012a0ce65a517434",
+    "projection_metadata_sha256": "83130c5ed41f9c35c04731a16f9e7dde4851069b7eb834b5a2c49230ba0dc2bf",
+    "verified_analysis_inputs": {
+      "cross_testbed_profile": {
+        "artifact": "cross_testbed_terminal_contrasts.csv",
+        "artifact_sha256": "a082b769f7d02f90bc16d3e212c5f88810c6e3d4edbff8da97b22dedb29c59a4",
+        "metadata": "cross_testbed_terminal_contrasts.csv.metadata.json",
+        "metadata_sha256": "5373b3757e97e4001f6f73916b76b32f7fc96eb3386d7b519a091c0438fa317c",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 40
+      },
+      "main_osa_gate_profile": {
+        "artifact": "osa_gate_profile_contrasts.csv",
+        "artifact_sha256": "23eab6a0e2898ee81055e2c54f00b16856f5aa44c472caf607228acab00e29a6",
+        "metadata": "osa_gate_profile_contrasts.csv.metadata.json",
+        "metadata_sha256": "498cb199e6f02ba06e9d3c416af9ea7e4e79bc4ec46a0176580118eb1bdf1cee",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 30
+      },
+      "main_osa_primary": {
+        "artifact": "main_osa_primary.csv",
+        "artifact_sha256": "8b1e05a052525aaeb40fd56cf605b4b5907258b448c0c9adabf508956b4dc552",
+        "metadata": "main_osa_primary.csv.metadata.json",
+        "metadata_sha256": "3034322cac8971bf08e33ed22b22e2d2ea884e3fdf2531c4da0e20dca49374bb",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 3
+      },
+      "protocol_interactions": {
+        "artifact": "protocol_scaffold_interactions.csv",
+        "artifact_sha256": "78ab8198f81552427f76f7da290035408d2eb40848ceb154c311ed67984f733c",
+        "metadata": "protocol_scaffold_interactions.csv.metadata.json",
+        "metadata_sha256": "de723ec5b2646774d43b9540ab4805baa9f4986b51965525a81508374363a29d",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 6
+      },
+      "protocol_paired_grid": {
+        "artifact": "protocol_scaffold_paired_grid.csv",
+        "artifact_sha256": "ad7330e77a876f5fe82faf65dc720e8fee218d30d03c3ca5ab62d03466135a23",
+        "metadata": "protocol_scaffold_paired_grid.csv.metadata.json",
+        "metadata_sha256": "8b6934a03a3e9d12ef10e180c499516468de0f603dec6a1095a166a46ca544a7",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 12
+      },
+      "protocol_primary_secondary": {
+        "artifact": "protocol_scaffold_primary_secondary_contrasts.csv",
+        "artifact_sha256": "251a1d1f07915d1c6adc1bd80b9fd00718ab1daa44a98e1857e39a04a98d85c7",
+        "metadata": "protocol_scaffold_primary_secondary_contrasts.csv.metadata.json",
+        "metadata_sha256": "19fff2262b98128f95df7417e2e851a63b45c6a2186096463379beec19544891",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 6
+      },
+      "schedule_operating_characteristics": {
+        "artifact": "schedule_ratio_operating_characteristics.csv",
+        "artifact_sha256": "3966046a0ec8edb88433f6febb7d952892c83c89b20c347fec0786fc58e04c49",
+        "metadata": "schedule_ratio_analysis.metadata.json",
+        "metadata_sha256": "2441545e4acdcdd6579f128f5fbf9c208c0a1ae25e41a6b4088b0164287394bd",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 15
+      },
+      "schedule_paired_contrasts": {
+        "artifact": "schedule_ratio_paired_contrasts.csv",
+        "artifact_sha256": "4b9d51431b7f1ddd5b5ab3f4eef994bdf04ae3bdbd70d284946a1811d89031a5",
+        "metadata": "schedule_ratio_analysis.metadata.json",
+        "metadata_sha256": "2441545e4acdcdd6579f128f5fbf9c208c0a1ae25e41a6b4088b0164287394bd",
+        "projection_identity_verified": true,
+        "recomputed_csv_byte_identity": true,
+        "rows": 15
+      }
+    }
+  },
+  "schedule_ratio": {
+    "dose_access": "full_panel",
+    "new_schedule_cycle": [
+      "cEI",
+      "cEI",
+      "tMSE"
+    ],
+    "operating_characteristics": [
+      {
+        "independent_seeds": 100,
+        "mcse": 2.4183640851792454,
+        "mean": 11.0,
+        "outcome_id": "terminal_threshold_event",
+        "policy": "cEI",
+        "policy_label": "pure cEI",
+        "unit": "percentage points"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 2.6227443411030134,
+        "mean": 13.0,
+        "outcome_id": "terminal_threshold_event",
+        "policy": "tMSE",
+        "policy_label": "pure tMSE",
+        "unit": "percentage points"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 1.632993161855452,
+        "mean": 6.0,
+        "outcome_id": "terminal_threshold_event",
+        "policy": "cEI-tMSE-1to1",
+        "policy_label": "cEI–tMSE",
+        "unit": "percentage points"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 2.611164839335468,
+        "mean": 15.0,
+        "outcome_id": "terminal_threshold_event",
+        "policy": "cEI-tMSE-2to1",
+        "policy_label": "cEI-heavy (12 cEI, 6 tMSE cohorts)",
+        "unit": "percentage points"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 2.811861599824155,
+        "mean": 18.5,
+        "outcome_id": "terminal_threshold_event",
+        "policy": "cKG",
+        "policy_label": "cKG",
+        "unit": "percentage points"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 0.4666948043465241,
+        "mean": 6.82,
+        "outcome_id": "above_boundary_assignment_count",
+        "policy": "cEI",
+        "policy_label": "pure cEI",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 0.513587107676699,
+        "mean": 11.54,
+        "outcome_id": "above_boundary_assignment_count",
+        "policy": "tMSE",
+        "policy_label": "pure tMSE",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 0.41183133744902234,
+        "mean": 9.71,
+        "outcome_id": "above_boundary_assignment_count",
+        "policy": "cEI-tMSE-1to1",
+        "policy_label": "cEI–tMSE",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 0.42109285427229937,
+        "mean": 8.98,
+        "outcome_id": "above_boundary_assignment_count",
+        "policy": "cEI-tMSE-2to1",
+        "policy_label": "cEI-heavy (12 cEI, 6 tMSE cohorts)",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "independent_seeds": 100,
+        "mcse": 0.3458995007895568,
+        "mean": 7.4,
+        "outcome_id": "above_boundary_assignment_count",
+        "policy": "cKG",
+        "policy_label": "cKG",
+        "unit": "assignments per 40-assignment simulated trial"
+      }
+    ],
+    "paired_contrasts": [
+      {
+        "contrast": "cKG minus cEI–tMSE",
+        "contrast_role": "existing main comparator",
+        "direction": "positive",
+        "eligible_stratum_pairs": 200,
+        "estimate": 12.5,
+        "independent_seeds": 100,
+        "mcse": 3.361622383686938,
+        "outcome_id": "terminal_threshold_event",
+        "pointwise_95_high": 19.0887798720264,
+        "pointwise_95_low": 5.911220127973602,
+        "pointwise_interval_excludes_zero": true,
+        "policy_a": "cKG",
+        "policy_b": "cEI-tMSE-1to1",
+        "unit": "percentage points"
+      },
+      {
+        "contrast": "cKG minus cEI–tMSE",
+        "contrast_role": "existing main comparator",
+        "direction": "negative",
+        "eligible_stratum_pairs": 200,
+        "estimate": -2.31,
+        "independent_seeds": 100,
+        "mcse": 0.34835689350510246,
+        "outcome_id": "above_boundary_assignment_count",
+        "pointwise_95_high": -1.6272204887299992,
+        "pointwise_95_low": -2.992779511270001,
+        "pointwise_interval_excludes_zero": true,
+        "policy_a": "cKG",
+        "policy_b": "cEI-tMSE-1to1",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "contrast": "cKG minus cEI-heavy (12 cEI, 6 tMSE cohorts)",
+        "contrast_role": "new schedule-composition check",
+        "direction": "positive",
+        "eligible_stratum_pairs": 200,
+        "estimate": 3.5,
+        "independent_seeds": 100,
+        "mcse": 3.6414421607518372,
+        "outcome_id": "terminal_threshold_event",
+        "pointwise_95_high": 10.637226635073601,
+        "pointwise_95_low": -3.637226635073601,
+        "pointwise_interval_excludes_zero": false,
+        "policy_a": "cKG",
+        "policy_b": "cEI-tMSE-2to1",
+        "unit": "percentage points"
+      },
+      {
+        "contrast": "cKG minus cEI-heavy (12 cEI, 6 tMSE cohorts)",
+        "contrast_role": "new schedule-composition check",
+        "direction": "negative",
+        "eligible_stratum_pairs": 200,
+        "estimate": -1.58,
+        "independent_seeds": 100,
+        "mcse": 0.3464626439262445,
+        "outcome_id": "above_boundary_assignment_count",
+        "pointwise_95_high": -0.9009332179045609,
+        "pointwise_95_low": -2.2590667820954393,
+        "pointwise_interval_excludes_zero": true,
+        "policy_a": "cKG",
+        "policy_b": "cEI-tMSE-2to1",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "contrast": "cKG minus pure tMSE",
+        "contrast_role": "pure-tMSE component reference",
+        "direction": "positive",
+        "eligible_stratum_pairs": 200,
+        "estimate": 5.5,
+        "independent_seeds": 100,
+        "mcse": 3.169854854402611,
+        "outcome_id": "terminal_threshold_event",
+        "pointwise_95_high": 11.712915514629117,
+        "pointwise_95_low": -0.7129155146291168,
+        "pointwise_interval_excludes_zero": false,
+        "policy_a": "cKG",
+        "policy_b": "tMSE",
+        "unit": "percentage points"
+      },
+      {
+        "contrast": "cKG minus pure tMSE",
+        "contrast_role": "pure-tMSE component reference",
+        "direction": "negative",
+        "eligible_stratum_pairs": 200,
+        "estimate": -4.14,
+        "independent_seeds": 100,
+        "mcse": 0.4015173241793704,
+        "outcome_id": "above_boundary_assignment_count",
+        "pointwise_95_high": -3.3530260446084337,
+        "pointwise_95_low": -4.926973955391565,
+        "pointwise_interval_excludes_zero": true,
+        "policy_a": "cKG",
+        "policy_b": "tMSE",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "contrast": "cKG minus pure cEI",
+        "contrast_role": "pure-cEI component reference",
+        "direction": "positive",
+        "eligible_stratum_pairs": 200,
+        "estimate": 7.5,
+        "independent_seeds": 100,
+        "mcse": 3.285643703363854,
+        "outcome_id": "terminal_threshold_event",
+        "pointwise_95_high": 13.939861658593154,
+        "pointwise_95_low": 1.0601383414068462,
+        "pointwise_interval_excludes_zero": true,
+        "policy_a": "cKG",
+        "policy_b": "cEI",
+        "unit": "percentage points"
+      },
+      {
+        "contrast": "cKG minus pure cEI",
+        "contrast_role": "pure-cEI component reference",
+        "direction": "positive",
+        "eligible_stratum_pairs": 200,
+        "estimate": 0.58,
+        "independent_seeds": 100,
+        "mcse": 0.39903418754322645,
+        "outcome_id": "above_boundary_assignment_count",
+        "pointwise_95_high": 1.362107007584724,
+        "pointwise_95_low": -0.20210700758472389,
+        "pointwise_interval_excludes_zero": false,
+        "policy_a": "cKG",
+        "policy_b": "cEI",
+        "unit": "assignments per 40-assignment simulated trial"
+      },
+      {
+        "contrast": "cEI-heavy (12 cEI, 6 tMSE cohorts) minus cEI–tMSE",
+        "contrast_role": "schedule-composition check",
+        "direction": "positive",
+        "eligible_stratum_pairs": 200,
+        "estimate": 9.0,
+        "independent_seeds": 100,
+        "mcse": 2.5005049995001514,
+        "outcome_id": "terminal_threshold_event",
+        "pointwise_95_high": 13.900989799020296,
+        "pointwise_95_low": 4.099010200979704,
+        "pointwise_interval_excludes_zero": true,
+        "policy_a": "cEI-tMSE-2to1",
+        "policy_b": "cEI-tMSE-1to1",
+        "unit": "percentage points"
+      },
+      {
+        "contrast": "cEI-heavy (12 cEI, 6 tMSE cohorts) minus cEI–tMSE",
+        "contrast_role": "schedule-composition check",
+        "direction": "negative",
+        "eligible_stratum_pairs": 200,
+        "estimate": -0.73,
+        "independent_seeds": 100,
+        "mcse": 0.3437332181394827,
+        "outcome_id": "above_boundary_assignment_count",
+        "pointwise_95_high": -0.056282892446613886,
+        "pointwise_95_low": -1.403717107553386,
+        "pointwise_interval_excludes_zero": true,
+        "policy_a": "cEI-tMSE-2to1",
+        "policy_b": "cEI-tMSE-1to1",
+        "unit": "assignments per 40-assignment simulated trial"
+      }
+    ],
+    "post_hoc_descriptive": true,
+    "ratio_tuned": false,
+    "sim": "osa",
+    "tau": 0.7
+  },
+  "schema_version": 1
+}

@@ -1,0 +1,120 @@
+{
+  "amendment_bundle_sha256": "ccaa6f589088c7f919527ac273c8574821dfb692d8ca4acf83812c38abc93dba",
+  "artifact": "budget_toxicity_calibration_raw_master_operator_capped_M0500.json.zst",
+  "artifact_bytes": 3626,
+  "artifact_class": "authenticated_operator_capped_index_over_frozen_seed_block_indexes",
+  "artifact_sha256": "24336bf86b838ec7a3a634926e6c2bdf582339900405f2fedb1f84d08b74d24a",
+  "bindings": {
+    "analysis_spec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178",
+    "design_sha256": "a8759b0ea148bcfa97273c6bab1ed4bec744944956d609681275a2e94d670085",
+    "frozen_formal_source_sha256": {
+      "paper/analyze_primary_osa_exact_ckg_gate.py": "579d4a390c051316b31cbd8775a655b274c4f0952a85090493fdc5c6a75dbbb2",
+      "paper/formal_rerun_manifest.json": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+      "paper/formal_rerun_preflight.py": "a326911a293600e2951f380bb8297b08ec1fda7440b417c8d9d0dda9b7de208b",
+      "paper/run_full_formal_rerun.py": "e3037131097e7be5672495604574ba20fbaff34014c27c978811e06c3b7c3d8f",
+      "paper/run_primary_osa_exact_ckg_gate.py": "063a8aa444be800d1be442dce0b13fba84bd96e493bf2022ca72e785461847a9",
+      "src/safedosebo/acquisitions.py": "1e06ad27fd355fb8106d3a07d44ad446edbddd3e3d1f4e36766d2fc68d0c5756",
+      "src/safedosebo/ckg_exact.py": "b0689cdfb1bc95f0bb6da12745962fb51f42cfc5e8fb15f39b07de702527484d",
+      "src/safedosebo/context.py": "61085802c1d2d80ade1622aa062b0a10a1f567120404227d2e09d1622dfe65b1",
+      "src/safedosebo/gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+      "src/safedosebo/metrics.py": "45a62ea39dc36af6ee7a5e17d547e6bbb2ad40499d028195c3f4fe3cf0d35fb7",
+      "src/safedosebo/protocol.py": "ff0a55b3e12bceb5a556121f721b44a9e186b0dc823d895cf98cda9681f3e8b7",
+      "src/safedosebo/registry.py": "3d097a6b33a27f192d0dd7a90b4e4a89b34f04821c8b42c2681fc101460e5241",
+      "src/safedosebo/surfaces.py": "48d9a238e17c919c09fc7f577e4cd3c85e21023b60a0df7ee1d99d23a3419899",
+      "src/safedosebo/trial.py": "61929fa04d30b27155c2aa99992bed30ad7ccb072b43e0c46a1e282dfd81a3ce"
+    },
+    "implementation_source_sha256": {
+      "paper/analyze_budget_toxicity_calibration_audit.py": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+      "paper/budget_toxicity_calibration_core.py": "da51663bb6a6ae8e0bf1ceff4f6168d71d5ad71ceb3b193907c72c04ad0a7558",
+      "paper/monitor_budget_toxicity_calibration_precision.py": "3994535bc1e2c300388c2d161d326e66f6185452971075e8d7bc9caf76bb07e0",
+      "paper/run_budget_toxicity_calibration_audit.py": "c36420dc8a37c8a538ecba3b8d5d82753d428fb0eb4074dbe97baf83e474365d"
+    },
+    "launch_fingerprint": "364a65e046c83acf5458885e8b07e2cb3de441c5ba01f0a1d02e6f59f6d3e0a5",
+    "manifest_sha256": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+    "ray_contract": {
+      "maximum_in_flight": 20,
+      "num_cpus": 10,
+      "serial_fallback": false,
+      "worker_num_cpus": 1
+    },
+    "runtime_identity": {
+      "gpytorch": "1.14",
+      "matplotlib": "3.10.7",
+      "numpy": "1.26.4",
+      "python": "3.11.6",
+      "ray": "2.10.0",
+      "scipy": "1.16.3",
+      "torch": "2.4.1",
+      "zstandard": "0.19.0"
+    },
+    "source_sha256": {
+      "paper/analyze_budget_toxicity_calibration_audit.py": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+      "paper/analyze_primary_osa_exact_ckg_gate.py": "579d4a390c051316b31cbd8775a655b274c4f0952a85090493fdc5c6a75dbbb2",
+      "paper/budget_toxicity_calibration_core.py": "da51663bb6a6ae8e0bf1ceff4f6168d71d5ad71ceb3b193907c72c04ad0a7558",
+      "paper/formal_rerun_manifest.json": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+      "paper/formal_rerun_preflight.py": "a326911a293600e2951f380bb8297b08ec1fda7440b417c8d9d0dda9b7de208b",
+      "paper/monitor_budget_toxicity_calibration_precision.py": "3994535bc1e2c300388c2d161d326e66f6185452971075e8d7bc9caf76bb07e0",
+      "paper/run_budget_toxicity_calibration_audit.py": "c36420dc8a37c8a538ecba3b8d5d82753d428fb0eb4074dbe97baf83e474365d",
+      "paper/run_full_formal_rerun.py": "e3037131097e7be5672495604574ba20fbaff34014c27c978811e06c3b7c3d8f",
+      "paper/run_primary_osa_exact_ckg_gate.py": "063a8aa444be800d1be442dce0b13fba84bd96e493bf2022ca72e785461847a9",
+      "src/safedosebo/acquisitions.py": "1e06ad27fd355fb8106d3a07d44ad446edbddd3e3d1f4e36766d2fc68d0c5756",
+      "src/safedosebo/ckg_exact.py": "b0689cdfb1bc95f0bb6da12745962fb51f42cfc5e8fb15f39b07de702527484d",
+      "src/safedosebo/context.py": "61085802c1d2d80ade1622aa062b0a10a1f567120404227d2e09d1622dfe65b1",
+      "src/safedosebo/gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+      "src/safedosebo/metrics.py": "45a62ea39dc36af6ee7a5e17d547e6bbb2ad40499d028195c3f4fe3cf0d35fb7",
+      "src/safedosebo/protocol.py": "ff0a55b3e12bceb5a556121f721b44a9e186b0dc823d895cf98cda9681f3e8b7",
+      "src/safedosebo/registry.py": "3d097a6b33a27f192d0dd7a90b4e4a89b34f04821c8b42c2681fc101460e5241",
+      "src/safedosebo/surfaces.py": "48d9a238e17c919c09fc7f577e4cd3c85e21023b60a0df7ee1d99d23a3419899",
+      "src/safedosebo/trial.py": "61929fa04d30b27155c2aa99992bed30ad7ccb072b43e0c46a1e282dfd81a3ce"
+    }
+  },
+  "cap_finalizer_sha256": "6e8f0644f7d91b38056731816e1ac4fe1c1d1623135dbea11298c3721dfe7a5f",
+  "compression": {
+    "checksum": true,
+    "content_size": true,
+    "dict_id": false,
+    "format": "zstandard",
+    "level": 19,
+    "threads": 0
+  },
+  "environment": {
+    "captured_at_utc": "2026-08-28T06:05:06.291575+00:00",
+    "logical_cpu_count": 10,
+    "machine": "arm64",
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "privacy_note": "No username, home path, hostname, serial number, or persistent device identifier is recorded.",
+    "python": "3.11.6",
+    "ray_contract": {
+      "maximum_in_flight": 20,
+      "num_cpus": 10,
+      "serial_fallback": false,
+      "worker_num_cpus": 1
+    },
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "final_M": 500,
+  "generated_at_utc": "2026-08-28T06:05:06.327865Z",
+  "immutable": true,
+  "operator_cap_summary": {
+    "effective_next_M": null,
+    "original_next_M": 1000,
+    "precision_target_achieved": false,
+    "terminal_reason": "OPERATOR_CAP_WITH_UNRESOLVED_PRECISION",
+    "terminated_with_unresolved_precision": true,
+    "unresolved_estimand_count": 7
+  },
+  "path_count": 24000,
+  "precision_bundle_sha256": "69e1f78f45bfa214996c899b1a8532ced06f1eb31b7e819b993b921e2eb50b4d",
+  "schema_version": 1,
+  "snapshot_count": 72000,
+  "status": "TERMINAL_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_OPERATOR_CAP",
+  "storage_model": "authenticated_index_over_seed_block_indexes_plus_operator_cap",
+  "uncompressed_bytes": 14397,
+  "uncompressed_sha256": "629a053eb1d421d3fb3ea35929ec1fb49a5da712a499648765e99b6058f28274"
+}

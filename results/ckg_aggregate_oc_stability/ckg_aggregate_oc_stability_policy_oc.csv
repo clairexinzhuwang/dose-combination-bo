@@ -1,0 +1,31 @@
+policy,outcome_id,outcome,unit,denominator_definition,eligible_seed_stratum_rows,independent_seeds,mean,mcse,ci95_low,ci95_high,critical_t,mean_assignments_of_40
+cEI,recommended_efficacy,Recommended true efficacy,OSA efficacy units,trials producing a recommendation,400,200,6.680289062500001,0.18406441282626493,6.317322039063826,7.043256085936176,1.971956544249395,
+cEI,threshold_exceeding_final_recommendation,All-trial threshold-exceeding final recommendation,percentage points,all simulated trials,400,200,9.75,1.573073520693657,6.647967376282708,12.852032623717292,1.971956544249395,
+cEI,above_boundary_assignments,Above-boundary simulated assignments,percentage points of 40 assignments,all simulated assignments,400,200,16.81875,0.8307548965720226,15.180537445037572,18.45696255496243,1.971956544249395,6.7275
+cEI,dose_location_error,Dose-location error,panel dose units,trials producing a recommendation,400,200,1.923214496672391,0.04895737169618754,1.826672687166844,2.019756306177938,1.971956544249395,
+cEI,recommendation_rate,Recommendation rate,percentage points,all simulated trials,400,200,100.0,0.0,100.0,100.0,1.971956544249395,
+cEI,stop_rate,Stop rate,percentage points,all simulated trials,400,200,0.0,0.0,0.0,0.0,1.971956544249395,
+cKG-512-seed0,recommended_efficacy,Recommended true efficacy,OSA efficacy units,trials producing a recommendation,400,200,7.55218095703125,0.208647936521013,7.1407362931645055,7.963625620897994,1.971956544249395,
+cKG-512-seed0,threshold_exceeding_final_recommendation,All-trial threshold-exceeding final recommendation,percentage points,all simulated trials,400,200,22.0,2.1159836801528895,17.827372134397592,26.172627865602408,1.971956544249395,
+cKG-512-seed0,above_boundary_assignments,Above-boundary simulated assignments,percentage points of 40 assignments,all simulated assignments,400,200,17.18125,0.5333563769296826,16.129494402096363,18.233005597903635,1.971956544249395,6.8725
+cKG-512-seed0,dose_location_error,Dose-location error,panel dose units,trials producing a recommendation,400,200,1.7158553963793997,0.056848201243624656,1.6037532139082273,1.827957578850572,1.971956544249395,
+cKG-512-seed0,recommendation_rate,Recommendation rate,percentage points,all simulated trials,400,200,100.0,0.0,100.0,100.0,1.971956544249395,
+cKG-512-seed0,stop_rate,Stop rate,percentage points,all simulated trials,400,200,0.0,0.0,0.0,0.0,1.971956544249395,
+cKG-1024-seed0,recommended_efficacy,Recommended true efficacy,OSA efficacy units,trials producing a recommendation,400,200,7.6485251953125,0.1895749620585573,7.274691608255297,8.022358782369702,1.971956544249395,
+cKG-1024-seed0,threshold_exceeding_final_recommendation,All-trial threshold-exceeding final recommendation,percentage points,all simulated trials,400,200,14.75,1.9347879787235254,10.934682183621085,18.565317816378915,1.971956544249395,
+cKG-1024-seed0,above_boundary_assignments,Above-boundary simulated assignments,percentage points of 40 assignments,all simulated assignments,400,200,19.16875,0.7228805823712148,17.74326090488227,20.59423909511773,1.971956544249395,7.6675
+cKG-1024-seed0,dose_location_error,Dose-location error,panel dose units,trials producing a recommendation,400,200,1.6629410389362982,0.05077454379216169,1.5628158450240675,1.763066232848529,1.971956544249395,
+cKG-1024-seed0,recommendation_rate,Recommendation rate,percentage points,all simulated trials,400,200,100.0,0.0,100.0,100.0,1.971956544249395,
+cKG-1024-seed0,stop_rate,Stop rate,percentage points,all simulated trials,400,200,0.0,0.0,0.0,0.0,1.971956544249395,
+cKG-1024-seed1,recommended_efficacy,Recommended true efficacy,OSA efficacy units,trials producing a recommendation,400,200,7.5379043945312505,0.19889349715854815,7.145695061200803,7.9301137278616975,1.971956544249395,
+cKG-1024-seed1,threshold_exceeding_final_recommendation,All-trial threshold-exceeding final recommendation,percentage points,all simulated trials,400,200,22.5,2.089396537148283,18.37980082503842,26.62019917496158,1.971956544249395,
+cKG-1024-seed1,above_boundary_assignments,Above-boundary simulated assignments,percentage points of 40 assignments,all simulated assignments,400,200,16.90625,0.5303994817481381,15.860325270900272,17.952174729099728,1.971956544249395,6.7625
+cKG-1024-seed1,dose_location_error,Dose-location error,panel dose units,trials producing a recommendation,400,200,1.7366844845194211,0.0550530196108114,1.6281223222171912,1.845246646821651,1.971956544249395,
+cKG-1024-seed1,recommendation_rate,Recommendation rate,percentage points,all simulated trials,400,200,100.0,0.0,100.0,100.0,1.971956544249395,
+cKG-1024-seed1,stop_rate,Stop rate,percentage points,all simulated trials,400,200,0.0,0.0,0.0,0.0,1.971956544249395,
+cEI-tMSE,recommended_efficacy,Recommended true efficacy,OSA efficacy units,trials producing a recommendation,400,200,7.1373462890625,0.17056774271254496,6.80099411258265,7.47369846554235,1.971956544249395,
+cEI-tMSE,threshold_exceeding_final_recommendation,All-trial threshold-exceeding final recommendation,percentage points,all simulated trials,400,200,6.75,1.2620026758168321,4.26138556456275,9.238614435437249,1.971956544249395,
+cEI-tMSE,above_boundary_assignments,Above-boundary simulated assignments,percentage points of 40 assignments,all simulated assignments,400,200,24.19375,0.7921518255746853,22.631661023518895,25.755838976481108,1.971956544249395,9.6775
+cEI-tMSE,dose_location_error,Dose-location error,panel dose units,trials producing a recommendation,400,200,1.71832461258465,0.05227531248213117,1.6152399680328293,1.8214092571364708,1.971956544249395,
+cEI-tMSE,recommendation_rate,Recommendation rate,percentage points,all simulated trials,400,200,100.0,0.0,100.0,100.0,1.971956544249395,
+cEI-tMSE,stop_rate,Stop rate,percentage points,all simulated trials,400,200,0.0,0.0,0.0,0.0,1.971956544249395,

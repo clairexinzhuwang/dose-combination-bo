@@ -1,0 +1,220 @@
+{
+  "adapter": "paper/generate_budget_toxicity_calibration_publication.py",
+  "adapter_sha256": "e14c2464f586f3abb805bfa24bb47f2ecc61a93e7405e0cb51489d497c6aa919",
+  "artifact_class": "outcome_independent_budget_toxicity_calibration_publication_projection",
+  "artifacts": {
+    "budget_toxicity_calibration_all_118.csv": {
+      "artifact_type": "all_118_primary_csv",
+      "bytes": 59383,
+      "metadata": "budget_toxicity_calibration_all_118.csv.metadata.json",
+      "metadata_sha256": "8c249e2527e853c74b507efb5bebb2a484643ce1e7f93b34472f8297dadfa8c2",
+      "sha256": "0d59ab620691fd55973059161f4ddac3deaebb7f3f57c0d2d94966c509fed96d"
+    },
+    "budget_toxicity_calibration_all_118.json": {
+      "artifact_type": "all_118_primary_json",
+      "bytes": 198817,
+      "metadata": "budget_toxicity_calibration_all_118.json.metadata.json",
+      "metadata_sha256": "3f54c4f2a43da83eca668b4a71a1fed2ef49f48e9313295044a573410280f161",
+      "sha256": "490d309a10d97cb4d4182d78b66b0b0c66dca1945d765c42f4b6f0cfef30a91d"
+    },
+    "budget_toxicity_calibration_family_A.tex": {
+      "artifact_type": "complete_family_A_longtable",
+      "bytes": 7560,
+      "metadata": "budget_toxicity_calibration_family_A.tex.metadata.json",
+      "metadata_sha256": "5a8138595868cfeb49889ab7805c322bea6ebda4b412b65de71a5ff52a1d53de",
+      "sha256": "8f4d741e14887b72f668b218380ca707033cdfdaf26010c4cab2721fbbc2ee87"
+    },
+    "budget_toxicity_calibration_family_B.tex": {
+      "artifact_type": "complete_family_B_longtable",
+      "bytes": 6752,
+      "metadata": "budget_toxicity_calibration_family_B.tex.metadata.json",
+      "metadata_sha256": "01ac715d5da58a8695d63f0f921f557e29e57c70545c15ce1c1ff9a1fcfea360",
+      "sha256": "7030f968d6a6529c6b973d9206e7d1c6aa37848b1d1c55a43880732289f0ebd3"
+    },
+    "budget_toxicity_calibration_family_C.tex": {
+      "artifact_type": "complete_family_C_longtable",
+      "bytes": 2993,
+      "metadata": "budget_toxicity_calibration_family_C.tex.metadata.json",
+      "metadata_sha256": "63838584e1a3dfc0056a2ea3246c24ac497a39e9cca59cd4cd29043460731ae8",
+      "sha256": "7809bd68b6da6fd4659899e281b510616764813c85efeb5e740203af3d106a5a"
+    },
+    "budget_toxicity_calibration_plotted_secondary_72.json": {
+      "artifact_type": "plotted_secondary_absolute_72_json",
+      "bytes": 72148,
+      "metadata": "budget_toxicity_calibration_plotted_secondary_72.json.metadata.json",
+      "metadata_sha256": "368bb35f6f1bb8719b790562c01108a07e2aa3a59821224f46031bc9b23ca991",
+      "sha256": "9e1a0ace65be790a35b1ac7ba42f012eb78877d5a48ec087ef2472e4c806f2c1"
+    },
+    "budget_toxicity_calibration_policy_vs_cei_did_36.json": {
+      "artifact_type": "complete_policy_vs_cEI_calibration_did_36_json",
+      "bytes": 44054,
+      "metadata": "budget_toxicity_calibration_policy_vs_cei_did_36.json.metadata.json",
+      "metadata_sha256": "4664495fb7fe6664549e81c9b1f0832e13c7d2afb4b94705f049f226b460dead",
+      "sha256": "42fc98e299b86bc90a3a502fb52d6f5527a61db68d3292863f9c27c77d213352"
+    },
+    "budget_toxicity_calibration_policy_vs_cei_did_36.tex": {
+      "artifact_type": "complete_policy_vs_cEI_calibration_did_36_longtable",
+      "bytes": 5404,
+      "metadata": "budget_toxicity_calibration_policy_vs_cei_did_36.tex.metadata.json",
+      "metadata_sha256": "56ba88b4b3b05fb5125d36057691949f1d197e472ea96f72052f9d024c05f5d8",
+      "sha256": "a0411280fffad36260301a7d8114ce0a187a8a242d898dbb6a4dcefd23c3cc97"
+    },
+    "budget_toxicity_calibration_result_facts.json": {
+      "artifact_type": "frozen_result_facts_json",
+      "bytes": 90247,
+      "metadata": "budget_toxicity_calibration_result_facts.json.metadata.json",
+      "metadata_sha256": "13d9dc0c959f08bb81345e5c8fb09d45be45186568e06b549a35b72d9b52da80",
+      "sha256": "6643840607d9984f9de7efaad5518f56763764a5f5ed42628247f6ed1623f95d"
+    },
+    "budget_toxicity_calibration_result_facts.tex": {
+      "artifact_type": "frozen_result_facts_tex",
+      "bytes": 8411,
+      "metadata": "budget_toxicity_calibration_result_facts.tex.metadata.json",
+      "metadata_sha256": "bc3e7c7cb8d72b13660e31a6b0af163252d40e5b3307a1d161fedb45e0b6f6b2",
+      "sha256": "9543d6d3d7dba36bded7291fd60f4570ca221cb3e4fd4393957f243365a8d194"
+    },
+    "figure_budget_toxicity_calibration_absolute_gate_brier_profiles.pdf": {
+      "artifact_type": "publication_figure_absolute_gate_brier_profiles",
+      "bytes": 29703,
+      "metadata": "figure_budget_toxicity_calibration_absolute_gate_brier_profiles.pdf.metadata.json",
+      "metadata_sha256": "5a0d195138bbdbb03b6dba4c04460a5344e8e1717d581cc538c4d8c0d47f139c",
+      "sha256": "02f3cc6b0c8bb4d4b1f9d7164178ef3ffc7faba78b4f699efedbbfea52b79e48"
+    },
+    "figure_budget_toxicity_calibration_absolute_gate_brier_profiles.png": {
+      "artifact_type": "publication_figure_absolute_gate_brier_profiles",
+      "bytes": 363034,
+      "metadata": "figure_budget_toxicity_calibration_absolute_gate_brier_profiles.png.metadata.json",
+      "metadata_sha256": "a96985e1fb88528ac39f3a78e92f288490c57e8fae4605e71f237357a3747c46",
+      "sha256": "5f5a42a913ecfeec2ef5311919934335599934e421b99e1c182d8193a9702f07"
+    },
+    "figure_budget_toxicity_calibration_attenuation_interactions.pdf": {
+      "artifact_type": "publication_figure_attenuation_interactions",
+      "bytes": 21587,
+      "metadata": "figure_budget_toxicity_calibration_attenuation_interactions.pdf.metadata.json",
+      "metadata_sha256": "9dd400f39612b788342f6dbd67781632a0c7014ef0de7b96eed9ff8d963f634a",
+      "sha256": "eb8dd3ba6547410492597848b16d54910f0441daada2068c120dba774a6033c6"
+    },
+    "figure_budget_toxicity_calibration_attenuation_interactions.png": {
+      "artifact_type": "publication_figure_attenuation_interactions",
+      "bytes": 215765,
+      "metadata": "figure_budget_toxicity_calibration_attenuation_interactions.png.metadata.json",
+      "metadata_sha256": "899db2c24aeef18885db954fa44a2db648048503970f9291a345c5b566cfba5f",
+      "sha256": "6022100b50f15ca972180f8b8b7e09f3bcd9e281678c034c3b6cbca8e971d0ed"
+    },
+    "figure_budget_toxicity_calibration_calibration_penalties.pdf": {
+      "artifact_type": "publication_figure_calibration_penalties",
+      "bytes": 25947,
+      "metadata": "figure_budget_toxicity_calibration_calibration_penalties.pdf.metadata.json",
+      "metadata_sha256": "7e1de524d6ad17be1149fad9ac98ef2a0615e7ac0d372cf14b188d894cc5f288",
+      "sha256": "424d91743397da238a27610de2e5feb6fd9360222ca0e12799cf151c7079ea1b"
+    },
+    "figure_budget_toxicity_calibration_calibration_penalties.png": {
+      "artifact_type": "publication_figure_calibration_penalties",
+      "bytes": 320527,
+      "metadata": "figure_budget_toxicity_calibration_calibration_penalties.png.metadata.json",
+      "metadata_sha256": "818543e9c24d10103b9f9060eca0cb6724d85f8c4488a9c29f02ab873e531bb2",
+      "sha256": "c1168d95cd1c12ae2a6f049dc624c1ef3e1ce40eb9183d2c7272015299409247"
+    },
+    "figure_budget_toxicity_calibration_cei_reference.pdf": {
+      "artifact_type": "publication_figure_cei_reference",
+      "bytes": 18577,
+      "metadata": "figure_budget_toxicity_calibration_cei_reference.pdf.metadata.json",
+      "metadata_sha256": "176d027e13b1a1d15dc5c9db32cb0118f39f25f655848b00c5149abadcb093f9",
+      "sha256": "56928eb1d332e97e89d26d0161184dbddc9bd4d0781df443889058bc449f05dd"
+    },
+    "figure_budget_toxicity_calibration_cei_reference.png": {
+      "artifact_type": "publication_figure_cei_reference",
+      "bytes": 177345,
+      "metadata": "figure_budget_toxicity_calibration_cei_reference.png.metadata.json",
+      "metadata_sha256": "acb6ceffe2b7cbaa180e1f0c91a2082f8e2ea43453160087a4688b59d7b714f3",
+      "sha256": "02645d9654bc3f868992d640b905dede33262b9ce183f33696307c58ab2c39dc"
+    },
+    "figure_budget_toxicity_calibration_principal_profile.pdf": {
+      "artifact_type": "publication_figure_principal_profile",
+      "bytes": 22357,
+      "metadata": "figure_budget_toxicity_calibration_principal_profile.pdf.metadata.json",
+      "metadata_sha256": "5d9dab04ea6aa8104568701f89804d7c5b41b646911d534c9446854142bb4ae8",
+      "sha256": "3c904a8e4dd8b929874c8c2dc0ac134dfbc49266657ebf372cf2182e773eaef3"
+    },
+    "figure_budget_toxicity_calibration_principal_profile.png": {
+      "artifact_type": "publication_figure_principal_profile",
+      "bytes": 278134,
+      "metadata": "figure_budget_toxicity_calibration_principal_profile.png.metadata.json",
+      "metadata_sha256": "384fb024a158c7117d9ea8507ff43b76dc894b4acd054c889c8bd11b96dd3f36",
+      "sha256": "fedfe7a0491163876383d825929d6163a77543ccfae742b3dc32191861a7df8f"
+    }
+  },
+  "authenticated_analysis": {
+    "baseline_status": "PASS_AVAILABLE_FIELD_IDENTITY",
+    "commit_status": "COMMITTED_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_ANALYSIS",
+    "final_M": 500,
+    "primary_estimand_count": 118,
+    "primary_family_counts": {
+      "A": 54,
+      "B": 48,
+      "C": 16
+    },
+    "secondary_absolute_profile_rows_used": 72,
+    "secondary_absolute_row_count": 864,
+    "secondary_contrast_row_count": 363,
+    "secondary_policy_vs_cEI_calibration_did_rows_published": 36,
+    "status": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_ANALYSIS"
+  },
+  "contract": "budget_toxicity_calibration_publication_contract.json",
+  "contract_sha256": "a1904b435d4e42ef6df25094bc1f3ce35156ceaec5bf157ec24fb2ff2827b6a8",
+  "deterministic_timestamp_utc": "2000-01-01T00:00:00Z",
+  "input_bundle_sha256": "3b8ea560a8b6ff56199b97eafacc4709af44f14f1595bec982a21142768a1973",
+  "inputs": {
+    "budget_toxicity_calibration_analysis.commit.json": {
+      "bytes": 319,
+      "sha256": "83ed20118b1ad9bdf37c35db809317d625c8fcd66e0eedc909d44b8527d8f20f"
+    },
+    "budget_toxicity_calibration_analysis.metadata.json": {
+      "bytes": 66110,
+      "sha256": "9c1d2ffffa347c116583e6e4d0ab75440e01236a065d2b87003b16c0dddb8a9e"
+    },
+    "budget_toxicity_calibration_baseline_identity.json": {
+      "bytes": 4748,
+      "sha256": "c796ab602b95a6033a80e6d3361fb49ea7e9e5034188d517561ffd23b8f62450"
+    },
+    "budget_toxicity_calibration_baseline_identity.json.metadata.json": {
+      "bytes": 61365,
+      "sha256": "4c6d2f20b71241d17c43c224603bd2d98dd7715a33d57ce52562634b2a70a663"
+    },
+    "budget_toxicity_calibration_primary.json": {
+      "bytes": 147856,
+      "sha256": "81cd4438ac97cc824a15eaa3eb6c581744f4cf074e2fa363ac31643cdcaf91c2"
+    },
+    "budget_toxicity_calibration_primary.json.metadata.json": {
+      "bytes": 61357,
+      "sha256": "e851c9a5b5f4ba077d92036b3dfbb0eb6c6db8fa09bf42f357f1fc06bfed33ed"
+    },
+    "budget_toxicity_calibration_secondary.json": {
+      "bytes": 1208690,
+      "sha256": "76e21974fad82ec53e085a7f1fba9c0bf3b13a599b3e8f02a7e81595549005fe"
+    },
+    "budget_toxicity_calibration_secondary.json.metadata.json": {
+      "bytes": 61364,
+      "sha256": "e3588f507717bfc25bc97c56f5b2dd3d7a85da4ace0eee125253b9aa415c753f"
+    }
+  },
+  "output_bundle_sha256": "5d0ba397ecb75d8165c4228c992bda93a269814dfa0efb687c13e14d0bdeeeab",
+  "publication_rules": {
+    "colors_encode_only_c_sigma": true,
+    "complete_primary_projection": true,
+    "finite_fixed_design_audit": true,
+    "no_filtering_by_sign_interval_or_winner": true,
+    "policy_vs_cEI_calibration_did_projection_complete": true,
+    "primary_scientific_display_uses_guarded_simultaneous_bands": true,
+    "raw_estimates_mcse_and_intervals_retained": true,
+    "secondary_cell_predicates_have_no_vote_or_family_theorem": true,
+    "secondary_scientific_display_uses_guarded_pointwise_intervals": true
+  },
+  "schema_version": 3,
+  "status": "COMPLETE_AUTHENTICATED_BUDGET_TOXICITY_CALIBRATION_PUBLICATION",
+  "trusted_commitments": {
+    "analyzer_sha256": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+    "manifest_sha256": "2e189ff6426bd3ad12fd29896fb6f76027a0d9e4424013d92edd0df3d143d3b6",
+    "prespec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178"
+  }
+}

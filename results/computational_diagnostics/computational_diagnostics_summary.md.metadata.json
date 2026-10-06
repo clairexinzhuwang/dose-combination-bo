@@ -1,0 +1,172 @@
+{
+  "artifact": "computational_diagnostics_summary.md",
+  "artifact_bytes": 2202,
+  "artifact_sha256": "1611f8b7e51fa8cc14a67caac16ef1a6c4006052644d16eb55fbf9633e374f47",
+  "artifact_type": "computational_diagnostics_markdown",
+  "design": {
+    "acquisition_timing_boundary": "Time only the registered acquisition callable; Context construction, GP fitting, allocation, final refits, and metrics are excluded.",
+    "budget": 40,
+    "ckg_fantasy_counts": [
+      128,
+      256,
+      512
+    ],
+    "cohort_size": 2,
+    "empty_gate": "pf",
+    "fantasy_nesting": "Generate production-ordered Zf[0:512] and Zg[0:512] banks with seed 0; use channel-wise prefixes for 128 and 256.",
+    "gate_mode": "latent",
+    "grid_n": 5,
+    "noise": "fixed",
+    "protocol_scaffold": "lhs_fixed",
+    "stability_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "status": "post hoc and descriptive",
+    "strata": [
+      0,
+      1
+    ],
+    "stratum_clustering": "Average the two strata within seed before timing summaries, ratios, and agreement summaries.",
+    "surface": "osa",
+    "tau": 0.7,
+    "timing_order": "One process; seed then stratum; cyclically rotate the six variants within each seed-stratum cell.",
+    "timing_seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "timing_variants": [
+      "cEI",
+      "tMSE",
+      "cEI-tMSE",
+      "cKG-128",
+      "cKG-256",
+      "cKG-512"
+    ],
+    "total_timing_boundary": "Entire run_trial call, including final refits and metrics.",
+    "warmup": 4
+  },
+  "environment": {
+    "captured_at_utc": "2026-08-23T03:09:59.973392+00:00",
+    "hardware": {
+      "chip": "Apple M2 Pro",
+      "core_description": "10 (6 Performance and 4 Efficiency)",
+      "cpu_model": "Apple M2 Pro",
+      "logical_cpu_count": 10,
+      "memory": "16 GB",
+      "model_identifier": "Mac14,9",
+      "model_name": "MacBook Pro",
+      "model_number": "MPHE3LL/A"
+    },
+    "machine": "arm64",
+    "numpy_configuration": {
+      "build_dependencies": {
+        "blas": {
+          "found": true,
+          "name": "openblas64",
+          "openblas configuration": "USE_64BITINT=1 DYNAMIC_ARCH=1 DYNAMIC_OLDER= NO_CBLAS= NO_LAPACK= NO_LAPACKE= NO_AFFINITY=1 USE_OPENMP= SANDYBRIDGE MAX_THREADS=3",
+          "version": "0.3.23.dev"
+        },
+        "lapack": {
+          "found": true,
+          "name": "dep4350285776",
+          "openblas configuration": "unknown",
+          "version": "1.26.4"
+        }
+      },
+      "compilers": {
+        "c": {
+          "linker": "ld64",
+          "name": "clang",
+          "version": "14.0.0"
+        },
+        "c++": {
+          "linker": "ld64",
+          "name": "clang",
+          "version": "14.0.0"
+        },
+        "cython": {
+          "linker": "cython",
+          "name": "cython",
+          "version": "3.0.8"
+        }
+      },
+      "host_machine": {
+        "cpu": "aarch64",
+        "endian": "little",
+        "family": "aarch64",
+        "system": "darwin"
+      },
+      "simd_extensions": {
+        "baseline": [
+          "NEON",
+          "NEON_FP16",
+          "NEON_VFPV4",
+          "ASIMD"
+        ],
+        "found": [
+          "ASIMDHP"
+        ]
+      }
+    },
+    "platform": "macOS-26.5.1-arm64-arm-64bit",
+    "python": "3.11.6 | packaged by conda-forge | (main, Oct  3 2023, 10:37:07) [Clang 15.0.7 ]",
+    "python_executable_name": "python",
+    "thread_environment": {
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    },
+    "torch_num_interop_threads": 1,
+    "torch_num_threads": 1,
+    "versions": {
+      "gpytorch": "1.14",
+      "numpy": "1.26.4",
+      "safedosebo": "source-tree",
+      "scipy": "1.16.3",
+      "torch": "2.4.1"
+    }
+  },
+  "generated_at_utc": "2026-08-23T03:31:09.861451+00:00",
+  "record_counts": {
+    "same_state_decisions": 720,
+    "same_state_reference_trials": 40,
+    "stability_trials": 120,
+    "timing_trials": 120
+  },
+  "source_sha256": {
+    "acquisitions.py": "fe6a55c937a9db615bba057d8b420e917b02d368a2f478632344ad23a2c5f960",
+    "gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+    "run_computational_diagnostics.py": "55bdfb44383c58f0af386b384090a0a01c4cbc6206a5dc6108794f09ea9bfb45",
+    "trial.py": "29351d4c85104582514fc19eac839b32a3a623e7c446b72e668f407a07dda56e"
+  },
+  "status": "post hoc and descriptive"
+}

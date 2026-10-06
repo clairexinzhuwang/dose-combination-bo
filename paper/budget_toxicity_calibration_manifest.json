@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_NEW_AUDIT_EXECUTION",
+  "freeze_date": "2026-08-26",
+  "purpose": "Finite-budget audit of assumed toxicity observation-noise calibration under the OSA truth.",
+  "temporal_boundary": {
+    "original_results_inspected": true,
+    "comparator_family_results_inspected": true,
+    "wholly_prospective_or_preregistered": false,
+    "new_audit_paths_generated_before_design_freeze": false,
+    "inference_scope": "exploratory_analysis_specified_major_revision_sensitivity"
+  },
+  "pre_analysis_construction_amendment": {
+    "amendment_id": "baseline_singleton_serializer_20260827",
+    "amendment_sequence": 2,
+    "status": "FROZEN_BEFORE_SECOND_CLEAN_RESTART",
+    "freeze_date": "2026-08-27",
+    "scientific_design_changed": false,
+    "completed_execution_before_amendment": {
+      "block_id": "M0200",
+      "launch_fingerprint": "5c0d05492e367c1bc52045dbcb8525daa672bf09868b69ecedf872c3278f89cb",
+      "immutable_shard_envelopes": 24,
+      "physical_paths": 9600,
+      "nested_snapshots": 28800
+    },
+    "gate_boundary": {
+      "baseline_only_gate_invoked": true,
+      "baseline_identity_status": "FAIL_QUERY_SHAPE_SERIALIZATION_ONLY",
+      "failed_before_precision_monitor": true,
+      "failed_before_scientific_analysis": true,
+      "scientific_effects_inspected": false,
+      "effect_signs_intervals_pvalues_rankings_or_topup_inspected": false
+    },
+    "construction_diagnosis": {
+      "common_field_cells": 3200,
+      "other_common_fields_exact": true,
+      "batch_posterior_state_gate_and_recommendation_unchanged": true,
+      "serializer_root_cause": "historical_singleton_queries_versus_batched_25_dose_query_components",
+      "scalar_last_binary64_bit_differences": {
+        "rpsel": {
+          "mismatch_cells": 687,
+          "maximum_absolute_difference": 3.4239278079439828e-12
+        },
+        "obd_pf": {
+          "mismatch_cells": 1692,
+          "maximum_absolute_difference": 2.2304380564719395e-13
+        },
+        "obd_sdg": {
+          "mismatch_cells": 1662,
+          "maximum_absolute_difference": 1.748934330692009e-12
+        }
+      },
+      "allocation_history": {
+        "available_cells": 3040,
+        "exact_cells": 3040,
+        "prespecified_unavailable_cells": 160,
+        "unavailable_exception_exact": true
+      }
+    },
+    "pre_amendment_in_memory_maximum_budget_replays": {
+      "count": 2,
+      "policy": "cEI",
+      "seeds": [0, 1],
+      "maximum_budget": 80,
+      "compared_prefix_budget": 40,
+      "purpose": "prefix_legacy_envelope_and_prefrozen_scientific_state_hash_diagnosis_only",
+      "immediately_discarded": true,
+      "persisted_as_production_records": false,
+      "scientific_effects_inspected": false
+    },
+    "post_repair_in_memory_construction_regressions": {
+      "count": 2,
+      "policy": "cEI",
+      "seeds": [1, 4],
+      "maximum_budget": 42,
+      "compared_prefix_budget": 40,
+      "purpose": "singleton_serializer_regression_only",
+      "immediately_discarded": true,
+      "persisted_as_production_records": false,
+      "scientific_effects_inspected": false
+    },
+    "repair_scope": {
+      "batched_25_dose_state_preserved_for_panel_quantities_gates_and_recommendations": true,
+      "singleton_query_order_shapes_and_formulas_replayed_only_for": [
+        "rpsel",
+        "obd_pf",
+        "obd_sdg"
+      ],
+      "execution_source_binding_refrozen": true
+    },
+    "quarantine": {
+      "path": "results/budget_toxicity_calibration_staging__ABORTED_BASELINE_SINGLETON_SERIALIZER__launch_5c0d05492e367c1b__20260827",
+      "regular_file_count": 99,
+      "total_bytes": 180462355,
+      "inventory_sha256": "09e6416d0a75de5610f7d88ab1785d6b5d9b87df0408776b84bfd77a3031fec9",
+      "analysis_eligible": false,
+      "shard_or_checkpoint_reuse_prohibited": true
+    },
+    "restart": {
+      "seed_start": 0,
+      "empty_active_staging_required": true,
+      "complete_M0200_factorial_regeneration_required": true,
+      "complete_M0200_factorial_regenerated_before_refreeze": false,
+      "old_shards_reused": false
+    },
+    "sequence_3_scientific_equivalence_and_numerical_guard": {
+      "amendment_id": "scientific_equivalence_and_numerical_guard_20260827",
+      "amendment_sequence": 3,
+      "status": "FROZEN_BEFORE_THIRD_CLEAN_RESTART",
+      "freeze_date": "2026-08-27",
+      "scientific_design_changed": false,
+      "scientific_effects_inspected": false,
+      "effect_signs_intervals_pvalues_rankings_or_topup_inspected": false,
+      "old_production_identity": {
+        "manifest_path": "paper/historical/budget_toxicity_calibration_manifest__pre_third_amendment__sha72616233.json",
+        "manifest_sha256": "72616233f17cbffa8aaf6e65045fa75d3e2a232fcfd22c6f4ba4b36750d18f35",
+        "manifest_status": "FROZEN_BEFORE_NEW_AUDIT_EXECUTION",
+        "analysis_spec_sha256": "90be1c2c7cbc02944ae4c4af2316c47af0dfc9b3e50af69c5f4faea830360452",
+        "design_sha256": "58658d6cc8a1b42f194062554e0d7fe73c0cb384de42534401c69aa725c42feb",
+        "execution_identity_canonical_sha256": "58440675dd4003d2c5aea87efe2cb1e7df64bc52de59fb07225cc0b534517b45",
+        "launch_fingerprint": "f40e4e7d8f2d4f0b192babc1474556998bbf82b9061310a1d13e31cedb227acf",
+        "implementation_source_sha256": {
+          "paper/analyze_budget_toxicity_calibration_audit.py": "98f0d6a0f0ae7de1765e56f6848a252c0c238af4e76f4ef623075b7ef4fc7391",
+          "paper/budget_toxicity_calibration_core.py": "da51663bb6a6ae8e0bf1ceff4f6168d71d5ad71ceb3b193907c72c04ad0a7558",
+          "paper/monitor_budget_toxicity_calibration_precision.py": "6cd9746a59290a340ef148fd51b34663b2428b06529321139f393b9178720c5e",
+          "paper/run_budget_toxicity_calibration_audit.py": "c36420dc8a37c8a538ecba3b8d5d82753d428fb0eb4074dbe97baf83e474365d"
+        },
+        "frozen_formal_source_count": 14,
+        "runtime_identity_unchanged": true,
+        "resolved_exactly_from_manifest_snapshot": true
+      },
+      "diagnostic_versions": {
+        "V1": {
+          "schema_version": 1,
+          "specification": {
+            "path": "paper/budget_toxicity_calibration_scientific_equivalence_diagnostic_spec.json",
+            "sha256": "3dd10218c7f4fec9677dd8fd711e8d987c310b895749609a478d7b0bed510d86"
+          },
+          "runner": {
+            "path": "paper/run_budget_toxicity_calibration_scientific_equivalence_diagnostic.py",
+            "sha256": "acffbe38d147b9eb15e57baec7e9bb1ce5448622af75f7d7bd9d73785ac8d48c"
+          },
+          "test": {
+            "path": "tests/test_budget_toxicity_calibration_scientific_equivalence_diagnostic.py",
+            "sha256": "e73572be2e6947a2e9ac3a4b64b0945f0452a06760fa7953a89f5bf903b195af"
+          },
+          "artifact": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic/budget_toxicity_calibration_scientific_equivalence.json.zst",
+            "sha256": "ef58ef01c39e6e2d35455b979d2f217f9a9bd38a388a36c73003819f4edd956e"
+          },
+          "metadata": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic/budget_toxicity_calibration_scientific_equivalence.json.zst.metadata.json",
+            "sha256": "be7acfbcde0581b6fc56c542b31065b12b29f5475c1d2773a615f155a9ca8aae"
+          },
+          "commit": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic/budget_toxicity_calibration_scientific_equivalence.json.zst.commit.json",
+            "sha256": "46b4f5165e861bbb8d1d1bee9b682e6ee54ab5659ae6cf42823addf878f64f70"
+          },
+          "decision": "INCONCLUSIVE_REPEAT_INSUFFICIENCY",
+          "completed_scientific_paths": 0,
+          "scientific_interpretation_prohibited": true
+        },
+        "V2": {
+          "schema_version": 2,
+          "specification": {
+            "path": "paper/budget_toxicity_calibration_scientific_equivalence_diagnostic_v2_spec.json",
+            "sha256": "87c96baba5c6a09f7284e7fd96ec25baaa271b3b7dc2f1bfa7f7a212f3b041a5"
+          },
+          "runner": {
+            "path": "paper/run_budget_toxicity_calibration_scientific_equivalence_diagnostic_v2.py",
+            "sha256": "f8cdae5d00382f19419b0eece8192f5a77c0a6144bb292c0dfa0e703aaea0f77"
+          },
+          "test": {
+            "path": "tests/test_budget_toxicity_calibration_scientific_equivalence_diagnostic_v2.py",
+            "sha256": "6e6e8979340c2a21c4f173f55bc24d0439dd62f85085d9b9d12fdad2bbb3cf05"
+          },
+          "artifact": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic_v2/budget_toxicity_calibration_scientific_equivalence_v2.json.zst",
+            "sha256": "fe3ba4418a7bb928760028596c89dce00369b5e5a28a7035676fe9326517db16"
+          },
+          "metadata": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic_v2/budget_toxicity_calibration_scientific_equivalence_v2.json.zst.metadata.json",
+            "sha256": "b3817a3edcd93b039d9ede39dcc401439fdfd0d1a426f35fa760d2ca6d95f334"
+          },
+          "commit": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic_v2/budget_toxicity_calibration_scientific_equivalence_v2.json.zst.commit.json",
+            "sha256": "de47ee7253d0e58f027f007be79c8b11a3ef64cfced7ec9398eafa0ca96d07a3"
+          },
+          "decision": "INCONCLUSIVE_AUTHENTICATION",
+          "completed_scientific_paths": 23,
+          "semantic_comparison_completed": false,
+          "scientific_interpretation_prohibited": true
+        },
+        "V3": {
+          "schema_version": 3,
+          "specification": {
+            "path": "paper/budget_toxicity_calibration_scientific_equivalence_diagnostic_v3_spec.json",
+            "sha256": "008e4c67f488ff0daa0a62b6867621ac94d75596da1d06258577a1ad2fb4b9eb"
+          },
+          "runner": {
+            "path": "paper/run_budget_toxicity_calibration_scientific_equivalence_diagnostic_v3.py",
+            "sha256": "cb0a7fd2686a2767467ba83d056747c3e375c98b04ff072147af6d9224960e30"
+          },
+          "test": {
+            "path": "tests/test_budget_toxicity_calibration_scientific_equivalence_diagnostic_v3.py",
+            "sha256": "c1dfc6ac315dda099e673aa6a7ebd08824e8de643fa0fd950117fc70fa67bf78"
+          },
+          "artifact": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic_v3/budget_toxicity_calibration_scientific_equivalence_v3.json.zst",
+            "sha256": "42ae32a6c4ed38a6f20dcc3f4f17154df3be0e0b68f158dedf324c95c2a6625a"
+          },
+          "metadata": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic_v3/budget_toxicity_calibration_scientific_equivalence_v3.json.zst.metadata.json",
+            "sha256": "0e3397512e25e01c90474f8f27ba89e96e9d0dd4add2c47be45517f8ecb75576"
+          },
+          "commit": {
+            "path": "results/budget_toxicity_calibration_scientific_equivalence_diagnostic_v3/budget_toxicity_calibration_scientific_equivalence_v3.json.zst.commit.json",
+            "sha256": "2e58ea20d9e7397a4e88ccdc8a6fd9ab5a564558156313d9f71db43e9333ac99"
+          },
+          "decision": "PASS_SCIENTIFIC_EQUIVALENCE_WITH_VARIABLE_CONSTRUCTION_COUNT",
+          "completed_fresh_paths": 23,
+          "authenticated_stored_key_pairs": 6,
+          "all_categorical_and_primary_discrete_contributions_exact": true,
+          "all_continuous_classes_within_frozen_tolerance": true,
+          "all_decision_margin_certificates_passed": true
+        }
+      },
+      "V3_interpretation_scope": {
+        "pass_is_finite_fixed_key_runtime_and_platform_only": true,
+        "fixed_fresh_paths": 23,
+        "fixed_stored_key_pairs": 6,
+        "construction_count_variability_scientifically_inert_for_fixed_comparisons": true,
+        "bitwise_determinism_established": false,
+        "underlying_construction_count_variability_eliminated_or_repaired": false,
+        "general_numerical_repair_claimed": false,
+        "robustness_to_other_runtimes_keys_models_likelihoods_or_misspecification_claimed": false
+      },
+      "third_quarantine": {
+        "source_launch_fingerprint": "f40e4e7d8f2d4f0b192babc1474556998bbf82b9061310a1d13e31cedb227acf",
+        "path": "results/budget_toxicity_calibration_staging__ABORTED_CONSTRUCTION_REPRODUCIBILITY__launch_f40e4e7d8f2d4f0__20260827",
+        "relocation_was_byte_preserving": true,
+        "regular_file_count": 29,
+        "total_bytes": 52894420,
+        "inventory_sha256": "f1ad4bd634aa186562ced1c8360344f3559b07d02d2fd9a26a1f444505034870",
+        "analysis_eligible": false,
+        "shard_or_checkpoint_reuse_prohibited": true,
+        "default_staging_path_absent_at_refreeze": true
+      },
+      "historical_byte_snapshots": {
+        "prespec": {
+          "path": "paper/budget_toxicity_calibration_prespec__pre_third_amendment__sha90be1c2c.md",
+          "bytes": 28000,
+          "sha256": "90be1c2c7cbc02944ae4c4af2316c47af0dfc9b3e50af69c5f4faea830360452"
+        },
+        "manifest": {
+          "path": "paper/historical/budget_toxicity_calibration_manifest__pre_third_amendment__sha72616233.json",
+          "bytes": 12311,
+          "sha256": "72616233f17cbffa8aaf6e65045fa75d3e2a232fcfd22c6f4ba4b36750d18f35"
+        },
+        "precision_monitor": {
+          "path": "paper/historical/monitor_precision__sha6cd9746a59290a340ef148fd51b34663b2428b06529321139f393b9178720c5e.py",
+          "bytes": 56384,
+          "sha256": "6cd9746a59290a340ef148fd51b34663b2428b06529321139f393b9178720c5e"
+        },
+        "analyzer": {
+          "path": "paper/historical/analyzer_audit__sha98f0d6a0f0ae7de1765e56f6848a252c0c238af4e76f4ef623075b7ef4fc7391.py",
+          "bytes": 127555,
+          "sha256": "98f0d6a0f0ae7de1765e56f6848a252c0c238af4e76f4ef623075b7ef4fc7391"
+        },
+        "prespec_forward_patch": {
+          "path": "paper/budget_toxicity_calibration_prespec__third_amendment_forward.patch",
+          "bytes": 16974,
+          "sha256": "9c0b6bd1d4853be13c4227d145bd00661be039c16e272e3d1c7ad77b495f3f7a",
+          "direct_application_sha256": "f0633de03d421d2b557952f9feb5938136fd255fd2502158e6b52acafe3f610b",
+          "post_patch_intermediate_prespec_sha256": "3fa4bd1e625c3d25081c3b73e74b86e8d8eca85f776828e5122a747f8501572c",
+          "final_prespec_with_secondary_guard_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178"
+        }
+      },
+      "numerical_equivalence_guard": {
+        "precision_artifact_schema_version": 2,
+        "eta": 1.4901161193847656e-08,
+        "eta_definition": "sqrt(binary64_machine_epsilon)=2^-26",
+        "panel_brier_snapshot_bound_points": 2.9802322387695312e-06,
+        "primary_replicate_bounds_points": {
+          "exact_discrete_rows": 0.0,
+          "family_B_panel_brier_difference": 5.9604644775390625e-06,
+          "family_C_panel_brier_difference_in_differences": 1.1920928955078125e-05
+        },
+        "mcse_guard_formula": "a_k(M) = b_k/sqrt(M-1)",
+        "guarded_precision_formula": "MCSE_guard_k = MCSE_k + a_k(M)",
+        "guarded_precision_threshold_points": 1.5,
+        "simultaneous_band_halfwidth_guard_formula": "h_k = b_k + q_F*a_k(M)",
+        "guarded_simultaneous_band_formula": "[L_k-h_k, U_k+h_k]",
+        "all_sign_based_primary_predicates_use_guarded_bands": true,
+        "secondary_pointwise_guard": {
+          "schema_version": 1,
+          "non_brier_replicate_bound_points": 0.0,
+          "absolute_panel_brier_snapshot_bound_points": 2.9802322387695312e-06,
+          "absolute_panel_brier_snapshot_bound_expression": "200*eta",
+          "within_policy_N80_minus_N20_panel_brier_bound_points": 5.9604644775390625e-06,
+          "within_policy_N80_minus_N20_panel_brier_bound_expression": "400*eta",
+          "policy_vs_cEI_four_term_panel_brier_calibration_did_bound_points": 1.1920928955078125e-05,
+          "policy_vs_cEI_four_term_panel_brier_calibration_did_bound_expression": "800*eta",
+          "mcse_guard_formula": "a = b/sqrt(M-1)",
+          "pointwise_halfwidth_guard_formula": "h = b + t_{M-1,0.975}*a",
+          "guarded_interval_formula": "[raw_ci95_low-h, raw_ci95_high+h]",
+          "raw_intervals_retained": true,
+          "all_secondary_sign_table_figure_and_TeX_classifications_use_guarded_intervals": true,
+          "zero_endpoint_classification": "unresolved"
+        },
+        "constants_may_not_be_changed_after_effect_inspection": true
+      },
+      "restart": {
+        "seed_start": 0,
+        "empty_default_staging_required": true,
+        "complete_M0200_factorial_regeneration_required": true,
+        "complete_M0200_factorial_regenerated_before_refreeze": false,
+        "new_launch_fingerprint_embedded_in_manifest": false,
+        "prior_shard_or_checkpoint_reuse_prohibited": true,
+        "old_shards_reused": false
+      }
+    }
+  },
+  "design": {
+    "surface": "osa",
+    "strata": [0, 1],
+    "policies": ["cKG-exact-formal", "tmse", "qBIG", "cEI"],
+    "policy_display": {
+      "cKG-exact-formal": "cKG",
+      "tmse": "tMSE-only",
+      "qBIG": "Entropy reduction",
+      "cEI": "cEI"
+    },
+    "assumed_toxicity_noise_sd_factors": [0.5, 1.0, 2.0],
+    "assumed_toxicity_noise_variance_factors": [0.25, 1.0, 4.0],
+    "truth_efficacy_noise_sd_factor": 1.0,
+    "truth_toxicity_noise_sd_factor": 1.0,
+    "assumed_efficacy_noise_sd_factor": 1.0,
+    "gammas": [0.7, 0.9],
+    "snapshot_budgets": [20, 40, 80],
+    "maximum_physical_budget": 80,
+    "mode": "latent",
+    "noise_fitting": "fixed_assumed_variance",
+    "protocol_scaffold": "lhs_fixed",
+    "warmup": 4,
+    "cohort_size": 2,
+    "grid_n": 5,
+    "empty_gate": "pf",
+    "stopping": false,
+    "stable_gate_rule": "z_g > Phi^{-1}(tau)"
+  },
+  "true_panel_targets": [
+    {
+      "stratum": 0,
+      "canonical_index": 8,
+      "dose": [0.25, 0.75],
+      "true_efficacy": 7.67921875,
+      "true_toxicity": 1.2816796875,
+      "toxicity_threshold": 1.5,
+      "true_feasible_dose_count": 11
+    },
+    {
+      "stratum": 1,
+      "canonical_index": 13,
+      "dose": [0.5, 0.75],
+      "true_efficacy": 13.20546875,
+      "true_toxicity": 1.6223437500000002,
+      "toxicity_threshold": 2.0,
+      "true_feasible_dose_count": 16
+    }
+  ],
+  "seed_blocks": [
+    {"block_id": "M0200", "seed_start": 0, "seed_stop_exclusive": 200, "cumulative_M": 200},
+    {"block_id": "M0500_TOPUP", "seed_start": 200, "seed_stop_exclusive": 500, "cumulative_M": 500},
+    {"block_id": "M1000_TOPUP", "seed_start": 500, "seed_stop_exclusive": 1000, "cumulative_M": 1000}
+  ],
+  "accounting": {
+    "physical_paths_per_replicate": 48,
+    "nested_snapshots_per_replicate": 144,
+    "M0200_physical_paths": 9600,
+    "M0200_nested_snapshots": 28800,
+    "M0500_cumulative_physical_paths": 24000,
+    "M0500_cumulative_nested_snapshots": 72000,
+    "M1000_cumulative_physical_paths": 48000,
+    "M1000_cumulative_nested_snapshots": 144000
+  },
+  "primary_families": {
+    "A_policy_contrasts_count": 54,
+    "B_calibration_contrasts_count": 48,
+    "C_recovery_interactions_count": 16,
+    "total_precision_control_estimands": 118,
+    "outcome_scale": "0_to_100_points",
+    "within_replicate_aggregation": "equal_weight_two_strata_and_two_gates"
+  },
+  "precision_rule": {
+    "initial_M": 200,
+    "intermediate_M": 500,
+    "maximum_M": 1000,
+    "paired_mcse_threshold_points": 1.5,
+    "precision_artifact_schema_version": 2,
+    "decision_uses_guarded_mcse": true,
+    "guarded_mcse_formula": "raw_mcse_points + b_k/sqrt(M-1)",
+    "row_certified_only_if_guarded_mcse_at_most_threshold": true,
+    "top_up_entire_factorial_only": true,
+    "outcome_sign_or_significance_may_influence_topup": false,
+    "blind_monitor_prohibits_means_signs_intervals_pvalues_and_rankings": true
+  },
+  "multiplicity": {
+    "simultaneous_family_bands": ["A", "B", "C"],
+    "confidence_level": 0.95,
+    "method": "seed_clustered_rademacher_multiplier_max_t",
+    "multiplier_draws": 100000,
+    "family_rng_seeds": {"A": 202608261, "B": 202608262, "C": 202608263},
+    "critical_quantile_method": "higher",
+    "primary_signs_use_numerically_guarded_simultaneous_bands": true,
+    "numerical_halfwidth_guard_formula": "b_k + q_F*b_k/sqrt(M-1)",
+    "pointwise_paired_t_intervals_also_reported": true,
+    "cell_vote_prohibited": true
+  },
+  "baseline_identity": {
+    "oracles": {
+      "selected_comparator_family": {
+        "path": "results/comparator_family_analysis/comparator_family_selected_records.json.zst",
+        "artifact_sha256": "b5ebd7768efee30fdc3b0a252e6c7c702215c444adf3a9326b5423c068b6283e",
+        "metadata_sha256": "75dce1739ae521ece6a48a02a38458d52e9d4f6341721fa2daf7cb17e82f0150"
+      },
+      "formal_decision_master": {
+        "archive_path": "analysis/formal_execution_provenance/formal_decision_master.json.zst",
+        "artifact_sha256": "fc60ac3250421c69a52fa9b932581e25c8c54d6f1bdfed3e1c6c7b35b02b3fe9",
+        "metadata_path": "analysis/formal_execution_provenance/formal_decision_master.json.metadata.json",
+        "metadata_sha256": "7daab718463d1f6f0107cb0c7d6d33e6b0ee4300c0eb2fdc957c10b11f3f528e"
+      },
+      "comparator_extension": {
+        "archive_path": "records/comparator_family_extension/comparator_family_completion_records.json.zst",
+        "artifact_sha256": "866c6ab2af18aa54187001c9286c9b20b1ebb6258756895d5610a3f1ce9bbf5c",
+        "metadata_sha256": "88e22c060471d95d659a0d81b6eaff42d2dd9a35d5a03f93464fb6d601ba8f35",
+        "commit_sha256": "ebc9ec4d6327f00069999431d424364413c2018e5546815db924a75a6aa8fb2a"
+      }
+    },
+    "required_overlap_cells": 3200,
+    "required_common_field_cells": 3200,
+    "required_allocation_history_cells": 3040,
+    "historical_cells_without_serialized_allocation_history": {
+      "policy": "cEI",
+      "gamma": 0.7,
+      "seed_start": 0,
+      "seed_stop_exclusive": 80,
+      "strata": [0, 1],
+      "count": 160
+    },
+    "factors": {"assumed_toxicity_noise_sd_factor": 1.0, "budget": 40},
+    "failure_blocks_analysis": true
+  },
+  "immutable_existing_evidence": {
+    "formal_projection_rows": 55480,
+    "comparator_extension_rows": 8800,
+    "selected_comparator_family_rows": 34000,
+    "must_not_be_modified_or_merged": true
+  },
+  "required_runtime": {
+    "python": "3.11.6",
+    "numpy": "1.26.4",
+    "scipy": "1.16.3",
+    "torch": "2.4.1",
+    "gpytorch": "1.14",
+    "ray": "2.10.0",
+    "zstandard": "0.19.0",
+    "matplotlib": "3.10.7",
+    "ray_num_cpus": 10,
+    "worker_num_cpus": 1,
+    "maximum_in_flight": 20,
+    "serial_fallback": false
+  },
+  "analysis_specification": "paper/budget_toxicity_calibration_prespec.md",
+  "execution_source_paths": [
+    "paper/budget_toxicity_calibration_core.py",
+    "paper/run_budget_toxicity_calibration_audit.py",
+    "paper/monitor_budget_toxicity_calibration_precision.py",
+    "paper/analyze_budget_toxicity_calibration_audit.py"
+  ],
+  "execution_identity": {
+    "analysis_spec_sha256": "1b1152d8f09462b96bf2f35252a9cd5703b331ab7a3546d4708b189f81e8c178",
+    "implementation_source_sha256": {
+      "paper/analyze_budget_toxicity_calibration_audit.py": "bcf3ec2964b88d61ac4becc8a9aa838831a3240d93a082abf42b5b328799ec2a",
+      "paper/budget_toxicity_calibration_core.py": "da51663bb6a6ae8e0bf1ceff4f6168d71d5ad71ceb3b193907c72c04ad0a7558",
+      "paper/monitor_budget_toxicity_calibration_precision.py": "3994535bc1e2c300388c2d161d326e66f6185452971075e8d7bc9caf76bb07e0",
+      "paper/run_budget_toxicity_calibration_audit.py": "c36420dc8a37c8a538ecba3b8d5d82753d428fb0eb4074dbe97baf83e474365d"
+    },
+    "frozen_formal_source_sha256": {
+      "paper/analyze_primary_osa_exact_ckg_gate.py": "579d4a390c051316b31cbd8775a655b274c4f0952a85090493fdc5c6a75dbbb2",
+      "paper/formal_rerun_manifest.json": "8fde3c59e83da0f8bce76f4d7d3caf6a7aa4e03c2fbb3d71f633d6563f207b24",
+      "paper/formal_rerun_preflight.py": "a326911a293600e2951f380bb8297b08ec1fda7440b417c8d9d0dda9b7de208b",
+      "paper/run_full_formal_rerun.py": "e3037131097e7be5672495604574ba20fbaff34014c27c978811e06c3b7c3d8f",
+      "paper/run_primary_osa_exact_ckg_gate.py": "063a8aa444be800d1be442dce0b13fba84bd96e493bf2022ca72e785461847a9",
+      "src/safedosebo/acquisitions.py": "1e06ad27fd355fb8106d3a07d44ad446edbddd3e3d1f4e36766d2fc68d0c5756",
+      "src/safedosebo/ckg_exact.py": "b0689cdfb1bc95f0bb6da12745962fb51f42cfc5e8fb15f39b07de702527484d",
+      "src/safedosebo/context.py": "61085802c1d2d80ade1622aa062b0a10a1f567120404227d2e09d1622dfe65b1",
+      "src/safedosebo/gp.py": "d4ce5cc9b1d2aabe4fe1b5480bcb0c244782c7a914bff075ec43c6fd0917ed72",
+      "src/safedosebo/metrics.py": "45a62ea39dc36af6ee7a5e17d547e6bbb2ad40499d028195c3f4fe3cf0d35fb7",
+      "src/safedosebo/protocol.py": "ff0a55b3e12bceb5a556121f721b44a9e186b0dc823d895cf98cda9681f3e8b7",
+      "src/safedosebo/registry.py": "3d097a6b33a27f192d0dd7a90b4e4a89b34f04821c8b42c2681fc101460e5241",
+      "src/safedosebo/surfaces.py": "48d9a238e17c919c09fc7f577e4cd3c85e21023b60a0df7ee1d99d23a3419899",
+      "src/safedosebo/trial.py": "61929fa04d30b27155c2aa99992bed30ad7ccb072b43e0c46a1e282dfd81a3ce"
+    },
+    "runtime_identity": {
+      "python": "3.11.6",
+      "numpy": "1.26.4",
+      "scipy": "1.16.3",
+      "torch": "2.4.1",
+      "gpytorch": "1.14",
+      "matplotlib": "3.10.7",
+      "ray": "2.10.0",
+      "zstandard": "0.19.0"
+    },
+    "design_sha256": "a8759b0ea148bcfa97273c6bab1ed4bec744944956d609681275a2e94d670085"
+  }
+}

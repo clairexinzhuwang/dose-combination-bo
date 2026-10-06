@@ -1,0 +1,8 @@
+{
+  "artifact_count": 3,
+  "metadata": "budget_toxicity_calibration_family_A_post_initialization.metadata.json",
+  "metadata_sha256": "634d80a00b3ed90d112038f42e5d3a21fa3a3bbdba6878c898c7dfef5cbef6c4",
+  "schema_version": 1,
+  "source_input_bundle_sha256": "3b8ea560a8b6ff56199b97eafacc4709af44f14f1595bec982a21142768a1973",
+  "status": "COMMITTED_POST_HOC_SUPPORTING_FAMILY_A_POST_INITIALIZATION_PROJECTION"
+}
