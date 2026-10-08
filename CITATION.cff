@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "Please cite dose-combination-bo and the companion manuscript."
+message: "Please cite dose-combination-bo and the companion arXiv preprint."
 title: "dose-combination-bo"
 type: software
 authors:
@@ -9,7 +9,7 @@ version: "0.2.1rc5"
 license: MIT
 repository-code: "https://github.com/clairexinzhuwang/dose-combination-bo"
 references:
-  - type: unpublished
+  - type: article
     title: "Bayesian Optimization for Dose Finding with Two Agents: Participant Allocation and Final Selection"
     authors:
       - family-names: Wang
@@ -17,3 +17,10 @@ references:
       - family-names: Love
         given-names: Tanzy
     year: 2026
+    date-published: "2026-10-07"
+    status: preprint
+    url: "https://arxiv.org/abs/2610.09245"
+    identifiers:
+      - type: other
+        value: "arXiv:2610.09245"
+        description: "arXiv preprint"
