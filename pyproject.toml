@@ -44,6 +44,7 @@ dose-combination-bo = "dose_combination_bo.cli:main"
 Homepage = "https://github.com/clairexinzhuwang/dose-combination-bo"
 Repository = "https://github.com/clairexinzhuwang/dose-combination-bo"
 Documentation = "https://github.com/clairexinzhuwang/dose-combination-bo#readme"
+Paper = "https://doi.org/10.48550/arXiv.2610.09245"
 Issues = "https://github.com/clairexinzhuwang/dose-combination-bo/issues"
 
 [tool.setuptools.packages.find]

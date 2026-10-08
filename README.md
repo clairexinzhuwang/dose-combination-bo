@@ -6,13 +6,14 @@ end. The current software and paper use combinations of two agents.
 
 ## Paper
 
-The companion paper is available as
-[arXiv:2610.09245](https://arxiv.org/abs/2610.09245)
+The companion paper is available via its
+[DOI](https://doi.org/10.48550/arXiv.2610.09245) and
+[arXiv record](https://arxiv.org/abs/2610.09245)
 ([PDF](https://arxiv.org/pdf/2610.09245)):
 
 > Xinzhu Wang and Tanzy Love. *Bayesian Optimization for Dose Finding with Two
-> Agents: Participant Allocation and Final Selection*. arXiv:2610.09245
-> [stat.AP], 2026.
+> Agents: Participant Allocation and Final Selection*. arXiv, 2026.
+> https://doi.org/10.48550/arXiv.2610.09245
 
 Versioned repository copies of the [article](paper/Main_Manuscript.pdf) and
 [supporting information](paper/Supporting_Information.pdf) are also included,

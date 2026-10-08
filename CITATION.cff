@@ -19,6 +19,7 @@ references:
     year: 2026
     date-published: "2026-10-07"
     status: preprint
+    doi: "10.48550/arXiv.2610.09245"
     url: "https://arxiv.org/abs/2610.09245"
     identifiers:
       - type: other

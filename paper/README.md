@@ -1,5 +1,9 @@
 # Paper
 
+The published preprint is available via
+[doi:10.48550/arXiv.2610.09245](https://doi.org/10.48550/arXiv.2610.09245)
+and [arXiv:2610.09245](https://arxiv.org/abs/2610.09245).
+
 Start with the [complete manuscript](Complete_Manuscript.pdf) (28 pages).
 The [main article](Main_Manuscript.pdf) (15 pages) and
 [supporting information](Supporting_Information.pdf) (13 pages) are also
